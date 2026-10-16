@@ -1,0 +1,6345 @@
+{
+  "ok": true,
+  "error": null,
+  "config_id": "gemini-3.6-flash__think-medium",
+  "model": "gemini-3.6-flash",
+  "label": "Gemini 3.6 Flash medium",
+  "provider": "gemini",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "medium_05",
+  "batch_size": "full",
+  "n_utterances": 103,
+  "n_requests": 1,
+  "max_output_tokens": 8216,
+  "elapsed_seconds": 66.069,
+  "retries": 1,
+  "finish_reasons": [
+    "STOP"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": false,
+      "error": "Expecting value: line 94 column 7 (char 1789)"
+    },
+    {
+      "attempt": 2,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9797,
+    "completion_tokens": 7113,
+    "cached_tokens": 0,
+    "total_tokens": 16910
+  },
+  "estimated_cost_usd": 0.034022,
+  "historical_cost_usd": null,
+  "new_spend_usd": 0.034022,
+  "reused_from_stage1": false,
+  "failures": 0,
+  "tp": 49,
+  "fp": 2,
+  "fn": 0,
+  "precision_pct": 96.0784,
+  "recall_pct": 100.0,
+  "micro_f1_pct": 98.0,
+  "rows": [
+    {
+      "original": "C What if she doesn't want to play?",
+      "expected": "C What if she does/n't want to play?",
+      "actual": "C What if she does/n't want to play?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P We can ask and see what she chooses.",
+      "expected": "P We can ask and see what she choose/3s.",
+      "actual": "P We can ask and see what she choose/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I asked a boy once.",
+      "expected": "C I ask/ed a boy once.",
+      "actual": "C I ask/ed a boy once.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C He just looked at his shoes.",
+      "expected": "C He just look/ed at his shoe/s.",
+      "actual": "C He just look/ed at his shoe/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Did you wait for an answer?",
+      "expected": "P Did you wait for an answer?",
+      "actual": "P Did you wait for an answer?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (I said) I said it again louder.",
+      "expected": "C (I said) I said it again louder.",
+      "actual": "C (I said) I said it again louder.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Sometimes people need a little time.",
+      "expected": "P Sometimes people need a little time.",
+      "actual": "P Sometimes people need a little time.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C He heard me.",
+      "expected": "C He heard me.",
+      "actual": "C He heard me.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Hearing and being ready to answer are different.",
+      "expected": "P Hearing and being ready to answer are different.",
+      "actual": "P Hearing and being ready to answer are different.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C How long is a little time?",
+      "expected": "C How long is a little time?",
+      "actual": "C How long is a little time?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Long enough for a few quiet breaths.",
+      "expected": "P Long enough for a few quiet breath/s.",
+      "actual": "P Long enough for a few quiet breath/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I'll breathe at her.",
+      "expected": "C I/'ll breathe at her.",
+      "actual": "C I/'ll breathe at her.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Quietly to yourself, I meant.",
+      "expected": "P Quietly to yourself, I meant.",
+      "actual": "P Quietly to yourself, I meant.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (I know) I was joking.",
+      "expected": "C (I know) I was joke/ing.",
+      "actual": "C (I know) I was joke/ing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Shall I pretend to be the new child?",
+      "expected": "P Shall I pretend to be the new child?",
+      "actual": "P Shall I pretend to be the new child?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Yes, you are Nia.",
+      "expected": "C Yes, you are Nia.",
+      "actual": "C Yes, you are Nia.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I will sit here with my book {turns slightly away}.",
+      "expected": "P I will sit here with my book {turns slightly away}.",
+      "actual": "P I will sit here with my book {turn/3s slightly away}.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Nia, come and play dragons.",
+      "expected": "C Nia, come and play dragon/s.",
+      "actual": "C Nia, come and play dragon/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I am reading right now.",
+      "expected": "P I am read/ing right now.",
+      "actual": "P I am read/ing right now.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C There aren't any words on that bit.",
+      "expected": "C There are/n't any word/s on that bit.",
+      "actual": "C There are/n't any word/s on that bit.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P In our pretend game, there are.",
+      "expected": "P In our pretend game, there are.",
+      "actual": "P In our pretend game, there are.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Oh.",
+      "expected": "C Oh.",
+      "actual": "C Oh.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Do you) would you like to play later?",
+      "expected": "C (Do you) would you like to play later?",
+      "actual": "C (Do you) would you like to play later?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Maybe.",
+      "expected": "P Maybe.",
+      "actual": "P Maybe.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C That's not an answer.",
+      "expected": "C That/'s not an answer.",
+      "actual": "C That/'s not an answer.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P It can mean that I do not know yet.",
+      "expected": "P It can mean that I do not know yet.",
+      "actual": "P It can mean that I do not know yet.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C But I need to know which dragon she is.",
+      "expected": "C But I need to know which dragon she is.",
+      "actual": "C But I need to know which dragon she is.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Could you keep a dragon ready without choosing for her?",
+      "expected": "P Could you keep a dragon ready without choosing for her?",
+      "actual": "P Could you keep a dragon ready without choosing for her?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C The green one.",
+      "expected": "C The green one.",
+      "actual": "C The green one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Or let her choose when she joins.",
+      "expected": "P Or let her choose when she join/3s.",
+      "actual": "P Or let her choose when she join/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (I could) I could leave all three.",
+      "expected": "C (I could) I could leave all three.",
+      "actual": "C (I could) I could leave all three.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P That would give her a choice.",
+      "expected": "P That would give her a choice.",
+      "actual": "P That would give her a choice.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I've taken the red one though.",
+      "expected": "C I/'ve take/en the red one though.",
+      "actual": "C I/'ve take/en the red one though.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P You have taken a role for yourself.",
+      "expected": "P You have take/en a role for yourself.",
+      "actual": "P You have take/en a role for yourself.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Can I keep it?",
+      "expected": "C Can I keep it?",
+      "actual": "C Can I keep it?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Of course.",
+      "expected": "P Of course.",
+      "actual": "P Of course.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Nia can have the^",
+      "expected": "C Nia can have the^",
+      "actual": "C Nia can have the^",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Remember, she may choose for herself.",
+      "expected": "P Remember, she may choose for herself.",
+      "actual": "P Remember, she may choose for herself.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I was saying the other dragons.",
+      "expected": "C I was say/ing the other dragon/s.",
+      "actual": "C I was say/ing the other dragon/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Then tell her that.",
+      "expected": "P Then tell her that.",
+      "actual": "P Then tell her that.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C You can be any of these dragons.",
+      "expected": "C You can be any of these dragon/s.",
+      "actual": "C You can be any of these dragon/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Thank you.",
+      "expected": "P Thank you.",
+      "actual": "P Thank you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Do you want to see their house?",
+      "expected": "C Do you want to see their house?",
+      "actual": "C Do you want to see their house?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I would like to look.",
+      "expected": "P I would like to look.",
+      "actual": "P I would like to look.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Over here) this pillow is the roof.",
+      "expected": "C (Over here) this pillow is the roof.",
+      "actual": "C (Over here) this pillow is the roof.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P What happens if it falls?",
+      "expected": "P What happen/3s if it fall/3s?",
+      "actual": "P What happen/3s if it fall/3s?",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Dragon rain.",
+      "expected": "C Dragon rain.",
+      "actual": "C Dragon rain.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C %plop.",
+      "expected": "C %plop.",
+      "actual": "C %plop.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Does anybody get hurt?",
+      "expected": "P Does anybody get hurt?",
+      "actual": "P Does anybody get hurt?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C No, the roof is soft.",
+      "expected": "C No, the roof is soft.",
+      "actual": "C No, the roof is soft.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I'd feel safe under that.",
+      "expected": "P I/'d feel safe under that.",
+      "actual": "P I/'d feel safe under that.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C You sound like you, not Nia.",
+      "expected": "C You sound like you, not Nia.",
+      "actual": "C You sound like you, not Nia.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Nia might ask about the roof too.",
+      "expected": "P Nia might ask about the roof too.",
+      "actual": "P Nia might ask about the roof too.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C She might.",
+      "expected": "C She might.",
+      "actual": "C She might.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Um) her dragon's tail can stick out here.",
+      "expected": "C (Um) her dragon/z tail can stick out here.",
+      "actual": "C (Um) her dragon/z tail can stick out here.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P The red dragon's tail needs space too.",
+      "expected": "P The red dragon/z tail need/3s space too.",
+      "actual": "P The red dragon/z tail need/3s space too.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Mine is curly.",
+      "expected": "C Mine is curly.",
+      "actual": "C Mine is curly.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Mine is very long.",
+      "expected": "P Mine is very long.",
+      "actual": "P Mine is very long.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C You're choosing already!",
+      "expected": "C You/'re choose/ing already!",
+      "actual": "C You/'re choose/ing already!",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I decided to join after looking.",
+      "expected": "P I decide/ed to join after looking.",
+      "actual": "P I decide/ed to join after looking.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C So waiting worked.",
+      "expected": "C So waiting work/ed.",
+      "actual": "C So waiting work/ed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P It helped in this pretend turn.",
+      "expected": "P It help/ed in this pretend turn.",
+      "actual": "P It help/ed in this pretend turn.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Will it work every time?",
+      "expected": "C Will it work every time?",
+      "actual": "C Will it work every time?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P No, someone may still prefer another activity.",
+      "expected": "P No, someone may still prefer another activity.",
+      "actual": "P No, someone may still prefer another activity.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Even after) even after I show the house?",
+      "expected": "C (Even after) even after I show the house?",
+      "actual": "C (Even after) even after I show the house?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Yes.",
+      "expected": "P Yes.",
+      "actual": "P Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Then I would feel sad.",
+      "expected": "C Then I would feel sad.",
+      "actual": "C Then I would feel sad.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P You can feel sad and still accept the answer.",
+      "expected": "P You can feel sad and still accept the answer.",
+      "actual": "P You can feel sad and still accept the answer.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I can say>",
+      "expected": "C I can say>",
+      "actual": "C I can say>",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P What could you say?",
+      "expected": "P What could you say?",
+      "actual": "P What could you say?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Okay, maybe another time.",
+      "expected": "C Okay, maybe another time.",
+      "actual": "C Okay, maybe another time.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P That sounds friendly.",
+      "expected": "P That sound/3s friendly.",
+      "actual": "P That sound/3s friendly.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Now we can both be ourselves.",
+      "expected": "C Now we can both be ourselves.",
+      "actual": "C Now we can both be ourselves.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P All right.",
+      "expected": "P All right.",
+      "actual": "P All right.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Have you eaten dragon dinner?",
+      "expected": "C Have you eat/en dragon dinner?",
+      "actual": "C Have you eat/en dragon dinner?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I have not eaten dragon dinner today.",
+      "expected": "P I have not eat/en dragon dinner today.",
+      "actual": "P I have not eat/en dragon dinner today.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C It's invisible.",
+      "expected": "C It/'s invisible.",
+      "actual": "C It/'s invisible.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (You have) you've got some on your knee.",
+      "expected": "C (You have) you/'ve got some on your knee.",
+      "actual": "C (You have) you/'ve got some on your knee.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I should have noticed.",
+      "expected": "P I should have notice/ed.",
+      "actual": "P I should have notice/ed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C You dropped it.",
+      "expected": "C You drop/ed it.",
+      "actual": "C You drop/ed it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I will try a tiny bite.",
+      "expected": "P I will try a tiny bite.",
+      "actual": "P I will try a tiny bite.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Not too hot.",
+      "expected": "C Not too hot.",
+      "actual": "C Not too hot.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Delicious.",
+      "expected": "P Delicious.",
+      "actual": "P Delicious.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Nia might not like pretend food.",
+      "expected": "C Nia might not like pretend food.",
+      "actual": "C Nia might not like pretend food.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P What could you ask her instead?",
+      "expected": "P What could you ask her instead?",
+      "actual": "P What could you ask her instead?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C What games do you like?",
+      "expected": "C What game/s do you like?",
+      "actual": "C What game/s do you like?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P That gives her room to tell you.",
+      "expected": "P That give/3s her room to tell you.",
+      "actual": "P That give/3s her room to tell you.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Maybe she likes drawing.",
+      "expected": "C Maybe she like/3s drawing.",
+      "actual": "C Maybe she like/3s drawing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P You like drawing too.",
+      "expected": "P You like drawing too.",
+      "actual": "P You like drawing too.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C We could draw dragon houses.",
+      "expected": "C We could draw dragon house/s.",
+      "actual": "C We could draw dragon house/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Or just) or just houses.",
+      "expected": "C (Or just) or just house/s.",
+      "actual": "C (Or just) or just house/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P You found another idea.",
+      "expected": "P You found another idea.",
+      "actual": "P You found another idea.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I don't have to make her like mine.",
+      "expected": "C I don't have to make her like mine.",
+      "actual": "C I don't have to make her like mine.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Exactly.",
+      "expected": "P Exactly.",
+      "actual": "P Exactly.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I'll still show her the green dragon.",
+      "expected": "C I/'ll still show her the green dragon.",
+      "actual": "C I/'ll still show her the green dragon.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P An invitation to look.",
+      "expected": "P An invitation to look.",
+      "actual": "P An invitation to look.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Yes, if she wants {tucks the green dragon under the pillow}.",
+      "expected": "C Yes, if she want/3s {tucks the green dragon under the pillow}.",
+      "actual": "C Yes, if she want/3s {tuck/3s the green dragon under the pillow}.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C He can wait here.",
+      "expected": "C He can wait here.",
+      "actual": "C He can wait here.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Is he comfortable under that pillow?",
+      "expected": "P Is he comfortable under that pillow?",
+      "actual": "P Is he comfortable under that pillow?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C (Very) very comfortable.",
+      "expected": "C (Very) very comfortable.",
+      "actual": "C (Very) very comfortable.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C He's borrowed the soft corner.",
+      "expected": "C He/h's borrow/ed the soft corner.",
+      "actual": "C He/h's borrow/ed the soft corner.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Then we can leave him to rest.",
+      "expected": "P Then we can leave him to rest.",
+      "actual": "P Then we can leave him to rest.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C He'll tell us when he wants a visitor.",
+      "expected": "C He/'ll tell us when he want/3s a visitor.",
+      "actual": "C He/'ll tell us when he want/3s a visitor.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  ],
+  "raw_responses": [
+    "{\n  \"outputs\": [\n    {\n      \"id\": 0,\n      \"text\": \"C What if she does/n't want to play?\"\n    },\n    {\n      \"id\": 1,\n      \"text\": \"P We can ask and see what she choose/3s.\"\n    },\n    {\n      \"id\": 2,\n      \"text\": \"C I ask/ed a boy once.\"\n    },\n    {\n      \"id\": 3,\n      \"text\": \"C He just look/ed at his shoe/s.\"\n    },\n    {\n      \"id\": 4,\n      \"text\": \"P Did you wait for an answer?\"\n    },\n    {\n      \"id\": 5,\n      \"text\": \"C (I said) I said it again louder.\"\n    },\n    {\n      \"id\": 6,\n      \"text\": \"P Sometimes people need a little time.\"\n    },\n    {\n      \"id\": 7,\n      \"text\": \"C He heard me.\"\n    },\n    {\n      \"id\": 8,\n      \"text\": \"P Hearing and being ready to answer are different.\"\n    },\n    {\n      \"id\": 9,\n      \"text\": \"C How long is a little time?\"\n    },\n    {\n      \"id\": 10,\n      \"text\": \"P Long enough for a few quiet breath/s.\"\n    },\n    {\n      \"id\": 11,\n      \"text\": \"C I/'ll breathe at her.\"\n    },\n    {\n      \"id\": 12,\n      \"text\": \"P Quietly to yourself, I meant.\"\n    },\n    {\n      \"id\": 13,\n      \"text\": \"C (I know) I was joke/ing.\"\n    },\n    {\n      \"id\": 14,\n      \"text\": \"P Shall I pretend to be the new child?\"\n    },\n    {\n      \"id\": 15,\n      \"text\": \"C Yes, you are Nia.\"\n    },\n    {\n      \"id\": 16,\n      \"text\": \"P I will sit here with my book {turn/3s slightly away}.\"\n    },\n    {\n      \"id\": 17,\n      \"text\": \"C Nia, come and play dragon/s.\"\n    },\n    {\n      \"id\": 18,\n      \"text\": \"P I am read/ing right now.\"\n    },\n    {\n      \"id\": 19,\n      \"text\": \"C There are/n't any word/s on that bit.\"\n    },\n    {\n      \"id\": 20,\n      \"text\": \"P In our pretend game, there are.\"\n    },\n    {\n      \"id\": 21,\n      \"text\": \"C Oh.\"\n    },\n    {\n      \"id\": 22,\n      \"text\": \"C (Do you) would you like to play later?\"\n    },\n    {\n      \"id\": 23,\n      \"text\": \"P Maybe.\"\n    },\n    {\n      \"id\": 24,\n      \"text\": \"C That/'s not an answer.\"\n    },\n    {\n      \"id\": 25,\n      \"text\": \"P It can mean that I do not know yet.\"\n    },\n    {\n      \"id\": 26,\n      \"text\": \"C But I need to know which dragon she is.\"\n    },\n    {\n      \"id\": 27,\n      \"text\": \"P Could you keep a dragon ready without choosing for her?\"\n    },\n    {\n      \"id\": 28,\n      \"text\": \"C The green one.\"\n    },\n    {\n      \"id\": 29,\n      \"text\": \"P Or let her choose when she join/3s.\"\n    },\n    {\n      \"id\": 30,\n      \"text\": \"C (I could) I could leave all three.\"\n    },\n    {\n      \"id\": 31,\n      \"text\": \"P That would give her a choice.\"\n    },\n    {\n      \"id\": 32,\n      \"text\": \"C I/'ve take/en the red one though.\"\n    },\n    {\n      \"id\": 33,\n      \"text\": \"P You have take/en a role for yourself.\"\n    },\n    {\n      \"id\": 34,\n      \"text\": \"C Can I keep it?\"\n    },\n    {\n      \"id\": 35,\n      \"text\": \"P Of course.\"\n    },\n    {\n      \"id\": 36,\n      \"text\": \"C Nia can have the^\"\n    },\n    {\n      \"id\": 37,\n      \"text\": \"P Remember, she may choose for herself.\"\n    },\n    {\n      \"id\": 38,\n      \"text\": \"C I was say/ing the other dragon/s.\"\n    },\n    {\n      \"id\": 39,\n      \"text\": \"P Then tell her that.\"\n    },\n    {\n      \"id\": 40,\n      \"text\": \"C You can be any of these dragon/s.\"\n    },\n    {\n      \"id\": 41,\n      \"text\": \"P Thank you.\"\n    },\n    {\n      \"id\": 42,\n      \"text\": \"C Do you want to see their house?\"\n    },\n    {\n      \"id\": 43,\n      \"text\": \"P I would like to look.\"\n    },\n    {\n      \"id\": 44,\n      \"text\": \"C (Over here) this pillow is the roof.\"\n    },\n    {\n      \"id\": 45,\n      \"text\": \"P What happen/3s if it fall/3s?\"\n    },\n    {\n      \"id\": 46,\n      \"text\": \"C Dragon rain.\"\n    },\n    {\n      \"id\": 47,\n      \"text\": \"C %plop.\"\n    },\n    {\n      \"id\": 48,\n      \"text\": \"P Does anybody get hurt?\"\n    },\n    {\n      \"id\": 49,\n      \"text\": \"C No, the roof is soft.\"\n    },\n    {\n      \"id\": 50,\n      \"text\": \"P I/'d feel safe under that.\"\n    },\n    {\n      \"id\": 51,\n      \"text\": \"C You sound like you, not Nia.\"\n    },\n    {\n      \"id\": 52,\n      \"text\": \"P Nia might ask about the roof too.\"\n    },\n    {\n      \"id\": 53,\n      \"text\": \"C She might.\"\n    },\n    {\n      \"id\": 54,\n      \"text\": \"C (Um) her dragon/z tail can stick out here.\"\n    },\n    {\n      \"id\": 55,\n      \"text\": \"P The red dragon/z tail need/3s space too.\"\n    },\n    {\n      \"id\": 56,\n      \"text\": \"C Mine is curly.\"\n    },\n    {\n      \"id\": 57,\n      \"text\": \"P Mine is very long.\"\n    },\n    {\n      \"id\": 58,\n      \"text\": \"C You/'re choose/ing already!\"\n    },\n    {\n      \"id\": 59,\n      \"text\": \"P I decide/ed to join after looking.\"\n    },\n    {\n      \"id\": 60,\n      \"text\": \"C So waiting work/ed.\"\n    },\n    {\n      \"id\": 61,\n      \"text\": \"P It help/ed in this pretend turn.\"\n    },\n    {\n      \"id\": 62,\n      \"text\": \"C Will it work every time?\"\n    },\n    {\n      \"id\": 63,\n      \"text\": \"P No, someone may still prefer another activity.\"\n    },\n    {\n      \"id\": 64,\n      \"text\": \"C (Even after) even after I show the house?\"\n    },\n    {\n      \"id\": 65,\n      \"text\": \"P Yes.\"\n    },\n    {\n      \"id\": 66,\n      \"text\": \"C Then I would feel sad.\"\n    },\n    {\n      \"id\": 67,\n      \"text\": \"P You can feel sad and still accept the answer.\"\n    },\n    {\n      \"id\": 68,\n      \"text\": \"C I can say>\"\n    },\n    {\n      \"id\": 69,\n      \"text\": \"P What could you say?\"\n    },\n    {\n      \"id\": 70,\n      \"text\": \"C Okay, maybe another time.\"\n    },\n    {\n      \"id\": 71,\n      \"text\": \"P That sound/3s friendly.\"\n    },\n    {\n      \"id\": 72,\n      \"text\": \"C Now we can both be ourselves.\"\n    },\n    {\n      \"id\": 73,\n      \"text\": \"P All right.\"\n    },\n    {\n      \"id\": 74,\n      \"text\": \"C Have you eat/en dragon dinner?\"\n    },\n    {\n      \"id\": 75,\n      \"text\": \"P I have not eat/en dragon dinner today.\"\n    },\n    {\n      \"id\": 76,\n      \"text\": \"C It/'s invisible.\"\n    },\n    {\n      \"id\": 77,\n      \"text\": \"C (You have) you/'ve got some on your knee.\"\n    },\n    {\n      \"id\": 78,\n      \"text\": \"P I should have notice/ed.\"\n    },\n    {\n      \"id\": 79,\n      \"text\": \"C You drop/ed it.\"\n    },\n    {\n      \"id\": 80,\n      \"text\": \"P I will try a tiny bite.\"\n    },\n    {\n      \"id\": 81,\n      \"text\": \"C Not too hot.\"\n    },\n    {\n      \"id\": 82,\n      \"text\": \"P Delicious.\"\n    },\n    {\n      \"id\": 83,\n      \"text\": \"C Nia might not like pretend food.\"\n    },\n    {\n      \"id\": 84,\n      \"text\": \"P What could you ask her instead?\"\n    },\n    {\n      \"id\": 85,\n      \"text\": \"C What game/s do you like?\"\n    },\n    {\n      \"id\": 86,\n      \"text\": \"P That give/3s her room to tell you.\"\n    },\n    {\n      \"id\": 87,\n      \"text\": \"C Maybe she like/3s drawing.\"\n    },\n    {\n      \"id\": 88,\n      \"text\": \"P You like drawing too.\"\n    },\n    {\n      \"id\": 89,\n      \"text\": \"C We could draw dragon house/s.\"\n    },\n    {\n      \"id\": 90,\n      \"text\": \"C (Or just) or just house/s.\"\n    },\n    {\n      \"id\": 91,\n      \"text\": \"P You found another idea.\"\n    },\n    {\n      \"id\": 92,\n      \"text\": \"C I don't have to make her like mine.\"\n    },\n    {\n      \"id\": 93,\n      \"text\": \"P Exactly.\"\n    },\n    {\n      \"id\": 94,\n      \"text\": \"C I/'ll still show her the green dragon.\"\n    },\n    {\n      \"id\": 95,\n      \"text\": \"P An invitation to look.\"\n    },\n    {\n      \"id\": 96,\n      \"text\": \"C Yes, if she want/3s {tuck/3s the green dragon under the pillow}.\"\n    },\n    {\n      \"id\": 97,\n      \"text\": \"C He can wait here.\"\n    },\n    {\n      \"id\": 98,\n      \"text\": \"P Is he comfortable under that pillow?\"\n    },\n    {\n      \"id\": 99,\n      \"text\": \"C (Very) very comfortable.\"\n    },\n    {\n      \"id\": 100,\n      \"text\": \"C He/h's borrow/ed the soft corner.\"\n    },\n    {\n      \"id\": 101,\n      \"text\": \"P Then we can leave him to rest.\"\n    },\n    {\n      \"id\": 102,\n      \"text\": \"C He/'ll tell us when he want/3s a visitor.\"\n    }\n  ]\n}"
+  ],
+  "counts_toward_phase_a": true,
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

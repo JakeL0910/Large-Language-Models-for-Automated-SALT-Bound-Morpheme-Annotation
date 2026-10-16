@@ -1,0 +1,995 @@
+{
+  "ok": true,
+  "error": null,
+  "model": "gpt-4o",
+  "prompt_version": "V2",
+  "family": "medium_10",
+  "batch_size": "full",
+  "n_utterances": 105,
+  "n_requests": 1,
+  "max_output_tokens": 4200,
+  "elapsed_seconds": 8.942,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4092,
+    "completion_tokens": 1626,
+    "cached_tokens": 0,
+    "total_tokens": 5718
+  },
+  "estimated_cost_usd": 0.02649,
+  "failures": 0,
+  "tp": 46,
+  "fp": 20,
+  "fn": 7,
+  "precision_pct": 69.697,
+  "recall_pct": 86.7925,
+  "micro_f1_pct": 77.3109,
+  "rows": [
+    {
+      "original": "P What are you turning over in your hand?",
+      "expected": "P What are you turn/ing over in your hand?",
+      "actual": "P What are you turn/ing over in your hand?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A sleeping potato.",
+      "expected": "C A sleeping potato.",
+      "actual": "C A sleep/ing potato.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I thought it was a stone.",
+      "expected": "P I thought it was a stone.",
+      "actual": "P I thought it was a stone.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It is, but it looks like a potato.",
+      "expected": "C It is, but it look/3s like a potato.",
+      "actual": "C It is, but it look/3s like a potato.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (This side) this side is its face.",
+      "expected": "C (This side) this side is its face.",
+      "actual": "C (This side) this side is its face.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Two little dark marks.",
+      "expected": "P Two little dark mark/s.",
+      "actual": "P Two little dark mark/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Eyes.",
+      "expected": "C Eye/s.",
+      "actual": "C Eye/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Where is the mouth?",
+      "expected": "P Where is the mouth?",
+      "actual": "P Where is the mouth?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Under here.",
+      "expected": "C Under here.",
+      "actual": "C Under here.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It doesn't talk much.",
+      "expected": "C It does/n't talk much.",
+      "actual": "C It does/n't talk much.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A quiet potato.",
+      "expected": "P A quiet potato.",
+      "actual": "P A quiet potato.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, now it is a whale.",
+      "expected": "C No, now it is a whale.",
+      "actual": "C No, now it is a whale.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What changed?",
+      "expected": "P What change/ed?",
+      "actual": "P What changed?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C (I turned) I turned it sideways.",
+      "expected": "C (I turn/ed) I turn/ed it sideways.",
+      "actual": "C (I turned) I turn/ed it sideways.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P The narrow end could be a tail.",
+      "expected": "P The narrow end could be a tail.",
+      "actual": "P The narrow end could be a tail.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It swims in my hand.",
+      "expected": "C It swim/3s in my hand.",
+      "actual": "C It swim/3s in my hand.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A very small ocean.",
+      "expected": "P A very small ocean.",
+      "actual": "P A very small ocean.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Your hand can join mine.",
+      "expected": "C Your hand can join mine.",
+      "actual": "C Your hand can join mine.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then we have a wider ocean.",
+      "expected": "P Then we have a wider ocean.",
+      "actual": "P Then we have a wide/er ocean.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Don't let the whale fall.",
+      "expected": "C Don't let the whale fall.",
+      "actual": "C Do/n't let the whale fall.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I am holding my hands still.",
+      "expected": "P I am hold/ing my hand/s still.",
+      "actual": "P I am hold/ing my hand/s still.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's eaten all the water.",
+      "expected": "C He/h's eat/en all the water.",
+      "actual": "C He/'s eat/en all the water.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P A whale could not eat an ocean.",
+      "expected": "P A whale could not eat an ocean.",
+      "actual": "P A whale could not eat an ocean.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This one has eaten two.",
+      "expected": "C This one has eat/en two.",
+      "actual": "C This one ha/s eat/en two.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A thirsty story whale.",
+      "expected": "P A thirsty story whale.",
+      "actual": "P A thirsty story whale.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Three) three if you count yesterday.",
+      "expected": "C (Three) three if you count yesterday.",
+      "actual": "C (Three) three if you count yesterday.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Has he taken water from the pond too?",
+      "expected": "P Has he take/en water from the pond too?",
+      "actual": "P Ha/s he take/en water from the pond too?",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, he's taken a bath there.",
+      "expected": "C No, he/h's take/en a bath there.",
+      "actual": "C No, he/'s take/en a bath there.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Did he leave some water for the ducks?",
+      "expected": "P Did he leave some water for the duck/s?",
+      "actual": "P Did he leave some water for the duck/s?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He is polite.",
+      "expected": "C He is polite.",
+      "actual": "C He is polite.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'm glad to hear it.",
+      "expected": "P I/'m glad to hear it.",
+      "actual": "P I/'m glad to hear it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now he wants to be a mountain.",
+      "expected": "C Now he want/3s to be a mountain.",
+      "actual": "C Now he want/3s to be a mountain.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Can he change whenever he wants?",
+      "expected": "P Can he change whenever he want/3s?",
+      "actual": "P Can he change whenever he want/3s?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Stones can.",
+      "expected": "C Stone/s can.",
+      "actual": "C Stone/s can.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P In your story.",
+      "expected": "P In your story.",
+      "actual": "P In your story.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (In my) in my story, yes.",
+      "expected": "C (In my) in my story, yes.",
+      "actual": "C (In my) in my story, yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Put him on your knee.",
+      "expected": "C Put him on your knee.",
+      "actual": "C Put him on your knee.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Here?",
+      "expected": "P Here?",
+      "actual": "P Here?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That's his island.",
+      "expected": "C That/'s his island.",
+      "actual": "C That/'s his island.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We could put a^",
+      "expected": "C We could put a^",
+      "actual": "C We could put a^",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A tree on top?",
+      "expected": "P A tree on top?",
+      "actual": "P A tree on top?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A tiny house.",
+      "expected": "C A tiny house.",
+      "actual": "C A tiny house.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Whose house?",
+      "expected": "P Whose house?",
+      "actual": "P Whose house?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C My brother's.",
+      "expected": "C My brother/z.",
+      "actual": "C My brother/z.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P He would have to shrink.",
+      "expected": "P He would have to shrink.",
+      "actual": "P He would have to shrink.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (He can) he'll be this small {pinches thumb and finger together}.",
+      "expected": "C (He can) he/'ll be this small {pinches thumb and finger together}.",
+      "actual": "C (He can) he/'ll be this small {pinches thumb and finger together}.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Smaller than the house you imagined.",
+      "expected": "P Smaller than the house you imagine/ed.",
+      "actual": "P Small/er than the house you imagine/ed.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then he has lots of room.",
+      "expected": "C Then he has lot/s of room.",
+      "actual": "C Then he ha/s lot/s of room.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What does he do on the island?",
+      "expected": "P What does he do on the island?",
+      "actual": "P What does he do on the island?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He fishes from the side.",
+      "expected": "C He fish/3s from the side.",
+      "actual": "C He fish/3s from the side.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Does he catch anything?",
+      "expected": "P Does he catch anything?",
+      "actual": "P Does he catch anything?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Old boots.",
+      "expected": "C Old boot/s.",
+      "actual": "C Old boot/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Not fish?",
+      "expected": "P Not fish?",
+      "actual": "P Not fish?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The fish hide when he arrives.",
+      "expected": "C The fish hide when he arrive/3s.",
+      "actual": "C The fish hide when he arrive/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Here is the harbor.",
+      "expected": "C Here is the harbor.",
+      "actual": "C Here is the harbor.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I walked past this wall yesterday.",
+      "expected": "P I walk/ed past this wall yesterday.",
+      "actual": "P I walk/ed past this wall yesterday.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You didn't see the harbor.",
+      "expected": "C You did/n't see the harbor.",
+      "actual": "C You did/n't see the harbor.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It had not been invented yet.",
+      "expected": "P It had not been invented yet.",
+      "actual": "P It had not been invent/ed yet.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (There was) there was just a wall.",
+      "expected": "C (There was) there was just a wall.",
+      "actual": "C (There was) there was just a wall.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Who keeps the boats here?",
+      "expected": "P Who keep/3s the boat/s here?",
+      "actual": "P Who keep/3s the boat/s here?",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The stone's little people.",
+      "expected": "C The stone/z little people.",
+      "actual": "C The stone/'s little people.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P How many people?",
+      "expected": "P How many people?",
+      "actual": "P How many people?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Enough for every boat.",
+      "expected": "C Enough for every boat.",
+      "actual": "C Enough for every boat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That might be quite a crowd.",
+      "expected": "P That might be quite a crowd.",
+      "actual": "P That might be quite a crowd.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They take turns.",
+      "expected": "C They take turn/s.",
+      "actual": "C They take turn/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I've made a rule.",
+      "expected": "C I/'ve made a rule.",
+      "actual": "C I/'ve made a rule.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What is it?",
+      "expected": "P What is it?",
+      "actual": "P What is it?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No shouting when the whale's asleep.",
+      "expected": "C No shouting when the whale/'s asleep.",
+      "actual": "C No shout/ing when the whale/'s asleep.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The mountain is still a whale underneath?",
+      "expected": "P The mountain is still a whale underneath?",
+      "actual": "P The mountain is still a whale underneath?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Sometimes.",
+      "expected": "C Sometimes.",
+      "actual": "C Sometimes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'd worry about living on a whale.",
+      "expected": "P I/'d worry about living on a whale.",
+      "actual": "P I/'d worry about live/ing on a whale.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He tells everyone before he dives.",
+      "expected": "C He tell/3s everyone before he dive/3s.",
+      "actual": "C He tell/3s everyone before he dive/3s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thoughtful of him.",
+      "expected": "P Thoughtful of him.",
+      "actual": "P Thoughtful of him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (He rings) he rings a bell.",
+      "expected": "C (He ring/3s) he ring/3s a bell.",
+      "actual": "C (He rings) he ring/3s a bell.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C %ding_dong.",
+      "expected": "C %ding_dong.",
+      "actual": "C %ding_dong.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then the people leave?",
+      "expected": "P Then the people leave?",
+      "actual": "P Then the people leave?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They get into the boats.",
+      "expected": "C They get into the boat/s.",
+      "actual": "C They get into the boat/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What happens to the house?",
+      "expected": "P What happen/3s to the house?",
+      "actual": "P What happen/3s to the house?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It floats.",
+      "expected": "C It float/3s.",
+      "actual": "C It float/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I forgot to tell you.",
+      "expected": "C I forgot to tell you.",
+      "actual": "C I forgot to tell you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That explains it.",
+      "expected": "P That explain/3s it.",
+      "actual": "P That explain/3s it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I was going to make>",
+      "expected": "C I was going to make>",
+      "actual": "C I was go/ing to make>",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Another place?",
+      "expected": "P Another place?",
+      "actual": "P Another place?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, but I like this one best.",
+      "expected": "C Yes, but I like this one best.",
+      "actual": "C Yes, but I like this one best.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (The whale) the whale island.",
+      "expected": "C (The whale) the whale island.",
+      "actual": "C (The whale) the whale island.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Shall we keep it on this low wall?",
+      "expected": "P Shall we keep it on this low wall?",
+      "actual": "P Shall we keep it on this low wall?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Can we take it home?",
+      "expected": "C Can we take it home?",
+      "actual": "C Can we take it home?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We found it in the shared garden.",
+      "expected": "P We found it in the shared garden.",
+      "actual": "P We found it in the share/ed garden.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Someone else might want it.",
+      "expected": "C Someone else might want it.",
+      "actual": "C Someone else might want it.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P They might enjoy looking at it here.",
+      "expected": "P They might enjoy looking at it here.",
+      "actual": "P They might enjoy look/ing at it here.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But they won't know the story.",
+      "expected": "C But they won't know the story.",
+      "actual": "C But they wo/n't know the story.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We could tell them if they ask.",
+      "expected": "P We could tell them if they ask.",
+      "actual": "P We could tell them if they ask.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Or we) or we could make a little sign.",
+      "expected": "C (Or we) or we could make a little sign.",
+      "actual": "C (Or we) or we could make a little sign.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What would it say?",
+      "expected": "P What would it say?",
+      "actual": "P What would it say?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Sleeping whale, please be quiet.",
+      "expected": "C Sleeping whale, please be quiet.",
+      "actual": "C Sleep/ing whale, please be quiet.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Will this spot do?",
+      "expected": "P Will this spot do?",
+      "actual": "P Will this spot do?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, that rock's his pillow.",
+      "expected": "C Yes, that rock/'s his pillow.",
+      "actual": "C Yes, that rock/'s his pillow.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A firm pillow.",
+      "expected": "P A firm pillow.",
+      "actual": "P A firm pillow.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's slept here before.",
+      "expected": "C He/h's slept here before.",
+      "actual": "C He/'s sleep/ed here before.",
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Then he knows the place.",
+      "expected": "P Then he know/3s the place.",
+      "actual": "P Then he know/3s the place.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I think) I think he's happy {strokes the smooth upper surface}.",
+      "expected": "C (I think) I think he/'s happy {strokes the smooth upper surface}.",
+      "actual": "C (I think) I think he/'s happy {strokes the smooth upper surface}.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P He looks peaceful.",
+      "expected": "P He look/3s peaceful.",
+      "actual": "P He look/3s peaceful.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'll visit tomorrow.",
+      "expected": "C I/'ll visit tomorrow.",
+      "actual": "C I/'ll visit tomorrow.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He might be a potato again.",
+      "expected": "C He might be a potato again.",
+      "actual": "C He might be a potato again.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "counts_toward_stage1": true,
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"P What are you turn/ing over in your hand?\"},{\"id\":1,\"text\":\"C A sleep/ing potato.\"},{\"id\":2,\"text\":\"P I thought it was a stone.\"},{\"id\":3,\"text\":\"C It is, but it look/3s like a potato.\"},{\"id\":4,\"text\":\"C (This side) this side is its face.\"},{\"id\":5,\"text\":\"P Two little dark mark/s.\"},{\"id\":6,\"text\":\"C Eye/s.\"},{\"id\":7,\"text\":\"P Where is the mouth?\"},{\"id\":8,\"text\":\"C Under here.\"},{\"id\":9,\"text\":\"C It does/n't talk much.\"},{\"id\":10,\"text\":\"P A quiet potato.\"},{\"id\":11,\"text\":\"C No, now it is a whale.\"},{\"id\":12,\"text\":\"P What changed?\"},{\"id\":13,\"text\":\"C (I turned) I turn/ed it sideways.\"},{\"id\":14,\"text\":\"P The narrow end could be a tail.\"},{\"id\":15,\"text\":\"C It swim/3s in my hand.\"},{\"id\":16,\"text\":\"P A very small ocean.\"},{\"id\":17,\"text\":\"C Your hand can join mine.\"},{\"id\":18,\"text\":\"P Then we have a wide/er ocean.\"},{\"id\":19,\"text\":\"C Do/n't let the whale fall.\"},{\"id\":20,\"text\":\"P I am hold/ing my hand/s still.\"},{\"id\":21,\"text\":\"C He/'s eat/en all the water.\"},{\"id\":22,\"text\":\"P A whale could not eat an ocean.\"},{\"id\":23,\"text\":\"C This one ha/s eat/en two.\"},{\"id\":24,\"text\":\"P A thirsty story whale.\"},{\"id\":25,\"text\":\"C (Three) three if you count yesterday.\"},{\"id\":26,\"text\":\"P Ha/s he take/en water from the pond too?\"},{\"id\":27,\"text\":\"C No, he/'s take/en a bath there.\"},{\"id\":28,\"text\":\"P Did he leave some water for the duck/s?\"},{\"id\":29,\"text\":\"C Yes.\"},{\"id\":30,\"text\":\"C He is polite.\"},{\"id\":31,\"text\":\"P I/'m glad to hear it.\"},{\"id\":32,\"text\":\"C Now he want/3s to be a mountain.\"},{\"id\":33,\"text\":\"P Can he change whenever he want/3s?\"},{\"id\":34,\"text\":\"C Stone/s can.\"},{\"id\":35,\"text\":\"P In your story.\"},{\"id\":36,\"text\":\"C (In my) in my story, yes.\"},{\"id\":37,\"text\":\"C Put him on your knee.\"},{\"id\":38,\"text\":\"P Here?\"},{\"id\":39,\"text\":\"C That/'s his island.\"},{\"id\":40,\"text\":\"C We could put a^\"},{\"id\":41,\"text\":\"P A tree on top?\"},{\"id\":42,\"text\":\"C A tiny house.\"},{\"id\":43,\"text\":\"P Whose house?\"},{\"id\":44,\"text\":\"C My brother/z.\"},{\"id\":45,\"text\":\"P He would have to shrink.\"},{\"id\":46,\"text\":\"C (He can) he/'ll be this small {pinches thumb and finger together}.\"},{\"id\":47,\"text\":\"P Small/er than the house you imagine/ed.\"},{\"id\":48,\"text\":\"C Then he ha/s lot/s of room.\"},{\"id\":49,\"text\":\"P What does he do on the island?\"},{\"id\":50,\"text\":\"C He fish/3s from the side.\"},{\"id\":51,\"text\":\"P Does he catch anything?\"},{\"id\":52,\"text\":\"C Old boot/s.\"},{\"id\":53,\"text\":\"P Not fish?\"},{\"id\":54,\"text\":\"C The fish hide when he arrive/3s.\"},{\"id\":55,\"text\":\"C Here is the harbor.\"},{\"id\":56,\"text\":\"P I walk/ed past this wall yesterday.\"},{\"id\":57,\"text\":\"C You did/n't see the harbor.\"},{\"id\":58,\"text\":\"P It had not been invent/ed yet.\"},{\"id\":59,\"text\":\"C (There was) there was just a wall.\"},{\"id\":60,\"text\":\"P Who keep/3s the boat/s here?\"},{\"id\":61,\"text\":\"C The stone/'s little people.\"},{\"id\":62,\"text\":\"P How many people?\"},{\"id\":63,\"text\":\"C Enough for every boat.\"},{\"id\":64,\"text\":\"P That might be quite a crowd.\"},{\"id\":65,\"text\":\"C They take turn/s.\"},{\"id\":66,\"text\":\"C I/'ve made a rule.\"},{\"id\":67,\"text\":\"P What is it?\"},{\"id\":68,\"text\":\"C No shout/ing when the whale/'s asleep.\"},{\"id\":69,\"text\":\"P The mountain is still a whale underneath?\"},{\"id\":70,\"text\":\"C Sometimes.\"},{\"id\":71,\"text\":\"P I/'d worry about live/ing on a whale.\"},{\"id\":72,\"text\":\"C He tell/3s everyone before he dive/3s.\"},{\"id\":73,\"text\":\"P Thoughtful of him.\"},{\"id\":74,\"text\":\"C (He rings) he ring/3s a bell.\"},{\"id\":75,\"text\":\"C %ding_dong.\"},{\"id\":76,\"text\":\"P Then the people leave?\"},{\"id\":77,\"text\":\"C They get into the boat/s.\"},{\"id\":78,\"text\":\"P What happen/3s to the house?\"},{\"id\":79,\"text\":\"C It float/3s.\"},{\"id\":80,\"text\":\"C I forgot to tell you.\"},{\"id\":81,\"text\":\"P That explain/3s it.\"},{\"id\":82,\"text\":\"C I was go/ing to make>\"},{\"id\":83,\"text\":\"P Another place?\"},{\"id\":84,\"text\":\"C Yes, but I like this one best.\"},{\"id\":85,\"text\":\"C (The whale) the whale island.\"},{\"id\":86,\"text\":\"P Shall we keep it on this low wall?\"},{\"id\":87,\"text\":\"C Can we take it home?\"},{\"id\":88,\"text\":\"P We found it in the share/ed garden.\"},{\"id\":89,\"text\":\"C Someone else might want it.\"},{\"id\":90,\"text\":\"P They might enjoy look/ing at it here.\"},{\"id\":91,\"text\":\"C But they wo/n't know the story.\"},{\"id\":92,\"text\":\"P We could tell them if they ask.\"},{\"id\":93,\"text\":\"C (Or we) or we could make a little sign.\"},{\"id\":94,\"text\":\"P What would it say?\"},{\"id\":95,\"text\":\"C Sleep/ing whale, please be quiet.\"},{\"id\":96,\"text\":\"P Will this spot do?\"},{\"id\":97,\"text\":\"C Yes, that rock/'s his pillow.\"},{\"id\":98,\"text\":\"P A firm pillow.\"},{\"id\":99,\"text\":\"C He/'s sleep/ed here before.\"},{\"id\":100,\"text\":\"P Then he know/3s the place.\"},{\"id\":101,\"text\":\"C (I think) I think he/'s happy {strokes the smooth upper surface}.\"},{\"id\":102,\"text\":\"P He look/3s peaceful.\"},{\"id\":103,\"text\":\"C I/'ll visit tomorrow.\"},{\"id\":104,\"text\":\"C He might be a potato again.\"}]}"
+  ],
+  "configuration": {
+    "temperature": 0.0,
+    "reasoning_effort": null,
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

@@ -1,0 +1,2504 @@
+{
+  "ok": true,
+  "error": null,
+  "config_id": "gemini-3.6-flash__think-medium",
+  "model": "gemini-3.6-flash",
+  "label": "Gemini 3.6 Flash medium",
+  "provider": "gemini",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "ING_easy_05",
+  "batch_size": "full",
+  "n_utterances": 40,
+  "n_requests": 1,
+  "max_output_tokens": 16384,
+  "elapsed_seconds": 15.925,
+  "retries": 0,
+  "finish_reasons": [
+    "STOP"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8721,
+    "completion_tokens": 4135,
+    "cached_tokens": 0,
+    "total_tokens": 12856
+  },
+  "estimated_cost_usd": 0.022047,
+  "historical_cost_usd": null,
+  "new_spend_usd": 0.022047,
+  "reused_from_stage1": false,
+  "failures": 0,
+  "tp": 28,
+  "fp": 0,
+  "fn": 0,
+  "precision_pct": 100.0,
+  "recall_pct": 100.0,
+  "micro_f1_pct": 100.0,
+  "rows": [
+    {
+      "original": "P The bowl is not ready yet.",
+      "expected": "P The bowl is not ready yet.",
+      "actual": "P The bowl is not ready yet.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C We can check it together beside the blanket.",
+      "expected": "C We can check it together beside the blanket.",
+      "actual": "C We can check it together beside the blanket.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C The animal is behaving differently today.",
+      "expected": "C The animal is behave/ing differently today.",
+      "actual": "C The animal is behave/ing differently today.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Then let's look around the pet corner before we decide.",
+      "expected": "C Then let/'us look around the pet corner before we decide.",
+      "actual": "C Then let/'us look around the pet corner before we decide.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P While Cora is comparing, Finn is choosing the blanket.",
+      "expected": "P While Cora is compare/ing, Finn is choose/ing the blanket.",
+      "actual": "P While Cora is compare/ing, Finn is choose/ing the blanket.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I can see both actions from the pet corner.",
+      "expected": "P I can see both action/s from the pet corner.",
+      "actual": "P I can see both action/s from the pet corner.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I put the bowl by the window.",
+      "expected": "C I put the bowl by the window.",
+      "actual": "C I put the bowl by the window.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P That gives us room to choose the blanket.",
+      "expected": "P That give/3s us room to choose the blanket.",
+      "actual": "P That give/3s us room to choose the blanket.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Should we check the bowl before the blanket?",
+      "expected": "P Should we check the bowl before the blanket?",
+      "actual": "P Should we check the bowl before the blanket?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Yes, because Cora may need the blanket first.",
+      "expected": "C Yes, because Cora may need the blanket first.",
+      "actual": "C Yes, because Cora may need the blanket first.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C The missing bowl is near the blanket.",
+      "expected": "C The missing bowl is near the blanket.",
+      "actual": "C The missing bowl is near the blanket.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I am checking the spot beside the bowl now.",
+      "expected": "P I am check/ing the spot beside the bowl now.",
+      "actual": "P I am check/ing the spot beside the bowl now.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Cora can use the bowl after us.",
+      "expected": "P Cora can use the bowl after us.",
+      "actual": "P Cora can use the bowl after us.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Then we should compare it carefully with the orange blanket nearby.",
+      "expected": "C Then we should compare it carefully with the orange blanket nearby.",
+      "actual": "C Then we should compare it carefully with the orange blanket nearby.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C This bowl looks different from the blanket.",
+      "expected": "C This bowl look/3s different from the blanket.",
+      "actual": "C This bowl look/3s different from the blanket.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Compare them before you choose either one during Cora's turn.",
+      "expected": "C Compare them before you choose either one during Cora/z turn.",
+      "actual": "C Compare them before you choose either one during Cora/z turn.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Cora is checking the blanket while I hold the cage.",
+      "expected": "P Cora is check/ing the blanket while I hold the cage.",
+      "actual": "P Cora is check/ing the blanket while I hold the cage.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I am using the toy at the same time.",
+      "expected": "P I am use/ing the toy at the same time.",
+      "actual": "P I am use/ing the toy at the same time.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Let me use the blanket once.",
+      "expected": "C Let me use the blanket once.",
+      "actual": "C Let me use the blanket once.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I will watch what happens to the cage.",
+      "expected": "P I will watch what happen/3s to the cage.",
+      "actual": "P I will watch what happen/3s to the cage.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Cora is comparing the blanket at the end of the table.",
+      "expected": "P Cora is compare/ing the blanket at the end of the table.",
+      "actual": "P Cora is compare/ing the blanket at the end of the table.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Watch closely while Finn is choosing the cage.",
+      "expected": "C Watch closely while Finn is choose/ing the cage.",
+      "actual": "C Watch closely while Finn is choose/ing the cage.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Finn told me to save the blanket.",
+      "expected": "C Finn told me to save the blanket.",
+      "actual": "C Finn told me to save the blanket.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P We can set it aside without losing the cage.",
+      "expected": "P We can set it aside without losing the cage.",
+      "actual": "P We can set it aside without losing the cage.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P I remember the blanket from the last try.",
+      "expected": "P I remember the blanket from the last try.",
+      "actual": "P I remember the blanket from the last try.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C It helped when we had to check the cage.",
+      "expected": "C It help/ed when we had to check the cage.",
+      "actual": "C It help/ed when we had to check the cage.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C You're holding the blanket too close to the cage.",
+      "expected": "C You/'re hold/ing the blanket too close to the cage.",
+      "actual": "C You/'re hold/ing the blanket too close to the cage.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C I'm moving the blanket away from the cage now.",
+      "expected": "C I/'m move/ing the blanket away from the cage now.",
+      "actual": "C I/'m move/ing the blanket away from the cage now.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Wait, the blanket shifted when I touched the cage.",
+      "expected": "P Wait, the blanket shift/ed when I touch/ed the cage.",
+      "actual": "P Wait, the blanket shift/ed when I touch/ed the cage.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Stop there while I steady both parts with the green toy nearby.",
+      "expected": "P Stop there while I steady both part/s with the green toy nearby.",
+      "actual": "P Stop there while I steady both part/s with the green toy nearby.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C This step with the blanket did not give us the result we expected.",
+      "expected": "C This step with the blanket did not give us the result we expect/ed.",
+      "actual": "C This step with the blanket did not give us the result we expect/ed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Maybe the blanket was too close to the cage.",
+      "expected": "P Maybe the blanket was too close to the cage.",
+      "actual": "P Maybe the blanket was too close to the cage.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P Checking the cage is my favorite job.",
+      "expected": "P Checking the cage is my favorite job.",
+      "actual": "P Checking the cage is my favorite job.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Right now you are using the toy instead.",
+      "expected": "C Right now you are use/ing the toy instead.",
+      "actual": "C Right now you are use/ing the toy instead.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C We solved the part near the cage that was causing trouble.",
+      "expected": "C We solve/ed the part near the cage that was cause/ing trouble.",
+      "actual": "C We solve/ed the part near the cage that was cause/ing trouble.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P One final check of the cage will be enough.",
+      "expected": "P One final check of the cage will be enough.",
+      "actual": "P One final check of the cage will be enough.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "P The cage and toy are no longer mixed up.",
+      "expected": "P The cage and toy are no longer mixed up.",
+      "actual": "P The cage and toy are no longer mixed up.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Good, because each one has a different job while Finn waits beside the towel.",
+      "expected": "C Good, because each one has a different job while Finn wait/3s beside the towel.",
+      "actual": "C Good, because each one has a different job while Finn wait/3s beside the towel.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Now the cage is ready, with the toy in a clear place.",
+      "expected": "C Now the cage is ready, with the toy in a clear place.",
+      "actual": "C Now the cage is ready, with the toy in a clear place.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "original": "C Because we agreed to check the care note and change one thing, we can finish together.",
+      "expected": "C Because we agree/ed to check the care note and change one thing, we can finish together.",
+      "actual": "C Because we agree/ed to check the care note and change one thing, we can finish together.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false,
+      "conventions": {
+        "S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  ],
+  "raw_responses": [
+    "{\"outputs\": [{\"id\": 0, \"text\": \"P The bowl is not ready yet.\"}, {\"id\": 1, \"text\": \"C We can check it together beside the blanket.\"}, {\"id\": 2, \"text\": \"C The animal is behave/ing differently today.\"}, {\"id\": 3, \"text\": \"C Then let/'us look around the pet corner before we decide.\"}, {\"id\": 4, \"text\": \"P While Cora is compare/ing, Finn is choose/ing the blanket.\"}, {\"id\": 5, \"text\": \"P I can see both action/s from the pet corner.\"}, {\"id\": 6, \"text\": \"C I put the bowl by the window.\"}, {\"id\": 7, \"text\": \"P That give/3s us room to choose the blanket.\"}, {\"id\": 8, \"text\": \"P Should we check the bowl before the blanket?\"}, {\"id\": 9, \"text\": \"C Yes, because Cora may need the blanket first.\"}, {\"id\": 10, \"text\": \"C The missing bowl is near the blanket.\"}, {\"id\": 11, \"text\": \"P I am check/ing the spot beside the bowl now.\"}, {\"id\": 12, \"text\": \"P Cora can use the bowl after us.\"}, {\"id\": 13, \"text\": \"C Then we should compare it carefully with the orange blanket nearby.\"}, {\"id\": 14, \"text\": \"C This bowl look/3s different from the blanket.\"}, {\"id\": 15, \"text\": \"C Compare them before you choose either one during Cora/z turn.\"}, {\"id\": 16, \"text\": \"P Cora is check/ing the blanket while I hold the cage.\"}, {\"id\": 17, \"text\": \"P I am use/ing the toy at the same time.\"}, {\"id\": 18, \"text\": \"C Let me use the blanket once.\"}, {\"id\": 19, \"text\": \"P I will watch what happen/3s to the cage.\"}, {\"id\": 20, \"text\": \"P Cora is compare/ing the blanket at the end of the table.\"}, {\"id\": 21, \"text\": \"C Watch closely while Finn is choose/ing the cage.\"}, {\"id\": 22, \"text\": \"C Finn told me to save the blanket.\"}, {\"id\": 23, \"text\": \"P We can set it aside without losing the cage.\"}, {\"id\": 24, \"text\": \"P I remember the blanket from the last try.\"}, {\"id\": 25, \"text\": \"C It help/ed when we had to check the cage.\"}, {\"id\": 26, \"text\": \"C You/'re hold/ing the blanket too close to the cage.\"}, {\"id\": 27, \"text\": \"C I/'m move/ing the blanket away from the cage now.\"}, {\"id\": 28, \"text\": \"P Wait, the blanket shift/ed when I touch/ed the cage.\"}, {\"id\": 29, \"text\": \"P Stop there while I steady both part/s with the green toy nearby.\"}, {\"id\": 30, \"text\": \"C This step with the blanket did not give us the result we expect/ed.\"}, {\"id\": 31, \"text\": \"P Maybe the blanket was too close to the cage.\"}, {\"id\": 32, \"text\": \"P Checking the cage is my favorite job.\"}, {\"id\": 33, \"text\": \"C Right now you are use/ing the toy instead.\"}, {\"id\": 34, \"text\": \"C We solve/ed the part near the cage that was cause/ing trouble.\"}, {\"id\": 35, \"text\": \"P One final check of the cage will be enough.\"}, {\"id\": 36, \"text\": \"P The cage and toy are no longer mixed up.\"}, {\"id\": 37, \"text\": \"C Good, because each one has a different job while Finn wait/3s beside the towel.\"}, {\"id\": 38, \"text\": \"C Now the cage is ready, with the toy in a clear place.\"}, {\"id\": 39, \"text\": \"C Because we agree/ed to check the care note and change one thing, we can finish together.\"}]}"
+  ],
+  "counts_toward_phase_a": false,
+  "counts_toward_phase_b": false,
+  "phase": "3",
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  },
+  "eval_set": "single_convention_reserved",
+  "convention": "ING",
+  "difficulty": "easy",
+  "stage": "stage3_finalists",
+  "continuation": "gemini_unattempted_33"
+}

@@ -1,0 +1,734 @@
+{
+  "ok": true,
+  "error": null,
+  "model": "gpt-5.6-luna",
+  "prompt_version": "V3",
+  "family": "easy_09",
+  "batch_size": "full",
+  "n_utterances": 76,
+  "n_requests": 1,
+  "max_output_tokens": 7136,
+  "elapsed_seconds": 15.866,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4125,
+    "completion_tokens": 2093,
+    "cached_tokens": 0,
+    "total_tokens": 6218
+  },
+  "estimated_cost_usd": 0.003337,
+  "failures": 2,
+  "tp": 35,
+  "fp": 6,
+  "fn": 2,
+  "precision_pct": 85.3659,
+  "recall_pct": 94.5946,
+  "micro_f1_pct": 89.7436,
+  "rows": [
+    {
+      "original": "C My bed goes here, above the door.",
+      "expected": "C My bed go/3s here, above the door.",
+      "actual": "C My bed go/3s here, above the door.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P How would you reach it?",
+      "expected": "P How would you reach it?",
+      "actual": "P How would you reach it?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A ladder.",
+      "expected": "C A ladder.",
+      "actual": "C A ladder.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then a slide comes down.",
+      "expected": "C Then a slide come/3s down.",
+      "actual": "C Then a slide come/3s down.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Right beside the door?",
+      "expected": "P Right beside the door?",
+      "actual": "P Right beside the door?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Not beside) through the door.",
+      "expected": "C (Not beside) through the door.",
+      "actual": "C (Not beside) through the door.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Visitors would have a surprise.",
+      "expected": "P Visitor/s would have a surprise.",
+      "actual": "P Visitor/s would have a surprise.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'd shout first.",
+      "expected": "C I/'d shout first.",
+      "actual": "C I/'d shout first.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That would help.",
+      "expected": "P That would help.",
+      "actual": "P That would help.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %whee.",
+      "expected": "C %whee.",
+      "actual": "C %whee.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I heard you.",
+      "expected": "P I heard you.",
+      "actual": "P I heard you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This room's only pretend.",
+      "expected": "C This room/'s only pretend.",
+      "actual": "C room/'s only pretend.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": true
+    },
+    {
+      "original": "P I know.",
+      "expected": "P I know.",
+      "actual": "P I know.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I can draw anything.",
+      "expected": "C I can draw anything.",
+      "actual": "C I can draw anything.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What is that blue square?",
+      "expected": "P What is that blue square?",
+      "actual": "P What is that blue square?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The fish window.",
+      "expected": "C The fish window.",
+      "actual": "C The fish window.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A window shaped like a fish?",
+      "expected": "P A window shaped like a fish?",
+      "actual": "P A window shaped like a fish?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, (the fish) real fish behind it.",
+      "expected": "C No, (the fish) real fish behind it.",
+      "actual": "C No, (the fish) real fish behind it.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Like an aquarium wall.",
+      "expected": "P Like an aquarium wall.",
+      "actual": "P Like an aquarium wall.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They're watching me sleep.",
+      "expected": "C They/'re watch/ing me sleep.",
+      "actual": "C They/'re watch/ing me sleep.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Do the fish sleep too?",
+      "expected": "P Do the fish sleep too?",
+      "actual": "P Do the fish sleep too?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Maybe with their eyes open.",
+      "expected": "C Maybe with their eye/s open.",
+      "actual": "C Maybe with their eye/s open.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Some fish do.",
+      "expected": "P Some fish do.",
+      "actual": "P Some fish do.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then they won't miss anything.",
+      "expected": "C Then they won't miss anything.",
+      "actual": "C Then they won't miss anything.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I've never had fish beside my bed.",
+      "expected": "P I/'ve never had fish beside my bed.",
+      "actual": "P I/'ve never had fish beside my bed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I've seen them at the dentist's.",
+      "expected": "C I/'ve seen them at the dentist/z.",
+      "actual": "C I/'ve seen them at the dentist/z.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P In the waiting room.",
+      "expected": "P In the waiting room.",
+      "actual": "P In the waiting room.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That room has boring chairs.",
+      "expected": "C That room has boring chair/s.",
+      "actual": "C That room has boring chair/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Mine has soft mushrooms.",
+      "expected": "C Mine has soft mushroom/s.",
+      "actual": "C Mine has soft mushroom/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P To sit on?",
+      "expected": "P To sit on?",
+      "actual": "P To sit on?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, not to eat.",
+      "expected": "C Yes, not to eat.",
+      "actual": "C Yes, not to eat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Are those wheels underneath?",
+      "expected": "P Are those wheel/s underneath?",
+      "actual": "P Are those wheel/s underneath?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They roll when you push.",
+      "expected": "C They roll when you push.",
+      "actual": "C They roll when you push.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Your chair might roll away.",
+      "expected": "P Your chair might roll away.",
+      "actual": "P Your chair might roll away.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It stops when you say stop.",
+      "expected": "C It stop/3s when you say stop.",
+      "actual": "C It stop/3s when you say stop.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A listening chair.",
+      "expected": "P A listening chair.",
+      "actual": "P A listening chair.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Um) Mum's chair can stay still.",
+      "expected": "C (Um) Mum/z chair can stay still.",
+      "actual": "C (Um) Mum/z chair can stay still.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She might prefer that.",
+      "expected": "P She might prefer that.",
+      "actual": "P She might prefer that.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This one is hers.",
+      "expected": "C This one is hers.",
+      "actual": "C This one is hers.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Why is it bigger?",
+      "expected": "P Why is it bigger?",
+      "actual": "P Why is it bigger?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She likes to sit with me.",
+      "expected": "C She like/3s to sit with me.",
+      "actual": "C She like/3s to sit with me.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You thought about everybody.",
+      "expected": "P You thought about everybody.",
+      "actual": "P You thought about everybody.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Not Dad yet.",
+      "expected": "C Not Dad yet.",
+      "actual": "C Not Dad yet.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He can have a hammock.",
+      "expected": "C He can have a hammock.",
+      "actual": "C He can have a hammock.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Where will it hang?",
+      "expected": "P Where will it hang?",
+      "actual": "P Where will it hang?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Between these trees.",
+      "expected": "C Between these tree/s.",
+      "actual": "C Between these tree/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Trees inside?",
+      "expected": "P Tree/s inside?",
+      "actual": "P Tree/s inside?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I planted them in the drawing.",
+      "expected": "C I plant/ed them in the drawing.",
+      "actual": "C I plant/ed them in the drawing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You drew nice tall trees.",
+      "expected": "P You drew nice tall tree/s.",
+      "actual": "P You drew nice tall tree/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I colored one purple.",
+      "expected": "C I color/ed one purple.",
+      "actual": "C I color/ed one purple.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Purple trees grow pajamas.",
+      "expected": "C Purple tree/s grow pajamas.",
+      "actual": "C Purple tree/s grow pajama/s.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I have never taken pajamas from a tree.",
+      "expected": "P I have never take/en pajamas from a tree.",
+      "actual": "P I have never take/en pajama/s from a tree.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Dad has taken all the blue pajamas already.",
+      "expected": "C Dad has take/en all the blue pajamas already.",
+      "actual": "C Dad has take/en all the blue pajama/s already.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What will you wear?",
+      "expected": "P What will you wear?",
+      "actual": "P What will you wear?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The purple pajamas.",
+      "expected": "C The purple pajamas.",
+      "actual": "C The purple pajama/s.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (They can) they'll fit me.",
+      "expected": "C (They can) they/'ll fit me.",
+      "actual": "C (They can) they/'ll fit me.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What if it rains in your room?",
+      "expected": "P What if it rain/3s in your room?",
+      "actual": "P What if it rain/3s in your room?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It can't.",
+      "expected": "C It can/'t.",
+      "actual": "C can/'t.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": true
+    },
+    {
+      "original": "P There is a roof, then?",
+      "expected": "P There is a roof, then?",
+      "actual": "P There is a roof, then?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A glass roof.",
+      "expected": "C A glass roof.",
+      "actual": "C A glass roof.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C For looking at stars.",
+      "expected": "C For looking at star/s.",
+      "actual": "C For looking at star/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I like looking at stars.",
+      "expected": "P I like looking at star/s.",
+      "actual": "P I like looking at star/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Careful, your finger's squashing the moon.",
+      "expected": "C Careful, your finger/'s squash/ing the moon.",
+      "actual": "C Careful, your finger/'s squash/ing the moon.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Sorry, moon.",
+      "expected": "P Sorry, moon.",
+      "actual": "P Sorry, moon.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I haven't drawn the moon yet.",
+      "expected": "C I have/n't drawn the moon yet.",
+      "actual": "C I have/n't drawn the moon yet.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then it escaped my finger.",
+      "expected": "P Then it escape/ed my finger.",
+      "actual": "P Then it escape/ed my finger.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Here) here it is.",
+      "expected": "C (Here) here it is.",
+      "actual": "C (Here) here it is.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Half a moon.",
+      "expected": "C Half a moon.",
+      "actual": "C Half a moon.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Who took the other half?",
+      "expected": "P Who took the other half?",
+      "actual": "P Who took the other half?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A very hungry fish.",
+      "expected": "C A very hungry fish.",
+      "actual": "C A very hungry fish.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Through the fish window?",
+      "expected": "P Through the fish window?",
+      "actual": "P Through the fish window?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He knows a secret way.",
+      "expected": "C He know/3s a secret way.",
+      "actual": "C He know/3s a secret way.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You will have to show me that.",
+      "expected": "P You will have to show me that.",
+      "actual": "P You will have to show me that.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'll draw it on the back.",
+      "expected": "C I/'ll draw it on the back.",
+      "actual": "C I/'ll draw it on the back.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Don't peek until it's finished.",
+      "expected": "C Don't peek until it/'s finished.",
+      "actual": "C Don't peek until it/'s finished.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "counts_toward_stage1": true,
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C My bed go/3s here, above the door.\"},{\"id\":1,\"text\":\"P How would you reach it?\"},{\"id\":2,\"text\":\"C A ladder.\"},{\"id\":3,\"text\":\"C Then a slide come/3s down.\"},{\"id\":4,\"text\":\"P Right beside the door?\"},{\"id\":5,\"text\":\"C (Not beside) through the door.\"},{\"id\":6,\"text\":\"P Visitor/s would have a surprise.\"},{\"id\":7,\"text\":\"C I/'d shout first.\"},{\"id\":8,\"text\":\"P That would help.\"},{\"id\":9,\"text\":\"C %whee.\"},{\"id\":10,\"text\":\"P I heard you.\"},{\"id\":11,\"text\":\"C room/'s only pretend.\"},{\"id\":12,\"text\":\"P I know.\"},{\"id\":13,\"text\":\"C I can draw anything.\"},{\"id\":14,\"text\":\"P What is that blue square?\"},{\"id\":15,\"text\":\"C The fish window.\"},{\"id\":16,\"text\":\"P A window shaped like a fish?\"},{\"id\":17,\"text\":\"C No, (the fish) real fish behind it.\"},{\"id\":18,\"text\":\"P Like an aquarium wall.\"},{\"id\":19,\"text\":\"C Yes.\"},{\"id\":20,\"text\":\"C They/'re watch/ing me sleep.\"},{\"id\":21,\"text\":\"P Do the fish sleep too?\"},{\"id\":22,\"text\":\"C Maybe with their eye/s open.\"},{\"id\":23,\"text\":\"P Some fish do.\"},{\"id\":24,\"text\":\"C Then they won't miss anything.\"},{\"id\":25,\"text\":\"P I/'ve never had fish beside my bed.\"},{\"id\":26,\"text\":\"C I/'ve seen them at the dentist/z.\"},{\"id\":27,\"text\":\"P In the waiting room.\"},{\"id\":28,\"text\":\"C That room has boring chair/s.\"},{\"id\":29,\"text\":\"C Mine has soft mushroom/s.\"},{\"id\":30,\"text\":\"P To sit on?\"},{\"id\":31,\"text\":\"C Yes, not to eat.\"},{\"id\":32,\"text\":\"P Are those wheel/s underneath?\"},{\"id\":33,\"text\":\"C They roll when you push.\"},{\"id\":34,\"text\":\"P Your chair might roll away.\"},{\"id\":35,\"text\":\"C It stop/3s when you say stop.\"},{\"id\":36,\"text\":\"P A listening chair.\"},{\"id\":37,\"text\":\"C (Um) Mum/z chair can stay still.\"},{\"id\":38,\"text\":\"P She might prefer that.\"},{\"id\":39,\"text\":\"C This one is hers.\"},{\"id\":40,\"text\":\"P Why is it bigger?\"},{\"id\":41,\"text\":\"C She like/3s to sit with me.\"},{\"id\":42,\"text\":\"P You thought about everybody.\"},{\"id\":43,\"text\":\"C Not Dad yet.\"},{\"id\":44,\"text\":\"C He can have a hammock.\"},{\"id\":45,\"text\":\"P Where will it hang?\"},{\"id\":46,\"text\":\"C Between these tree/s.\"},{\"id\":47,\"text\":\"P Tree/s inside?\"},{\"id\":48,\"text\":\"C I plant/ed them in the drawing.\"},{\"id\":49,\"text\":\"P You drew nice tall tree/s.\"},{\"id\":50,\"text\":\"C I color/ed one purple.\"},{\"id\":51,\"text\":\"C Purple tree/s grow pajama/s.\"},{\"id\":52,\"text\":\"P I have never take/en pajama/s from a tree.\"},{\"id\":53,\"text\":\"C Dad has take/en all the blue pajama/s already.\"},{\"id\":54,\"text\":\"P What will you wear?\"},{\"id\":55,\"text\":\"C The purple pajama/s.\"},{\"id\":56,\"text\":\"C (They can) they/'ll fit me.\"},{\"id\":57,\"text\":\"P What if it rain/3s in your room?\"},{\"id\":58,\"text\":\"C can/'t.\"},{\"id\":59,\"text\":\"P There is a roof, then?\"},{\"id\":60,\"text\":\"C A glass roof.\"},{\"id\":61,\"text\":\"C For looking at star/s.\"},{\"id\":62,\"text\":\"P I like looking at star/s.\"},{\"id\":63,\"text\":\"C Careful, your finger/'s squash/ing the moon.\"},{\"id\":64,\"text\":\"P Sorry, moon.\"},{\"id\":65,\"text\":\"C I have/n't drawn the moon yet.\"},{\"id\":66,\"text\":\"P Then it escape/ed my finger.\"},{\"id\":67,\"text\":\"C (Here) here it is.\"},{\"id\":68,\"text\":\"C Half a moon.\"},{\"id\":69,\"text\":\"P Who took the other half?\"},{\"id\":70,\"text\":\"C A very hungry fish.\"},{\"id\":71,\"text\":\"P Through the fish window?\"},{\"id\":72,\"text\":\"C He know/3s a secret way.\"},{\"id\":73,\"text\":\"P You will have to show me that.\"},{\"id\":74,\"text\":\"C I/'ll draw it on the back.\"},{\"id\":75,\"text\":\"C Don't peek until it/'s finished.\"}]}"
+  ],
+  "configuration": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

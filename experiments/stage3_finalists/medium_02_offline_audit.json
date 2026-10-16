@@ -1,0 +1,61 @@
+{
+  "cell": "results/stage3_finalists/cells/gemini-3.6-flash__think-medium__medium_02.json",
+  "preserved": true,
+  "official_record_unchanged": true,
+  "ok": false,
+  "error": "Batch JSON missing output IDs: [99]",
+  "finish_reasons": [
+    "STOP"
+  ],
+  "max_output_tokens": 16384,
+  "usage": {
+    "prompt_tokens": 9716,
+    "completion_tokens": 8683,
+    "cached_tokens": 0,
+    "total_tokens": 18399
+  },
+  "raw_chars": 5124,
+  "n_utterances": 102,
+  "n_output_objects": 102,
+  "n_valid_id_text_objects": 101,
+  "unique_ids": 101,
+  "duplicates": [],
+  "empty_text_ids": [],
+  "missing_ids": [
+    99
+  ],
+  "extra_ids": [],
+  "strictly_increasing": true,
+  "sequence_gaps_prev_next": [
+    [
+      98,
+      100
+    ]
+  ],
+  "malformed_objects": [
+    {
+      "array_index": 99,
+      "keys": [
+        "item",
+        "text"
+      ],
+      "item": {
+        "item": 99,
+        "text": "P Who make/3s the next rule?"
+      }
+    }
+  ],
+  "truncation": false,
+  "isolation": "single_object_key_typo",
+  "diagnostic_remap": {
+    "note": "Offline only. Official medium_02 cell not changed.",
+    "n_ids": 102,
+    "failures": 0,
+    "tp": 54,
+    "fp": 4,
+    "fn": 0,
+    "precision_pct": 93.1034,
+    "recall_pct": 100.0,
+    "micro_f1_pct": 96.4286
+  }
+}

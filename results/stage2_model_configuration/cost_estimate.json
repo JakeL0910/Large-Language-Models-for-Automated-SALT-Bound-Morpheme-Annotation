@@ -1,0 +1,176 @@
+{
+  "phase_a": {
+    "cells": 84,
+    "reusable": 24,
+    "new_requests": 60,
+    "new_cost_usd": 3.0559,
+    "reused_historical_cost_usd_not_rebilled": 0.5341,
+    "by_config_new": [
+      {
+        "config_id": "gpt-5.6-sol__reason-medium",
+        "n": 12,
+        "cost_usd": 1.3636
+      },
+      {
+        "config_id": "claude-sonnet-5__think-adaptive-high",
+        "n": 12,
+        "cost_usd": 0.9616
+      },
+      {
+        "config_id": "deepseek-v4-pro__think-high",
+        "n": 12,
+        "cost_usd": 0.3638
+      },
+      {
+        "config_id": "qwen-3.5-plus__think-on",
+        "n": 12,
+        "cost_usd": 0.1461
+      },
+      {
+        "config_id": "gemini-3.6-flash__think-medium",
+        "n": 12,
+        "cost_usd": 0.2207
+      }
+    ]
+  },
+  "phase_b_screening": {
+    "cells": 66,
+    "new_requests": 66,
+    "new_cost_usd": 1.784,
+    "by_config": [
+      {
+        "config_id": "gpt-5.6-luna__reason-none__t0.0",
+        "n": 3,
+        "cost_usd": 0.0116
+      },
+      {
+        "config_id": "gpt-5.6-sol__reason-none__t0.0",
+        "n": 3,
+        "cost_usd": 0.2108
+      },
+      {
+        "config_id": "claude-sonnet-5__think-disabled",
+        "n": 3,
+        "cost_usd": 0.1054
+      },
+      {
+        "config_id": "deepseek-v4-pro__think-off__t0.0",
+        "n": 3,
+        "cost_usd": 0.056
+      },
+      {
+        "config_id": "qwen-3.5-plus__think-off__t0.0",
+        "n": 3,
+        "cost_usd": 0.0231
+      },
+      {
+        "config_id": "gemini-3.6-flash__think-minimal",
+        "n": 3,
+        "cost_usd": 0.0443
+      },
+      {
+        "config_id": "gemini-3.6-flash__think-high",
+        "n": 3,
+        "cost_usd": 0.0713
+      },
+      {
+        "config_id": "gpt-4o__t0.3",
+        "n": 3,
+        "cost_usd": 0.1189
+      },
+      {
+        "config_id": "gpt-4o__t0.6",
+        "n": 3,
+        "cost_usd": 0.1189
+      },
+      {
+        "config_id": "gpt-4o__t1.0",
+        "n": 3,
+        "cost_usd": 0.1189
+      },
+      {
+        "config_id": "gpt-5.6-luna__reason-none__t0.3",
+        "n": 3,
+        "cost_usd": 0.0116
+      },
+      {
+        "config_id": "gpt-5.6-luna__reason-none__t0.6",
+        "n": 3,
+        "cost_usd": 0.0116
+      },
+      {
+        "config_id": "gpt-5.6-luna__reason-none__t1.0",
+        "n": 3,
+        "cost_usd": 0.0116
+      },
+      {
+        "config_id": "gpt-5.6-sol__reason-none__t0.3",
+        "n": 3,
+        "cost_usd": 0.2108
+      },
+      {
+        "config_id": "gpt-5.6-sol__reason-none__t0.6",
+        "n": 3,
+        "cost_usd": 0.2108
+      },
+      {
+        "config_id": "gpt-5.6-sol__reason-none__t1.0",
+        "n": 3,
+        "cost_usd": 0.2108
+      },
+      {
+        "config_id": "deepseek-v4-pro__think-off__t0.3",
+        "n": 3,
+        "cost_usd": 0.056
+      },
+      {
+        "config_id": "deepseek-v4-pro__think-off__t0.6",
+        "n": 3,
+        "cost_usd": 0.056
+      },
+      {
+        "config_id": "deepseek-v4-pro__think-off__t1.0",
+        "n": 3,
+        "cost_usd": 0.056
+      },
+      {
+        "config_id": "qwen-3.5-plus__think-off__t0.3",
+        "n": 3,
+        "cost_usd": 0.0231
+      },
+      {
+        "config_id": "qwen-3.5-plus__think-off__t0.6",
+        "n": 3,
+        "cost_usd": 0.0231
+      },
+      {
+        "config_id": "qwen-3.5-plus__think-off__t1.0",
+        "n": 3,
+        "cost_usd": 0.0231
+      }
+    ]
+  },
+  "phase_b_promotion_remaining_9_files": {
+    "rule": "At most 2 Phase B configs per model; 9 files each if promoted.",
+    "low_usd_if_none_promote": 0.0,
+    "high_usd_if_two_per_model": 3.1215,
+    "high_new_requests": 117
+  },
+  "totals_new_requests": {
+    "phase_a_plus_screening": 126,
+    "plus_promotion_high": 243
+  },
+  "totals_new_usd": {
+    "phase_a": 3.0559,
+    "phase_b_screening": 1.784,
+    "phase_a_plus_screening": 4.8399,
+    "plus_promotion_high": 7.9614
+  },
+  "proposed_spend_ceiling_usd": 25.0,
+  "notes": [
+    "Estimates scale Stage 1 V5 GPT-4o prompt tokens and 4o/Luna completion tokens per file.",
+    "Reasoning-on completion uses Luna medium as the 1.0 multiplier; Sol/Claude/high inflate it.",
+    "Cache hits are not assumed (conservative). DeepSeek uses peak list prices.",
+    "Not a billing guarantee. SDK retries can add requests."
+  ]
+}

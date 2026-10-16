@@ -1,0 +1,1086 @@
+{
+  "ok": false,
+  "error": "Batch JSON missing output IDs: [99]",
+  "config_id": "gemini-3.6-flash__think-medium",
+  "model": "gemini-3.6-flash",
+  "label": "Gemini 3.6 Flash medium",
+  "provider": "gemini",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "medium_02",
+  "batch_size": "full",
+  "n_utterances": 102,
+  "n_requests": 1,
+  "max_output_tokens": 16384,
+  "elapsed_seconds": 35.106,
+  "retries": 0,
+  "finish_reasons": [
+    "STOP"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": false,
+      "error": "Batch JSON missing output IDs: [99]",
+      "finish_reason": "STOP",
+      "raw_chars": 5124
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9716,
+    "completion_tokens": 8683,
+    "cached_tokens": 0,
+    "total_tokens": 18399
+  },
+  "estimated_cost_usd": 0.039848,
+  "historical_cost_usd": null,
+  "new_spend_usd": 0.039848,
+  "reused_from_stage1": false,
+  "failures": 102,
+  "tp": 0,
+  "fp": 0,
+  "fn": 54,
+  "precision_pct": 0.0,
+  "recall_pct": 0.0,
+  "micro_f1_pct": 0.0,
+  "rows": [
+    {
+      "original": "C You talked!",
+      "expected": "C You talk/ed!",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I thought the game had not started.",
+      "expected": "P I thought the game had not start/ed.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C It started when I sat down.",
+      "expected": "C It start/ed when I sat down.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I need to know the rule before I lose.",
+      "expected": "P I need to know the rule before I lose.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (The rule) no talking.",
+      "expected": "C (The rule) no talking.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P How do I ask questions?",
+      "expected": "P How do I ask question/s?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C With your face.",
+      "expected": "C With your face.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Like this {raises both eyebrows}?",
+      "expected": "P Like this {raises both eyebrows}?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C You look like a frog.",
+      "expected": "C You look like a frog.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P That was my question face.",
+      "expected": "P That was my question face.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C It doesn't work.",
+      "expected": "C It does/n't work.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P We can change the rules before another round.",
+      "expected": "P We can change the rule/s before another round.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I've taken my turn already.",
+      "expected": "C I/'ve take/en my turn already.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P You have taken one turn as the teacher.",
+      "expected": "P You have take/en one turn as the teacher.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Now you can be teacher.",
+      "expected": "C Now you can be teacher.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I'd like us to invent it together.",
+      "expected": "P I/'d like us to invent it together.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (Together) okay.",
+      "expected": "C (Together) okay.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C This means stop talking.",
+      "expected": "C This mean/3s stop talking.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P It could mean that your mouth is closed.",
+      "expected": "P It could mean that your mouth is closed.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Same thing.",
+      "expected": "C Same thing.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P What if I hum with it closed?",
+      "expected": "P What if I hum with it closed?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C %mmm.",
+      "expected": "C %mmm.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C You can hear that.",
+      "expected": "C You can hear that.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Exactly.",
+      "expected": "P Exactly.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C No humming either.",
+      "expected": "C No humming either.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (No humming) unless you're a bee.",
+      "expected": "C (No humming) unless you/'re a bee.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Are bees playing this game?",
+      "expected": "P Are bee/s play/ing this game?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Sometimes.",
+      "expected": "C Sometimes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Then they need a special rule.",
+      "expected": "P Then they need a special rule.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C They can't put a finger on their lips.",
+      "expected": "C They can/'t put a finger on their lip/s.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P No fingers.",
+      "expected": "P No finger/s.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (Um) wings then.",
+      "expected": "C (Um) wing/s then.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P We can pretend a bee holds one wing still.",
+      "expected": "P We can pretend a bee hold/3s one wing still.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C That's funny.",
+      "expected": "C That/'s funny.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I'll show you my animal.",
+      "expected": "C I/'ll show you my animal.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C It has a long^",
+      "expected": "C It has a long^",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P You nearly gave me the answer aloud.",
+      "expected": "P You nearly gave me the answer aloud.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C No, I was explaining how to play.",
+      "expected": "C No, I was explain/ing how to play.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Explanation time is allowed?",
+      "expected": "P Explanation time is allowed?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Let's make that a rule too.",
+      "expected": "P Let/'us make that a rule too.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C You raise your hand for explanation time.",
+      "expected": "C You raise your hand for explanation time.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P May I speak now?",
+      "expected": "P May I speak now?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P How many guesses do I get?",
+      "expected": "P How many guess/s do I get?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (Two guesses) three.",
+      "expected": "C (Two guess/s) three.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P And if I still do not know?",
+      "expected": "P And if I still do not know?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I'll show another clue.",
+      "expected": "C I/'ll show another clue.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P That seems fair.",
+      "expected": "P That seem/3s fair.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Now watch.",
+      "expected": "C Now watch.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (My hand) my hand's a trunk.",
+      "expected": "C (My hand) my hand/'s a trunk.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P You said that out loud.",
+      "expected": "P You said that out loud.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Oh!",
+      "expected": "C Oh!",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I forgot>",
+      "expected": "C I forgot>",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P You forgot about being silent?",
+      "expected": "P You forgot about being silent?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P We can start again.",
+      "expected": "P We can start again.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Elephant.",
+      "expected": "C Elephant.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I hadn't guessed yet.",
+      "expected": "P I had/n't guess/ed yet.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I gave it away.",
+      "expected": "C I gave it away.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P You could choose something new.",
+      "expected": "P You could choose something new.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (This time) this time it is hard.",
+      "expected": "C (This time) this time it is hard.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C No talking from now.",
+      "expected": "C No talking from now.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P A waking bear?",
+      "expected": "P A waking bear?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C No {shakes head and raises one finger}.",
+      "expected": "C No {shakes head and raises one finger}.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Was that one guess or one more clue?",
+      "expected": "P Was that one guess or one more clue?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (It means) it means one guess.",
+      "expected": "C (It mean/3s) it mean/3s one guess.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I see why the teacher needs to talk sometimes.",
+      "expected": "P I see why the teacher need/3s to talk sometimes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C You're asking too much.",
+      "expected": "C You/'re ask/ing too much.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I am learning a new game.",
+      "expected": "P I am learn/ing a new game.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C All right.",
+      "expected": "C All right.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C The animal's wings open like this.",
+      "expected": "C The animal/z wing/s open like this.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Is a butterfly coming out?",
+      "expected": "P Is a butterfly come/ing out?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Yes!",
+      "expected": "C Yes!",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I watched one in a film.",
+      "expected": "C I watch/ed one in a film.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Its wings were folded first.",
+      "expected": "P Its wing/s were folded first.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Then it opened them slowly.",
+      "expected": "C Then it open/ed them slowly.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P A good thing to act out.",
+      "expected": "P A good thing to act out.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C It's your turn.",
+      "expected": "C It/'s your turn.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I need a moment to think.",
+      "expected": "P I need a moment to think.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (I can) I can wait.",
+      "expected": "C (I can) I can wait.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I am pretending to nibble something.",
+      "expected": "P I am pretend/ing to nibble something.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Rabbit?",
+      "expected": "C Rabbit?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Not this time.",
+      "expected": "P Not this time.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C You've eaten a whole pretend carrot.",
+      "expected": "C You/'ve eat/en a whole pretend carrot.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P A mouse could have eaten it too.",
+      "expected": "P A mouse could have eat/en it too.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C But mice hold food with their feet.",
+      "expected": "C But mice hold food with their feet.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P My hands are near my mouth.",
+      "expected": "P My hand/s are near my mouth.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Oh, a mouse.",
+      "expected": "C Oh, a mouse.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Yes.",
+      "expected": "P Yes.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C The mouse's paws are smaller than yours.",
+      "expected": "C The mouse/z paw/s are smaller than yours.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Mine are not very convincing.",
+      "expected": "P Mine are not very convincing.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C I knew anyway.",
+      "expected": "C I knew anyway.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (Next round) next round we can whisper the clues.",
+      "expected": "C (Next round) next round we can whisper the clue/s.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I thought this was a silent game.",
+      "expected": "P I thought this was a silent game.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C It was.",
+      "expected": "C It was.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Now it's a nearly silent game.",
+      "expected": "C Now it/'s a nearly silent game.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P I won't argue with the teacher.",
+      "expected": "P I won't argue with the teacher.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C Both teachers.",
+      "expected": "C Both teacher/s.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "P Who makes the next rule?",
+      "expected": "P Who make/3s the next rule?",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C We can point at each other.",
+      "expected": "C We can point at each other.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    },
+    {
+      "original": "C (Or we) or we can both think.",
+      "expected": "C (Or we) or we can both think.",
+      "actual": "",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": true,
+      "conventions": {}
+    }
+  ],
+  "raw_responses": [
+    "{\"outputs\": [{\"id\": 0, \"text\": \"C You talk/ed!\"}, {\"id\": 1, \"text\": \"P I thought the game had not start/ed.\"}, {\"id\": 2, \"text\": \"C It start/ed when I sat down.\"}, {\"id\": 3, \"text\": \"P I need to know the rule before I lose.\"}, {\"id\": 4, \"text\": \"C (The rule) no talking.\"}, {\"id\": 5, \"text\": \"P How do I ask question/s?\"}, {\"id\": 6, \"text\": \"C With your face.\"}, {\"id\": 7, \"text\": \"P Like this {raise/3s both eyebrow/s}?\"}, {\"id\": 8, \"text\": \"C You look like a frog.\"}, {\"id\": 9, \"text\": \"P That was my question face.\"}, {\"id\": 10, \"text\": \"C It does/n't work.\"}, {\"id\": 11, \"text\": \"P We can change the rule/s before another round.\"}, {\"id\": 12, \"text\": \"C I/'ve take/en my turn already.\"}, {\"id\": 13, \"text\": \"P You have take/en one turn as the teacher.\"}, {\"id\": 14, \"text\": \"C Now you can be teacher.\"}, {\"id\": 15, \"text\": \"P I/'d like us to invent it together.\"}, {\"id\": 16, \"text\": \"C (Together) okay.\"}, {\"id\": 17, \"text\": \"C This mean/3s stop talking.\"}, {\"id\": 18, \"text\": \"P It could mean that your mouth is closed.\"}, {\"id\": 19, \"text\": \"C Same thing.\"}, {\"id\": 20, \"text\": \"P What if I hum with it closed?\"}, {\"id\": 21, \"text\": \"C %mmm.\"}, {\"id\": 22, \"text\": \"C You can hear that.\"}, {\"id\": 23, \"text\": \"P Exactly.\"}, {\"id\": 24, \"text\": \"C No humming either.\"}, {\"id\": 25, \"text\": \"C (No humming) unless you/'re a bee.\"}, {\"id\": 26, \"text\": \"P Are bee/s play/ing this game?\"}, {\"id\": 27, \"text\": \"C Sometimes.\"}, {\"id\": 28, \"text\": \"P Then they need a special rule.\"}, {\"id\": 29, \"text\": \"C They can/'t put a finger on their lip/s.\"}, {\"id\": 30, \"text\": \"P No finger/s.\"}, {\"id\": 31, \"text\": \"C (Um) wing/s then.\"}, {\"id\": 32, \"text\": \"P We can pretend a bee hold/3s one wing still.\"}, {\"id\": 33, \"text\": \"C That/'s funny.\"}, {\"id\": 34, \"text\": \"C I/'ll show you my animal.\"}, {\"id\": 35, \"text\": \"C It has a long^\"}, {\"id\": 36, \"text\": \"P You nearly gave me the answer aloud.\"}, {\"id\": 37, \"text\": \"C No, I was explain/ing how to play.\"}, {\"id\": 38, \"text\": \"P Explanation time is allowed?\"}, {\"id\": 39, \"text\": \"C Yes.\"}, {\"id\": 40, \"text\": \"P Let/'us make that a rule too.\"}, {\"id\": 41, \"text\": \"C You raise your hand for explanation time.\"}, {\"id\": 42, \"text\": \"P May I speak now?\"}, {\"id\": 43, \"text\": \"C Yes.\"}, {\"id\": 44, \"text\": \"P How many guess/s do I get?\"}, {\"id\": 45, \"text\": \"C (Two guess/s) three.\"}, {\"id\": 46, \"text\": \"P And if I still do not know?\"}, {\"id\": 47, \"text\": \"C I/'ll show another clue.\"}, {\"id\": 48, \"text\": \"P That seem/3s fair.\"}, {\"id\": 49, \"text\": \"C Now watch.\"}, {\"id\": 50, \"text\": \"C (My hand) my hand/'s a trunk.\"}, {\"id\": 51, \"text\": \"P You said that out loud.\"}, {\"id\": 52, \"text\": \"C Oh!\"}, {\"id\": 53, \"text\": \"C I forgot>\"}, {\"id\": 54, \"text\": \"P You forgot about being silent?\"}, {\"id\": 55, \"text\": \"C Yes.\"}, {\"id\": 56, \"text\": \"P We can start again.\"}, {\"id\": 57, \"text\": \"C Elephant.\"}, {\"id\": 58, \"text\": \"P I had/n't guess/ed yet.\"}, {\"id\": 59, \"text\": \"C I gave it away.\"}, {\"id\": 60, \"text\": \"P You could choose something new.\"}, {\"id\": 61, \"text\": \"C (This time) this time it is hard.\"}, {\"id\": 62, \"text\": \"C No talking from now.\"}, {\"id\": 63, \"text\": \"P A waking bear?\"}, {\"id\": 64, \"text\": \"C No {shake/3s head and raise/3s one finger}.\"}, {\"id\": 65, \"text\": \"P Was that one guess or one more clue?\"}, {\"id\": 66, \"text\": \"C (It mean/3s) it mean/3s one guess.\"}, {\"id\": 67, \"text\": \"P I see why the teacher need/3s to talk sometimes.\"}, {\"id\": 68, \"text\": \"C You/'re ask/ing too much.\"}, {\"id\": 69, \"text\": \"P I am learn/ing a new game.\"}, {\"id\": 70, \"text\": \"C All right.\"}, {\"id\": 71, \"text\": \"C The animal/z wing/s open like this.\"}, {\"id\": 72, \"text\": \"P Is a butterfly come/ing out?\"}, {\"id\": 73, \"text\": \"C Yes!\"}, {\"id\": 74, \"text\": \"C I watch/ed one in a film.\"}, {\"id\": 75, \"text\": \"P Its wing/s were folded first.\"}, {\"id\": 76, \"text\": \"C Then it open/ed them slowly.\"}, {\"id\": 77, \"text\": \"P A good thing to act out.\"}, {\"id\": 78, \"text\": \"C It/'s your turn.\"}, {\"id\": 79, \"text\": \"P I need a moment to think.\"}, {\"id\": 80, \"text\": \"C (I can) I can wait.\"}, {\"id\": 81, \"text\": \"P I am pretend/ing to nibble something.\"}, {\"id\": 82, \"text\": \"C Rabbit?\"}, {\"id\": 83, \"text\": \"P Not this time.\"}, {\"id\": 84, \"text\": \"C You/'ve eat/en a whole pretend carrot.\"}, {\"id\": 85, \"text\": \"P A mouse could have eat/en it too.\"}, {\"id\": 86, \"text\": \"C But mice hold food with their feet.\"}, {\"id\": 87, \"text\": \"P My hand/s are near my mouth.\"}, {\"id\": 88, \"text\": \"C Oh, a mouse.\"}, {\"id\": 89, \"text\": \"P Yes.\"}, {\"id\": 90, \"text\": \"C The mouse/z paw/s are smaller than yours.\"}, {\"id\": 91, \"text\": \"P Mine are not very convincing.\"}, {\"id\": 92, \"text\": \"C I knew anyway.\"}, {\"id\": 93, \"text\": \"C (Next round) next round we can whisper the clue/s.\"}, {\"id\": 94, \"text\": \"P I thought this was a silent game.\"}, {\"id\": 95, \"text\": \"C It was.\"}, {\"id\": 96, \"text\": \"C Now it/'s a nearly silent game.\"}, {\"id\": 97, \"text\": \"P I won't argue with the teacher.\"}, {\"id\": 98, \"text\": \"C Both teacher/s.\"}, {\"item\": 99, \"text\": \"P Who make/3s the next rule?\"}, {\"id\": 100, \"text\": \"C We can point at each other.\"}, {\"id\": 101, \"text\": \"C (Or we) or we can both think.\"}]}"
+  ],
+  "counts_toward_phase_a": false,
+  "counts_toward_phase_b": false,
+  "phase": "3",
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  },
+  "eval_set": "mixed_reserved",
+  "convention": "MIXED_FINAL",
+  "difficulty": "medium",
+  "stage": "stage3_finalists"
+}

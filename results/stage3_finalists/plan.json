@@ -1,0 +1,1359 @@
+{
+  "status": "STAGE3_PARTIAL",
+  "stage": "stage3_finalists",
+  "executed": true,
+  "paid_api_requests": 0,
+  "frozen_at_utc": "2026-10-15T21:59:26Z",
+  "prompt": "prompts/10 Final/v5 Final.txt",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "processing_mode": "batch",
+  "batch_size": "full_transcript",
+  "temperature_grid": false,
+  "primary_metric": "micro_f1",
+  "metrics_excluded": [
+    "wla",
+    "bm_wla"
+  ],
+  "models": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "reasoning": "medium",
+      "temperature": null,
+      "supports_temperature": false,
+      "stage2_12file_micro_f1_pct": 97.8261,
+      "stage2_12file_failures": 0,
+      "http_timeout_s": 300,
+      "max_output_tokens_hard_cap": 128000,
+      "gemini_output_floor": null
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "reasoning": "medium",
+      "temperature": null,
+      "supports_temperature": false,
+      "stage2_12file_micro_f1_pct": 97.6173,
+      "stage2_12file_failures": 0,
+      "http_timeout_s": 420,
+      "max_output_tokens_hard_cap": 65536,
+      "gemini_output_floor": 16384
+    }
+  ],
+  "corpus": {
+    "mixed_reserved_n": 18,
+    "mixed_source": "v3.1 (same files as Stage 1–2; repo originals differ and must not be used)",
+    "mixed_seed": 42,
+    "mixed_families": [
+      "easy_01",
+      "easy_02",
+      "easy_05",
+      "easy_06",
+      "easy_07",
+      "easy_10",
+      "hard_01",
+      "hard_03",
+      "hard_04",
+      "hard_05",
+      "hard_07",
+      "hard_08",
+      "medium_01",
+      "medium_02",
+      "medium_06",
+      "medium_07",
+      "medium_08",
+      "medium_09"
+    ],
+    "single_convention_reserved_n": 30,
+    "single_source": "repo transcripts/ and keys/ (no v3.1 single-convention corpus exists)",
+    "single_seed": 42,
+    "single_design": "1 file per 10 conventions × 3 difficulties",
+    "single_convention_order": [
+      "S",
+      "Z",
+      "3S",
+      "ING",
+      "ED",
+      "EN",
+      "BE",
+      "MODAL",
+      "OTHER",
+      "NEG"
+    ],
+    "stage1_2_mixed_validation_excluded": [
+      "easy_03",
+      "easy_04",
+      "easy_08",
+      "easy_09",
+      "hard_02",
+      "hard_06",
+      "hard_09",
+      "hard_10",
+      "medium_03",
+      "medium_04",
+      "medium_05",
+      "medium_10"
+    ],
+    "n_transcripts": 48,
+    "n_utterances": 3689,
+    "n_requests": 96
+  },
+  "scoring": {
+    "primary": "bag-of-morphemes micro F1 (Stage 1/2 evaluate_rows; failed rows kept)",
+    "convention_reporting": "Classify each extract_morphemes token into S/Z/3S/ING/ED/EN/BE/MODAL/OTHER/NEG or UNCLASSIFIED so convention TP/FP/FN partition pooled totals. Do not use the Stage 2 token-index overlay as the Stage 3 convention table.",
+    "stage2_pooled_f1_unchanged": true,
+    "stage2_audit": "experiments/stage2_model_configuration/convention_vs_pooled_audit.json"
+  },
+  "execution_guards": {
+    "one_process": true,
+    "exclusive_lock": true,
+    "skip_existing_ok_cells": true,
+    "no_start_timeout_retries": true,
+    "max_attempts": 1,
+    "concurrency": 3,
+    "stop_on_truncation_or_id_collapse": true,
+    "do_not_retune": true,
+    "requires_explicit_approval": true
+  },
+  "cost_estimate": {
+    "gpt-5.6-sol__reason-medium": {
+      "n_files": 48,
+      "n_utterances": 3689,
+      "scaled_from_stage2_12file": true,
+      "est_prompt_tokens": 315360,
+      "est_completion_tokens": 111431,
+      "est_cost_usd": 3.4901,
+      "stage2_12file_cost_usd": 1.192052
+    },
+    "gemini-3.6-flash__think-medium": {
+      "n_files": 48,
+      "n_utterances": 3689,
+      "scaled_from_stage2_12file": true,
+      "est_prompt_tokens": 346441,
+      "est_completion_tokens": 262112,
+      "est_cost_usd": 1.2428,
+      "stage2_12file_cost_usd": 0.424469
+    },
+    "totals": {
+      "n_requests": 96,
+      "est_cost_usd": 4.7329,
+      "proposed_ceiling_usd": 12.0,
+      "notes": "Scales Stage 2 Phase A 12-file prompt/completion tokens by Stage 3 utterance count. Cache hits are not assumed. Not a billing guarantee."
+    }
+  },
+  "files": [
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_01",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_01.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_01_KEY.txt",
+      "transcript_sha256": "56112541c29c19c7d7b2f7dd18f166ff2ba9a328ed0552da27de7645e4e035be",
+      "key_sha256": "55e5384bfdefb0de6982f60dc6fc8f3f3d2d885170c6d08213f63720cc526b95",
+      "n_utterances": 74,
+      "gold_json_tokens": 1420,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_02",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_02.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_02_KEY.txt",
+      "transcript_sha256": "43d41eab2a7fb2f343336e66f36c440ebb0d13ddab62736f1f98077f2cb337b7",
+      "key_sha256": "4c10b3c52529c6a9dce7efa1ab2b24279910e94896bad04be51e52de94c4e6a0",
+      "n_utterances": 75,
+      "gold_json_tokens": 1406,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_05",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_05.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_05_KEY.txt",
+      "transcript_sha256": "08d0addb21c7026be4a4a0b1e91c0eb1a81e9cc1f31e41c61bd730f80209c6e4",
+      "key_sha256": "f4b5401243534779093cc23ce153b85c7c0bc10effd01a364d243420377ea161",
+      "n_utterances": 76,
+      "gold_json_tokens": 1405,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_06",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_06.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_06_KEY.txt",
+      "transcript_sha256": "57c7430532e7b979650d8dfde0e369492ba106ada81a367085f5656d3291155d",
+      "key_sha256": "111de93febcd7a1042b1b48128a0a22d4986bc24f1dcb2782a495d2cd36e15b3",
+      "n_utterances": 72,
+      "gold_json_tokens": 1361,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_07",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_07.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_07_KEY.txt",
+      "transcript_sha256": "18dc32580d07e8022900ac47c9adde5fbed7f617a7cab80c53699583b4be22ed",
+      "key_sha256": "7660a050101ecd75ede3e90ff5424bf84ea3bc6c937ffc0e58284e3e9b555980",
+      "n_utterances": 77,
+      "gold_json_tokens": 1462,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "easy_10",
+      "convention": "MIXED_FINAL",
+      "difficulty": "easy",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_easy_10.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_easy_10_KEY.txt",
+      "transcript_sha256": "0ff0e1f7d9e5eb50a9dd4080f647f1e5324e6df386f536f02288cd9753590bd4",
+      "key_sha256": "77e25c1bd1adb4a0a9092ec70fcbf68bb5b98e70729dbfcad12ce16bc490758c",
+      "n_utterances": 75,
+      "gold_json_tokens": 1379,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_01",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_01.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_01_KEY.txt",
+      "transcript_sha256": "e0558c429de75dd3f49ef52ef6f5389ff7510fb4d5e3d3b631884dc3f444346b",
+      "key_sha256": "f2fac3dca9b15c01e491567d660b2539b83a99e3d8fd7eea2552e5c5684f408f",
+      "n_utterances": 137,
+      "gold_json_tokens": 2778,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_03",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_03.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_03_KEY.txt",
+      "transcript_sha256": "56f16afef1b197274bc326a02e7e05da543f6315d74ba3b4d0bfc0d482c86485",
+      "key_sha256": "0631369e015d43bd46edd1534823cf7d29c728213b26774fbd1ce3c5c1196e17",
+      "n_utterances": 142,
+      "gold_json_tokens": 2985,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_04",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_04.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_04_KEY.txt",
+      "transcript_sha256": "1f0e7ec7473876115456f1bd656a8ae8ec86f0d6ec50f79cd43e1a5e6d585acd",
+      "key_sha256": "c1affd770457d4f86b2dc602109689a268dd8206dd7921707e86340617f71e91",
+      "n_utterances": 131,
+      "gold_json_tokens": 2656,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_05",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_05.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_05_KEY.txt",
+      "transcript_sha256": "9798a4e1df42441eaa21ddddec47f9f841e1f9a07946343d258e6ef8ac1aaf6a",
+      "key_sha256": "7b22fb2e160b275d048ec7a85c06ace4d4bfe20e144eb9c80da19d4f22f46541",
+      "n_utterances": 135,
+      "gold_json_tokens": 2763,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_07",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_07.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_07_KEY.txt",
+      "transcript_sha256": "6d871bb5a90557a1db359f7ae8656336f67f5c4dde87c17668dedd06694cf4f3",
+      "key_sha256": "f52d282e2c258c6245bbed9d15afe2b26c92bc2058833218f429ef9ce8886860",
+      "n_utterances": 147,
+      "gold_json_tokens": 3020,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "hard_08",
+      "convention": "MIXED_FINAL",
+      "difficulty": "hard",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_hard_08.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_hard_08_KEY.txt",
+      "transcript_sha256": "4b58dae3e178a66f224cf93c11a21cfda2a636c101888b09f6e19e7e1a78ed40",
+      "key_sha256": "7cf2746f7b8a9fd8eca09d5433e4ef1d5ab3c9282e2ad7e9fe963ba4825027d0",
+      "n_utterances": 130,
+      "gold_json_tokens": 2772,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_01",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_01.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_01_KEY.txt",
+      "transcript_sha256": "2b1a740af0183141afce3c6a1842d44ce163f42c1cd53ed180c2ecf7f826b585",
+      "key_sha256": "ae2da2ef4e4b37c9f2db4ecf4da26af360ba9749069c80f905a681bcadd1e2d3",
+      "n_utterances": 103,
+      "gold_json_tokens": 2019,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_02",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_02.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_02_KEY.txt",
+      "transcript_sha256": "a236a3feb43293667d905535a6bb6fbbec64f94f966435532c3bae3d5da2db44",
+      "key_sha256": "12f9ee86b2847beeb3048558d2675f1472da8a34bafe4379d5ffafa825c22c2f",
+      "n_utterances": 102,
+      "gold_json_tokens": 1935,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_06",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_06.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_06_KEY.txt",
+      "transcript_sha256": "57cef9bd628da8841e4b0d9585e86f9d8fa442f66aa0f7133dc54cd0cdca43c0",
+      "key_sha256": "28ce95f915c9e971e25c9691592b4c9800318c6887e4f93d35a8cdd17e679a66",
+      "n_utterances": 104,
+      "gold_json_tokens": 2014,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_07",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_07.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_07_KEY.txt",
+      "transcript_sha256": "9ea1b170d518b1b407e1f362aac887b65522cf3cb0a5992303750cc673a72e02",
+      "key_sha256": "e81049cf53abd9e90e5fe2948e6ac57e413ab0f4f1b6bcdd731983108d3ee378",
+      "n_utterances": 103,
+      "gold_json_tokens": 2032,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_08",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_08.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_08_KEY.txt",
+      "transcript_sha256": "b865d354e9f3603e2a661ef89e6885fb69132890818f86a1d801fe2aab3dfb2f",
+      "key_sha256": "0bb8a99efa766800553641adc7d0c035c14fa9f5b8ba0be16c5bc3655325eb71",
+      "n_utterances": 101,
+      "gold_json_tokens": 1974,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "mixed_reserved",
+      "family": "medium_09",
+      "convention": "MIXED_FINAL",
+      "difficulty": "medium",
+      "transcript": "results/preliminary_processing/v3.1_corpus/transcripts/10 Final (30)/MIXED_FINAL_medium_09.txt",
+      "key": "results/preliminary_processing/v3.1_corpus/keys/10 Final (30)/MIXED_FINAL_medium_09_KEY.txt",
+      "transcript_sha256": "8326576f1d555242b0ea4ea5ff91bfcfddf05a2c64feb49975f2375b7e43b23b",
+      "key_sha256": "7b4ed848e32c63aa3cd058abef721dba568f32279e375f03b1a54cf3be8b03f4",
+      "n_utterances": 105,
+      "gold_json_tokens": 2050,
+      "corpus": "v3.1_mixed"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "S_easy_01",
+      "convention": "S",
+      "difficulty": "easy",
+      "transcript": "transcripts/1 S (15)/S_easy_01.txt",
+      "key": "keys/1 S (15)/S_easy_01_KEY.txt",
+      "transcript_sha256": "41044b3340b8fdd62bc26641714ef59e56994e3ce0048f709fef96c1882c610f",
+      "key_sha256": "f9ea2b8e40c5a85adabf360afa97ca01d8820ea81fb2714799057e746a22f1bd",
+      "n_utterances": 40,
+      "gold_json_tokens": 929,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "S_medium_01",
+      "convention": "S",
+      "difficulty": "medium",
+      "transcript": "transcripts/1 S (15)/S_medium_01.txt",
+      "key": "keys/1 S (15)/S_medium_01_KEY.txt",
+      "transcript_sha256": "f98890099d2e1592b8fdb22523676399570a0197be93239fb03426ccadcacbf3",
+      "key_sha256": "3d5e66952d3b388ff773eefdd69ab4340658da9b1642336685c06f4f4ee3fc44",
+      "n_utterances": 60,
+      "gold_json_tokens": 1416,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "S_hard_03",
+      "convention": "S",
+      "difficulty": "hard",
+      "transcript": "transcripts/1 S (15)/S_hard_03.txt",
+      "key": "keys/1 S (15)/S_hard_03_KEY.txt",
+      "transcript_sha256": "9406a0af0913657b0f469d60cc082151da1bdfc8f2a06cd59a657fddb597006d",
+      "key_sha256": "6dc244727a9dc1041a3f4af1518f1a8cc0d8d9e6fff32f7ca7dad885d1a3f872",
+      "n_utterances": 80,
+      "gold_json_tokens": 1845,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "Z_easy_02",
+      "convention": "Z",
+      "difficulty": "easy",
+      "transcript": "transcripts/2 Z (15)/Z_easy_02.txt",
+      "key": "keys/2 Z (15)/Z_easy_02_KEY.txt",
+      "transcript_sha256": "96bf2d312a1fe214ea029459501b4560b2d87aefeec1462a200fd0e9a8ae06e6",
+      "key_sha256": "44d8dce684e5fdfe924f4c313cedffd33c26691539f224f8c0ac89f2f830cb6d",
+      "n_utterances": 40,
+      "gold_json_tokens": 905,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "Z_medium_02",
+      "convention": "Z",
+      "difficulty": "medium",
+      "transcript": "transcripts/2 Z (15)/Z_medium_02.txt",
+      "key": "keys/2 Z (15)/Z_medium_02_KEY.txt",
+      "transcript_sha256": "84035cf82e0fce2f0d07b7b3d35dc0bab16dce332a4928de51eb19f4497b5611",
+      "key_sha256": "f5d1a6e825dafc17cec86e0022b1e6d623c4d97de7413ead99e93b5bfce2facd",
+      "n_utterances": 60,
+      "gold_json_tokens": 1359,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "Z_hard_02",
+      "convention": "Z",
+      "difficulty": "hard",
+      "transcript": "transcripts/2 Z (15)/Z_hard_02.txt",
+      "key": "keys/2 Z (15)/Z_hard_02_KEY.txt",
+      "transcript_sha256": "6ca8091457a35e575d10d514c20ff18e469f257910be51d3b67597ed5c88a1ee",
+      "key_sha256": "fe9151c83824abd1e3431a495ea315a77aaed39cdc0e02edc04ff7adf4a861e0",
+      "n_utterances": 80,
+      "gold_json_tokens": 1836,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "3S_easy_01",
+      "convention": "3S",
+      "difficulty": "easy",
+      "transcript": "transcripts/3 3S (15)/3S_easy_01.txt",
+      "key": "keys/3 3S (15)/3S_easy_01_KEY.txt",
+      "transcript_sha256": "dbae1ad296c8a2cb050ac6b504fe730a7a201d948fe0b80770f836fead38e228",
+      "key_sha256": "ce964d1de08596c65efc7b878ea3a69db302af868b704f2e011953190690d178",
+      "n_utterances": 40,
+      "gold_json_tokens": 960,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "3S_medium_05",
+      "convention": "3S",
+      "difficulty": "medium",
+      "transcript": "transcripts/3 3S (15)/3S_medium_05.txt",
+      "key": "keys/3 3S (15)/3S_medium_05_KEY.txt",
+      "transcript_sha256": "7bb05855b94e18c855be746184dcd57ac74b75fbed0f0f7a3019cd1b593449c6",
+      "key_sha256": "d5c60afcef56db7a5c931d6ea8f504a26df309e1d3fa85f7cda9f96d71ec0c85",
+      "n_utterances": 60,
+      "gold_json_tokens": 1435,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "3S_hard_01",
+      "convention": "3S",
+      "difficulty": "hard",
+      "transcript": "transcripts/3 3S (15)/3S_hard_01.txt",
+      "key": "keys/3 3S (15)/3S_hard_01_KEY.txt",
+      "transcript_sha256": "2c1b6caf3ca1ef09a85e61246338a167da74d72e3b8c7f3cf1c49721f1209af2",
+      "key_sha256": "2626741f3ece97be7713a524331ed5e4b472fcc0bbeaa9eb16d2b5e76dd49b94",
+      "n_utterances": 80,
+      "gold_json_tokens": 1962,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ING_easy_05",
+      "convention": "ING",
+      "difficulty": "easy",
+      "transcript": "transcripts/4 ING (15)/ING_easy_05.txt",
+      "key": "keys/4 ING (15)/ING_easy_05_KEY.txt",
+      "transcript_sha256": "87aa739265080ddb6d9929caefdfb2ca5c7ce7d9740a552370e8a050f1e297f5",
+      "key_sha256": "9dc2024d341ad34c0690363ddede2029e870f99873feefb12918ce013d2a8606",
+      "n_utterances": 40,
+      "gold_json_tokens": 955,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ING_medium_04",
+      "convention": "ING",
+      "difficulty": "medium",
+      "transcript": "transcripts/4 ING (15)/ING_medium_04.txt",
+      "key": "keys/4 ING (15)/ING_medium_04_KEY.txt",
+      "transcript_sha256": "4ab6ef2f56670eaf38c03de013874fd45f7fab547ae6127e330413ab3557a2a7",
+      "key_sha256": "6ab10d3ed0c95bb45bd0ecd21d250c76f5b0c97590b8ef79b648f9091493e951",
+      "n_utterances": 60,
+      "gold_json_tokens": 1398,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ING_hard_01",
+      "convention": "ING",
+      "difficulty": "hard",
+      "transcript": "transcripts/4 ING (15)/ING_hard_01.txt",
+      "key": "keys/4 ING (15)/ING_hard_01_KEY.txt",
+      "transcript_sha256": "79c6f47ff4c901480779e82db5c9b0b18d31d0f2e24338429306d83b07c3b353",
+      "key_sha256": "d36639f852903c816eb09ea65fe29bcdfd2f1e8e98af03805374b4f62462dc00",
+      "n_utterances": 80,
+      "gold_json_tokens": 1879,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ED_easy_01",
+      "convention": "ED",
+      "difficulty": "easy",
+      "transcript": "transcripts/5 ED (15)/ED_easy_01.txt",
+      "key": "keys/5 ED (15)/ED_easy_01_KEY.txt",
+      "transcript_sha256": "dc38bf99aa0189849844b3ed31f4fe61cecaba661c6c1b874ca0e25bc9519f62",
+      "key_sha256": "3a7d2f0a350a8834fa557d4dd0036c0c544f3af446a8b747086c0882432ddbf4",
+      "n_utterances": 40,
+      "gold_json_tokens": 937,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ED_medium_01",
+      "convention": "ED",
+      "difficulty": "medium",
+      "transcript": "transcripts/5 ED (15)/ED_medium_01.txt",
+      "key": "keys/5 ED (15)/ED_medium_01_KEY.txt",
+      "transcript_sha256": "2d0b97089f1028536453dcbb903ed30630c85cb1c570f2f53aa4c176748aee93",
+      "key_sha256": "f0133df4f522994de3d180a46e97c507e0d87c3ce7296c3c871ba84dbbb36358",
+      "n_utterances": 60,
+      "gold_json_tokens": 1440,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "ED_hard_02",
+      "convention": "ED",
+      "difficulty": "hard",
+      "transcript": "transcripts/5 ED (15)/ED_hard_02.txt",
+      "key": "keys/5 ED (15)/ED_hard_02_KEY.txt",
+      "transcript_sha256": "22cdec01666efad364ef39333d49d6575871a9615e7d4ada5319304bc0d372bd",
+      "key_sha256": "a191e2e3ef588eb53bca6680499d5280babb59c2441a9b753c5f31dd01a378b4",
+      "n_utterances": 80,
+      "gold_json_tokens": 1924,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "EN_easy_02",
+      "convention": "EN",
+      "difficulty": "easy",
+      "transcript": "transcripts/6 EN (15)/EN_easy_02.txt",
+      "key": "keys/6 EN (15)/EN_easy_02_KEY.txt",
+      "transcript_sha256": "888ebefe802e3c88d836be38d3ac65e31af78d47ed4bd967db8517f5e886d676",
+      "key_sha256": "cd4fb65558d25fb10e0ae305b406d198374d5f3e0637fbee3f4abada03aaabc8",
+      "n_utterances": 40,
+      "gold_json_tokens": 992,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "EN_medium_05",
+      "convention": "EN",
+      "difficulty": "medium",
+      "transcript": "transcripts/6 EN (15)/EN_medium_05.txt",
+      "key": "keys/6 EN (15)/EN_medium_05_KEY.txt",
+      "transcript_sha256": "91b203c5dd77a946807044429072afc7ac17e89854a581345a754382226a1d69",
+      "key_sha256": "ae274f8cd359049f3e91187c4f995e11a4672a535e71a41abcfe7e054af55cd4",
+      "n_utterances": 60,
+      "gold_json_tokens": 1444,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "EN_hard_05",
+      "convention": "EN",
+      "difficulty": "hard",
+      "transcript": "transcripts/6 EN (15)/EN_hard_05.txt",
+      "key": "keys/6 EN (15)/EN_hard_05_KEY.txt",
+      "transcript_sha256": "29751e1ee374bb4bfa51a3770580128adb7e932bc58236e565ff6f40c7ba33aa",
+      "key_sha256": "a066a01af5e5e82ca1f06a7d0cd9f133bf05ba63e29985e3fb20c2fddb05d8af",
+      "n_utterances": 80,
+      "gold_json_tokens": 1903,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "BE_easy_01",
+      "convention": "BE",
+      "difficulty": "easy",
+      "transcript": "transcripts/7 BE (15)/BE_easy_01.txt",
+      "key": "keys/7 BE (15)/BE_easy_01_KEY.txt",
+      "transcript_sha256": "24f5cd92dceee235895186a5ca95246a7bec5efe8e8e218ac587c5607df35765",
+      "key_sha256": "dd5234c34c3970edd2888036384cb951927fa0f74cde9257b4d75437504445ec",
+      "n_utterances": 40,
+      "gold_json_tokens": 957,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "BE_medium_05",
+      "convention": "BE",
+      "difficulty": "medium",
+      "transcript": "transcripts/7 BE (15)/BE_medium_05.txt",
+      "key": "keys/7 BE (15)/BE_medium_05_KEY.txt",
+      "transcript_sha256": "9841a65077200b3ab6a81838f87211614061ab2b0453233c3f6752db91c1b396",
+      "key_sha256": "a67c10a7a4581524754e5643ef011127a671c53445fffce4043964aa3c215753",
+      "n_utterances": 60,
+      "gold_json_tokens": 1496,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "BE_hard_02",
+      "convention": "BE",
+      "difficulty": "hard",
+      "transcript": "transcripts/7 BE (15)/BE_hard_02.txt",
+      "key": "keys/7 BE (15)/BE_hard_02_KEY.txt",
+      "transcript_sha256": "4f4d4353d7f7f27ff68e49518700eb7cba8fb515eb8227a4eb44ccbcc7ff2e27",
+      "key_sha256": "51aea3f420ba0167e35fab0fbbda13dadd56249a32286ec69ec4552838448378",
+      "n_utterances": 80,
+      "gold_json_tokens": 1964,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "MODAL_easy_05",
+      "convention": "MODAL",
+      "difficulty": "easy",
+      "transcript": "transcripts/8 MODAL (15)/MODAL_easy_05.txt",
+      "key": "keys/8 MODAL (15)/MODAL_easy_05_KEY.txt",
+      "transcript_sha256": "773f8d3ce5097e310324936b58d607eb96499bc37db070006ccdae369dc205e0",
+      "key_sha256": "096b49b8e6cce375cc58fe02afc47edca3f0d70628bff466e66396412fddabfe",
+      "n_utterances": 40,
+      "gold_json_tokens": 942,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "MODAL_medium_04",
+      "convention": "MODAL",
+      "difficulty": "medium",
+      "transcript": "transcripts/8 MODAL (15)/MODAL_medium_04.txt",
+      "key": "keys/8 MODAL (15)/MODAL_medium_04_KEY.txt",
+      "transcript_sha256": "510d3597a6f6235fa79db0e928b242e138e81a225c41ca026de4e76bf4bc5dbb",
+      "key_sha256": "93f1bcc9b4d5008f92bc11662dffbed76f5bc5cfd41474f8e33d9b31650a1712",
+      "n_utterances": 60,
+      "gold_json_tokens": 1513,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "MODAL_hard_02",
+      "convention": "MODAL",
+      "difficulty": "hard",
+      "transcript": "transcripts/8 MODAL (15)/MODAL_hard_02.txt",
+      "key": "keys/8 MODAL (15)/MODAL_hard_02_KEY.txt",
+      "transcript_sha256": "e8e0ca80c7068f90c9354442eeb4e9aa745f2e9c9700e62cf9b147a71e2f2f9d",
+      "key_sha256": "f91ac99547193da943b8dfc39a017b7f5b7f87284b907b771226cb6ff3b83789",
+      "n_utterances": 80,
+      "gold_json_tokens": 1885,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "OTHER_easy_04",
+      "convention": "OTHER",
+      "difficulty": "easy",
+      "transcript": "transcripts/9 OTHER (15)/OTHER_easy_04.txt",
+      "key": "keys/9 OTHER (15)/OTHER_easy_04_KEY.txt",
+      "transcript_sha256": "2a55c1ebaa58b03a44f9b0a1d7f84b7e7a4586e4282e2df88ef5085b513d8dda",
+      "key_sha256": "611e0474e7febcfa3ccf12d6311fe8283dc4e16f2c353a620566351a25583056",
+      "n_utterances": 40,
+      "gold_json_tokens": 980,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "OTHER_medium_05",
+      "convention": "OTHER",
+      "difficulty": "medium",
+      "transcript": "transcripts/9 OTHER (15)/OTHER_medium_05.txt",
+      "key": "keys/9 OTHER (15)/OTHER_medium_05_KEY.txt",
+      "transcript_sha256": "df4dd380a407791ce2cd26ade7fe1d061921dcb25bf99803a35f7113f8000555",
+      "key_sha256": "cfa2b491dbc596d77d450cc2d60f352ec15a2832fd89b61e9341d0c9a77690b8",
+      "n_utterances": 60,
+      "gold_json_tokens": 1487,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "OTHER_hard_03",
+      "convention": "OTHER",
+      "difficulty": "hard",
+      "transcript": "transcripts/9 OTHER (15)/OTHER_hard_03.txt",
+      "key": "keys/9 OTHER (15)/OTHER_hard_03_KEY.txt",
+      "transcript_sha256": "5d714437aa8ca81856c1d6feff094dba600ef8cedefed7de7c357ba8274a75ac",
+      "key_sha256": "e8dfcd1b1bffd2b78b98fad0128dfa9970f38c5b2e062fe215a6e40e4717b4fd",
+      "n_utterances": 80,
+      "gold_json_tokens": 1950,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "NEG_easy_01",
+      "convention": "NEG",
+      "difficulty": "easy",
+      "transcript": "transcripts/11 NEG (15)/NEG_easy_01.txt",
+      "key": "keys/11 NEG (15)/NEG_easy_01_KEY.txt",
+      "transcript_sha256": "86617257de0d3f39dee5700599557d7543daa3d91d803855e2746cb221261783",
+      "key_sha256": "dc0ff1dc236647b86f7496e58d8f52981909484006561ed42bc6b8dec5e48b4b",
+      "n_utterances": 40,
+      "gold_json_tokens": 961,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "NEG_medium_02",
+      "convention": "NEG",
+      "difficulty": "medium",
+      "transcript": "transcripts/11 NEG (15)/NEG_medium_02.txt",
+      "key": "keys/11 NEG (15)/NEG_medium_02_KEY.txt",
+      "transcript_sha256": "78e18f615753d364fc6efe3513cb44d4ffcfa6f8c0e2bce5cc621613a19ed986",
+      "key_sha256": "fc7c38f338c469e7cc6a9b478f17ee09319850f79edd5f56572a7169fe9ee358",
+      "n_utterances": 60,
+      "gold_json_tokens": 1455,
+      "corpus": "repo_original_single_convention"
+    },
+    {
+      "eval_set": "single_convention_reserved",
+      "family": "NEG_hard_04",
+      "convention": "NEG",
+      "difficulty": "hard",
+      "transcript": "transcripts/11 NEG (15)/NEG_hard_04.txt",
+      "key": "keys/11 NEG (15)/NEG_hard_04_KEY.txt",
+      "transcript_sha256": "557799d0f35f5a0aab112e9faac09144cc074ca4d4c8c347bb2367cf62da5323",
+      "key_sha256": "2fd5e62c4f0bcc5f77c3ce0c509572ad9df7f48e1c1ef1e13aaff5ab65e010ac",
+      "n_utterances": 80,
+      "gold_json_tokens": 1985,
+      "corpus": "repo_original_single_convention"
+    }
+  ],
+  "jobs": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 7056
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_02",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 7096
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_05",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 7136
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_06",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 6976
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 7176
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_10",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 7096
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9576
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_03",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9776
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_04",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9336
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_05",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9976
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_08",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 9296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8216
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_02",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8176
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_06",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8256
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8216
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_08",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8136
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_09",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 8296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "S_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "S_medium_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "S_hard_03",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "Z_easy_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "Z_medium_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "Z_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "3S_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "3S_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "3S_hard_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ING_easy_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ING_medium_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ING_hard_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ED_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ED_medium_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "ED_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "EN_easy_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "EN_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "EN_hard_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "BE_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "BE_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "BE_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "MODAL_easy_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "MODAL_medium_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "MODAL_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "OTHER_easy_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "OTHER_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "OTHER_hard_03",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "NEG_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 5696
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "NEG_medium_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 6496
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "NEG_hard_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 7296
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_02",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_05",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_06",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_10",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_03",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_04",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_05",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_08",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_01",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_02",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_06",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_07",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_08",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_09",
+      "eval_set": "mixed_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "S_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "S_medium_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "S_hard_03",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "Z_easy_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "Z_medium_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "Z_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "3S_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "3S_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "3S_hard_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ING_easy_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ING_medium_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ING_hard_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ED_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ED_medium_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "ED_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "EN_easy_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "EN_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "EN_hard_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "BE_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "BE_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "BE_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "MODAL_easy_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "MODAL_medium_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "MODAL_hard_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "OTHER_easy_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "OTHER_medium_05",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "OTHER_hard_03",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "NEG_easy_01",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "NEG_medium_02",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "NEG_hard_04",
+      "eval_set": "single_convention_reserved",
+      "max_output_tokens": 16384
+    }
+  ],
+  "execution_summary": {
+    "n_ok": 61,
+    "n_cells": 63,
+    "new_spend_usd": 4.549748,
+    "stop_reason": "utterance_id_collapse gemini-3.6-flash__think-medium medium_02",
+    "completed_at_utc": "2026-10-15T22:50:16Z"
+  }
+}

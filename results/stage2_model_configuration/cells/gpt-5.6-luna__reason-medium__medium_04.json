@@ -1,0 +1,952 @@
+{
+  "ok": true,
+  "error": null,
+  "config_id": "gpt-5.6-luna__reason-medium",
+  "model": "gpt-5.6-luna",
+  "label": "GPT-5.6 Luna medium",
+  "provider": "openai",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "medium_04",
+  "batch_size": "full",
+  "n_utterances": 100,
+  "n_requests": 1,
+  "max_output_tokens": 8096,
+  "elapsed_seconds": 26.528,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "usage": {
+    "prompt_tokens": 8872,
+    "completion_tokens": 3114,
+    "cached_tokens": 0,
+    "total_tokens": 11986
+  },
+  "estimated_cost_usd": 0.0,
+  "historical_cost_usd": 0.005511,
+  "new_spend_usd": 0.0,
+  "reused_from_stage1": true,
+  "failures": 0,
+  "tp": 52,
+  "fp": 1,
+  "fn": 1,
+  "precision_pct": 98.1132,
+  "recall_pct": 98.1132,
+  "micro_f1_pct": 98.1132,
+  "rows": [
+    {
+      "original": "C The boy is falling into the sky.",
+      "expected": "C The boy is fall/ing into the sky.",
+      "actual": "C The boy is fall/ing into the sky.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You are holding the picture upside down.",
+      "expected": "P You are hold/ing the picture upside down.",
+      "actual": "P You are hold/ing the picture upside down.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I know.",
+      "expected": "C I know.",
+      "actual": "C I know.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (That makes) that makes it a different story.",
+      "expected": "C (That make/3s) that make/3s it a different story.",
+      "actual": "C (That make/3s) that make/3s it a different story.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Tell me the upside-down story.",
+      "expected": "P Tell me the upside-down story.",
+      "actual": "P Tell me the upside-down story.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C His shoes are heavy.",
+      "expected": "C His shoe/s are heavy.",
+      "actual": "C His shoe/s are heavy.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They pull him up.",
+      "expected": "C They pull him up.",
+      "actual": "C They pull him up.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Up toward the ground?",
+      "expected": "P Up toward the ground?",
+      "actual": "P Up toward the ground?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, because the ground's above him.",
+      "expected": "C Yes, because the ground/'s above him.",
+      "actual": "C Yes, because the ground/z above him.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P I see the grass along this edge.",
+      "expected": "P I see the grass along this edge.",
+      "actual": "P I see the grass along this edge.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's taken a balloon from the girl.",
+      "expected": "C He/h's take/en a balloon from the girl.",
+      "actual": "C He/h's take/en a balloon from the girl.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She has taken his hat in exchange.",
+      "expected": "P She has take/en his hat in exchange.",
+      "actual": "P She has take/en his hat in exchange.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, (she has) she stole his hat.",
+      "expected": "C No, (she has) she stole his hat.",
+      "actual": "C No, (she has) she stole his hat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then we have a disagreement in the story.",
+      "expected": "P Then we have a disagreement in the story.",
+      "actual": "P Then we have a disagreement in the story.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He wants it back.",
+      "expected": "C He want/3s it back.",
+      "actual": "C He want/3s it back.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P How can he reach her?",
+      "expected": "P How can he reach her?",
+      "actual": "P How can he reach her?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He kicks the air.",
+      "expected": "C He kick/3s the air.",
+      "actual": "C He kick/3s the air.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %whoosh.",
+      "expected": "C %whoosh.",
+      "actual": "C %whoosh.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P His feet look still in the picture.",
+      "expected": "P His feet look still in the picture.",
+      "actual": "P His feet look still in the picture.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Pictures don't show all the kicks.",
+      "expected": "C Picture/s don't show all the kick/s.",
+      "actual": "C Picture/s don't show all the kick/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P True.",
+      "expected": "P True.",
+      "actual": "P True.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The girl's arm goes this way.",
+      "expected": "C The girl/z arm go/3s this way.",
+      "actual": "C The girl/z arm go/3s this way.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Toward his hat.",
+      "expected": "P Toward his hat.",
+      "actual": "P Toward his hat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She's waving it.",
+      "expected": "C She/'s wave/ing it.",
+      "actual": "C She/'s wave/ing it.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Perhaps she is trying to return it.",
+      "expected": "P Perhaps she is try/ing to return it.",
+      "actual": "P Perhaps she is try/ing to return it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I thought) I thought she was teasing him.",
+      "expected": "C (I thought) I thought she was tease/ing him.",
+      "actual": "C (I thought) I thought she was tease/ing him.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Either could fit so far.",
+      "expected": "P Either could fit so far.",
+      "actual": "P Either could fit so far.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You like her better than me.",
+      "expected": "C You like her better than me.",
+      "actual": "C You like her better than me.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I am wondering what else might be happening.",
+      "expected": "P I am wonder/ing what else might be happen/ing.",
+      "actual": "P I am wonder/ing what else might be happen/ing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C All right, you tell one.",
+      "expected": "C All right, you tell one.",
+      "actual": "C All right, you tell one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The wind blew his hat off.",
+      "expected": "P The wind blew his hat off.",
+      "actual": "P The wind blew his hat off.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She caught it before it flew away.",
+      "expected": "P She caught it before it flew away.",
+      "actual": "P She caught it before it flew away.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then why is he^",
+      "expected": "C Then why is he^",
+      "actual": "C Then why is he^",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Why is he so far above her?",
+      "expected": "P Why is he so far above her?",
+      "actual": "P Why is he so far above her?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P In my story, the balloon lifted him.",
+      "expected": "P In my story, the balloon lift/ed him.",
+      "actual": "P In my story, the balloon lift/ed him.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A little balloon can't lift a boy.",
+      "expected": "C A little balloon can/'t lift a boy.",
+      "actual": "C A little balloon can/'t lift a boy.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P An ordinary one could not.",
+      "expected": "P An ordinary one could not.",
+      "actual": "P An ordinary one could not.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (This one) this one has magic air.",
+      "expected": "C (This one) this one has magic air.",
+      "actual": "C (This one) this one has magic air.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That could explain it.",
+      "expected": "P That could explain it.",
+      "actual": "P That could explain it.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The dog knows about the magic.",
+      "expected": "C The dog know/3s about the magic.",
+      "actual": "C The dog know/3s about the magic.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P How can we tell?",
+      "expected": "P How can we tell?",
+      "actual": "P How can we tell?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C His tail points at the balloon.",
+      "expected": "C His tail point/3s at the balloon.",
+      "actual": "C His tail point/3s at the balloon.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It could just be wagging.",
+      "expected": "P It could just be wag/ing.",
+      "actual": "P It could just be wag/ing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You're doing it again.",
+      "expected": "C You/'re do/ing it again.",
+      "actual": "C You/'re do/ing it again.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Offering another possibility?",
+      "expected": "P Offering another possibility?",
+      "actual": "P Offering another possibility?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Is that spoiling your story?",
+      "expected": "P Is that spoil/ing your story?",
+      "actual": "P Is that spoil/ing your story?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (A little) a little bit.",
+      "expected": "C (A little) a little bit.",
+      "actual": "C (A little) a little bit.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then finish your version first.",
+      "expected": "P Then finish your version first.",
+      "actual": "P Then finish your version first.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The dog jumped after him.",
+      "expected": "C The dog jump/ed after him.",
+      "actual": "C The dog jump/ed after him.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He missed the balloon string.",
+      "expected": "C He miss/ed the balloon string.",
+      "actual": "C He miss/ed the balloon string.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The girl laughed because the dog sneezed.",
+      "expected": "C The girl laugh/ed because the dog sneeze/ed.",
+      "actual": "C The girl laugh/ed because the dog sneeze/ed.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A sneeze in midair?",
+      "expected": "P A sneeze in midair?",
+      "actual": "P A sneeze in midair?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A huge one.",
+      "expected": "C A huge one.",
+      "actual": "C A huge one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That's why the boy went higher.",
+      "expected": "C That/'s why the boy went higher.",
+      "actual": "C That/'s why the boy went higher.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I would not have guessed that.",
+      "expected": "P I would not have guess/ed that.",
+      "actual": "P I would not have guess/ed that.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now he's hungry.",
+      "expected": "C Now he/'s hungry.",
+      "actual": "C Now he/'s hungry.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P He should come down for lunch.",
+      "expected": "P He should come down for lunch.",
+      "actual": "P He should come down for lunch.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's eaten all his sandwiches already.",
+      "expected": "C He/h's eat/en all his sandwich/s already.",
+      "actual": "C He/h's eat/en all his sandwich/s already.",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Has the dog eaten anything?",
+      "expected": "P Has the dog eat/en anything?",
+      "actual": "P Has the dog eat/en anything?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Half the girl's sandwich.",
+      "expected": "C Half the girl/z sandwich.",
+      "actual": "C Half the girl/z sandwich.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Without asking?",
+      "expected": "P Without asking?",
+      "actual": "P Without asking?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (She gave) she gave it to him.",
+      "expected": "C (She gave) she gave it to him.",
+      "actual": "C (She gave) she gave it to him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That was kind.",
+      "expected": "P That was kind.",
+      "actual": "P That was kind.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She can be kind and teasing.",
+      "expected": "C She can be kind and teasing.",
+      "actual": "C She can be kind and teasing.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Yes, she can.",
+      "expected": "P Yes, she can.",
+      "actual": "P Yes, she can.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I will let her give back the hat.",
+      "expected": "C I will let her give back the hat.",
+      "actual": "C I will let her give back the hat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'd be glad to get it back.",
+      "expected": "P I/'d be glad to get it back.",
+      "actual": "P I/'d be glad to get it back.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But she puts a flower in it first.",
+      "expected": "C But she put/3s a flower in it first.",
+      "actual": "C But she put/3s a flower in it first.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P For the boy?",
+      "expected": "P For the boy?",
+      "actual": "P For the boy?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C For a bee.",
+      "expected": "C For a bee.",
+      "actual": "C For a bee.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Oh dear.",
+      "expected": "P Oh dear.",
+      "actual": "P Oh dear.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A friendly bee.",
+      "expected": "C A friendly bee.",
+      "actual": "C A friendly bee.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It won't sting him.",
+      "expected": "C It won't sting him.",
+      "actual": "C It won't sting him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Shall we see what changes this way?",
+      "expected": "P Shall we see what change/3s this way?",
+      "actual": "P Shall we see what change/3s this way?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Now the) now the boy's on a wall.",
+      "expected": "C (Now the) now the boy/'s on a wall.",
+      "actual": "C (Now the) now the boy/'s on a wall.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The girl is underneath him.",
+      "expected": "P The girl is underneath him.",
+      "actual": "P The girl is underneath him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I didn't notice the wall.",
+      "expected": "C I did/n't notice the wall.",
+      "actual": "C I did/n't notice the wall.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It was along the top before.",
+      "expected": "P It was along the top before.",
+      "actual": "P It was along the top before.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That ruins the sky story.",
+      "expected": "C That ruin/3s the sky story.",
+      "actual": "C That ruin/3s the sky story.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Your story can still exist.",
+      "expected": "P Your story can still exist.",
+      "actual": "P Your story can still exist.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But the picture>",
+      "expected": "C But the picture>",
+      "actual": "C But the picture>",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The picture gave you the idea.",
+      "expected": "P The picture gave you the idea.",
+      "actual": "P The picture gave you the idea.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You can change what happens next.",
+      "expected": "P You can change what happen/3s next.",
+      "actual": "P You can change what happen/3s next.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I could) I could draw another picture.",
+      "expected": "C (I could) I could draw another picture.",
+      "actual": "C (I could) I could draw another picture.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P With magic air?",
+      "expected": "P With magic air?",
+      "actual": "P With magic air?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The bee's wearing the hat.",
+      "expected": "C The bee/'s wear/ing the hat.",
+      "actual": "C The bee/'s wear/ing the hat.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A hat that big would hide the bee.",
+      "expected": "P A hat that big would hide the bee.",
+      "actual": "P A hat that big would hide the bee.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Just its little head.",
+      "expected": "C Just its little head.",
+      "actual": "C Just its little head.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We might need a smaller hat.",
+      "expected": "P We might need a smaller hat.",
+      "actual": "P We might need a smaller hat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This small {holds thumb and finger close together}.",
+      "expected": "C This small {holds thumb and finger close together}.",
+      "actual": "C This small {holds thumb and finger close together}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P About the size of my thumbnail.",
+      "expected": "P About the size of my thumbnail.",
+      "actual": "P About the size of my thumbnail.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You can draw the upright story.",
+      "expected": "C You can draw the upright story.",
+      "actual": "C You can draw the upright story.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'll try.",
+      "expected": "P I/'ll try.",
+      "actual": "P I/'ll try.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I've already chosen mine.",
+      "expected": "C I/'ve already chosen mine.",
+      "actual": "C I/'ve already chosen mine.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The upside-down one.",
+      "expected": "P The upside-down one.",
+      "actual": "P The upside-down one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (The upside-down) the sneeze one.",
+      "expected": "C (The upside-down) the sneeze one.",
+      "actual": "C (The upside-down) the sneeze one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (That is) that is its name.",
+      "expected": "C (That is) that is its name.",
+      "actual": "C (That is) that is its name.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'll remember it {nods toward the raised hand}.",
+      "expected": "P I/'ll remember it {nods toward the raised hand}.",
+      "actual": "P I/'ll remember it {nods toward the raised hand}.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C The boy is fall/ing into the sky.\"},{\"id\":1,\"text\":\"P You are hold/ing the picture upside down.\"},{\"id\":2,\"text\":\"C I know.\"},{\"id\":3,\"text\":\"C (That make/3s) that make/3s it a different story.\"},{\"id\":4,\"text\":\"P Tell me the upside-down story.\"},{\"id\":5,\"text\":\"C His shoe/s are heavy.\"},{\"id\":6,\"text\":\"C They pull him up.\"},{\"id\":7,\"text\":\"P Up toward the ground?\"},{\"id\":8,\"text\":\"C Yes, because the ground/z above him.\"},{\"id\":9,\"text\":\"P I see the grass along this edge.\"},{\"id\":10,\"text\":\"C He/h's take/en a balloon from the girl.\"},{\"id\":11,\"text\":\"P She has take/en his hat in exchange.\"},{\"id\":12,\"text\":\"C No, (she has) she stole his hat.\"},{\"id\":13,\"text\":\"P Then we have a disagreement in the story.\"},{\"id\":14,\"text\":\"C He want/3s it back.\"},{\"id\":15,\"text\":\"P How can he reach her?\"},{\"id\":16,\"text\":\"C He kick/3s the air.\"},{\"id\":17,\"text\":\"C %whoosh.\"},{\"id\":18,\"text\":\"P His feet look still in the picture.\"},{\"id\":19,\"text\":\"C Picture/s don't show all the kick/s.\"},{\"id\":20,\"text\":\"P True.\"},{\"id\":21,\"text\":\"C The girl/z arm go/3s this way.\"},{\"id\":22,\"text\":\"P Toward his hat.\"},{\"id\":23,\"text\":\"C She/'s wave/ing it.\"},{\"id\":24,\"text\":\"P Perhaps she is try/ing to return it.\"},{\"id\":25,\"text\":\"C (I thought) I thought she was tease/ing him.\"},{\"id\":26,\"text\":\"P Either could fit so far.\"},{\"id\":27,\"text\":\"C You like her better than me.\"},{\"id\":28,\"text\":\"P I am wonder/ing what else might be happen/ing.\"},{\"id\":29,\"text\":\"C All right, you tell one.\"},{\"id\":30,\"text\":\"P The wind blew his hat off.\"},{\"id\":31,\"text\":\"P She caught it before it flew away.\"},{\"id\":32,\"text\":\"C Then why is he^\"},{\"id\":33,\"text\":\"P Why is he so far above her?\"},{\"id\":34,\"text\":\"C Yes.\"},{\"id\":35,\"text\":\"P In my story, the balloon lift/ed him.\"},{\"id\":36,\"text\":\"C A little balloon can/'t lift a boy.\"},{\"id\":37,\"text\":\"P An ordinary one could not.\"},{\"id\":38,\"text\":\"C (This one) this one has magic air.\"},{\"id\":39,\"text\":\"P That could explain it.\"},{\"id\":40,\"text\":\"C The dog know/3s about the magic.\"},{\"id\":41,\"text\":\"P How can we tell?\"},{\"id\":42,\"text\":\"C His tail point/3s at the balloon.\"},{\"id\":43,\"text\":\"P It could just be wag/ing.\"},{\"id\":44,\"text\":\"C You/'re do/ing it again.\"},{\"id\":45,\"text\":\"P Offering another possibility?\"},{\"id\":46,\"text\":\"C Yes.\"},{\"id\":47,\"text\":\"P Is that spoil/ing your story?\"},{\"id\":48,\"text\":\"C (A little) a little bit.\"},{\"id\":49,\"text\":\"P Then finish your version first.\"},{\"id\":50,\"text\":\"C The dog jump/ed after him.\"},{\"id\":51,\"text\":\"C He miss/ed the balloon string.\"},{\"id\":52,\"text\":\"C The girl laugh/ed because the dog sneeze/ed.\"},{\"id\":53,\"text\":\"P A sneeze in midair?\"},{\"id\":54,\"text\":\"C A huge one.\"},{\"id\":55,\"text\":\"C That/'s why the boy went higher.\"},{\"id\":56,\"text\":\"P I would not have guess/ed that.\"},{\"id\":57,\"text\":\"C Now he/'s hungry.\"},{\"id\":58,\"text\":\"P He should come down for lunch.\"},{\"id\":59,\"text\":\"C He/h's eat/en all his sandwich/s already.\"},{\"id\":60,\"text\":\"P Has the dog eat/en anything?\"},{\"id\":61,\"text\":\"C Half the girl/z sandwich.\"},{\"id\":62,\"text\":\"P Without asking?\"},{\"id\":63,\"text\":\"C (She gave) she gave it to him.\"},{\"id\":64,\"text\":\"P That was kind.\"},{\"id\":65,\"text\":\"C She can be kind and teasing.\"},{\"id\":66,\"text\":\"P Yes, she can.\"},{\"id\":67,\"text\":\"C I will let her give back the hat.\"},{\"id\":68,\"text\":\"P I/'d be glad to get it back.\"},{\"id\":69,\"text\":\"C But she put/3s a flower in it first.\"},{\"id\":70,\"text\":\"P For the boy?\"},{\"id\":71,\"text\":\"C For a bee.\"},{\"id\":72,\"text\":\"P Oh dear.\"},{\"id\":73,\"text\":\"C A friendly bee.\"},{\"id\":74,\"text\":\"C It won't sting him.\"},{\"id\":75,\"text\":\"P Shall we see what change/3s this way?\"},{\"id\":76,\"text\":\"C (Now the) now the boy/'s on a wall.\"},{\"id\":77,\"text\":\"P The girl is underneath him.\"},{\"id\":78,\"text\":\"C I did/n't notice the wall.\"},{\"id\":79,\"text\":\"P It was along the top before.\"},{\"id\":80,\"text\":\"C That ruin/3s the sky story.\"},{\"id\":81,\"text\":\"P Your story can still exist.\"},{\"id\":82,\"text\":\"C But the picture>\"},{\"id\":83,\"text\":\"P The picture gave you the idea.\"},{\"id\":84,\"text\":\"P You can change what happen/3s next.\"},{\"id\":85,\"text\":\"C (I could) I could draw another picture.\"},{\"id\":86,\"text\":\"P With magic air?\"},{\"id\":87,\"text\":\"C The bee/'s wear/ing the hat.\"},{\"id\":88,\"text\":\"P A hat that big would hide the bee.\"},{\"id\":89,\"text\":\"C Just its little head.\"},{\"id\":90,\"text\":\"P We might need a smaller hat.\"},{\"id\":91,\"text\":\"C This small {holds thumb and finger close together}.\"},{\"id\":92,\"text\":\"P About the size of my thumbnail.\"},{\"id\":93,\"text\":\"C You can draw the upright story.\"},{\"id\":94,\"text\":\"P I/'ll try.\"},{\"id\":95,\"text\":\"C I/'ve already chosen mine.\"},{\"id\":96,\"text\":\"P The upside-down one.\"},{\"id\":97,\"text\":\"C (The upside-down) the sneeze one.\"},{\"id\":98,\"text\":\"C (That is) that is its name.\"},{\"id\":99,\"text\":\"P I/'ll remember it {nods toward the raised hand}.\"}]}"
+  ],
+  "counts_toward_phase_a": true,
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1",
+    "source": "stage1_v5_reuse"
+  }
+}

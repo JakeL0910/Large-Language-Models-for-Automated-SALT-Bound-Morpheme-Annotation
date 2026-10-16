@@ -1,0 +1,1274 @@
+{
+  "ok": true,
+  "error": null,
+  "model": "gpt-4o",
+  "prompt_version": "V4",
+  "family": "hard_10",
+  "batch_size": "full",
+  "n_utterances": 136,
+  "n_requests": 1,
+  "max_output_tokens": 5440,
+  "elapsed_seconds": 12.808,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6500,
+    "completion_tokens": 2201,
+    "cached_tokens": 0,
+    "total_tokens": 8701
+  },
+  "estimated_cost_usd": 0.03826,
+  "failures": 0,
+  "tp": 58,
+  "fp": 32,
+  "fn": 20,
+  "precision_pct": 64.4444,
+  "recall_pct": 74.359,
+  "micro_f1_pct": 69.0476,
+  "rows": [
+    {
+      "original": "C Welcome to Goose Radio.",
+      "expected": "C Welcome to Goose Radio.",
+      "actual": "C Welcome to Goose Radio.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Who is our guest?",
+      "expected": "P Who is our guest?",
+      "actual": "P Who is our guest?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Me, but I'm a goose.",
+      "expected": "C Me, but I/'m a goose.",
+      "actual": "C Me, but I/'m a goose.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (You have) You have to ask me why I am here.",
+      "expected": "C (You have) You have to ask me why I am here.",
+      "actual": "C (You have) You have to ask me why I am here.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Why have you come to our pond, Goose?",
+      "expected": "P Why have you come to our pond, Goose?",
+      "actual": "P Why have you come to our pond, Goose?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Because the pond at home got too cold.",
+      "expected": "C Because the pond at home got too cold.",
+      "actual": "C Because the pond at home got too cold.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Did you travel alone?",
+      "expected": "P Did you travel alone?",
+      "actual": "P Did you travel alone?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, with my aunt and my brother.",
+      "expected": "C No, with my aunt and my brother.",
+      "actual": "C No, with my aunt and my brother.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C My brother complains all the way.",
+      "expected": "C My brother complain/3s all the way.",
+      "actual": "C My brother complain/s all the way.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P What does he complain about?",
+      "expected": "P What does he complain about?",
+      "actual": "P What does he complain about?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (His wings) His wings are tired.",
+      "expected": "C (His wing/s) His wing/s are tired.",
+      "actual": "C (His wings) His wing/s are tired.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P How does your aunt help him?",
+      "expected": "P How does your aunt help him?",
+      "actual": "P How does your aunt help him?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She says we can stop at the next pond.",
+      "expected": "C She says we can stop at the next pond.",
+      "actual": "C She say/s we can stop at the next pond.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That sounds kind.",
+      "expected": "P That sound/3s kind.",
+      "actual": "P That sound/s kind.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C I've eaten some seeds there already.",
+      "expected": "C I/'ve eat/en some seed/s there already.",
+      "actual": "C I/'ve eat/en some seed/s there already.",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P At this pond?",
+      "expected": "P At this pond?",
+      "actual": "P At this pond?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (At the) At the one before this.",
+      "expected": "C (At the) At the one before this.",
+      "actual": "C (At the) At the one before this.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You have visited several ponds.",
+      "expected": "P You have visit/ed several pond/s.",
+      "actual": "P You have visit/ed several pond/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Three, but my brother says four.",
+      "expected": "C Three, but my brother says four.",
+      "actual": "C Three, but my brother say/s four.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Why does he count four?",
+      "expected": "P Why does he count four?",
+      "actual": "P Why does he count four?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He counts the big puddle.",
+      "expected": "C He count/3s the big puddle.",
+      "actual": "C He count/s the big puddle.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Is a puddle a pond?",
+      "expected": "P Is a puddle a pond?",
+      "actual": "P Is a puddle a pond?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Not if it goes away before you finish swimming.",
+      "expected": "C Not if it go/3s away before you finish swimming.",
+      "actual": "C Not if it go/3s away before you finish swim/ing.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You have a practical definition.",
+      "expected": "P You have a practical definition.",
+      "actual": "P You have a practical definition.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (What) What does that word mean?",
+      "expected": "C (What) What does that word mean?",
+      "actual": "C (What) What does that word mean?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You used what happened to explain the difference.",
+      "expected": "P You use/ed what happen/ed to explain the difference.",
+      "actual": "P You use/d what happen/ed to explain the difference.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C Oh.",
+      "expected": "C Oh.",
+      "actual": "C Oh.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I thought it meant the goose's name.",
+      "expected": "C I thought it meant the goose/z name.",
+      "actual": "C I thought it mean/t the goose/'s name.",
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P We haven't asked your name yet.",
+      "expected": "P We have/n't ask/ed your name yet.",
+      "actual": "P We have/n't ask/ed your name yet.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Captain Feather.",
+      "expected": "C Captain Feather.",
+      "actual": "C Captain Feather.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %honk.",
+      "expected": "C %honk.",
+      "actual": "C %honk.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Captain Feather, where are you heading next?",
+      "expected": "P Captain Feather, where are you head/ing next?",
+      "actual": "P Captain Feather, where are you head/ing next?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Somewhere with warmer toes.",
+      "expected": "C Somewhere with warmer toe/s.",
+      "actual": "C Somewhere with warmer toe/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Do places have toes?",
+      "expected": "P Do place/s have toe/s?",
+      "actual": "P Do place/s have toe/s?",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (No) I mean where my toes can get warm.",
+      "expected": "C (No) I mean where my toe/s can get warm.",
+      "actual": "C (No) I mean where my toe/s can get warm.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thank you for explaining.",
+      "expected": "P Thank you for explaining.",
+      "actual": "P Thank you for explain/ing.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I've taken my brother under my wing.",
+      "expected": "C I/'ve take/en my brother under my wing.",
+      "actual": "C I/'ve take/en my brother under my wing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Is he under there now?",
+      "expected": "P Is he under there now?",
+      "actual": "P Is he under there now?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Not really.",
+      "expected": "C Not really.",
+      "actual": "C Not really.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He'd fall off when I flew.",
+      "expected": "C He/'d fall off when I flew.",
+      "actual": "C He/'d fall off when I flew.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You mean you are helping him.",
+      "expected": "P You mean you are help/ing him.",
+      "actual": "P You mean you are help/ing him.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Auntie's other wing is busy.",
+      "expected": "C Auntie/z other wing is busy.",
+      "actual": "C Auntie/'s other wing is busy.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Busy with what?",
+      "expected": "P Busy with what?",
+      "actual": "P Busy with what?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She's flying.",
+      "expected": "C She/'s fly/ing.",
+      "actual": "C She/'s fly/ing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Both wings would be useful for that.",
+      "expected": "P Both wing/s would be useful for that.",
+      "actual": "P Both wing/s would be useful for that.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Right) Right, I didn't mean a real wing.",
+      "expected": "C (Right) Right, I did/n't mean a real wing.",
+      "actual": "C (Right) Right, I did/n't mean a real wing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We understand you now.",
+      "expected": "P We understand you now.",
+      "actual": "P We understand you now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Can I ask the next question?",
+      "expected": "C Can I ask the next question?",
+      "actual": "C Can I ask the next question?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You can be the interviewer.",
+      "expected": "P You can be the interviewer.",
+      "actual": "P You can be the interviewer.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But who's the goose then?",
+      "expected": "C But who/'s the goose then?",
+      "actual": "C But who/'s the goose then?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I will take that role.",
+      "expected": "P I will take that role.",
+      "actual": "P I will take that role.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (First) First I need the microphone {takes the tube from P}.",
+      "expected": "C (First) First I need the microphone {takes the tube from P}.",
+      "actual": "C (First) First I need the microphone {takes the tube from P}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Here it is.",
+      "expected": "P Here it is.",
+      "actual": "P Here it is.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C What's a goose do when it gets lost?",
+      "expected": "C What/d's a goose do when it get/3s lost?",
+      "actual": "C What/'s a goose do when it get/s lost?",
+      "tp": 0,
+      "fp": 2,
+      "fn": 2,
+      "failed": false
+    },
+    {
+      "original": "P It tries to find a familiar place.",
+      "expected": "P It try/3s to find a familiar place.",
+      "actual": "P It try/3s to find a familiar place.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Have you ever got lost, Captain?",
+      "expected": "C Have you ever got lost, Captain?",
+      "actual": "C Have you ever got lost, Captain?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Once I followed the wrong flock.",
+      "expected": "P Once I follow/ed the wrong flock.",
+      "actual": "P Once I follow/ed the wrong flock.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Oh) Why'd you follow them?",
+      "expected": "C (Oh) Why/d'd you follow them?",
+      "actual": "C (Oh) Why/d'd you follow them?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I thought one of the geese was my aunt.",
+      "expected": "P I thought one of the geese was my aunt.",
+      "actual": "P I thought one of the geese was my aunt.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Did she look the same?",
+      "expected": "C Did she look the same?",
+      "actual": "C Did she look the same?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P From far away, yes.",
+      "expected": "P From far away, yes.",
+      "actual": "P From far away, yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then what happened?",
+      "expected": "C Then what happen/ed?",
+      "actual": "C Then what happen/ed?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I called her name.",
+      "expected": "P I call/ed her name.",
+      "actual": "P I call/ed her name.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She didn't answer.",
+      "expected": "P She did/n't answer.",
+      "actual": "P She did/n't answer.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (So) So you knew you had the wrong aunt.",
+      "expected": "C (So) So you knew you had the wrong aunt.",
+      "actual": "C (So) So you knew you had the wrong aunt.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I turned back before we went much farther.",
+      "expected": "P I turn/ed back before we went much farther.",
+      "actual": "P I turn/ed back before we went much farther.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That was a good choice.",
+      "expected": "C That was a good choice.",
+      "actual": "C That was a good choice.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thank you, interviewer.",
+      "expected": "P Thank you, interviewer.",
+      "actual": "P Thank you, interviewer.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I want to be the goose again.",
+      "expected": "C I want to be the goose again.",
+      "actual": "C I want to be the goose again.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then I will hold the microphone.",
+      "expected": "P Then I will hold the microphone.",
+      "actual": "P Then I will hold the microphone.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Wait, I haven't finished my^",
+      "expected": "C Wait, I have/n't finish/ed my^",
+      "actual": "C Wait, I have/n't finish/ed my^",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Your question?",
+      "expected": "P Your question?",
+      "actual": "P Your question?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (My) My goodbye to the first goose.",
+      "expected": "C (My) My goodbye to the first goose.",
+      "actual": "C (My) My goodbye to the first goose.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Go ahead.",
+      "expected": "P Go ahead.",
+      "actual": "P Go ahead.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Thank you for coming, Captain Feather.",
+      "expected": "C Thank you for coming, Captain Feather.",
+      "actual": "C Thank you for come/ing, Captain Feather.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It was a pleasure.",
+      "expected": "P It was a pleasure.",
+      "actual": "P It was a pleasure.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now I'm the goose after lunch.",
+      "expected": "C Now I/'m the goose after lunch.",
+      "actual": "C Now I/'m the goose after lunch.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Have you eaten enough?",
+      "expected": "P Have you eat/en enough?",
+      "actual": "P Have you eat/en enough?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, but my brother's eaten more.",
+      "expected": "C Yes, but my brother/h's eat/en more.",
+      "actual": "C Yes, but my brother/'s eat/en more.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Is that a problem?",
+      "expected": "P Is that a problem?",
+      "actual": "P Is that a problem?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Not really) Not really, because he's bigger.",
+      "expected": "C (Not really) Not really, because he/'s bigger.",
+      "actual": "C (Not really) Not really, because he/'s bigger.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I (only) just noticed.",
+      "expected": "C I (only) just notice/ed.",
+      "actual": "C I (only) just notice/d.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Does he still want a rest?",
+      "expected": "P Does he still want a rest?",
+      "actual": "P Does he still want a rest?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's taken a nap on the bank.",
+      "expected": "C He/h's take/en a nap on the bank.",
+      "actual": "C He/'s take/en a nap on the bank.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Shall we speak quietly?",
+      "expected": "P Shall we speak quietly?",
+      "actual": "P Shall we speak quietly?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %honk.",
+      "expected": "C %honk.",
+      "actual": "C %honk.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Oops, that wasn't quiet.",
+      "expected": "C Oops, that was/n't quiet.",
+      "actual": "C Oops, that was/n't quiet.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You might wake him.",
+      "expected": "P You might wake him.",
+      "actual": "P You might wake him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I'll) I'll use my small honk.",
+      "expected": "C (I/'ll) I/'ll use my small honk.",
+      "actual": "C (I/'ll) I/'ll use my small honk.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %honk.",
+      "expected": "C %honk.",
+      "actual": "C %honk.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That was smaller.",
+      "expected": "P That was smaller.",
+      "actual": "P That was smaller.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He lifted his head.",
+      "expected": "C He lift/ed his head.",
+      "actual": "C He lift/ed his head.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Have we disturbed him?",
+      "expected": "P Have we disturb/ed him?",
+      "actual": "P Have we disturb/ed him?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, he wants to hear the radio.",
+      "expected": "C No, he want/3s to hear the radio.",
+      "actual": "C No, he want/s to hear the radio.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C He likes my voice best.",
+      "expected": "C He like/3s my voice best.",
+      "actual": "C He like/s my voice best.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Is this where he is resting?",
+      "expected": "P Is this where he is rest/ing?",
+      "actual": "P Is this where he is rest/ing?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes {taps the cushion}.",
+      "expected": "C Yes {taps the cushion}.",
+      "actual": "C Yes {taps the cushion}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Don't put the microphone on his head.",
+      "expected": "C Don't put the microphone on his head.",
+      "actual": "C Do/n't put the microphone on his head.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I won't.",
+      "expected": "P I won't.",
+      "actual": "P I wo/n't.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Also) Also Auntie wants to say something.",
+      "expected": "C (Also) Also Auntie want/3s to say something.",
+      "actual": "C (Also) Also Auntie want/s to say something.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P We only have two people to play all these roles.",
+      "expected": "P We only have two people to play all these role/s.",
+      "actual": "P We only have two people to play all these role/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I can do Auntie after Captain.",
+      "expected": "C I can do Auntie after Captain.",
+      "actual": "C I can do Auntie after Captain.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Tell me when you switch.",
+      "expected": "P Tell me when you switch.",
+      "actual": "P Tell me when you switch.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'm switching now.",
+      "expected": "C I/'m switch/ing now.",
+      "actual": "C I/'m switch/ing now.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Captain, we must leave before^",
+      "expected": "C Captain, we must leave before^",
+      "actual": "C Captain, we must leave before^",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Before sunset?",
+      "expected": "P Before sunset?",
+      "actual": "P Before sunset?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, before your brother eats the microphone.",
+      "expected": "C No, before your brother eat/3s the microphone.",
+      "actual": "C No, before your brother eat/s the microphone.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Is he trying to eat it?",
+      "expected": "P Is he try/ing to eat it?",
+      "actual": "P Is he try/ing to eat it?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (In the) In the story, because it looks like a reed.",
+      "expected": "C (In the) In the story, because it look/3s like a reed.",
+      "actual": "C (In the) In the story, because it look/s like a reed.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P We should move it away from him.",
+      "expected": "P We should move it away from him.",
+      "actual": "P We should move it away from him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This is Auntie's warning.",
+      "expected": "C This is Auntie/z warning.",
+      "actual": "C This is Auntie/'s warn/ing.",
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C No eating the radio equipment.",
+      "expected": "C No eating the radio equipment.",
+      "actual": "C No eat/ing the radio equipment.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The microphone is safe.",
+      "expected": "P The microphone is safe.",
+      "actual": "P The microphone is safe.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now I'm just me.",
+      "expected": "C Now I/'m just me.",
+      "actual": "C Now I/'m just me.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Are we ending the interview?",
+      "expected": "P Are we end/ing the interview?",
+      "actual": "P Are we end/ing the interview?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Nearly) Nearly, but I have to say where they went.",
+      "expected": "C (Nearly) Nearly, but I have to say where they went.",
+      "actual": "C (Nearly) Nearly, but I have to say where they went.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Where did they go?",
+      "expected": "P Where did they go?",
+      "actual": "P Where did they go?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They flapped over the trees.",
+      "expected": "C They flap/ed over the tree/s.",
+      "actual": "C They flap/ed over the tree/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They passed the water tower.",
+      "expected": "C They pass/ed the water tower.",
+      "actual": "C They pass/ed the water tower.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P All three together?",
+      "expected": "P All three together?",
+      "actual": "P All three together?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, nobody flew with the wrong aunt this time.",
+      "expected": "C Yes, nobody flew with the wrong aunt this time.",
+      "actual": "C Yes, nobody flew with the wrong aunt this time.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A successful departure.",
+      "expected": "P A successful departure.",
+      "actual": "P A successful departure.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Captain's aunt) Captain's brother dropped one feather.",
+      "expected": "C (Captain/z aunt) Captain/z brother drop/ed one feather.",
+      "actual": "C (Captain/'s aunt) Captain/'s brother drop/ed one feather.",
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "failed": false
+    },
+    {
+      "original": "P Should we collect it?",
+      "expected": "P Should we collect it?",
+      "actual": "P Should we collect it?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It's pretend {holds an empty palm toward P}.",
+      "expected": "C It/'s pretend {holds an empty palm toward P}.",
+      "actual": "C It/'s pretend {holds an empty palm toward P}.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You can have it.",
+      "expected": "C You can have it.",
+      "actual": "C You can have it.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'll put it beside the radio.",
+      "expected": "P I/'ll put it beside the radio.",
+      "actual": "P I/'ll put it beside the radio.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (And) And we'll remember their visit.",
+      "expected": "C (And) And we/'ll remember their visit.",
+      "actual": "C (And) And we/'ll remember their visit.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Will they return?",
+      "expected": "P Will they return?",
+      "actual": "P Will they return?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They might come back in spring.",
+      "expected": "C They might come back in spring.",
+      "actual": "C They might come back in spring.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Unless they find a>",
+      "expected": "C Unless they find a>",
+      "actual": "C Unless they find a>",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (A bigger) A bigger puddle on the way.",
+      "expected": "C (A bigger) A bigger puddle on the way.",
+      "actual": "C (A bigger) A bigger puddle on the way.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You have given us something to wait for.",
+      "expected": "P You have given us something to wait for.",
+      "actual": "P You have give/en us something to wait for.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Goose Radio is finished for today {sets the tube on the table}.",
+      "expected": "C Goose Radio is finished for today {sets the tube on the table}.",
+      "actual": "C Goose Radio is finish/ed for today {sets the tube on the table}.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The real me is going to have some water.",
+      "expected": "C The real me is going to have some water.",
+      "actual": "C The real me is go/ing to have some water.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "counts_toward_stage1": true,
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C Welcome to Goose Radio.\"},{\"id\":1,\"text\":\"P Who is our guest?\"},{\"id\":2,\"text\":\"C Me, but I/'m a goose.\"},{\"id\":3,\"text\":\"C (You have) You have to ask me why I am here.\"},{\"id\":4,\"text\":\"P Why have you come to our pond, Goose?\"},{\"id\":5,\"text\":\"C Because the pond at home got too cold.\"},{\"id\":6,\"text\":\"P Did you travel alone?\"},{\"id\":7,\"text\":\"C No, with my aunt and my brother.\"},{\"id\":8,\"text\":\"C My brother complain/s all the way.\"},{\"id\":9,\"text\":\"P What does he complain about?\"},{\"id\":10,\"text\":\"C (His wings) His wing/s are tired.\"},{\"id\":11,\"text\":\"P How does your aunt help him?\"},{\"id\":12,\"text\":\"C She say/s we can stop at the next pond.\"},{\"id\":13,\"text\":\"P That sound/s kind.\"},{\"id\":14,\"text\":\"C I/'ve eat/en some seed/s there already.\"},{\"id\":15,\"text\":\"P At this pond?\"},{\"id\":16,\"text\":\"C (At the) At the one before this.\"},{\"id\":17,\"text\":\"P You have visit/ed several pond/s.\"},{\"id\":18,\"text\":\"C Three, but my brother say/s four.\"},{\"id\":19,\"text\":\"P Why does he count four?\"},{\"id\":20,\"text\":\"C He count/s the big puddle.\"},{\"id\":21,\"text\":\"P Is a puddle a pond?\"},{\"id\":22,\"text\":\"C Not if it go/3s away before you finish swim/ing.\"},{\"id\":23,\"text\":\"P You have a practical definition.\"},{\"id\":24,\"text\":\"C (What) What does that word mean?\"},{\"id\":25,\"text\":\"P You use/d what happen/ed to explain the difference.\"},{\"id\":26,\"text\":\"C Oh.\"},{\"id\":27,\"text\":\"C I thought it mean/t the goose/'s name.\"},{\"id\":28,\"text\":\"P We have/n't ask/ed your name yet.\"},{\"id\":29,\"text\":\"C Captain Feather.\"},{\"id\":30,\"text\":\"C %honk.\"},{\"id\":31,\"text\":\"P Captain Feather, where are you head/ing next?\"},{\"id\":32,\"text\":\"C Somewhere with warmer toe/s.\"},{\"id\":33,\"text\":\"P Do place/s have toe/s?\"},{\"id\":34,\"text\":\"C (No) I mean where my toe/s can get warm.\"},{\"id\":35,\"text\":\"P Thank you for explain/ing.\"},{\"id\":36,\"text\":\"C I/'ve take/en my brother under my wing.\"},{\"id\":37,\"text\":\"P Is he under there now?\"},{\"id\":38,\"text\":\"C Not really.\"},{\"id\":39,\"text\":\"C He/'d fall off when I flew.\"},{\"id\":40,\"text\":\"P You mean you are help/ing him.\"},{\"id\":41,\"text\":\"C Yes.\"},{\"id\":42,\"text\":\"C Auntie/'s other wing is busy.\"},{\"id\":43,\"text\":\"P Busy with what?\"},{\"id\":44,\"text\":\"C She/'s fly/ing.\"},{\"id\":45,\"text\":\"P Both wing/s would be useful for that.\"},{\"id\":46,\"text\":\"C (Right) Right, I did/n't mean a real wing.\"},{\"id\":47,\"text\":\"P We understand you now.\"},{\"id\":48,\"text\":\"C Can I ask the next question?\"},{\"id\":49,\"text\":\"P You can be the interviewer.\"},{\"id\":50,\"text\":\"C But who/'s the goose then?\"},{\"id\":51,\"text\":\"P I will take that role.\"},{\"id\":52,\"text\":\"C (First) First I need the microphone {takes the tube from P}.\"},{\"id\":53,\"text\":\"P Here it is.\"},{\"id\":54,\"text\":\"C What/'s a goose do when it get/s lost?\"},{\"id\":55,\"text\":\"P It try/3s to find a familiar place.\"},{\"id\":56,\"text\":\"C Have you ever got lost, Captain?\"},{\"id\":57,\"text\":\"P Once I follow/ed the wrong flock.\"},{\"id\":58,\"text\":\"C (Oh) Why/d'd you follow them?\"},{\"id\":59,\"text\":\"P I thought one of the geese was my aunt.\"},{\"id\":60,\"text\":\"C Did she look the same?\"},{\"id\":61,\"text\":\"P From far away, yes.\"},{\"id\":62,\"text\":\"C Then what happen/ed?\"},{\"id\":63,\"text\":\"P I call/ed her name.\"},{\"id\":64,\"text\":\"P She did/n't answer.\"},{\"id\":65,\"text\":\"C (So) So you knew you had the wrong aunt.\"},{\"id\":66,\"text\":\"P I turn/ed back before we went much farther.\"},{\"id\":67,\"text\":\"C That was a good choice.\"},{\"id\":68,\"text\":\"P Thank you, interviewer.\"},{\"id\":69,\"text\":\"C I want to be the goose again.\"},{\"id\":70,\"text\":\"P Then I will hold the microphone.\"},{\"id\":71,\"text\":\"C Wait, I have/n't finish/ed my^\"},{\"id\":72,\"text\":\"P Your question?\"},{\"id\":73,\"text\":\"C (My) My goodbye to the first goose.\"},{\"id\":74,\"text\":\"P Go ahead.\"},{\"id\":75,\"text\":\"C Thank you for come/ing, Captain Feather.\"},{\"id\":76,\"text\":\"P It was a pleasure.\"},{\"id\":77,\"text\":\"C Now I/'m the goose after lunch.\"},{\"id\":78,\"text\":\"P Have you eat/en enough?\"},{\"id\":79,\"text\":\"C Yes, but my brother/'s eat/en more.\"},{\"id\":80,\"text\":\"P Is that a problem?\"},{\"id\":81,\"text\":\"C (Not really) Not really, because he/'s bigger.\"},{\"id\":82,\"text\":\"C I (only) just notice/d.\"},{\"id\":83,\"text\":\"P Does he still want a rest?\"},{\"id\":84,\"text\":\"C He/'s take/en a nap on the bank.\"},{\"id\":85,\"text\":\"P Shall we speak quietly?\"},{\"id\":86,\"text\":\"C %honk.\"},{\"id\":87,\"text\":\"C Oops, that was/n't quiet.\"},{\"id\":88,\"text\":\"P You might wake him.\"},{\"id\":89,\"text\":\"C (I/'ll) I/'ll use my small honk.\"},{\"id\":90,\"text\":\"C %honk.\"},{\"id\":91,\"text\":\"P That was smaller.\"},{\"id\":92,\"text\":\"C He lift/ed his head.\"},{\"id\":93,\"text\":\"P Have we disturb/ed him?\"},{\"id\":94,\"text\":\"C No, he want/s to hear the radio.\"},{\"id\":95,\"text\":\"C He like/s my voice best.\"},{\"id\":96,\"text\":\"P Is this where he is rest/ing?\"},{\"id\":97,\"text\":\"C Yes {taps the cushion}.\"},{\"id\":98,\"text\":\"C Do/n't put the microphone on his head.\"},{\"id\":99,\"text\":\"P I wo/n't.\"},{\"id\":100,\"text\":\"C (Also) Also Auntie want/s to say something.\"},{\"id\":101,\"text\":\"P We only have two people to play all these role/s.\"},{\"id\":102,\"text\":\"C I can do Auntie after Captain.\"},{\"id\":103,\"text\":\"P Tell me when you switch.\"},{\"id\":104,\"text\":\"C I/'m switch/ing now.\"},{\"id\":105,\"text\":\"C Captain, we must leave before^\"},{\"id\":106,\"text\":\"P Before sunset?\"},{\"id\":107,\"text\":\"C No, before your brother eat/s the microphone.\"},{\"id\":108,\"text\":\"P Is he try/ing to eat it?\"},{\"id\":109,\"text\":\"C (In the) In the story, because it look/s like a reed.\"},{\"id\":110,\"text\":\"P We should move it away from him.\"},{\"id\":111,\"text\":\"C This is Auntie/'s warn/ing.\"},{\"id\":112,\"text\":\"C No eat/ing the radio equipment.\"},{\"id\":113,\"text\":\"P The microphone is safe.\"},{\"id\":114,\"text\":\"C Now I/'m just me.\"},{\"id\":115,\"text\":\"P Are we end/ing the interview?\"},{\"id\":116,\"text\":\"C (Nearly) Nearly, but I have to say where they went.\"},{\"id\":117,\"text\":\"P Where did they go?\"},{\"id\":118,\"text\":\"C They flap/ed over the tree/s.\"},{\"id\":119,\"text\":\"C They pass/ed the water tower.\"},{\"id\":120,\"text\":\"P All three together?\"},{\"id\":121,\"text\":\"C Yes, nobody flew with the wrong aunt this time.\"},{\"id\":122,\"text\":\"P A successful departure.\"},{\"id\":123,\"text\":\"C (Captain/'s aunt) Captain/'s brother drop/ed one feather.\"},{\"id\":124,\"text\":\"P Should we collect it?\"},{\"id\":125,\"text\":\"C It/'s pretend {holds an empty palm toward P}.\"},{\"id\":126,\"text\":\"C You can have it.\"},{\"id\":127,\"text\":\"P I/'ll put it beside the radio.\"},{\"id\":128,\"text\":\"C (And) And we/'ll remember their visit.\"},{\"id\":129,\"text\":\"P Will they return?\"},{\"id\":130,\"text\":\"C They might come back in spring.\"},{\"id\":131,\"text\":\"C Unless they find a>\"},{\"id\":132,\"text\":\"C (A bigger) A bigger puddle on the way.\"},{\"id\":133,\"text\":\"P You have give/en us something to wait for.\"},{\"id\":134,\"text\":\"C Goose Radio is finish/ed for today {sets the tube on the table}.\"},{\"id\":135,\"text\":\"C The real me is go/ing to have some water.\"}]}"
+  ],
+  "configuration": {
+    "temperature": 0.0,
+    "reasoning_effort": null,
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

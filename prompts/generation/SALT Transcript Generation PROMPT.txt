@@ -1,0 +1,513 @@
+You are generating fully synthetic English language-sample transcripts for a research study according to the Standard Systematic Analysis of Language Transcripts (SALT) transcription conventions.
+Before generating any transcript, carefully analyze the attached Standard SALT Conventions instruction booklet in its entirety. Treat the booklet as the authoritative source for:
+transcript formatting;
+speaker identification;
+utterance segmentation;
+ending punctuation;
+spelling and root conventions;
+mazes and revisions;
+Omissions;
+grammatical-error notation;
+and bound-morpheme eligibility.
+SALT requires bound morphemes that follow a free morpheme to be separated using a slash with no intervening space. The manual distinguishes eligible regular forms from irregular, derivational, lexicalized, and otherwise ineligible forms.
+
+1. Study Purpose
+The transcripts will be used to evaluate automated annotation of the complete target inventory used in this study. Generate opportunities involving the following SALT bound-morpheme forms:
+/S — regular plural
+/Z — possessive
+/3S — regular third-person singular verb inflection
+/ING — progressive verb inflection
+/ED — regular past-tense inflection
+/EN — eligible past-participle inflection
+/’T and /N’T — eligible negative contractions
+Contracted forms of BE: /’S, /’RE, and /’M
+Contracted modal forms: /’LL and eligible /’D
+Other eligible contracted forms: /’VE, /H’S, /H’D, /D’S, /D’D, and /’US
+Also include /S/Z when a noun simultaneously contains an eligible regular plural and possessive inflection. Treat /S/Z as the ordered combination of /S and /Z, not as an unrelated additional morpheme family.
+The SALT booklet identifies regular plurals, possessives, third-person singular verbs, progressive forms, regular past tense, and eligible past participles as marked inflectional forms. It separately specifies negative and verb contractions, including the specialized forms representing has, had, does, did, and us.
+
+2. Required Source Use
+Perform the following steps internally before generating the transcript:
+Read the attached SALT booklet.
+Locate the section on bound morphemes.
+Review Appendix A explaining the rationale for marking or excluding forms.
+Review the transcript-format, punctuation, segmentation, spelling, maze, omission, and error-code sections.
+Apply the booklet’s rules consistently throughout the generated transcript.
+Resolve every potentially eligible form by grammatical function and the SALT rules rather than by its spelling alone.
+Do not rely on ordinary English suffix detection. A word that visually ends in s, ed, en, or ing is not automatically eligible for SALT bound-morpheme coding.
+When this prompt conflicts with the attached booklet, follow the booklet.
+
+3. Synthetic-Data and Privacy Requirements
+
+Every transcript must be entirely fictional.
+Do not:
+reproduce or paraphrase a real laboratory transcript;
+imitate a specific participant’s language;
+reconstruct a clinical record;
+copy a published transcript;
+use real participant identifiers;
+include real addresses, schools, medical records, diagnoses, or identifying events;
+imply that the fictional child represents an actual person;
+or incorporate information from any private dataset.
+Use generic fictional speakers, ordinary fictional scenarios, and original utterances.
+The purpose of this synthetic-data approach is to permit controlled pilot evaluation without exposing confidential laboratory transcripts or participant data.
+
+4. Output Type
+Generate an unannotated SALT transcript.
+The spoken words must appear in their ordinary surface forms. Do not insert the answer-key annotations into the generated transcript.
+For example, the unannotated transcript should contain:
+C The dogs chased the rabbit.
+It should not contain:
+C The dog/s chase/ed the rabbit.
+Do not use any target annotation anywhere in the transcript, including:
+/S
+/Z
+/S/Z
+/3S
+/ING
+/ED
+/EN
+/’T
+/N’T
+/’S
+/’RE
+/’M
+/’LL
+/’D
+/’VE
+/H’S
+/H’D
+/D’S
+/D’D
+/’US
+The researcher will independently construct and verify the corresponding answer key against the SALT guidelines.
+
+5. Required SALT Transcript Format
+Unless the transcript specification states otherwise:
+Use C as the child speaker ID.
+Use P as the adult, parent, or examiner speaker ID.
+Begin each utterance with the speaker ID.
+Place one blank space after the speaker ID.
+Place one utterance on each line.
+End every utterance with an eligible SALT ending-punctuation mark.
+Use a period for statements.
+Use a question mark for questions.
+Use an exclamation mark only when pragmatically appropriate.
+Use a tilde only for a genuine SALT intonation prompt.
+Use a greater-than sign only for an abandoned utterance.
+Use a caret only for an interrupted utterance.
+Preserve SALT-compatible C-unit segmentation.
+Do not place line numbers, timestamps, Markdown bullets, headings, or commentary inside the transcript.
+Do not wrap the transcript in quotation marks.
+Do not use a code block unless explicitly requested.
+SALT requires each utterance to begin with a speaker ID and to occupy a separate line ending in an accepted punctuation mark.
+
+6. Optional SALT Features
+Use advanced SALT features only when the transcript specification requests them or when they are necessary for the selected difficulty.
+These may include:
+repetitions;
+revisions;
+false starts;
+filled pauses;
+part words;
+abandoned utterances;
+interrupted utterances;
+omissions;
+child grammatical errors;
+unintelligible segments;
+parenthetical remarks;
+overlapping speech;
+or transcriber comments.
+When such features are included, format them exactly according to the booklet.
+Do not add complexity merely to make the transcript appear realistic. Every advanced convention must have a clear conversational purpose and must remain interpretable.
+
+7. Linguistic and Developmental Realism
+Create a coherent interaction between a fictional child and an adult.
+The child’s language must be:
+developmentally plausible for the requested age;
+internally consistent;
+conversational rather than textbook-like;
+varied in vocabulary and syntax;
+and sufficiently natural that the target forms occur within meaningful discourse.
+The child may produce plausible features such as:
+short and extended utterances;
+noun phrases and pronouns;
+regular and irregular verbs;
+auxiliary and copular constructions;
+questions;
+subordinate clauses;
+conjunctions;
+repetitions;
+revisions;
+fillers;
+elliptical responses;
+incomplete thoughts;
+or occasional grammatical errors.
+Do not make every child utterance grammatically perfect. However, do not introduce random or implausible errors merely to increase difficulty.
+The adult should use natural:
+prompts;
+follow-up questions;
+confirmations;
+acknowledgments;
+requests for clarification;
+and transitions.
+The adult must not explicitly teach, name, explain, or test the target morphemes.
+8. General Experimental Design Requirements
+For each requested target, include a controlled mixture of:
+true eligible contexts;
+correctly unmarked forms;
+irregular forms;
+lexical or derivational look-alikes;
+ambiguous surface forms;
+grammatical contrasts;
+and words whose eligibility depends on sentence-level context.
+Do not create a transcript that can be solved by identifying spelling patterns alone.
+Include sufficient non-target language to prevent annotation through simple suffix matching.
+Distribute candidate forms across the transcript. Do not place all examples of one target in a single cluster.
+Some utterances may contain multiple candidate forms, especially at medium and hard difficulty.
+Do not construct the interaction as:
+a grammar worksheet;
+a list of minimal pairs;
+a series of disconnected test sentences;
+or an obvious sequence designed only to elicit suffixes.
+9. Convention-Specific Requirements
+9.1 /S: Regular Plural
+Include a controlled mixture of:
+regular count-noun plurals;
+singular count nouns;
+irregular plurals;
+unchanged irregular plurals;
+mass nouns;
+nouns that conventionally occur only in plural form;
+possessive nouns;
+third-person singular verbs;
+proper names ending in s;
+and lexical words whose final letters resemble plural marking.
+Eligible regular plurals should be recoverable from a singular noun stem.
+Do not treat every noun ending in s as an eligible plural. The SALT manual specifically excludes irregular plurals and words without corresponding singular forms.
+9.2 /Z: Possessive
+Include a controlled mixture of:
+singular possessive nouns;
+non-possessive nouns used attributively;
+regular plurals;
+plural possessives;
+possessive pronouns;
+proper names ending in s;
+contractions involving surface ’s;
+and noun phrases whose possessive interpretation must be determined from meaning and syntax.
+Do not mark possessive pronouns such as mine, his, hers, ours, yours, its, or theirs as /Z.
+9.3 /S/Z: Plural Possessive Combination
+When appropriate, include noun phrases that require both regular plurality and possession.
+Contrast these with:
+singular possessives;
+ordinary regular plurals;
+irregular plural possessives;
+possessive pronouns;
+and non-possessive plural nouns.
+The plural component must precede the possessive component in the answer key.
+Do not overuse this relatively uncommon construction. It should occur within a context that makes plural ownership clear.
+9.4 /3S: Regular Third-Person Singular Verb
+Include:
+eligible regular third-person singular verbs;
+verbs with singular subjects;
+verbs with plural subjects;
+first- and second-person subjects;
+modal constructions;
+infinitives;
+irregular third-person forms;
+forms whose root sound changes;
+nouns ending in s;
+and possessive forms.
+The grammatical subject and verb function must make the correct decision recoverable.
+Do not treat every verb ending in s as /3S. The booklet excludes irregular forms and forms whose root sound changes.
+9.5 /ING: Progressive
+Include:
+progressive verbs with an appropriate auxiliary;
+progressive verbs across different subjects;
+progressive questions;
+progressive negatives;
+gerunds;
+deverbal nouns;
+participial modifiers;
+lexical words ending in ing;
+base verbs;
+infinitives;
+and -ing forms without a progressive grammatical function.
+Do not annotate every word ending in ing.
+The SALT manual marks progressive use but excludes gerunds such as those functioning as subjects or complements.
+9.6 /ED: Regular Past Tense
+Include:
+eligible regular past-tense verbs;
+different phonological realizations of regular past tense;
+irregular past-tense verbs;
+base-form verbs;
+infinitives;
+past participles;
+passive constructions;
+predicate adjectives;
+lexical adjectives ending in ed;
+present-tense verbs;
+and verbs appearing near BE, GET, HAVE, HAS, or HAD.
+The surrounding syntax must permit the annotator to distinguish simple past from participial and adjectival uses.
+Do not mark:
+irregular past forms;
+predicate adjectives;
+or a form as /ED merely because it ends in ed.
+The manual notes that eligible regular past-tense /ED forms do not follow a BE or GET verb.
+9.7 /EN: Past Participle
+Include:
+eligible past participles following HAVE, HAS, or HAD;
+contrasts between participles and simple past forms;
+irregular participles;
+forms with root changes;
+regular past-tense verbs;
+predicate adjectives;
+passive constructions;
+base verbs;
+and words ending in en that are not eligible participles.
+Provide enough sentence-level context to identify the grammatical construction.
+Do not identify /EN from spelling alone. Apply the specific SALT restrictions in the attached booklet. The manual’s transcription guidance states that eligible /EN forms occur following HAVE, HAS, or HAD.
+9.8 /’T and /N’T: Negative Contractions
+Include:
+eligible negative contractions in which the root pronunciation remains stable;
+uncontracted negative constructions;
+negative words that are not contractions;
+contractions whose root changes;
+won’t;
+don’t;
+ain’t;
+and affirmative forms of the same verbs.
+Do not assume every written n’t form receives a slash.
+The manual distinguishes eligible negative contractions from forms such as won’t and don’t, where the root sound changes, and from ain’t, which lacks the required uncontracted base.
+9.9 Contracted Forms of BE
+Include natural opportunities for:
+/’S representing is;
+/’RE representing are;
+/’M representing am;
+uncontracted is, are, and am;
+possessive ’s;
+/’S representing has;
+/D’S representing does;
+lexical words ending in s;
+and ambiguous surface forms whose interpretation depends on the following phrase.
+Use sentence context to make the underlying grammatical form determinable.
+Do not classify every orthographic ’s as contracted is.
+9.10 Contracted Modal Forms
+Include:
+/’LL representing will;
+eligible /’D representing would;
+full forms of will and would;
+/H’D representing had;
+/D’D representing did;
+possessive or lexical distractors;
+and contexts in which the words following the contraction distinguish the underlying form.
+Do not assume every ’d represents would.
+9.11 Other Eligible Contracted Forms
+Include controlled opportunities for:
+/’VE representing have;
+/H’S representing has;
+/H’D representing had;
+/D’S representing does;
+/D’D representing did;
+/’US representing us in eligible contracted use;
+uncontracted versions of the same words;
+/’S representing is;
+/’D representing would;
+possessive ’s;
+and other plausible surface-form distractors.
+The grammatical expansion must be recoverable from context.
+The SALT booklet explicitly distinguishes these specialized contraction labels from the more common contracted forms.
+10. Excluded and Distractor Forms
+Across the transcript set, include forms that test whether an annotation system can correctly avoid false positives.
+Potential distractors include:
+irregular plurals;
+nouns without singular counterparts;
+possessive pronouns;
+irregular third-person singular verbs;
+irregular past-tense verbs;
+irregular past participles;
+forms whose roots change phonologically;
+gerunds;
+predicate adjectives;
+participial adjectives;
+derivational suffixes;
+comparative and superlative morphology;
+lexical words with target-like endings;
+concatenatives;
+contractions excluded by SALT;
+and incorrect child productions that should not automatically receive credit for a correctly used bound morpheme.
+Do not make every distractor unusually obscure. Use a mixture of common and more challenging cases.
+The SALT summary instructs transcribers to mark only the specified inflectional morphemes and contractions and not to mark irregular forms, concatenatives, or plurals without singular forms.
+11. Difficulty Levels
+Easy
+For an easy transcript:
+use common vocabulary;
+use short, clear utterances;
+provide straightforward grammatical contexts;
+use mostly canonical sentence structures;
+limit ambiguity;
+include a modest number of obvious distractors;
+usually place no more than one central coding decision in an utterance;
+and ensure that the correct decision can be reached without relying heavily on distant discourse.
+Easy does not mean that every word resembling a target is eligible.
+Medium
+For a medium transcript:
+use broader vocabulary;
+vary sentence structure;
+include subordinate clauses;
+include irregular forms and lexical distractors;
+mix target and non-target forms;
+include some ambiguous contractions;
+occasionally place multiple relevant forms in one utterance;
+require grammatical interpretation;
+and include limited, SALT-compatible repetitions or revisions when natural.
+The correct decisions must remain recoverable from the transcript and booklet.
+Hard
+For a hard transcript:
+use longer and structurally varied utterances;
+include multiple candidate forms in some utterances;
+include grammatical homographs and contraction ambiguity;
+contrast regular and irregular morphology;
+include gerund-progressive contrasts;
+include simple-past, participial, passive, and adjectival contrasts;
+include possessive-plural-contraction ambiguity;
+include target-like lexical endings;
+use natural self-revisions, repetitions, omissions, or interruptions where appropriate;
+and require sentence-level or discourse-level interpretation.
+Hard cases must be difficult but not indeterminate.
+Do not create cases for which the answer cannot reasonably be determined from the booklet and transcript context.
+12. Single-Convention Transcripts
+When one convention is designated as the primary target:
+emphasize that convention;
+include enough eligible instances for evaluation;
+include meaningful non-target material;
+include closely related distractors;
+avoid excessive contamination from other target categories;
+and preserve a natural conversational structure.
+Other target forms may occur naturally, but the designated convention should provide the principal experimental contrast.
+13. Mixed-Convention Transcripts
+When the condition is Mixed, include meaningful opportunities from the full study inventory:
+regular plural;
+possessive;
+third-person singular;
+progressive;
+regular past;
+eligible past participle;
+negative contraction;
+contracted BE;
+contracted modal;
+and other eligible contracted forms.
+Also include /S/Z where natural.
+Requirements for mixed transcripts:
+distribute the conventions across the transcript;
+do not group each convention into a separate section;
+avoid allowing one convention to dominate without an explicit reason;
+include utterances containing multiple candidate forms;
+include distractors for every major target family;
+and preserve a coherent narrative or interaction.
+14. Transcript Length and Speaker Balance
+Follow the requested utterance count exactly unless doing so would violate a SALT segmentation rule.
+Unless otherwise specified:
+approximately 55–65% of utterances should be spoken by C;
+approximately 35–45% should be spoken by P;
+the child should contain most of the principal evaluation opportunities;
+the interaction should have a recognizable beginning, development, and ending;
+one-word responses should be used sparingly;
+candidate forms should be distributed throughout the sample;
+and repeated sentence templates should be avoided.
+An utterance count refers to SALT-segmented utterance lines, not conversational turns.
+15. Target Counts and Distribution
+When exact target counts are supplied:
+Treat the counts as desired numbers of eligible surface occurrences in the unannotated transcript.
+Do not reveal their locations.
+Silently verify the counts before returning the transcript.
+Ensure that the answer-key status of each occurrence is recoverable.
+Do not distort the conversation merely to force the count.
+Report no count summary in the output.
+When the requested counts cannot be met naturally, revise the transcript internally rather than explaining the problem.
+If no target counts are supplied, create a balanced distribution appropriate to the designated convention, difficulty, and transcript length.
+16. Annotation and Answer-Key Separation
+Return the transcript only.
+Do not provide:
+the answer key;
+a corrected transcript;
+target-word lists;
+target locations;
+morpheme counts;
+distractor lists;
+explanations;
+rule citations;
+coding rationales;
+difficulty justifications;
+confidence scores;
+precision;
+recall;
+WLA;
+F1;
+or any commentary before or after the transcript.
+Do not bold, italicize, underline, capitalize, or otherwise highlight candidate words.
+The researcher will create the gold-standard answer key separately and verify it against the SALT booklet.
+17. Internal Validation Procedure
+Before returning the transcript, silently complete the following checks.
+Format check
+Confirm that:
+every spoken line begins with C or P;
+each speaker ID is followed by one space;
+each utterance occupies its own line;
+every utterance has legal ending punctuation;
+the segmentation follows the requested SALT system;
+and no Markdown or explanatory text appears.
+Originality and privacy check
+Confirm that:
+the transcript is entirely fictional;
+no real transcript was reproduced or paraphrased;
+no identifying information appears;
+and no private laboratory information was used.
+Linguistic check
+Confirm that:
+the child’s language is developmentally plausible;
+the adult’s prompts are natural;
+the conversation is coherent;
+candidate forms occur in interpretable grammatical contexts;
+and the transcript does not resemble a grammar exercise.
+Experimental check
+Confirm that:
+the requested primary convention is sufficiently represented;
+all requested study categories are represented in mixed transcripts;
+eligible forms and distractors are both present;
+difficulty matches the requested level;
+exact target counts are met when supplied;
+candidate forms are distributed across the transcript;
+and no answer-key information has been revealed.
+SALT eligibility check
+For every candidate form, silently determine:
+What is the free-morpheme root?
+What grammatical function does the surface form serve?
+Is it regular or irregular?
+Does the root spelling or pronunciation change?
+Is the form inflectional, derivational, lexical, or contracted?
+Does SALT mark this specific form?
+Is there enough context for a researcher to verify the decision?
+Is it a true target, a legitimate distractor, or an indeterminate case?
+Remove or rewrite any indeterminate case.
+18. Transcript Specification
+Generate one transcript according to the following condition:
+Transcript ID: [INSERT ID]
+Condition: [Single Convention / Mixed]
+Primary convention: [/S / /Z / /3S / /ING / /ED / /EN / Negative Contractions / Contracted BE / Contracted Modals / Other Contractions / Mixed]
+Difficulty: [Easy / Medium / Hard]
+Number of utterances: [INSERT EXACT NUMBER]
+Child age: [INSERT AGE OR DEVELOPMENTAL RANGE]
+Interaction type: [Conversation / Narrative Retell / Toy Play / Picture Description / Story Generation / Other]
+Fictional topic or scenario: [INSERT TOPIC]
+Segmentation system: [C-units / Other specified system]
+Speaker labels: C = child; P = adult
+Annotation status: Unannotated
+Required target counts: [INSERT COUNTS OR “No exact counts”]
+Required distractor counts: [INSERT COUNTS OR “No exact counts”]
+Advanced SALT features permitted: [None / Mazes / Omissions / Errors / Interruptions / Other]
+Additional controls: [INSERT CONTROLS OR “None”]
+Return only the completed unannotated SALT transcript.
+
+
+

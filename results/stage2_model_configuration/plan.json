@@ -1,0 +1,1601 @@
+{
+  "status": "DRY_RUN_READY",
+  "stage": "stage2_model_configuration",
+  "paid_api_requests": 0,
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "screening_families": [
+    "easy_03",
+    "medium_03",
+    "hard_02"
+  ],
+  "validation_families": [
+    "easy_03",
+    "easy_04",
+    "easy_08",
+    "easy_09",
+    "hard_02",
+    "hard_06",
+    "hard_09",
+    "hard_10",
+    "medium_03",
+    "medium_04",
+    "medium_05",
+    "medium_10"
+  ],
+  "held_out_reserved_untouched": [
+    "easy_01",
+    "easy_02",
+    "easy_05",
+    "easy_06",
+    "easy_07",
+    "easy_10",
+    "hard_01",
+    "hard_03",
+    "hard_04",
+    "hard_05",
+    "hard_07",
+    "hard_08",
+    "medium_01",
+    "medium_02",
+    "medium_06",
+    "medium_07",
+    "medium_08",
+    "medium_09"
+  ],
+  "concurrency": 3,
+  "proposed_spend_ceiling_usd": 25.0,
+  "keys_present": {
+    "openai": true,
+    "anthropic": true,
+    "deepseek": true,
+    "dashscope": true,
+    "gemini": true
+  },
+  "configuration_matrix": [
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": null,
+      "phase": "A",
+      "reuse_stage1": true,
+      "notes": "Stage 1 V5 setting; API default temperature is 1.0.",
+      "id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": true,
+      "notes": "Stage 1 V5 setting; OpenAI default effort is medium. Temperature omitted.",
+      "id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "Matched to Luna Stage 1 effort. Temperature omitted.",
+      "id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "adaptive-high",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default: adaptive thinking on, effort high. Temperature forbidden.",
+      "id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "provider": "anthropic",
+      "api_model": "claude-sonnet-5",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "high",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default thinking on, effort high. Temperature has no effect.",
+      "id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "on",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default enable_thinking=true. Temperature omitted.",
+      "id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default thinking_level=medium. Temperature ignored/deprecated.",
+      "id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "True reasoning off. Temperature allowed only at effort=none.",
+      "id": "gpt-5.6-luna__reason-none__t0.0",
+      "label": "GPT-5.6 Luna none T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.0",
+      "label": "GPT-5.6 Sol none T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "True thinking off via thinking.type=disabled.",
+      "id": "claude-sonnet-5__think-disabled",
+      "label": "Claude Sonnet 5 thinking off",
+      "provider": "anthropic",
+      "api_model": "claude-sonnet-5",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.0",
+      "label": "DeepSeek V4 Pro off T=0.0",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.0",
+      "label": "Qwen 3.5 Plus off T=0.0",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "minimal",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "Lowest thinking. NOT equivalent to disabled; model may still think.",
+      "id": "gemini-3.6-flash__think-minimal",
+      "label": "Gemini 3.6 Flash minimal",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "high",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gemini-3.6-flash__think-high",
+      "label": "Gemini 3.6 Flash high",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t0.3",
+      "label": "GPT-4o T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t0.6",
+      "label": "GPT-4o T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t1.0",
+      "label": "GPT-4o T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t0.3",
+      "label": "GPT-5.6 Luna none T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t0.6",
+      "label": "GPT-5.6 Luna none T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t1.0",
+      "label": "GPT-5.6 Luna none T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.3",
+      "label": "GPT-5.6 Sol none T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.6",
+      "label": "GPT-5.6 Sol none T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t1.0",
+      "label": "GPT-5.6 Sol none T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.3",
+      "label": "DeepSeek V4 Pro off T=0.3",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.6",
+      "label": "DeepSeek V4 Pro off T=0.6",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t1.0",
+      "label": "DeepSeek V4 Pro off T=1.0",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.3",
+      "label": "Qwen 3.5 Plus off T=0.3",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.6",
+      "label": "Qwen 3.5 Plus off T=0.6",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t1.0",
+      "label": "Qwen 3.5 Plus off T=1.0",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    }
+  ],
+  "phase_a_cells": 84,
+  "phase_a_reusable": 24,
+  "phase_a_new": 60,
+  "phase_b_screening_cells": 66,
+  "reuse": {
+    "n_reusable_if_all_ok": 24,
+    "n_found": 24,
+    "n_missing": 0,
+    "missing": [],
+    "all_fingerprints_ok": true,
+    "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+    "cells": [
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_easy_03.json",
+        "family": "easy_03",
+        "transcript_sha256": "287d9408cae97b936490137d16320bb60e53c68018f51639a4a11e8807a75d74",
+        "key_sha256": "5ffbaaf43e76a3c509cc9ea8f422ecc71f1c09289253624bb64938e5d5aafd1e",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 75,
+        "failures": 0,
+        "tp": 37,
+        "fp": 7,
+        "fn": 5,
+        "micro_f1_pct": 86.0465,
+        "prompt_tokens": 8360,
+        "completion_tokens": 1123,
+        "estimated_cost_usd": 0.03213,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_easy_04.json",
+        "family": "easy_04",
+        "transcript_sha256": "4a467e929cccc2dd214a993a0ee425e229a69d631d0daae1ef7e3eab64fad1e0",
+        "key_sha256": "5bdf5da09afb786966307985925dc0aa16ffdacd025f9733f2d8749bc14488cd",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 74,
+        "failures": 0,
+        "tp": 36,
+        "fp": 5,
+        "fn": 5,
+        "micro_f1_pct": 87.8049,
+        "prompt_tokens": 8351,
+        "completion_tokens": 1117,
+        "estimated_cost_usd": 0.032047,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_easy_08.json",
+        "family": "easy_08",
+        "transcript_sha256": "cfd60450b66e61d502cd0398fdaf23e41312c9cd98853dc740637a0c9b549872",
+        "key_sha256": "6269f000d412285e448e451f7325fdc26bbcfdfedc6287caac3c28db75a68d3e",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 77,
+        "failures": 0,
+        "tp": 35,
+        "fp": 6,
+        "fn": 3,
+        "micro_f1_pct": 88.6076,
+        "prompt_tokens": 8338,
+        "completion_tokens": 1098,
+        "estimated_cost_usd": 0.031825,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_easy_09.json",
+        "family": "easy_09",
+        "transcript_sha256": "510f7afc7501927d61b157b7a79605fb2cf894a03a3adedcea3f3971fbea2326",
+        "key_sha256": "f4006a7d158d228a3a57a4d09fb23ec6e50d66007be5989ca5dc66c0f013e01d",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 76,
+        "failures": 0,
+        "tp": 30,
+        "fp": 13,
+        "fn": 7,
+        "micro_f1_pct": 75.0,
+        "prompt_tokens": 8359,
+        "completion_tokens": 1118,
+        "estimated_cost_usd": 0.032078,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_hard_02.json",
+        "family": "hard_02",
+        "transcript_sha256": "658f38ff83be6a15d48389b764e9a67a32b3f4a46f80e7a266b64cc45504ede9",
+        "key_sha256": "475d9164103fe3313db84f4f2b70760ede16e2b4f9c961f0a45e2a5fb7ff7ded",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 139,
+        "failures": 0,
+        "tp": 70,
+        "fp": 26,
+        "fn": 4,
+        "micro_f1_pct": 82.3529,
+        "prompt_tokens": 9727,
+        "completion_tokens": 2332,
+        "estimated_cost_usd": 0.047637,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_hard_06.json",
+        "family": "hard_06",
+        "transcript_sha256": "ee7c29b8ec0188c6a6c936a157bb3eb4b900727424420ccb37f3b39ad31f3257",
+        "key_sha256": "74d1249664f8dd068b577bc344894b3f7ef98cdff941f70638a82d2bdcb0a0e9",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 132,
+        "failures": 0,
+        "tp": 66,
+        "fp": 14,
+        "fn": 17,
+        "micro_f1_pct": 80.9816,
+        "prompt_tokens": 9588,
+        "completion_tokens": 2186,
+        "estimated_cost_usd": 0.04583,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_hard_09.json",
+        "family": "hard_09",
+        "transcript_sha256": "21b8ee8c493feee2177d9deab735924bfe4606e693c71800d46a76d531202bdb",
+        "key_sha256": "f0d039a92c09bd23e9be0e58f700e70ac21ea75e7abf3d08f4aef03401be37b5",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 138,
+        "failures": 0,
+        "tp": 52,
+        "fp": 21,
+        "fn": 21,
+        "micro_f1_pct": 71.2329,
+        "prompt_tokens": 9671,
+        "completion_tokens": 2217,
+        "estimated_cost_usd": 0.046347,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_hard_10.json",
+        "family": "hard_10",
+        "transcript_sha256": "4d0ddedf15002bc04e5f435ce2d6dbf5ffcf61bb8f1c331c916d029aaf62f5f9",
+        "key_sha256": "e5e734573eb47f0920589af1345e42abcd6507db4f0f61acca40d0d22803d869",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 136,
+        "failures": 0,
+        "tp": 73,
+        "fp": 11,
+        "fn": 5,
+        "micro_f1_pct": 90.1235,
+        "prompt_tokens": 9605,
+        "completion_tokens": 2209,
+        "estimated_cost_usd": 0.046102,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_medium_03.json",
+        "family": "medium_03",
+        "transcript_sha256": "fb2810c25f5484a2d9f2518891d43f313721c4522a00dd72b62d61a8224f2ad9",
+        "key_sha256": "76935435c80d46a251331cb7025d5a92983481cd3f5370a8996d6ab8b3fd27c5",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 105,
+        "failures": 0,
+        "tp": 49,
+        "fp": 11,
+        "fn": 6,
+        "micro_f1_pct": 85.2174,
+        "prompt_tokens": 8987,
+        "completion_tokens": 1671,
+        "estimated_cost_usd": 0.039177,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_medium_04.json",
+        "family": "medium_04",
+        "transcript_sha256": "4e4ed92a92b50f6a87d1806b64aa4a79ebb7f7f63c755ec55d8656dd26661c91",
+        "key_sha256": "621fcad20778c977f5fdc819322790e580d8749965e1edcd1f1f45242dfe2532",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 100,
+        "failures": 0,
+        "tp": 46,
+        "fp": 10,
+        "fn": 7,
+        "micro_f1_pct": 84.4037,
+        "prompt_tokens": 8873,
+        "completion_tokens": 1572,
+        "estimated_cost_usd": 0.037902,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_medium_05.json",
+        "family": "medium_05",
+        "transcript_sha256": "5cf87ed42cdb0f08333fddf6c844651e51a3add3530f9adeb1ba666d66895758",
+        "key_sha256": "4ea173223d6d2f09cbf2cdfcee054d86027f3fd1a446ba801fc5ed0911845570",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 103,
+        "failures": 0,
+        "tp": 36,
+        "fp": 17,
+        "fn": 13,
+        "micro_f1_pct": 70.5882,
+        "prompt_tokens": 8940,
+        "completion_tokens": 1605,
+        "estimated_cost_usd": 0.0384,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-4o__t0.0",
+        "stage1_cell": "gpt-4o_V5_medium_10.json",
+        "family": "medium_10",
+        "transcript_sha256": "327b41d3c3a22e4c65343079cbecc823e7cf7e1de1c322de703f8ab639a455dd",
+        "key_sha256": "c8d3244a3eae225a3fd371380e4940f2cb7b07c237ba6061d87ab09b3c1dd89d",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 105,
+        "failures": 0,
+        "tp": 46,
+        "fp": 6,
+        "fn": 7,
+        "micro_f1_pct": 87.619,
+        "prompt_tokens": 8926,
+        "completion_tokens": 1600,
+        "estimated_cost_usd": 0.038315,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_easy_03.json",
+        "family": "easy_03",
+        "transcript_sha256": "287d9408cae97b936490137d16320bb60e53c68018f51639a4a11e8807a75d74",
+        "key_sha256": "5ffbaaf43e76a3c509cc9ea8f422ecc71f1c09289253624bb64938e5d5aafd1e",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 75,
+        "failures": 0,
+        "tp": 40,
+        "fp": 1,
+        "fn": 2,
+        "micro_f1_pct": 96.3855,
+        "prompt_tokens": 8359,
+        "completion_tokens": 2117,
+        "estimated_cost_usd": 0.004212,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_easy_04.json",
+        "family": "easy_04",
+        "transcript_sha256": "4a467e929cccc2dd214a993a0ee425e229a69d631d0daae1ef7e3eab64fad1e0",
+        "key_sha256": "5bdf5da09afb786966307985925dc0aa16ffdacd025f9733f2d8749bc14488cd",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 74,
+        "failures": 1,
+        "tp": 36,
+        "fp": 4,
+        "fn": 5,
+        "micro_f1_pct": 88.8889,
+        "prompt_tokens": 8350,
+        "completion_tokens": 2158,
+        "estimated_cost_usd": 0.00426,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_easy_08.json",
+        "family": "easy_08",
+        "transcript_sha256": "cfd60450b66e61d502cd0398fdaf23e41312c9cd98853dc740637a0c9b549872",
+        "key_sha256": "6269f000d412285e448e451f7325fdc26bbcfdfedc6287caac3c28db75a68d3e",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 77,
+        "failures": 0,
+        "tp": 38,
+        "fp": 1,
+        "fn": 0,
+        "micro_f1_pct": 98.7013,
+        "prompt_tokens": 8337,
+        "completion_tokens": 2595,
+        "estimated_cost_usd": 0.004781,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_easy_09.json",
+        "family": "easy_09",
+        "transcript_sha256": "510f7afc7501927d61b157b7a79605fb2cf894a03a3adedcea3f3971fbea2326",
+        "key_sha256": "f4006a7d158d228a3a57a4d09fb23ec6e50d66007be5989ca5dc66c0f013e01d",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 76,
+        "failures": 0,
+        "tp": 36,
+        "fp": 4,
+        "fn": 1,
+        "micro_f1_pct": 93.5065,
+        "prompt_tokens": 8358,
+        "completion_tokens": 2158,
+        "estimated_cost_usd": 0.004261,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_hard_02.json",
+        "family": "hard_02",
+        "transcript_sha256": "658f38ff83be6a15d48389b764e9a67a32b3f4a46f80e7a266b64cc45504ede9",
+        "key_sha256": "475d9164103fe3313db84f4f2b70760ede16e2b4f9c961f0a45e2a5fb7ff7ded",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 139,
+        "failures": 0,
+        "tp": 71,
+        "fp": 2,
+        "fn": 3,
+        "micro_f1_pct": 96.5986,
+        "prompt_tokens": 9726,
+        "completion_tokens": 3722,
+        "estimated_cost_usd": 0.006412,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_hard_06.json",
+        "family": "hard_06",
+        "transcript_sha256": "ee7c29b8ec0188c6a6c936a157bb3eb4b900727424420ccb37f3b39ad31f3257",
+        "key_sha256": "74d1249664f8dd068b577bc344894b3f7ef98cdff941f70638a82d2bdcb0a0e9",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 132,
+        "failures": 0,
+        "tp": 78,
+        "fp": 3,
+        "fn": 5,
+        "micro_f1_pct": 95.122,
+        "prompt_tokens": 9587,
+        "completion_tokens": 4450,
+        "estimated_cost_usd": 0.007257,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_hard_09.json",
+        "family": "hard_09",
+        "transcript_sha256": "21b8ee8c493feee2177d9deab735924bfe4606e693c71800d46a76d531202bdb",
+        "key_sha256": "f0d039a92c09bd23e9be0e58f700e70ac21ea75e7abf3d08f4aef03401be37b5",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 138,
+        "failures": 0,
+        "tp": 66,
+        "fp": 6,
+        "fn": 7,
+        "micro_f1_pct": 91.0345,
+        "prompt_tokens": 9670,
+        "completion_tokens": 3800,
+        "estimated_cost_usd": 0.006494,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_hard_10.json",
+        "family": "hard_10",
+        "transcript_sha256": "4d0ddedf15002bc04e5f435ce2d6dbf5ffcf61bb8f1c331c916d029aaf62f5f9",
+        "key_sha256": "e5e734573eb47f0920589af1345e42abcd6507db4f0f61acca40d0d22803d869",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 136,
+        "failures": 0,
+        "tp": 77,
+        "fp": 1,
+        "fn": 1,
+        "micro_f1_pct": 98.7179,
+        "prompt_tokens": 9604,
+        "completion_tokens": 4194,
+        "estimated_cost_usd": 0.006954,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_medium_03.json",
+        "family": "medium_03",
+        "transcript_sha256": "fb2810c25f5484a2d9f2518891d43f313721c4522a00dd72b62d61a8224f2ad9",
+        "key_sha256": "76935435c80d46a251331cb7025d5a92983481cd3f5370a8996d6ab8b3fd27c5",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 105,
+        "failures": 1,
+        "tp": 54,
+        "fp": 1,
+        "fn": 1,
+        "micro_f1_pct": 98.1818,
+        "prompt_tokens": 8986,
+        "completion_tokens": 3220,
+        "estimated_cost_usd": 0.005661,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_medium_04.json",
+        "family": "medium_04",
+        "transcript_sha256": "4e4ed92a92b50f6a87d1806b64aa4a79ebb7f7f63c755ec55d8656dd26661c91",
+        "key_sha256": "621fcad20778c977f5fdc819322790e580d8749965e1edcd1f1f45242dfe2532",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 100,
+        "failures": 0,
+        "tp": 52,
+        "fp": 1,
+        "fn": 1,
+        "micro_f1_pct": 98.1132,
+        "prompt_tokens": 8872,
+        "completion_tokens": 3114,
+        "estimated_cost_usd": 0.005511,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_medium_05.json",
+        "family": "medium_05",
+        "transcript_sha256": "5cf87ed42cdb0f08333fddf6c844651e51a3add3530f9adeb1ba666d66895758",
+        "key_sha256": "4ea173223d6d2f09cbf2cdfcee054d86027f3fd1a446ba801fc5ed0911845570",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 103,
+        "failures": 0,
+        "tp": 48,
+        "fp": 1,
+        "fn": 1,
+        "micro_f1_pct": 97.9592,
+        "prompt_tokens": 8939,
+        "completion_tokens": 3011,
+        "estimated_cost_usd": 0.005401,
+        "fingerprint_ok": true
+      },
+      {
+        "stage2_config_id": "gpt-5.6-luna__reason-medium",
+        "stage1_cell": "gpt-5.6-luna_V5_medium_10.json",
+        "family": "medium_10",
+        "transcript_sha256": "327b41d3c3a22e4c65343079cbecc823e7cf7e1de1c322de703f8ab639a455dd",
+        "key_sha256": "c8d3244a3eae225a3fd371380e4940f2cb7b07c237ba6061d87ab09b3c1dd89d",
+        "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+        "n_utterances": 105,
+        "failures": 0,
+        "tp": 48,
+        "fp": 4,
+        "fn": 5,
+        "micro_f1_pct": 91.4286,
+        "prompt_tokens": 8925,
+        "completion_tokens": 2771,
+        "estimated_cost_usd": 0.00511,
+        "fingerprint_ok": true
+      }
+    ]
+  },
+  "scoring_audit": {
+    "n_utterances": 12600,
+    "n_failures": 27,
+    "failure_kinds": {
+      "tokencount 9->8": 3,
+      "tokencount 5->4": 6,
+      "tokencount 5->6": 1,
+      "tokencount 7->5": 1,
+      "tokencount 7->6": 5,
+      "tokencount 8->7": 2,
+      "tokencount 6->5": 6,
+      "tokencount 3->2": 1,
+      "tokencount 9->10": 1,
+      "tokencount 4->3": 1
+    },
+    "all_failures_are_token_count_or_empty": true,
+    "bag_vs_token_position_disagreements_on_aligned_rows": 0,
+    "scoring_correction_required": false,
+    "v5_remains_winner": true,
+    "rescored_ranking_unchanged": true,
+    "ranking": [
+      {
+        "prompt_version": "V5",
+        "micro_f1_pct": 88.7918,
+        "tp": 1220,
+        "fp": 176,
+        "fn": 132
+      },
+      {
+        "prompt_version": "V1",
+        "micro_f1_pct": 87.5,
+        "tp": 1218,
+        "fp": 214,
+        "fn": 134
+      },
+      {
+        "prompt_version": "V3",
+        "micro_f1_pct": 84.9455,
+        "tp": 1168,
+        "fp": 230,
+        "fn": 184
+      },
+      {
+        "prompt_version": "V2",
+        "micro_f1_pct": 84.5694,
+        "tp": 1203,
+        "fp": 290,
+        "fn": 149
+      },
+      {
+        "prompt_version": "V4",
+        "micro_f1_pct": 81.7555,
+        "tp": 1127,
+        "fp": 278,
+        "fn": 225
+      }
+    ],
+    "policy": "Keep Stage 1 evaluate_rows: failed rows contribute FP/FN and are never dropped. Aligned rows use per-utterance morpheme multisets. Token-index matching agreed.",
+    "examples": [
+      {
+        "cell": "gpt-4o_V1_medium_04.json",
+        "kind": "tokencount 9->8",
+        "original": "C I will let her give back the hat.",
+        "expected": "C I will let her give back the hat.",
+        "actual": "C I/'ll let her give back the hat."
+      },
+      {
+        "cell": "gpt-5.6-luna_V1_easy_09.json",
+        "kind": "tokencount 5->4",
+        "original": "C This room's only pretend.",
+        "expected": "C This room/'s only pretend.",
+        "actual": "C room/'s only pretend."
+      },
+      {
+        "cell": "gpt-5.6-luna_V1_hard_09.json",
+        "kind": "tokencount 5->6",
+        "original": "P A little tree counts.",
+        "expected": "P A little tree count/3s.",
+        "actual": "P Tree/s come in different sizes."
+      },
+      {
+        "cell": "gpt-5.6-luna_V1_hard_10.json",
+        "kind": "tokencount 7->5",
+        "original": "C (His wings) His wings are tired.",
+        "expected": "C (His wing/s) His wing/s are tired.",
+        "actual": "C His wing/s are tired."
+      },
+      {
+        "cell": "gpt-5.6-luna_V2_hard_10.json",
+        "kind": "tokencount 7->6",
+        "original": "C (What) What does that word mean?",
+        "expected": "C (What) What does that word mean?",
+        "actual": "C (What) What/d's that word mean?"
+      },
+      {
+        "cell": "gpt-5.6-luna_V2_hard_10.json",
+        "kind": "tokencount 7->6",
+        "original": "P Once I followed the wrong flock.",
+        "expected": "P Once I follow/ed the wrong flock.",
+        "actual": "P I follow/ed the wrong flock."
+      },
+      {
+        "cell": "gpt-5.6-luna_V2_hard_10.json",
+        "kind": "tokencount 5->4",
+        "original": "C Oops, that wasn't quiet.",
+        "expected": "C Oops, that was/n't quiet.",
+        "actual": "C Oops, was/n't quiet."
+      },
+      {
+        "cell": "gpt-5.6-luna_V2_medium_05.json",
+        "kind": "tokencount 8->7",
+        "original": "P Long enough for a few quiet breaths.",
+        "expected": "P Long enough for a few quiet breath/s.",
+        "actual": "P Long enough for a few breath/s."
+      }
+    ]
+  },
+  "preflight": {
+    "prompt": "prompts/10 Final/v5 Final.txt",
+    "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+    "prompt_tokens": 6946,
+    "longest_family": "hard_02",
+    "n_utterances": 139,
+    "gold_json_tokens": 2846,
+    "selected_batch_size": "full",
+    "selection_rule": "technical feasibility only; not F1",
+    "models": {
+      "gpt-4o": {
+        "context_window": 128000,
+        "max_output_tokens_hard_02_reasoning_on": 5560,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "gpt-5.6-luna": {
+        "context_window": 1050000,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "gpt-5.6-sol": {
+        "context_window": 1050000,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "claude-sonnet-5": {
+        "context_window": 1000000,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "deepseek-v4-pro": {
+        "context_window": 1000000,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "qwen3.5-plus": {
+        "context_window": 1000000,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      },
+      "gemini-3.6-flash": {
+        "context_window": 1048576,
+        "max_output_tokens_hard_02_reasoning_on": 9656,
+        "fits_context": true,
+        "fits_gold_json": true,
+        "full_transcript_feasible": true
+      }
+    },
+    "gold_json_tokens_by_family": {
+      "easy_03": 1420,
+      "easy_04": 1415,
+      "easy_08": 1397,
+      "easy_09": 1413,
+      "hard_02": 2846,
+      "hard_06": 2724,
+      "hard_09": 2793,
+      "hard_10": 2738,
+      "medium_03": 2080,
+      "medium_04": 1968,
+      "medium_05": 2024,
+      "medium_10": 2022
+    },
+    "all_full_transcript_feasible": true
+  },
+  "cost": {
+    "phase_a": {
+      "cells": 84,
+      "reusable": 24,
+      "new_requests": 60,
+      "new_cost_usd": 3.0559,
+      "reused_historical_cost_usd_not_rebilled": 0.5341,
+      "by_config_new": [
+        {
+          "config_id": "gpt-5.6-sol__reason-medium",
+          "n": 12,
+          "cost_usd": 1.3636
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "n": 12,
+          "cost_usd": 0.9616
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-high",
+          "n": 12,
+          "cost_usd": 0.3638
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-on",
+          "n": 12,
+          "cost_usd": 0.1461
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-medium",
+          "n": 12,
+          "cost_usd": 0.2207
+        }
+      ]
+    },
+    "phase_b_screening": {
+      "cells": 66,
+      "new_requests": 66,
+      "new_cost_usd": 1.784,
+      "by_config": [
+        {
+          "config_id": "gpt-5.6-luna__reason-none__t0.0",
+          "n": 3,
+          "cost_usd": 0.0116
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t0.0",
+          "n": 3,
+          "cost_usd": 0.2108
+        },
+        {
+          "config_id": "claude-sonnet-5__think-disabled",
+          "n": 3,
+          "cost_usd": 0.1054
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-off__t0.0",
+          "n": 3,
+          "cost_usd": 0.056
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-off__t0.0",
+          "n": 3,
+          "cost_usd": 0.0231
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-minimal",
+          "n": 3,
+          "cost_usd": 0.0443
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-high",
+          "n": 3,
+          "cost_usd": 0.0713
+        },
+        {
+          "config_id": "gpt-4o__t0.3",
+          "n": 3,
+          "cost_usd": 0.1189
+        },
+        {
+          "config_id": "gpt-4o__t0.6",
+          "n": 3,
+          "cost_usd": 0.1189
+        },
+        {
+          "config_id": "gpt-4o__t1.0",
+          "n": 3,
+          "cost_usd": 0.1189
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-none__t0.3",
+          "n": 3,
+          "cost_usd": 0.0116
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-none__t0.6",
+          "n": 3,
+          "cost_usd": 0.0116
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-none__t1.0",
+          "n": 3,
+          "cost_usd": 0.0116
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t0.3",
+          "n": 3,
+          "cost_usd": 0.2108
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t0.6",
+          "n": 3,
+          "cost_usd": 0.2108
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t1.0",
+          "n": 3,
+          "cost_usd": 0.2108
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-off__t0.3",
+          "n": 3,
+          "cost_usd": 0.056
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-off__t0.6",
+          "n": 3,
+          "cost_usd": 0.056
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-off__t1.0",
+          "n": 3,
+          "cost_usd": 0.056
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-off__t0.3",
+          "n": 3,
+          "cost_usd": 0.0231
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-off__t0.6",
+          "n": 3,
+          "cost_usd": 0.0231
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-off__t1.0",
+          "n": 3,
+          "cost_usd": 0.0231
+        }
+      ]
+    },
+    "phase_b_promotion_remaining_9_files": {
+      "rule": "At most 2 Phase B configs per model; 9 files each if promoted.",
+      "low_usd_if_none_promote": 0.0,
+      "high_usd_if_two_per_model": 3.1215,
+      "high_new_requests": 117
+    },
+    "totals_new_requests": {
+      "phase_a_plus_screening": 126,
+      "plus_promotion_high": 243
+    },
+    "totals_new_usd": {
+      "phase_a": 3.0559,
+      "phase_b_screening": 1.784,
+      "phase_a_plus_screening": 4.8399,
+      "plus_promotion_high": 7.9614
+    },
+    "proposed_spend_ceiling_usd": 25.0,
+    "notes": [
+      "Estimates scale Stage 1 V5 GPT-4o prompt tokens and 4o/Luna completion tokens per file.",
+      "Reasoning-on completion uses Luna medium as the 1.0 multiplier; Sol/Claude/high inflate it.",
+      "Cache hits are not assumed (conservative). DeepSeek uses peak list prices.",
+      "Not a billing guarantee. SDK retries can add requests."
+    ]
+  },
+  "providers": {
+    "checked_at_utc": "2026-10-15T00:54:48Z",
+    "models": [
+      {
+        "label": "GPT-4o",
+        "api_model": "gpt-4o",
+        "provider": "openai",
+        "endpoint": "chat.completions",
+        "key_present": true,
+        "reasoning": "none (not a reasoning model)",
+        "temperature": "0–2; Stage 2 baseline 0.0",
+        "structured_output": "response_format json_object (and json_schema)",
+        "max_output": 16384,
+        "context": 128000,
+        "prompt_caching": "automatic prefix ≥1024 tokens",
+        "rates_usd_per_m": {
+          "input": 2.5,
+          "cached_input": 1.25,
+          "output": 10.0
+        }
+      },
+      {
+        "label": "GPT-5.6 Luna",
+        "api_model": "gpt-5.6-luna",
+        "provider": "openai",
+        "endpoint": "chat.completions",
+        "key_present": true,
+        "reasoning": "reasoning_effort none|low|medium|high|xhigh|max; default medium",
+        "temperature": "allowed only when effort=none; otherwise API forces 1",
+        "structured_output": "json_object / json_schema",
+        "max_output": 128000,
+        "context": 1050000,
+        "prompt_caching": "automatic prefix",
+        "rates_usd_per_m": {
+          "input": 0.2,
+          "cached_input": 0.02,
+          "output": 1.2
+        }
+      },
+      {
+        "label": "GPT-5.6 Sol",
+        "api_model": "gpt-5.6-sol",
+        "provider": "openai",
+        "endpoint": "chat.completions",
+        "key_present": true,
+        "reasoning": "same effort enum as Luna; default medium",
+        "temperature": "allowed only when effort=none",
+        "structured_output": "json_object / json_schema",
+        "max_output": 128000,
+        "context": 1050000,
+        "prompt_caching": "automatic prefix",
+        "rates_usd_per_m": {
+          "input": 4.0,
+          "cached_input": 0.4,
+          "output": 20.0
+        }
+      },
+      {
+        "label": "Claude Sonnet 5",
+        "api_model": "claude-sonnet-5",
+        "provider": "anthropic",
+        "endpoint": "messages",
+        "key_present": true,
+        "reasoning": "adaptive on by default; disable with thinking.type=disabled; no budget_tokens",
+        "temperature": "non-default sampling returns HTTP 400 — omit always",
+        "structured_output": "output_config.format json_schema",
+        "max_output": 128000,
+        "context": 1000000,
+        "prompt_caching": "explicit cache_control on system block",
+        "rates_usd_per_m": {
+          "input": 2.0,
+          "cached_input": 0.2,
+          "output": 10.0
+        }
+      },
+      {
+        "label": "DeepSeek V4 Pro",
+        "api_model": "deepseek-v4-pro",
+        "provider": "deepseek",
+        "endpoint": "https://api.deepseek.com/chat/completions",
+        "key_present": true,
+        "reasoning": "thinking enabled by default; effort low|high|max; none disables",
+        "temperature": "0–2 in non-thinking; ignored in thinking mode",
+        "structured_output": "JSON output supported",
+        "max_output": 384000,
+        "context": 1000000,
+        "prompt_caching": "automatic cache-hit input rates",
+        "rates_usd_per_m": {
+          "input": 1.32,
+          "cached_input": 0.044,
+          "output": 3.96
+        },
+        "rate_note": "Peak list prices used for the estimate (off-peak is 50% lower)."
+      },
+      {
+        "label": "Qwen 3.5",
+        "api_model": "qwen3.5-plus",
+        "provider": "dashscope",
+        "endpoint": "compatible-mode/v1 (intl)",
+        "key_present": true,
+        "reasoning": "enable_thinking true by default; false is true off",
+        "temperature": "0–2 supported; Stage 2 grids it only when thinking is off",
+        "structured_output": "supported",
+        "max_output": 65536,
+        "context": 1000000,
+        "prompt_caching": "explicit cache on intl endpoint",
+        "rates_usd_per_m": {
+          "input": 0.4,
+          "cached_input": 0.04,
+          "output": 2.4
+        },
+        "rate_note": "Singapore international list ($0.40/$2.40). US/Frankfurt is $0.115/$0.688."
+      },
+      {
+        "label": "Gemini 3.6 Flash",
+        "api_model": "gemini-3.6-flash",
+        "provider": "gemini",
+        "endpoint": "generativelanguage.googleapis.com/v1beta generateContent",
+        "key_present": true,
+        "reasoning": "thinking_level minimal|low|medium|high; default medium. minimal ≠ disabled.",
+        "temperature": "custom temperature/top_p/top_k ignored (future 400) — omit",
+        "structured_output": "responseMimeType application/json + responseSchema",
+        "max_output": 65536,
+        "context": 1048576,
+        "prompt_caching": "explicit context cache",
+        "rates_usd_per_m": {
+          "input": 0.75,
+          "cached_input": 0.075,
+          "output": 3.75
+        },
+        "rate_note": "Paid tier through 2026-12-31. Thinking tokens billed as output."
+      }
+    ]
+  },
+  "advancement_rule": {
+    "screen_delta_pp": 1.0,
+    "max_failures": "max(baseline_screen_failures, 2)",
+    "max_promoted_per_model": 2,
+    "full_12_required_for_ranking": true
+  },
+  "metrics_excluded": [
+    "wla",
+    "bm_wla"
+  ],
+  "primary_metric": "micro_f1"
+}

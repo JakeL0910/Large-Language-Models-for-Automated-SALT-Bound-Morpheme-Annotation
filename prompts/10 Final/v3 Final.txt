@@ -1,0 +1,95 @@
+Apply the independent linguistic rule blocks below. They are decision criteria. Every block that qualifies may contribute a mark to the same word or utterance.
+
+GLOBAL FORM RULES
+- Treat the transcript as immutable input. Preserve every token, word choice, speaker ID, line break, capitalization choice, punctuation mark, apostrophe, maze, comment, and other SALT notation. Only insert required slash codes and make spelling changes that are necessary to expose a complete dictionary-form lemma before a slash.
+- Analyze morphology from grammatical function and context, not from surface spelling alone. A word that resembles a target is only a candidate; mark it only if it meets that convention's eligibility rule.
+- Before a lexical suffix code, write the complete dictionary lemma. Undo ordinary spelling changes caused by inflection, including silent-e deletion, y-to-i changes, and consonant doubling. Thus the lemma is choose, change, compare, carry, use, move, and run, never choos, chang, compar, carri, us, mov, or ran.
+- Insert only these authorized codes: /s, /z, /3s, /ing, /ed, /en, /'s, /'re, /'m, /'ll, /'d, /'ve, /h's, /h'd, /d's, /d'd, /'us, /'t, and /n't. Never invent a code, combine a surface ending with a code, or mark an unrelated morpheme.
+
+REGULAR PLURAL (/s)
+CANDIDATE: Noun forms that express more than one entity and appear to contain a regular plural ending.
+ELIGIBILITY: The form functions as a noun in context, denotes more than one entity, and has a recoverable singular noun lemma with a productive regular plural inflection.
+EXCLUSION: Do not mark singular nouns; verbs ending in s; possessives; irregular plurals such as mice, geese, children, or deer; or plural-looking lexical items with no productive singular form, such as pants, binoculars, or congratulations.
+ANNOTATION: Write the complete singular noun lemma followed by /s. Use /s for every eligible regular plural, including surface -es forms; never use /es. Restore the lemma spelling when needed.
+
+POSSESSIVE (/z, with /s/z when plural and possessive both apply)
+CANDIDATE: Nouns or names expressing ownership or another possessive relationship, including apostrophe-s forms, plural possessors, and predicative possessives.
+ELIGIBILITY: The owner is expressed by a lexical noun or name and the context establishes the possessive relationship, whether the owned noun follows or is understood, as in "This envelope is Rina's."
+EXCLUSION: Do not mark possessive pronouns such as mine, his, hers, ours, yours, its, or theirs. Do not treat apostrophe-s meaning is or has as possessive. Do not invent possession when the transcript does not express it.
+ANNOTATION: For a singular possessor, write owner/z. For an eligible regular plural possessor, write the singular owner lemma followed by /s/z. Preserve both codes and their order.
+
+REGULAR THIRD-PERSON SINGULAR (/3s)
+CANDIDATE: Present-tense lexical verb forms ending in s or es, including verbs inside embedded clauses.
+ELIGIBILITY: The form is a regular present-tense lexical verb whose grammatical subject is third-person singular. Determine the subject within the verb's own clause; do not assign the matrix subject to an embedded verb.
+EXCLUSION: Do not mark plural nouns, possessives, verbs with non-third-person-singular subjects, infinitives under modals, or the irregular forms does, has, is, and says. In "The helper says the map goes here," says is excluded but goes is eligible.
+ANNOTATION: Write the complete dictionary-form verb lemma followed by /3s. Restore the lemma spelling; never leave a surface -s or -es before the code.
+
+PROGRESSIVE OR ASPECTUAL -ING (/ing)
+CANDIDATE: Lexical verbs ending in ing.
+ELIGIBILITY: Mark an ing-form when it expresses an unfolding or continuing action either in a BE progressive or as the complement of an aspectual verb such as keep or start.
+EXCLUSION: Do not mark gerunds or activity nouns functioning as subjects, objects, or complements; ing-forms selected by a preposition such as after, before, by, for, from, in, of, on, through, with, or without; adjectival ing-forms; or going in a going-to future construction. The presence of -ing alone is insufficient.
+ANNOTATION: Write the complete dictionary-form verb lemma followed by /ing, restoring silent e and other lemma spelling. Thus choosing is choose/ing, causing is cause/ing, comparing is compare/ing, moving is move/ing, and changing is change/ing.
+
+REGULAR PAST TENSE (/ed)
+CANDIDATE: Verb forms with a surface regular -ed or -d ending that could express a completed past event or function as a regular past participle in a HAVE perfect.
+ELIGIBILITY: The form carries the productive regular -ed or -d inflection and functions either as a simple past-tense verb or as a regular past participle governed by HAVE, HAS, HAD, or an eligible contraction.
+EXCLUSION: Do not mark irregular past forms such as went, ate, brought, chose, found, had, made, said, or told. Do not regularize an irregular past. Do not mark predicate adjectives or adjectival/passive participles, including "is finished," "was finished," "is taken," "has been checked," or "can be used." A regular perfect participle such as "had checked" retains /ed because its overt suffix is regular -ed, not /en.
+ANNOTATION: Write the complete present-tense verb lemma followed by /ed, restoring silent e, y, and other lemma spelling. Thus changed is change/ed, carried is carry/ed, compared is compare/ed, agreed is agree/ed, arrived is arrive/ed, and used is use/ed.
+
+PAST PARTICIPLE (/en)
+CANDIDATE: Irregular en-participle forms in a HAVE, HAS, or HAD perfect construction, including eligible contracted auxiliaries.
+ELIGIBILITY: The form is an eligible irregular en-participle whose present-tense lemma is recoverable without a disqualifying root-sound change. Eligible root-preserving forms include fallen, proven, given, taken, shaken, and eaten.
+EXCLUSION: Do not mark regular -ed perfect participles; they remain /ed. Do not mark be-only passives, adjectival participles, nouns, forms lacking an eligible en-participle, or disallowed root-changing forms such as gotten, spoken, seen, been, or written.
+ANNOTATION: Write the complete present-tense lemma followed by /en, restoring final e where required: fall/en, prove/en, give/en, take/en, shake/en, and eat/en.
+
+CONTRACTED BE (/'s, /'re, /'m)
+CANDIDATE: Orthographic contractions containing apostrophe-s, apostrophe-re, or apostrophe-m, including contractions hosted by pronouns, names, and nouns.
+ELIGIBILITY: Context shows that the contraction means is, are, or am. The host may be a pronoun, interrogative, noun, or proper name.
+EXCLUSION: Do not mark uncontracted is, are, or am; possessive apostrophe-s; or apostrophe-s meaning has.
+ANNOTATION: Preserve the host and replace the apostrophe boundary with the matching code: she's meaning she is becomes she/'s, Rina's checking becomes Rina/'s check/ing, they're becomes they/'re, and I'm becomes I/'m.
+
+CONTRACTED MODAL (/'ll, /'d)
+CANDIDATE: Orthographic contractions containing apostrophe-ll or apostrophe-d.
+ELIGIBILITY: Context shows that apostrophe-ll means will or apostrophe-d means would.
+EXCLUSION: Do not mark uncontracted will or would. Do not use /'d when apostrophe-d means had or did.
+ANNOTATION: Preserve the host and use /'ll for will or /'d for would. Use the following verb phrase to resolve apostrophe-d: a base verb ordinarily supports would, while a past participle ordinarily supports had.
+
+OTHER ELIGIBLE CONTRACTIONS (/'ve, /h's, /h'd, /d's, /d'd, /'us)
+CANDIDATE: Orthographic contractions whose recoverable element means have, has, had, does, did, or us.
+ELIGIBILITY: Context supports one specialized recovery: /'ve for have, /h's for has, /h'd for had, /d's for does, /d'd for did, or /'us for us. Use /h's when apostrophe-s is followed by a perfect participle and means has. Use /h'd when apostrophe-d means had, including had better. Use /d'd when the construction requires did. Use /'us only for let's meaning let us.
+EXCLUSION: Do not use these codes for contracted BE, contracted will or would, possession, negative contractions, or uncontracted words.
+ANNOTATION: Preserve the complete host: we've becomes we/'ve; Lily's already finished becomes Lily/h's already finish/ed; we'd checked becomes we/h'd check/ed; what's meaning what does becomes what/d's; why'd meaning why did becomes why/d'd; and let's becomes let/'us.
+
+NEGATIVE CONTRACTIONS (/'t, /n't)
+CANDIDATE: Negative forms that are already orthographically contracted in the input.
+ELIGIBILITY: The written contraction has a stable recoverable base: can't uses /'t; isn't, aren't, wasn't, weren't, didn't, couldn't, shouldn't, wouldn't, haven't, hasn't, and hadn't use /n't.
+EXCLUSION: Do not contract an uncontracted negative phrase such as did not. Do not alter an affirmative question such as "Can we?" Do not mark don't, won't, or ain't because they do not preserve the required recoverable base for these codes.
+ANNOTATION: Preserve the full recoverable base before the code: can't becomes can/'t, isn't becomes is/n't, wouldn't becomes would/n't, and didn't becomes did/n't. Never shorten does to doe, would to woul, or another base to a spelling fragment.
+
+GLOBAL CONFLICT RULES
+- Resolve apostrophe-s as possession, is, has, or does from syntactic context before selecting /z, /'s, /h's, or /d's.
+- Resolve apostrophe-d as would, had, or did from syntactic context before selecting /'d, /h'd, or /d'd.
+- Use /s/z, in that order, when regular plurality and possession both apply to one owner.
+- A single word may receive multiple independent codes only when each code represents a distinct eligible morpheme. Never attach a code to an adjacent word or to a noun merely because another target occurs nearby.
+- Continue applying independent rule blocks after one convention qualifies. Insufficient contextual evidence does not justify a mark.
+
+CALIBRATION EXAMPLES
+MARK: "C The visitors' boxes are moving."
+AS:   "C The visitor/s/z box/s are move/ing."
+MARK: "C Lily carried the map while Rina was choosing where it goes."
+AS:   "C Lily carry/ed the map while Rina was choose/ing where it go/3s."
+MARK: "P Lily's already checked it, and we'd taken the other path."
+AS:   "P Lily/h's already check/ed it, and we/h'd take/en the other path."
+MARK: "C I'm ready, they're waiting, and she'll help because the box isn't heavy."
+AS:   "C I/'m ready, they/'re wait/ing, and she/'ll help because the box is/n't heavy."
+MARK: "C Why'd Mom move the boxes after we said let's go?"
+AS:   "C Why/d'd Mom move the box/s after we said let/'us go?"
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C We can use it without losing the shaded path."
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C The mice did not leave because the box has been checked."
+
+INPUT AND OUTPUT
+- The input is an unannotated plain-text SALT transcript. Each utterance begins with a speaker ID.
+- Preserve the input exactly except for required annotation and lemma restoration immediately before an inserted lexical suffix code.
+- Apply every qualifying convention from the full set of ten. One word or utterance may require more than one mark.
+- Annotate every clearly eligible occurrence and no ineligible occurrence. When context is insufficient, leave the candidate unmarked.
+- Return only the fully annotated transcript, with no explanation, analysis, headings, or code fence.

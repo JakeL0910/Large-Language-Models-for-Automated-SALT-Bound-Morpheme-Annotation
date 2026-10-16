@@ -1,0 +1,743 @@
+{
+  "ok": true,
+  "error": null,
+  "model": "gpt-5.6-luna",
+  "prompt_version": "V3",
+  "family": "easy_08",
+  "batch_size": "full",
+  "n_utterances": 77,
+  "n_requests": 1,
+  "max_output_tokens": 7176,
+  "elapsed_seconds": 18.953,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4104,
+    "completion_tokens": 2462,
+    "cached_tokens": 0,
+    "total_tokens": 6566
+  },
+  "estimated_cost_usd": 0.003775,
+  "failures": 3,
+  "tp": 31,
+  "fp": 7,
+  "fn": 7,
+  "precision_pct": 81.5789,
+  "recall_pct": 81.5789,
+  "micro_f1_pct": 81.5789,
+  "rows": [
+    {
+      "original": "P Wait until the bicycle has passed.",
+      "expected": "P Wait until the bicycle has pass/ed.",
+      "actual": "P Wait until the bicycle has pass/ed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now?",
+      "expected": "C Now?",
+      "actual": "C Now?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Now you can try a little call.",
+      "expected": "P Now you can try a little call.",
+      "actual": "P Now you can try a little call.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Hello!",
+      "expected": "C Hello!",
+      "actual": "C Hello!",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It said hello back.",
+      "expected": "C It said hello back.",
+      "actual": "C It said hello back.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That's your echo.",
+      "expected": "P That/'s your echo.",
+      "actual": "P That/'s your echo.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (My echo) my voice lives in there?",
+      "expected": "C (My echo) my voice live/3s in there?",
+      "actual": "C (My echo) my voice live/3s in there?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The sound bounces off the hard walls.",
+      "expected": "P The sound bounce/3s off the hard wall/s.",
+      "actual": "P The sound bounce/3s off the hard wall/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Like a ball?",
+      "expected": "C Like a ball?",
+      "actual": "C Like a ball?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A bit like that.",
+      "expected": "P A bit like that.",
+      "actual": "P A bit like that.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %boing.",
+      "expected": "C %boing.",
+      "actual": "C %boing.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What came back?",
+      "expected": "P What came back?",
+      "actual": "P What came back?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A tiny boing.",
+      "expected": "C A tiny boing.",
+      "actual": "C A tiny boing.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I liked that one.",
+      "expected": "C I like/ed that one.",
+      "actual": "C I like/ed that one.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You made a good echo sound.",
+      "expected": "P You made a good echo sound.",
+      "actual": "P You made a good echo sound.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Where are the people who say it?",
+      "expected": "C Where are the people who say it?",
+      "actual": "C Where are the people who say it?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P There are no extra people.",
+      "expected": "P There are no extra people.",
+      "actual": "P There are no extra people.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But I've heard somebody.",
+      "expected": "C But I/'ve heard somebody.",
+      "actual": "C But I/'ve heard somebody.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You've heard yourself.",
+      "expected": "P You/'ve heard yourself.",
+      "actual": "P You/'ve heard yourself.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I heard) I heard a little me.",
+      "expected": "C (I heard) I heard a little me.",
+      "actual": "C (I heard) I heard a little me.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Stay beside me, please.",
+      "expected": "P Stay beside me, please.",
+      "actual": "P Stay beside me, please.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'm listening.",
+      "expected": "C I/'m listen/ing.",
+      "actual": "C I/'m listen/ing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I am listening too.",
+      "expected": "P I am listen/ing too.",
+      "actual": "P I am listen/ing too.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It stopped.",
+      "expected": "C It stop/ed.",
+      "actual": "C It stop/ed.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You stopped making the sound.",
+      "expected": "P You stop/ed making the sound.",
+      "actual": "P You stop/ed make/ing the sound.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Could it keep going by itself?",
+      "expected": "C Could it keep going by itself?",
+      "actual": "C Could it keep go/ing by itself?",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Not here.",
+      "expected": "P Not here.",
+      "actual": "P Not here.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'd like one that never stops.",
+      "expected": "C I/'d like one that never stop/3s.",
+      "actual": "C I/'d like one that never stop/3s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That might get rather noisy.",
+      "expected": "P That might get rather noisy.",
+      "actual": "P That might get rather noisy.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C All night, hello, hello.",
+      "expected": "C All night, hello, hello.",
+      "actual": "C All night, hello, hello.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I couldn't sleep with that.",
+      "expected": "P I could/n't sleep with that.",
+      "actual": "P could/n't sleep with that.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": true
+    },
+    {
+      "original": "C Neither could I.",
+      "expected": "C Neither could I.",
+      "actual": "C Neither could I.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Let's do a sleepy echo.",
+      "expected": "C Let/'us do a sleepy echo.",
+      "actual": "C let/'us do a sleepy echo.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P A whisper?",
+      "expected": "P A whisper?",
+      "actual": "P A whisper?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Very) very tiny.",
+      "expected": "C (Very) very tiny.",
+      "actual": "C (Very) very tiny.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Goodnight.",
+      "expected": "P Goodnight.",
+      "actual": "P Goodnight.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I can't hear it.",
+      "expected": "C I can/'t hear it.",
+      "actual": "C can/'t hear it.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": true
+    },
+    {
+      "original": "P Perhaps that was too quiet.",
+      "expected": "P Perhaps that was too quiet.",
+      "actual": "P Perhaps that was too quiet.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C My loud voice works better.",
+      "expected": "C My loud voice work/3s better.",
+      "actual": "C My loud voice work/3s better.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It does.",
+      "expected": "P It does.",
+      "actual": "P It does.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'll say my name.",
+      "expected": "C I/'ll say my name.",
+      "actual": "C I/'ll say my name.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Leave a gap afterward.",
+      "expected": "P Leave a gap afterward.",
+      "actual": "P Leave a gap afterward.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Leo!",
+      "expected": "C Leo!",
+      "actual": "C Leo!",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C There!",
+      "expected": "C There!",
+      "actual": "C There!",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Leo's echo.",
+      "expected": "P Leo/z echo.",
+      "actual": "P Leo/z echo.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now your name.",
+      "expected": "C Now your name.",
+      "actual": "C Now your name.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Mara!",
+      "expected": "P Mara!",
+      "actual": "P Mara!",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Mara's echo is deeper.",
+      "expected": "C Mara/z echo is deeper.",
+      "actual": "C Mara/z echo is deeper.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Our voices are different.",
+      "expected": "P Our voice/s are different.",
+      "actual": "P Our voice/s are different.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Even when they come back.",
+      "expected": "C Even when they come back.",
+      "actual": "C Even when they come back.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Yes.",
+      "expected": "P Yes.",
+      "actual": "P Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Someone is coming.",
+      "expected": "C Someone is come/ing.",
+      "actual": "C Someone is com/ing.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P We should pause.",
+      "expected": "P We should pause.",
+      "actual": "P We should pause.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We've taken lots of turns.",
+      "expected": "C We/'ve take/en lot/s of turn/s.",
+      "actual": "C We/'ve take/en lot/s of turn/s.",
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You have taken more than I have.",
+      "expected": "P You have take/en more than I have.",
+      "actual": "P You have take/en more than I have.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You can have two next.",
+      "expected": "C You can have two next.",
+      "actual": "C You can have two next.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thank you.",
+      "expected": "P Thank you.",
+      "actual": "P Thank you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Um) did that lady hear my name?",
+      "expected": "C (Um) did that lady hear my name?",
+      "actual": "C (Um) did that lady hear my name?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Probably.",
+      "expected": "P Probably.",
+      "actual": "P Probably.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I hope she didn't think I was lost.",
+      "expected": "C I hope she did/n't think I was lost.",
+      "actual": "C I hope did/n't think I was lost.",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "failed": true
+    },
+    {
+      "original": "P She saw you beside me.",
+      "expected": "P She saw you beside me.",
+      "actual": "P She saw you beside me.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I waved at her.",
+      "expected": "C I wave/ed at her.",
+      "actual": "C I wave/ed at her.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She smiled back.",
+      "expected": "P She smile/ed back.",
+      "actual": "P She smile/ed back.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Her shoes make echoes too.",
+      "expected": "C Her shoe/s make echo/s too.",
+      "actual": "C Her shoe/s make echoes too.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P Hard little taps.",
+      "expected": "P Hard little tap/s.",
+      "actual": "P Hard little taps.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C We could do a tapping game.",
+      "expected": "C We could do a tapping game.",
+      "actual": "C We could do a tapping game.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P With our feet?",
+      "expected": "P With our feet?",
+      "actual": "P With our feet?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No running.",
+      "expected": "C No running.",
+      "actual": "C No running.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Agreed.",
+      "expected": "P Agreed.",
+      "actual": "P Agreed.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C One tap for you.",
+      "expected": "C One tap for you.",
+      "actual": "C One tap for you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P One for you.",
+      "expected": "P One for you.",
+      "actual": "P One for you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Two) three for the echo.",
+      "expected": "C (Two) three for the echo.",
+      "actual": "C (Two) three for the echo.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That gives the echo an extra turn.",
+      "expected": "P That give/3s the echo an extra turn.",
+      "actual": "P That give/3s the echo an extra turn.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Because it has lots of walls to visit.",
+      "expected": "C Because it has lot/s of wall/s to visit.",
+      "actual": "C Because it has lot/s of wall/s to visit.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Shall we walk toward the sunny end?",
+      "expected": "P Shall we walk toward the sunny end?",
+      "actual": "P Shall we walk toward the sunny end?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Slowly.",
+      "expected": "C Slowly.",
+      "actual": "C Slowly.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I want to hear my last tap.",
+      "expected": "C I want to hear my last tap.",
+      "actual": "C I want to hear my last tap.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "counts_toward_stage1": true,
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"P Wait until the bicycle has pass/ed.\"},{\"id\":1,\"text\":\"C Now?\"},{\"id\":2,\"text\":\"P Now you can try a little call.\"},{\"id\":3,\"text\":\"C Hello!\"},{\"id\":4,\"text\":\"C It said hello back.\"},{\"id\":5,\"text\":\"P That/'s your echo.\"},{\"id\":6,\"text\":\"C (My echo) my voice live/3s in there?\"},{\"id\":7,\"text\":\"P The sound bounce/3s off the hard wall/s.\"},{\"id\":8,\"text\":\"C Like a ball?\"},{\"id\":9,\"text\":\"P A bit like that.\"},{\"id\":10,\"text\":\"C %boing.\"},{\"id\":11,\"text\":\"P What came back?\"},{\"id\":12,\"text\":\"C A tiny boing.\"},{\"id\":13,\"text\":\"C I like/ed that one.\"},{\"id\":14,\"text\":\"P You made a good echo sound.\"},{\"id\":15,\"text\":\"C Where are the people who say it?\"},{\"id\":16,\"text\":\"P There are no extra people.\"},{\"id\":17,\"text\":\"C But I/'ve heard somebody.\"},{\"id\":18,\"text\":\"P You/'ve heard yourself.\"},{\"id\":19,\"text\":\"C (I heard) I heard a little me.\"},{\"id\":20,\"text\":\"P Stay beside me, please.\"},{\"id\":21,\"text\":\"C I/'m listen/ing.\"},{\"id\":22,\"text\":\"P I am listen/ing too.\"},{\"id\":23,\"text\":\"C It stop/ed.\"},{\"id\":24,\"text\":\"P You stop/ed make/ing the sound.\"},{\"id\":25,\"text\":\"C Could it keep go/ing by itself?\"},{\"id\":26,\"text\":\"P Not here.\"},{\"id\":27,\"text\":\"C I/'d like one that never stop/3s.\"},{\"id\":28,\"text\":\"P That might get rather noisy.\"},{\"id\":29,\"text\":\"C All night, hello, hello.\"},{\"id\":30,\"text\":\"P could/n't sleep with that.\"},{\"id\":31,\"text\":\"C Neither could I.\"},{\"id\":32,\"text\":\"C let/'us do a sleepy echo.\"},{\"id\":33,\"text\":\"P A whisper?\"},{\"id\":34,\"text\":\"C (Very) very tiny.\"},{\"id\":35,\"text\":\"P Goodnight.\"},{\"id\":36,\"text\":\"C can/'t hear it.\"},{\"id\":37,\"text\":\"P Perhaps that was too quiet.\"},{\"id\":38,\"text\":\"C My loud voice work/3s better.\"},{\"id\":39,\"text\":\"P It does.\"},{\"id\":40,\"text\":\"C I/'ll say my name.\"},{\"id\":41,\"text\":\"P Leave a gap afterward.\"},{\"id\":42,\"text\":\"C Leo!\"},{\"id\":43,\"text\":\"C There!\"},{\"id\":44,\"text\":\"P Leo/z echo.\"},{\"id\":45,\"text\":\"C Now your name.\"},{\"id\":46,\"text\":\"P Mara!\"},{\"id\":47,\"text\":\"C Mara/z echo is deeper.\"},{\"id\":48,\"text\":\"P Our voice/s are different.\"},{\"id\":49,\"text\":\"C Even when they come back.\"},{\"id\":50,\"text\":\"P Yes.\"},{\"id\":51,\"text\":\"C Someone is com/ing.\"},{\"id\":52,\"text\":\"P We should pause.\"},{\"id\":53,\"text\":\"C We/'ve take/en lot/s of turn/s.\"},{\"id\":54,\"text\":\"P You have take/en more than I have.\"},{\"id\":55,\"text\":\"C You can have two next.\"},{\"id\":56,\"text\":\"P Thank you.\"},{\"id\":57,\"text\":\"C (Um) did that lady hear my name?\"},{\"id\":58,\"text\":\"P Probably.\"},{\"id\":59,\"text\":\"C I hope did/n't think I was lost.\"},{\"id\":60,\"text\":\"P She saw you beside me.\"},{\"id\":61,\"text\":\"C I wave/ed at her.\"},{\"id\":62,\"text\":\"P She smile/ed back.\"},{\"id\":63,\"text\":\"C Her shoe/s make echoes too.\"},{\"id\":64,\"text\":\"P Hard little taps.\"},{\"id\":65,\"text\":\"C We could do a tapping game.\"},{\"id\":66,\"text\":\"P With our feet?\"},{\"id\":67,\"text\":\"C No running.\"},{\"id\":68,\"text\":\"P Agreed.\"},{\"id\":69,\"text\":\"C One tap for you.\"},{\"id\":70,\"text\":\"P One for you.\"},{\"id\":71,\"text\":\"C (Two) three for the echo.\"},{\"id\":72,\"text\":\"P That give/3s the echo an extra turn.\"},{\"id\":73,\"text\":\"C Because it has lot/s of wall/s to visit.\"},{\"id\":74,\"text\":\"P Shall we walk toward the sunny end?\"},{\"id\":75,\"text\":\"C Slowly.\"},{\"id\":76,\"text\":\"C I want to hear my last tap.\"}]}"
+  ],
+  "configuration": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

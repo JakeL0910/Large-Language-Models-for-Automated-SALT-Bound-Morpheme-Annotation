@@ -1,0 +1,2363 @@
+{
+  "status": "AUDIT_COMPLETE",
+  "source_summary": "results/stage2_model_configuration/phase_b_full12_summary.json",
+  "saved_cells_only": true,
+  "apis_called": false,
+  "gold_keys_modified": false,
+  "original_ranking_preserved": true,
+  "cause": {
+    "primary_metric_unchanged": true,
+    "primary_metric": "pooled bag-of-morphemes micro F1 (evaluate_rows / morpheme_tp_fp_fn)",
+    "published_convention_table": "Token-index overlay via convention_tp_fp_fn: each whitespace token's slash-code tuple is assigned to at most one of 10 conventions. This is not a partition of the pooled bag counts.",
+    "mechanisms": [
+      {
+        "id": "reporting_unit_mismatch",
+        "primary": true,
+        "description": "Pooled micro F1 counts whole marked tokens via extract_morphemes (eat/en is one item; stem+codes must match). The published convention table uses whitespace token-index alignment and only the slash-code tuple. Those two units are not a partition of each other."
+      },
+      {
+        "id": "punctuation_and_action_text",
+        "description": "extract_morphemes matches sock/s inside sock/s}. or is/n't> . token_code_tuple does not strip } or >, so the convention overlay drops those marks. Extra marks inside {holds ... sock/s} action text are counted in the bag and often missed or undercounted in the index overlay. This is the residual on Sol/Gemini (0 failures, 0 unclassified gold)."
+      },
+      {
+        "id": "stem_ignored_by_overlay",
+        "description": "On Luna, escape/ed vs escap/ed is bag FN+FP (different tokens) but convention-index TP because both have code ('ed',) at the same position."
+      },
+      {
+        "id": "unclassified_predicted_codes",
+        "description": "Predicted sandwich/es, echo/es, child/ren, stone/z's are not in the 10 convention tuples. The bag still counts them as FP. They are rare and do not explain Sol/Gemini residuals (0 unclassified marks there)."
+      },
+      {
+        "id": "failed_rows",
+        "description": "Failed rows keep pooled TP=0 with bag FP/FN. The overlay still position-aligns a non-empty actual, so it can award convention TP on a failed speaker-mismatch row (Claude hard_02 Let/'us)."
+      },
+      {
+        "id": "not_utterance_id_collapse",
+        "description": "Ranking cells are ok with JSON ids aligned. Residual remains on aligned rows."
+      }
+    ],
+    "correction": {
+      "do_not_change": [
+        "original pooled TP/FP/FN",
+        "original micro F1 / precision / recall",
+        "Stage 2 ranking order"
+      ],
+      "going_forward": "Keep pooled bag-of-morphemes as primary. Report per-convention figures by classifying each extracted mark into a convention (or UNCLASSIFIED) so convention TP/FP/FN partition the pooled totals."
+    },
+    "verdict": "The difference is a reporting-script overlay, not gold-key error and not utterance-ID collapse. Pooled Stage 2 F1 is unchanged and remains primary."
+  },
+  "by_config": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "original_pooled": {
+        "tp": 675,
+        "fp": 29,
+        "fn": 1
+      },
+      "original_convention_sum": {
+        "tp": 674,
+        "fp": 27,
+        "fn": 1
+      },
+      "residual": {
+        "tp": -1,
+        "fp": -2,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-high",
+      "label": "Gemini 3.6 Flash high",
+      "original_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "original_convention_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "residual": {
+        "tp": -1,
+        "fp": -3,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "original_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "original_convention_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "residual": {
+        "tp": -1,
+        "fp": -3,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    },
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "original_pooled": {
+        "tp": 672,
+        "fp": 30,
+        "fn": 4
+      },
+      "original_convention_sum": {
+        "tp": 672,
+        "fp": 27,
+        "fn": 3
+      },
+      "residual": {
+        "tp": 0,
+        "fp": -3,
+        "fn": -1
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 3,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-none__t1.0",
+      "label": "GPT-5.6 Sol none T=1.0",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 27,
+        "fn": 10
+      },
+      "original_convention_sum": {
+        "tp": 666,
+        "fp": 24,
+        "fn": 9
+      },
+      "residual": {
+        "tp": 0,
+        "fp": -3,
+        "fn": -1
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 1
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 30,
+        "fn": 10
+      },
+      "original_convention_sum": {
+        "tp": 665,
+        "fp": 28,
+        "fn": 10
+      },
+      "residual": {
+        "tp": -1,
+        "fp": -2,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 32,
+        "fn": 10
+      },
+      "original_convention_sum": {
+        "tp": 667,
+        "fp": 27,
+        "fn": 8
+      },
+      "residual": {
+        "tp": 1,
+        "fp": -5,
+        "fn": -2
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 2,
+      "n_unclassified_mark_tokens": 0,
+      "aligned_rows_bag_vs_position_disagreements": 1
+    },
+    {
+      "config_id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "original_pooled": {
+        "tp": 644,
+        "fp": 29,
+        "fn": 32
+      },
+      "original_convention_sum": {
+        "tp": 653,
+        "fp": 14,
+        "fn": 22
+      },
+      "residual": {
+        "tp": 9,
+        "fp": -15,
+        "fn": -10
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 2,
+      "n_unclassified_mark_tokens": 3,
+      "aligned_rows_bag_vs_position_disagreements": 10
+    },
+    {
+      "config_id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "original_pooled": {
+        "tp": 576,
+        "fp": 147,
+        "fn": 100
+      },
+      "original_convention_sum": {
+        "tp": 575,
+        "fp": 142,
+        "fn": 100
+      },
+      "residual": {
+        "tp": -1,
+        "fp": -5,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "n_failed_rows": 0,
+      "n_unclassified_mark_tokens": 4,
+      "aligned_rows_bag_vs_position_disagreements": 0
+    }
+  ],
+  "detail": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "original_pooled": {
+        "tp": 675,
+        "fp": 29,
+        "fn": 1
+      },
+      "original_pooled_micro_f1_pct": 97.8261,
+      "original_convention_sum": {
+        "tp": 674,
+        "fp": 27,
+        "fn": 1
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": -1,
+        "fp": -2,
+        "fn": 0
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 675,
+        "fp": 29,
+        "fn": 1
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 674,
+        "fp": 27,
+        "fn": 1
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 675,
+        "fp": 29,
+        "fn": 1
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 133,
+          "fp": 7,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 1,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 107,
+          "fp": 18,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 71,
+          "fp": 1,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 2,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 1
+        },
+        "MODAL": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "gpt-5.6-sol__reason-medium",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-high",
+      "label": "Gemini 3.6 Flash high",
+      "original_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "original_pooled_micro_f1_pct": 97.6173,
+      "original_convention_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": -1,
+        "fp": -3,
+        "fn": 0
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 133,
+          "fp": 8,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 107,
+          "fp": 22,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 71,
+          "fp": 1,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 2,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 72,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "gemini-3.6-flash__think-high",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {points between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-high",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-high",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-high",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "original_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "original_pooled_micro_f1_pct": 97.6173,
+      "original_convention_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": -1,
+        "fp": -3,
+        "fn": 0
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 675,
+        "fp": 30,
+        "fn": 0
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 676,
+        "fp": 33,
+        "fn": 0
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 133,
+          "fp": 8,
+          "fn": 0
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 107,
+          "fp": 21,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 71,
+          "fp": 1,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 3,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 72,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "gemini-3.6-flash__think-medium",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {points between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-medium",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gemini-3.6-flash__think-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "original_pooled": {
+        "tp": 672,
+        "fp": 30,
+        "fn": 4
+      },
+      "original_pooled_micro_f1_pct": 97.5327,
+      "original_convention_sum": {
+        "tp": 672,
+        "fp": 27,
+        "fn": 3
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": 0,
+        "fp": -3,
+        "fn": -1
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 3,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      "aligned_rows_pooled": {
+        "tp": 672,
+        "fp": 28,
+        "fn": 2
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 671,
+        "fp": 26,
+        "fn": 2
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 672,
+        "fp": 30,
+        "fn": 4
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 132,
+          "fp": 7,
+          "fn": 1
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 104,
+          "fp": 18,
+          "fn": 3
+        },
+        "ING": {
+          "tp": 71,
+          "fp": 1,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 4,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 72,
+          "fp": 0,
+          "fn": 0
+        },
+        "MODAL": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "deepseek-v4-pro__think-high",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {point/3s between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "point/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-high",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-high",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        },
+        {
+          "config_id": "deepseek-v4-pro__think-high",
+          "family": "medium_05",
+          "failed": true,
+          "expected": "P We can ask and see what she choose/3s.",
+          "actual": "C We can ask and see what she choose/3s.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "choose/3s"
+          ],
+          "pred_marks": [
+            "choose/3s"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-none__t1.0",
+      "label": "GPT-5.6 Sol none T=1.0",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 27,
+        "fn": 10
+      },
+      "original_pooled_micro_f1_pct": 97.2973,
+      "original_convention_sum": {
+        "tp": 666,
+        "fp": 24,
+        "fn": 9
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": 0,
+        "fp": -3,
+        "fn": -1
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 1,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 666,
+        "fp": 27,
+        "fn": 10
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 666,
+        "fp": 24,
+        "fn": 9
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 666,
+        "fp": 27,
+        "fn": 10
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 132,
+          "fp": 9,
+          "fn": 1
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 1,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 105,
+          "fp": 6,
+          "fn": 2
+        },
+        "ING": {
+          "tp": 69,
+          "fp": 1,
+          "fn": 2
+        },
+        "ED": {
+          "tp": 80,
+          "fp": 8,
+          "fn": 2
+        },
+        "EN": {
+          "tp": 43,
+          "fp": 2,
+          "fn": 1
+        },
+        "BE": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 1
+        },
+        "MODAL": {
+          "tp": 45,
+          "fp": 0,
+          "fn": 1
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t1.0",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {point/3s between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "point/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t1.0",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t1.0",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-sol__reason-none__t1.0",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "P You can explain it while it dry/3s.",
+          "actual": "P You can explain it while it drie/3s.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "dry/3s"
+          ],
+          "pred_marks": [
+            "drie/3s"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 30,
+        "fn": 10
+      },
+      "original_pooled_micro_f1_pct": 97.0845,
+      "original_convention_sum": {
+        "tp": 665,
+        "fp": 28,
+        "fn": 10
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": -1,
+        "fp": -2,
+        "fn": 0
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 666,
+        "fp": 30,
+        "fn": 10
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 665,
+        "fp": 28,
+        "fn": 10
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 666,
+        "fp": 30,
+        "fn": 10
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 130,
+          "fp": 6,
+          "fn": 3
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 104,
+          "fp": 19,
+          "fn": 3
+        },
+        "ING": {
+          "tp": 71,
+          "fp": 1,
+          "fn": 0
+        },
+        "ED": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 1
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 2,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 1
+        },
+        "MODAL": {
+          "tp": 44,
+          "fp": 0,
+          "fn": 2
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 2,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "qwen-3.5-plus__think-on",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-on",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "qwen-3.5-plus__think-on",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "original_pooled": {
+        "tp": 666,
+        "fp": 32,
+        "fn": 10
+      },
+      "original_pooled_micro_f1_pct": 96.9432,
+      "original_convention_sum": {
+        "tp": 667,
+        "fp": 27,
+        "fn": 8
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": 1,
+        "fp": -5,
+        "fn": -2
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 2,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 1,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 666,
+        "fp": 30,
+        "fn": 9
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 666,
+        "fp": 26,
+        "fn": 8
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 666,
+        "fp": 32,
+        "fn": 10
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 127,
+          "fp": 4,
+          "fn": 6
+        },
+        "Z": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "3S": {
+          "tp": 107,
+          "fp": 22,
+          "fn": 0
+        },
+        "ING": {
+          "tp": 70,
+          "fp": 2,
+          "fn": 1
+        },
+        "ED": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0
+        },
+        "EN": {
+          "tp": 44,
+          "fp": 3,
+          "fn": 0
+        },
+        "BE": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 1
+        },
+        "MODAL": {
+          "tp": 45,
+          "fp": 0,
+          "fn": 1
+        },
+        "OTHER": {
+          "tp": 47,
+          "fp": 1,
+          "fn": 1
+        },
+        "NEG": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {},
+      "n_unclassified_mark_tokens": 0,
+      "examples": [
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {points between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {hold/3s up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "hold/3s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "hard_02",
+          "failed": true,
+          "expected": "P Let/'us try the game once more {holds the second creature behind the paper strip}.",
+          "actual": "C Let/'us try the game once more {hold/3s the second creature behind the paper strip}.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Let/'us"
+          ],
+          "pred_marks": [
+            "Let/'us",
+            "hold/3s"
+          ]
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C This one/'s short {draws a low pair of branches}.",
+          "actual": "C This one/'s short {draw/3s a low pair of branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "one/'s"
+          ],
+          "pred_marks": [
+            "one/'s",
+            "draw/3s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        },
+        {
+          "config_id": "claude-sonnet-5__think-adaptive-high",
+          "family": "medium_04",
+          "failed": false,
+          "expected": "C (I thought) I thought she was tease/ing him.",
+          "actual": "C (I thought) I thought she was teas/ing him.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "tease/ing"
+          ],
+          "pred_marks": [
+            "teas/ing"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "original_pooled": {
+        "tp": 644,
+        "fp": 29,
+        "fn": 32
+      },
+      "original_pooled_micro_f1_pct": 95.4781,
+      "original_convention_sum": {
+        "tp": 653,
+        "fp": 14,
+        "fn": 22
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": 9,
+        "fp": -15,
+        "fn": -10
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 2,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 10,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 3
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 3
+      },
+      "aligned_rows_pooled": {
+        "tp": 644,
+        "fp": 26,
+        "fn": 29
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 653,
+        "fp": 11,
+        "fn": 19
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 644,
+        "fp": 29,
+        "fn": 32
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 123,
+          "fp": 8,
+          "fn": 10
+        },
+        "Z": {
+          "tp": 31,
+          "fp": 2,
+          "fn": 1
+        },
+        "3S": {
+          "tp": 104,
+          "fp": 5,
+          "fn": 3
+        },
+        "ING": {
+          "tp": 67,
+          "fp": 4,
+          "fn": 4
+        },
+        "ED": {
+          "tp": 78,
+          "fp": 2,
+          "fn": 4
+        },
+        "EN": {
+          "tp": 43,
+          "fp": 3,
+          "fn": 1
+        },
+        "BE": {
+          "tp": 67,
+          "fp": 0,
+          "fn": 5
+        },
+        "MODAL": {
+          "tp": 44,
+          "fp": 0,
+          "fn": 2
+        },
+        "OTHER": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 0
+        },
+        "NEG": {
+          "tp": 39,
+          "fp": 2,
+          "fn": 2
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {
+        "sandwich/es": 1,
+        "stone/z's": 1,
+        "rock/z's": 1
+      },
+      "n_unclassified_mark_tokens": 3,
+      "examples": [
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "easy_03",
+          "failed": false,
+          "expected": "C No, (not track/s) pretend sandwich/s.",
+          "actual": "C No, (not track/s) pretend sandwich/es.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "gold_marks": [
+            "track/s",
+            "sandwich/s"
+          ],
+          "pred_marks": [
+            "track/s",
+            "sandwich/es"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "easy_04",
+          "failed": false,
+          "expected": "C Here/'s a gap {points between two branches}.",
+          "actual": "C Here/'s a gap {point/s between two branch/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Here/'s"
+          ],
+          "pred_marks": [
+            "Here/'s",
+            "point/s",
+            "branch/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "easy_09",
+          "failed": false,
+          "expected": "P Then it escape/ed my finger.",
+          "actual": "P Then it escap/ed my finger.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "escape/ed"
+          ],
+          "pred_marks": [
+            "escap/ed"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {holds up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "hard_06",
+          "failed": false,
+          "expected": "C The train/'s come/ing out.",
+          "actual": "C The train/'s com/ing out.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "train/'s",
+            "come/ing"
+          ],
+          "pred_marks": [
+            "train/'s",
+            "com/ing"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "hard_06",
+          "failed": false,
+          "expected": "C The driver/'s have/ing a rest {lays spoon across lap}.",
+          "actual": "C The driver/'s hav/ing a rest {lays spoon across lap}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "driver/'s",
+            "have/ing"
+          ],
+          "pred_marks": [
+            "driver/'s",
+            "hav/ing"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Ren/z skirt go/3s all round.",
+          "actual": "C Ren/z skirt goe/3s all round.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "Ren/z",
+            "go/3s"
+          ],
+          "pred_marks": [
+            "Ren/z",
+            "goe/3s"
+          ]
+        },
+        {
+          "config_id": "gpt-5.6-luna__reason-medium",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "P That show/3s some possibility/s.",
+          "actual": "P That show/3s some possibilitie/s.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "show/3s",
+            "possibility/s"
+          ],
+          "pred_marks": [
+            "show/3s",
+            "possibilitie/s"
+          ]
+        }
+      ]
+    },
+    {
+      "config_id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "original_pooled": {
+        "tp": 576,
+        "fp": 147,
+        "fn": 100
+      },
+      "original_pooled_micro_f1_pct": 82.3445,
+      "original_convention_sum": {
+        "tp": 575,
+        "fp": 142,
+        "fn": 100
+      },
+      "residual_convention_sum_minus_pooled": {
+        "tp": -1,
+        "fp": -5,
+        "fn": 0
+      },
+      "n_utterances": 1260,
+      "n_failed_rows": 0,
+      "n_empty_actual": 0,
+      "aligned_rows_bag_vs_position_disagreements": 0,
+      "failed_rows_pooled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "failed_rows_convention_index_sum": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "aligned_rows_pooled": {
+        "tp": 576,
+        "fp": 147,
+        "fn": 100
+      },
+      "aligned_rows_convention_index_sum": {
+        "tp": 575,
+        "fp": 142,
+        "fn": 100
+      },
+      "bag_partition_sums_to_pooled": true,
+      "bag_partition_sum": {
+        "tp": 576,
+        "fp": 147,
+        "fn": 100
+      },
+      "bag_partition_by_convention": {
+        "S": {
+          "tp": 127,
+          "fp": 37,
+          "fn": 6
+        },
+        "Z": {
+          "tp": 30,
+          "fp": 11,
+          "fn": 2
+        },
+        "3S": {
+          "tp": 77,
+          "fp": 3,
+          "fn": 30
+        },
+        "ING": {
+          "tp": 68,
+          "fp": 36,
+          "fn": 3
+        },
+        "ED": {
+          "tp": 60,
+          "fp": 9,
+          "fn": 22
+        },
+        "EN": {
+          "tp": 33,
+          "fp": 4,
+          "fn": 11
+        },
+        "BE": {
+          "tp": 66,
+          "fp": 15,
+          "fn": 6
+        },
+        "MODAL": {
+          "tp": 46,
+          "fp": 4,
+          "fn": 0
+        },
+        "OTHER": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 19
+        },
+        "NEG": {
+          "tp": 40,
+          "fp": 24,
+          "fn": 1
+        },
+        "UNCLASSIFIED": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        }
+      },
+      "unclassified_mark_tokens": {
+        "sandwich/es": 2,
+        "echo/es": 1,
+        "child/ren": 1
+      },
+      "n_unclassified_mark_tokens": 4,
+      "examples": [
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "easy_03",
+          "failed": false,
+          "expected": "C No, (not track/s) pretend sandwich/s.",
+          "actual": "C No, (not tracks) pretend sandwich/es.",
+          "pooled_bag": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2
+          },
+          "gold_marks": [
+            "track/s",
+            "sandwich/s"
+          ],
+          "pred_marks": [
+            "sandwich/es"
+          ]
+        },
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "easy_08",
+          "failed": false,
+          "expected": "C Her shoe/s make echo/s too.",
+          "actual": "C Her shoe/s make echo/es too.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "gold_marks": [
+            "shoe/s",
+            "echo/s"
+          ],
+          "pred_marks": [
+            "shoe/s",
+            "echo/es"
+          ]
+        },
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "hard_02",
+          "failed": false,
+          "expected": "C I made him out of three sock/s {holds up the knotted socks}.",
+          "actual": "C I made him out of three sock/s {holds up the knotted sock/s}.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "sock/s"
+          ],
+          "pred_marks": [
+            "sock/s",
+            "sock/s"
+          ]
+        },
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "hard_06",
+          "failed": false,
+          "expected": "C Dad says children don't drive train/s.",
+          "actual": "C Dad say/3s child/ren do/n't drive train/s.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          "gold_marks": [
+            "train/s"
+          ],
+          "pred_marks": [
+            "say/3s",
+            "child/ren",
+            "do/n't",
+            "train/s"
+          ]
+        },
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "hard_09",
+          "failed": false,
+          "expected": "C Wait, the sign is/n't>",
+          "actual": "C Wait, the sign is/n't>",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "convention_index_sum": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "gold_marks": [
+            "is/n't"
+          ],
+          "pred_marks": [
+            "is/n't"
+          ]
+        },
+        {
+          "config_id": "gpt-4o__t0.0",
+          "family": "medium_04",
+          "failed": false,
+          "expected": "C He/h's eat/en all his sandwich/s already.",
+          "actual": "C He/'s eat/en all his sandwich/es already.",
+          "pooled_bag": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 2
+          },
+          "convention_index_sum": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 2
+          },
+          "gold_marks": [
+            "He/h's",
+            "eat/en",
+            "sandwich/s"
+          ],
+          "pred_marks": [
+            "He/'s",
+            "eat/en",
+            "sandwich/es"
+          ]
+        }
+      ]
+    }
+  ],
+  "original_ranking_snapshot": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "micro_f1_pct": 97.8261,
+      "tp": 675,
+      "fp": 29,
+      "fn": 1
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-high",
+      "label": "Gemini 3.6 Flash high",
+      "micro_f1_pct": 97.6173,
+      "tp": 676,
+      "fp": 33,
+      "fn": 0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "micro_f1_pct": 97.6173,
+      "tp": 676,
+      "fp": 33,
+      "fn": 0
+    },
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "micro_f1_pct": 97.5327,
+      "tp": 672,
+      "fp": 30,
+      "fn": 4
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-none__t1.0",
+      "label": "GPT-5.6 Sol none T=1.0",
+      "micro_f1_pct": 97.2973,
+      "tp": 666,
+      "fp": 27,
+      "fn": 10
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "micro_f1_pct": 97.0845,
+      "tp": 666,
+      "fp": 30,
+      "fn": 10
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "micro_f1_pct": 96.9432,
+      "tp": 666,
+      "fp": 32,
+      "fn": 10
+    },
+    {
+      "config_id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "micro_f1_pct": 95.4781,
+      "tp": 644,
+      "fp": 29,
+      "fn": 32
+    },
+    {
+      "config_id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "micro_f1_pct": 82.3445,
+      "tp": 576,
+      "fp": 147,
+      "fn": 100
+    }
+  ]
+}

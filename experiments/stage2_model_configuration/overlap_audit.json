@@ -1,0 +1,1273 @@
+{
+  "audited_at_utc": "2026-10-15T04:25:07Z",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "runs": [
+    {
+      "pid": 63737,
+      "label": "earlier_resume",
+      "started_at_utc": "2026-10-15T02:44:46.215Z",
+      "ended_at_utc": "2026-10-15T03:54:29.377Z",
+      "n_api_attempts": 47,
+      "n_skips": 2
+    },
+    {
+      "pid": 63831,
+      "label": "later_resume",
+      "started_at_utc": "2026-10-15T02:52:42.418Z",
+      "ended_at_utc": "2026-10-15T03:55:11.038Z",
+      "n_api_attempts": 23,
+      "n_skips": 26
+    }
+  ],
+  "n_disk_cells": 73,
+  "n_duplicated_transcripts": 23,
+  "duplicated_cells": [
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "family": "hard_02",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": false,
+          "micro_f1_pct": 0.0,
+          "elapsed_seconds": 2694.8,
+          "new_spend_usd": 0.0
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": false,
+          "micro_f1_pct": 0.0,
+          "elapsed_seconds": 2694.4,
+          "new_spend_usd": 0.0
+        }
+      ],
+      "duplicate_spend_usd": 0.0,
+      "earliest_success_spend_usd": 0.0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_03",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.82,
+          "elapsed_seconds": 18.5,
+          "new_spend_usd": 0.0238
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.82,
+          "elapsed_seconds": 57.2,
+          "new_spend_usd": 0.0307
+        }
+      ],
+      "duplicate_spend_usd": 0.0545,
+      "earliest_success_spend_usd": 0.0238
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_04",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.8,
+          "elapsed_seconds": 22.0,
+          "new_spend_usd": 0.0269
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.8,
+          "elapsed_seconds": 22.7,
+          "new_spend_usd": 0.0279
+        }
+      ],
+      "duplicate_spend_usd": 0.0548,
+      "earliest_success_spend_usd": 0.0269
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_08",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.7,
+          "elapsed_seconds": 21.5,
+          "new_spend_usd": 0.0268
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.7,
+          "elapsed_seconds": 22.1,
+          "new_spend_usd": 0.0271
+        }
+      ],
+      "duplicate_spend_usd": 0.0539,
+      "earliest_success_spend_usd": 0.0268
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_09",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 94.87,
+          "elapsed_seconds": 24.1,
+          "new_spend_usd": 0.0292
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 94.87,
+          "elapsed_seconds": 20.6,
+          "new_spend_usd": 0.0265
+        }
+      ],
+      "duplicate_spend_usd": 0.0557,
+      "earliest_success_spend_usd": 0.0292
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_06",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 97.08,
+          "elapsed_seconds": 111.1,
+          "new_spend_usd": 0.0376
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 97.08,
+          "elapsed_seconds": 35.3,
+          "new_spend_usd": 0.0415
+        }
+      ],
+      "duplicate_spend_usd": 0.0791,
+      "earliest_success_spend_usd": 0.0376
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_09",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": false,
+          "micro_f1_pct": 0.0,
+          "elapsed_seconds": 127.8,
+          "new_spend_usd": 0.0
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": false,
+          "micro_f1_pct": 0.0,
+          "elapsed_seconds": 126.9,
+          "new_spend_usd": 0.0
+        }
+      ],
+      "duplicate_spend_usd": 0.0,
+      "earliest_success_spend_usd": 0.0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_10",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 96.89,
+          "elapsed_seconds": 31.0,
+          "new_spend_usd": 0.0373
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 96.89,
+          "elapsed_seconds": 33.9,
+          "new_spend_usd": 0.0403
+        }
+      ],
+      "duplicate_spend_usd": 0.0776,
+      "earliest_success_spend_usd": 0.0373
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_03",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.21,
+          "elapsed_seconds": 28.8,
+          "new_spend_usd": 0.0344
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 100.0,
+          "elapsed_seconds": 35.0,
+          "new_spend_usd": 0.0379
+        }
+      ],
+      "duplicate_spend_usd": 0.0723,
+      "earliest_success_spend_usd": 0.0344
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_04",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 99.07,
+          "elapsed_seconds": 101.3,
+          "new_spend_usd": 0.0347
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 100.0,
+          "elapsed_seconds": 62.6,
+          "new_spend_usd": 0.0329
+        }
+      ],
+      "duplicate_spend_usd": 0.0676,
+      "earliest_success_spend_usd": 0.0347
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_05",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.0,
+          "elapsed_seconds": 67.8,
+          "new_spend_usd": 0.0372
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.0,
+          "elapsed_seconds": 66.1,
+          "new_spend_usd": 0.034
+        }
+      ],
+      "duplicate_spend_usd": 0.0712,
+      "earliest_success_spend_usd": 0.0372
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_10",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.15,
+          "elapsed_seconds": 69.7,
+          "new_spend_usd": 0.0347
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 99.07,
+          "elapsed_seconds": 105.8,
+          "new_spend_usd": 0.0383
+        }
+      ],
+      "duplicate_spend_usd": 0.073,
+      "earliest_success_spend_usd": 0.0347
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_03",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 97.62,
+          "elapsed_seconds": 167.7,
+          "new_spend_usd": 0.0265
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.82,
+          "elapsed_seconds": 154.6,
+          "new_spend_usd": 0.025
+        }
+      ],
+      "duplicate_spend_usd": 0.0515,
+      "earliest_success_spend_usd": 0.0265
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_04",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 100.0,
+          "elapsed_seconds": 266.5,
+          "new_spend_usd": 0.0407
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 100.0,
+          "elapsed_seconds": 248.8,
+          "new_spend_usd": 0.0383
+        }
+      ],
+      "duplicate_spend_usd": 0.079,
+      "earliest_success_spend_usd": 0.0407
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_08",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 96.0,
+          "elapsed_seconds": 86.7,
+          "new_spend_usd": 0.0153
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.7,
+          "elapsed_seconds": 177.3,
+          "new_spend_usd": 0.0282
+        }
+      ],
+      "duplicate_spend_usd": 0.0435,
+      "earliest_success_spend_usd": 0.0153
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_09",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 93.51,
+          "elapsed_seconds": 184.9,
+          "new_spend_usd": 0.0294
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 93.33,
+          "elapsed_seconds": 153.0,
+          "new_spend_usd": 0.0249
+        }
+      ],
+      "duplicate_spend_usd": 0.0543,
+      "earliest_success_spend_usd": 0.0294
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_06",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 95.76,
+          "elapsed_seconds": 252.6,
+          "new_spend_usd": 0.0394
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.2,
+          "elapsed_seconds": 199.1,
+          "new_spend_usd": 0.0319
+        }
+      ],
+      "duplicate_spend_usd": 0.0713,
+      "earliest_success_spend_usd": 0.0394
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_09",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 94.67,
+          "elapsed_seconds": 233.8,
+          "new_spend_usd": 0.0368
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 94.67,
+          "elapsed_seconds": 230.0,
+          "new_spend_usd": 0.036
+        }
+      ],
+      "duplicate_spend_usd": 0.0728,
+      "earliest_success_spend_usd": 0.0368
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_10",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 96.25,
+          "elapsed_seconds": 274.5,
+          "new_spend_usd": 0.0425
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 96.89,
+          "elapsed_seconds": 259.7,
+          "new_spend_usd": 0.0405
+        }
+      ],
+      "duplicate_spend_usd": 0.083,
+      "earliest_success_spend_usd": 0.0425
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_03",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 95.41,
+          "elapsed_seconds": 282.1,
+          "new_spend_usd": 0.0433
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 97.3,
+          "elapsed_seconds": 232.2,
+          "new_spend_usd": 0.0363
+        }
+      ],
+      "duplicate_spend_usd": 0.0796,
+      "earliest_success_spend_usd": 0.0433
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_04",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 92.59,
+          "elapsed_seconds": 139.0,
+          "new_spend_usd": 0.0232
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 98.15,
+          "elapsed_seconds": 191.5,
+          "new_spend_usd": 0.0305
+        }
+      ],
+      "duplicate_spend_usd": 0.0537,
+      "earliest_success_spend_usd": 0.0232
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_05",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 98.0,
+          "elapsed_seconds": 287.1,
+          "new_spend_usd": 0.044
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 100.0,
+          "elapsed_seconds": 268.9,
+          "new_spend_usd": 0.0415
+        }
+      ],
+      "duplicate_spend_usd": 0.0855,
+      "earliest_success_spend_usd": 0.044
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_10",
+      "n_api_attempts": 2,
+      "attempts": [
+        {
+          "run_pid": 63737,
+          "run_label": "earlier_resume",
+          "run_started_at_utc": "2026-10-15T02:44:46.215Z",
+          "ok": true,
+          "micro_f1_pct": 97.2,
+          "elapsed_seconds": 252.3,
+          "new_spend_usd": 0.0392
+        },
+        {
+          "run_pid": 63831,
+          "run_label": "later_resume",
+          "run_started_at_utc": "2026-10-15T02:52:42.418Z",
+          "ok": true,
+          "micro_f1_pct": 97.2,
+          "elapsed_seconds": 222.2,
+          "new_spend_usd": 0.0349
+        }
+      ],
+      "duplicate_spend_usd": 0.0741,
+      "earliest_success_spend_usd": 0.0392
+    }
+  ],
+  "canonical_selection": [
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "easy_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.62,
+      "canonical_elapsed_seconds": 56.3,
+      "canonical_new_spend_usd": 0.0692,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "easy_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.8,
+      "canonical_elapsed_seconds": 50.0,
+      "canonical_new_spend_usd": 0.0619,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "easy_08",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.0,
+      "canonical_elapsed_seconds": 40.6,
+      "canonical_new_spend_usd": 0.0521,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "easy_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 44.3,
+      "canonical_new_spend_usd": 0.0577,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "hard_02",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 94.81,
+      "canonical_elapsed_seconds": 105.1,
+      "canonical_new_spend_usd": 0.1386,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "hard_06",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.08,
+      "canonical_elapsed_seconds": 167.3,
+      "canonical_new_spend_usd": 0.2145,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "hard_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 94.67,
+      "canonical_elapsed_seconds": 106.3,
+      "canonical_new_spend_usd": 0.1263,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "hard_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.89,
+      "canonical_elapsed_seconds": 107.9,
+      "canonical_new_spend_usd": 0.1355,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "medium_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.36,
+      "canonical_elapsed_seconds": 120.1,
+      "canonical_new_spend_usd": 0.1486,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "medium_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 95.41,
+      "canonical_elapsed_seconds": 90.4,
+      "canonical_new_spend_usd": 0.1089,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "medium_05",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 60.1,
+      "canonical_new_spend_usd": 0.0802,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "family": "medium_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 99.05,
+      "canonical_elapsed_seconds": 73.9,
+      "canonical_new_spend_usd": 0.091,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "family": "hard_02",
+      "canonical_source": "no_successful_attempt",
+      "canonical_run_pid": null,
+      "canonical_run_label": null,
+      "canonical_micro_f1_pct": null,
+      "canonical_elapsed_seconds": null,
+      "canonical_new_spend_usd": null,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.82,
+      "canonical_elapsed_seconds": 18.5,
+      "canonical_new_spend_usd": 0.0238,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.8,
+      "canonical_elapsed_seconds": 22.0,
+      "canonical_new_spend_usd": 0.0269,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_08",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.7,
+      "canonical_elapsed_seconds": 21.5,
+      "canonical_new_spend_usd": 0.0268,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "easy_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 94.87,
+      "canonical_elapsed_seconds": 24.1,
+      "canonical_new_spend_usd": 0.0292,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_02",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.1,
+      "canonical_elapsed_seconds": 39.2,
+      "canonical_new_spend_usd": 0.0438,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_06",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.08,
+      "canonical_elapsed_seconds": 111.1,
+      "canonical_new_spend_usd": 0.0376,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_09",
+      "canonical_source": "no_successful_attempt",
+      "canonical_run_pid": null,
+      "canonical_run_label": null,
+      "canonical_micro_f1_pct": null,
+      "canonical_elapsed_seconds": null,
+      "canonical_new_spend_usd": null,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "hard_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.89,
+      "canonical_elapsed_seconds": 31.0,
+      "canonical_new_spend_usd": 0.0373,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.21,
+      "canonical_elapsed_seconds": 28.8,
+      "canonical_new_spend_usd": 0.0344,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 99.07,
+      "canonical_elapsed_seconds": 101.3,
+      "canonical_new_spend_usd": 0.0347,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_05",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.0,
+      "canonical_elapsed_seconds": 67.8,
+      "canonical_new_spend_usd": 0.0372,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "family": "medium_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.15,
+      "canonical_elapsed_seconds": 69.7,
+      "canonical_new_spend_usd": 0.0347,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.82,
+      "canonical_elapsed_seconds": 25.2,
+      "canonical_new_spend_usd": 0.0792,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 22.7,
+      "canonical_new_spend_usd": 0.0749,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_08",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.7,
+      "canonical_elapsed_seconds": 23.4,
+      "canonical_new_spend_usd": 0.076,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "easy_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 94.87,
+      "canonical_elapsed_seconds": 15.6,
+      "canonical_new_spend_usd": 0.0661,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_06",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.08,
+      "canonical_elapsed_seconds": 42.4,
+      "canonical_new_spend_usd": 0.1229,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.05,
+      "canonical_elapsed_seconds": 48.5,
+      "canonical_new_spend_usd": 0.128,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "hard_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 99.36,
+      "canonical_elapsed_seconds": 44.2,
+      "canonical_new_spend_usd": 0.1197,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 35.2,
+      "canonical_new_spend_usd": 0.1016,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 35.5,
+      "canonical_new_spend_usd": 0.1026,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_05",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.0,
+      "canonical_elapsed_seconds": 32.3,
+      "canonical_new_spend_usd": 0.0971,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "family": "medium_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.3,
+      "canonical_elapsed_seconds": 28.7,
+      "canonical_new_spend_usd": 0.0919,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.62,
+      "canonical_elapsed_seconds": 167.7,
+      "canonical_new_spend_usd": 0.0265,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 100.0,
+      "canonical_elapsed_seconds": 266.5,
+      "canonical_new_spend_usd": 0.0407,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_08",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.0,
+      "canonical_elapsed_seconds": 86.7,
+      "canonical_new_spend_usd": 0.0153,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "easy_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 93.51,
+      "canonical_elapsed_seconds": 184.9,
+      "canonical_new_spend_usd": 0.0294,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_06",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 95.76,
+      "canonical_elapsed_seconds": 252.6,
+      "canonical_new_spend_usd": 0.0394,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_09",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 94.67,
+      "canonical_elapsed_seconds": 233.8,
+      "canonical_new_spend_usd": 0.0368,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "hard_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 96.25,
+      "canonical_elapsed_seconds": 274.5,
+      "canonical_new_spend_usd": 0.0425,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_03",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 95.41,
+      "canonical_elapsed_seconds": 282.1,
+      "canonical_new_spend_usd": 0.0433,
+      "canonical_json_on_disk": true,
+      "surviving_raw_run_pid": 63737,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_04",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 92.59,
+      "canonical_elapsed_seconds": 139.0,
+      "canonical_new_spend_usd": 0.0232,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_05",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 98.0,
+      "canonical_elapsed_seconds": 287.1,
+      "canonical_new_spend_usd": 0.044,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "family": "medium_10",
+      "canonical_source": "earliest_successful_api_attempt",
+      "canonical_run_pid": 63737,
+      "canonical_run_label": "earlier_resume",
+      "canonical_micro_f1_pct": 97.2,
+      "canonical_elapsed_seconds": 252.3,
+      "canonical_new_spend_usd": 0.0392,
+      "canonical_json_on_disk": false,
+      "surviving_raw_run_pid": 63831,
+      "selection_independent_of_f1": true
+    }
+  ],
+  "spend": {
+    "pre_existing_new_cells_usd": 0.168104,
+    "logged_api_attempts_usd": 3.7963,
+    "provider_adjusted_logged_plus_preexisting_usd": 3.964404,
+    "duplicate_extra_usd": 0.7051,
+    "canonical_success_spend_usd": 3.259304,
+    "failed_attempts_logged_usd": 0.0,
+    "gemini_hard_09_unlogged_usage_note": "Both overlapping hard_09 failures stored usage=0 because JSON parse exceptions discarded the response body. Gemini still likely billed thinking/output tokens.",
+    "gemini_hard_09_estimated_unlogged_usd": 0.2418,
+    "deepseek_hard_02_logged_usd": 0.0,
+    "deepseek_hard_02_note": "Inference never started (900s server start-timeout, twice, three retries each). $0 logged is treated as accurate."
+  },
+  "first_copy_raw_status": "Qwen remaining (11) and Gemini remaining (11) JSON files were overwritten by pid 63831. Earliest successful metrics are preserved from pid 63737 logs. Surviving raw responses on disk are the later copies, archived before this recovery."
+}

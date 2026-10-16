@@ -1,0 +1,67 @@
+{
+  "cell": "results/stage3_finalists/cells/gemini-3.6-flash__think-medium__hard_03.json",
+  "preserved": true,
+  "official_record_unchanged": true,
+  "ok": false,
+  "error": "Batch JSON missing output IDs: [60]",
+  "finish_reasons": [
+    "STOP"
+  ],
+  "max_output_tokens": 16384,
+  "usage": {
+    "prompt_tokens": 10778,
+    "completion_tokens": 13650,
+    "cached_tokens": 0,
+    "total_tokens": 24428
+  },
+  "raw_chars": 7828,
+  "n_utterances": 142,
+  "n_output_objects": 142,
+  "n_valid_id_text_objects": 141,
+  "unique_ids": 141,
+  "duplicates": [],
+  "empty_text_ids": [],
+  "missing_ids": [
+    60
+  ],
+  "extra_ids": [],
+  "strictly_increasing": true,
+  "sequence_gaps_prev_next": [
+    [
+      59,
+      61
+    ]
+  ],
+  "malformed_objects": [
+    {
+      "array_index": 60,
+      "keys": [
+        "override",
+        "text"
+      ],
+      "item": {
+        "override": 60,
+        "text": "P For visitor/s smaller than dragon/s."
+      }
+    }
+  ],
+  "truncation": false,
+  "isolation": "single_object_key_typo",
+  "finding": "Valid JSON with 142 output objects. IDs 0-59 and 61-141 are present, unique, and strictly increasing. Array index 60 is a well-formed object whose identifier key is \"override\": 60 instead of \"id\": 60. parse_outputs requires keys id+text, so id 60 is treated as missing and the whole cell fails. finish=STOP (not length). Completion tokens 13650 of 16384. Not truncation, not duplicate IDs, not reordering. The omitted-id object text matches the gold annotation for utterance 60.",
+  "gold_utterance_60_original": "P For visitors smaller than dragons.",
+  "gold_utterance_60_key": "P For visitor/s smaller than dragon/s.",
+  "pred_text_on_override_60": "P For visitor/s smaller than dragon/s.",
+  "pred_matches_gold_key": true,
+  "diagnostic_remap_override_to_id": {
+    "note": "Offline only. Official hard_03 cell and scores were not changed.",
+    "n_ids": 142,
+    "failures": 0,
+    "tp": 102,
+    "fp": 5,
+    "fn": 0,
+    "precision_pct": 95.3271,
+    "recall_pct": 100.0,
+    "micro_f1_pct": 97.6077
+  },
+  "retry_recommendation_pending_continuation": "A single controlled technical retry of hard_03 is warranted after the 37 unattempted files complete: isolated schema-key slip, complete JSON, not truncated, annotation text present and matching gold. Do not remap official scores."
+}

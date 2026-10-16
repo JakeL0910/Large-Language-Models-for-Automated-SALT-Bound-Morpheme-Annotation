@@ -1,0 +1,589 @@
+{
+  "configs": [
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": null,
+      "phase": "A",
+      "reuse_stage1": true,
+      "notes": "Stage 1 V5 setting; API default temperature is 1.0.",
+      "id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": true,
+      "notes": "Stage 1 V5 setting; OpenAI default effort is medium. Temperature omitted.",
+      "id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "Matched to Luna Stage 1 effort. Temperature omitted.",
+      "id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "adaptive-high",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default: adaptive thinking on, effort high. Temperature forbidden.",
+      "id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "provider": "anthropic",
+      "api_model": "claude-sonnet-5",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "high",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default thinking on, effort high. Temperature has no effect.",
+      "id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "on",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default enable_thinking=true. Temperature omitted.",
+      "id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "medium",
+      "phase": "A",
+      "reuse_stage1": false,
+      "notes": "API default thinking_level=medium. Temperature ignored/deprecated.",
+      "id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 12,
+      "families": [
+        "easy_03",
+        "easy_04",
+        "easy_08",
+        "easy_09",
+        "hard_02",
+        "hard_06",
+        "hard_09",
+        "hard_10",
+        "medium_03",
+        "medium_04",
+        "medium_05",
+        "medium_10"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "True reasoning off. Temperature allowed only at effort=none.",
+      "id": "gpt-5.6-luna__reason-none__t0.0",
+      "label": "GPT-5.6 Luna none T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.0",
+      "label": "GPT-5.6 Sol none T=0.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "True thinking off via thinking.type=disabled.",
+      "id": "claude-sonnet-5__think-disabled",
+      "label": "Claude Sonnet 5 thinking off",
+      "provider": "anthropic",
+      "api_model": "claude-sonnet-5",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.0",
+      "label": "DeepSeek V4 Pro off T=0.0",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.0",
+      "label": "Qwen 3.5 Plus off T=0.0",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "minimal",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "Lowest thinking. NOT equivalent to disabled; model may still think.",
+      "id": "gemini-3.6-flash__think-minimal",
+      "label": "Gemini 3.6 Flash minimal",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": false,
+      "temperature": null,
+      "reasoning": "high",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gemini-3.6-flash__think-high",
+      "label": "Gemini 3.6 Flash high",
+      "provider": "gemini",
+      "api_model": "gemini-3.6-flash",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t0.3",
+      "label": "GPT-4o T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t0.6",
+      "label": "GPT-4o T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": null,
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-4o__t1.0",
+      "label": "GPT-4o T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-4o",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t0.3",
+      "label": "GPT-5.6 Luna none T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t0.6",
+      "label": "GPT-5.6 Luna none T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-luna__reason-none__t1.0",
+      "label": "GPT-5.6 Luna none T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-luna",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.3",
+      "label": "GPT-5.6 Sol none T=0.3",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t0.6",
+      "label": "GPT-5.6 Sol none T=0.6",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "none",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "gpt-5.6-sol__reason-none__t1.0",
+      "label": "GPT-5.6 Sol none T=1.0",
+      "provider": "openai",
+      "api_model": "gpt-5.6-sol",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.3",
+      "label": "DeepSeek V4 Pro off T=0.3",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t0.6",
+      "label": "DeepSeek V4 Pro off T=0.6",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "deepseek-v4-pro__think-off__t1.0",
+      "label": "DeepSeek V4 Pro off T=1.0",
+      "provider": "deepseek",
+      "api_model": "deepseek-v4-pro",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.3,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.3",
+      "label": "Qwen 3.5 Plus off T=0.3",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 0.6,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t0.6",
+      "label": "Qwen 3.5 Plus off T=0.6",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    },
+    {
+      "supports_temperature": true,
+      "temperature": 1.0,
+      "reasoning": "disabled",
+      "phase": "B",
+      "reuse_stage1": false,
+      "notes": "",
+      "id": "qwen-3.5-plus__think-off__t1.0",
+      "label": "Qwen 3.5 Plus off T=1.0",
+      "provider": "dashscope",
+      "api_model": "qwen3.5-plus",
+      "n_files": 3,
+      "families": [
+        "easy_03",
+        "medium_03",
+        "hard_02"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "cell": "results/stage3_finalists/cells/gemini-3.6-flash__think-medium__NEG_hard_04.json",
+  "preserved_as_first_attempt_failure": true,
+  "official_record_unchanged": true,
+  "ok": false,
+  "error": "Expecting value: line 1 column 5739 (char 5738)",
+  "finish_reasons": [
+    "STOP"
+  ],
+  "max_output_tokens": 16384,
+  "usage": {
+    "prompt_tokens": 9704,
+    "completion_tokens": 9239,
+    "cached_tokens": 0,
+    "total_tokens": 18943
+  },
+  "raw_chars": 7178,
+  "n_utterances": 80,
+  "truncation": false,
+  "isolation": "invalid_json_corruption_mid_array",
+  "finding": "finish=STOP, not length. JSON is valid through id 75, then identifier keys corrupt (\" me\" instead of \"id\") and the array never closes. Trailing non-JSON text. Offline synonym-key remap is not applicable.",
+  "sensitivity_applicable": false
+}

@@ -1,0 +1,814 @@
+{
+  "status": "PHASE_A_COMPLETE",
+  "stage": "stage2_model_configuration_phase_a",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "stop_reason": null,
+  "blocked_configs": [],
+  "missing_cells": [],
+  "wall_seconds": 0.0,
+  "new_spend_usd": 5.59799,
+  "new_spend_ceiling_usd": 8.0,
+  "n_cells": 84,
+  "n_reused": 24,
+  "n_new": 60,
+  "overall": {
+    "n_files": 84,
+    "n_ok": 84,
+    "n_utterances": 8820,
+    "failures": 7,
+    "tp": 4575,
+    "fp": 330,
+    "fn": 157,
+    "precision_pct": 93.2722,
+    "recall_pct": 96.6822,
+    "micro_f1_pct": 94.9466,
+    "macro_f1_pct": 95.0805,
+    "elapsed_seconds": 7635.268,
+    "prompt_tokens": 698580,
+    "completion_tokens": 663424,
+    "cached_tokens": 117510,
+    "new_spend_usd": 4.256895,
+    "historical_cost_usd": 0.534104,
+    "retries": 6
+  },
+  "ranking": [
+    {
+      "config_id": "gpt-5.6-sol__reason-medium",
+      "label": "GPT-5.6 Sol medium",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 0,
+      "tp": 675,
+      "fp": 29,
+      "fn": 1,
+      "precision_pct": 95.8807,
+      "recall_pct": 99.8521,
+      "micro_f1_pct": 97.8261,
+      "macro_f1_pct": 97.9407,
+      "elapsed_seconds": 405.221,
+      "prompt_tokens": 107713,
+      "completion_tokens": 38060,
+      "cached_tokens": 0,
+      "new_spend_usd": 1.192052,
+      "historical_cost_usd": 0.0,
+      "retries": 0
+    },
+    {
+      "config_id": "gemini-3.6-flash__think-medium",
+      "label": "Gemini 3.6 Flash medium",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 0,
+      "tp": 676,
+      "fp": 33,
+      "fn": 0,
+      "precision_pct": 95.3456,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 97.6173,
+      "macro_f1_pct": 97.7875,
+      "elapsed_seconds": 575.459,
+      "prompt_tokens": 118329,
+      "completion_tokens": 89526,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.424469,
+      "historical_cost_usd": 0.0,
+      "retries": 6
+    },
+    {
+      "config_id": "deepseek-v4-pro__think-high",
+      "label": "DeepSeek V4 Pro thinking high",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 3,
+      "tp": 672,
+      "fp": 30,
+      "fn": 4,
+      "precision_pct": 95.7265,
+      "recall_pct": 99.4083,
+      "micro_f1_pct": 97.5327,
+      "macro_f1_pct": 97.4936,
+      "elapsed_seconds": 2599.881,
+      "prompt_tokens": 110873,
+      "completion_tokens": 201599,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.944683,
+      "historical_cost_usd": 0.0,
+      "retries": 0
+    },
+    {
+      "config_id": "qwen-3.5-plus__think-on",
+      "label": "Qwen 3.5 Plus thinking on",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 0,
+      "tp": 666,
+      "fp": 30,
+      "fn": 10,
+      "precision_pct": 95.6897,
+      "recall_pct": 98.5207,
+      "micro_f1_pct": 97.0845,
+      "macro_f1_pct": 97.2337,
+      "elapsed_seconds": 2618.033,
+      "prompt_tokens": 115365,
+      "completion_tokens": 152030,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.411019,
+      "historical_cost_usd": 0.0,
+      "retries": 0
+    },
+    {
+      "config_id": "claude-sonnet-5__think-adaptive-high",
+      "label": "Claude Sonnet 5 adaptive high",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 2,
+      "tp": 666,
+      "fp": 32,
+      "fn": 10,
+      "precision_pct": 95.4155,
+      "recall_pct": 98.5207,
+      "micro_f1_pct": 96.9432,
+      "macro_f1_pct": 97.2234,
+      "elapsed_seconds": 1022.044,
+      "prompt_tokens": 30862,
+      "completion_tokens": 125051,
+      "cached_tokens": 117510,
+      "new_spend_usd": 1.284672,
+      "historical_cost_usd": 0.0,
+      "retries": 0
+    },
+    {
+      "config_id": "gpt-5.6-luna__reason-medium",
+      "label": "GPT-5.6 Luna medium",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 2,
+      "tp": 644,
+      "fp": 29,
+      "fn": 32,
+      "precision_pct": 95.6909,
+      "recall_pct": 95.2663,
+      "micro_f1_pct": 95.4781,
+      "macro_f1_pct": 95.3865,
+      "elapsed_seconds": 317.427,
+      "prompt_tokens": 107713,
+      "completion_tokens": 37310,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.0,
+      "historical_cost_usd": 0.066314,
+      "retries": 0
+    },
+    {
+      "config_id": "gpt-4o__t0.0",
+      "label": "GPT-4o T=0.0",
+      "n_files": 12,
+      "n_ok": 12,
+      "n_utterances": 1260,
+      "failures": 0,
+      "tp": 576,
+      "fp": 147,
+      "fn": 100,
+      "precision_pct": 79.668,
+      "recall_pct": 85.2071,
+      "micro_f1_pct": 82.3445,
+      "macro_f1_pct": 82.4982,
+      "elapsed_seconds": 97.203,
+      "prompt_tokens": 107725,
+      "completion_tokens": 19848,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.0,
+      "historical_cost_usd": 0.46779,
+      "retries": 0
+    }
+  ],
+  "unavailable_configs": [],
+  "by_difficulty": {
+    "easy": {
+      "n_files": 28,
+      "n_ok": 28,
+      "n_utterances": 2114,
+      "failures": 1,
+      "tp": 1073,
+      "fp": 70,
+      "fn": 33,
+      "precision_pct": 93.8758,
+      "recall_pct": 97.0163,
+      "micro_f1_pct": 95.4202,
+      "macro_f1_pct": 95.4221,
+      "elapsed_seconds": 2358.474,
+      "prompt_tokens": 214351,
+      "completion_tokens": 159041,
+      "cached_tokens": 35253,
+      "new_spend_usd": 1.006403,
+      "historical_cost_usd": 0.145594,
+      "retries": 1
+    },
+    "medium": {
+      "n_files": 28,
+      "n_ok": 28,
+      "n_utterances": 2891,
+      "failures": 3,
+      "tp": 1417,
+      "fp": 80,
+      "fn": 53,
+      "precision_pct": 94.656,
+      "recall_pct": 96.3946,
+      "micro_f1_pct": 95.5174,
+      "macro_f1_pct": 95.5385,
+      "elapsed_seconds": 2578.74,
+      "prompt_tokens": 231329,
+      "completion_tokens": 226646,
+      "cached_tokens": 47004,
+      "new_spend_usd": 1.429455,
+      "historical_cost_usd": 0.175477,
+      "retries": 5
+    },
+    "hard": {
+      "n_files": 28,
+      "n_ok": 28,
+      "n_utterances": 3815,
+      "failures": 3,
+      "tp": 2085,
+      "fp": 180,
+      "fn": 71,
+      "precision_pct": 92.053,
+      "recall_pct": 96.7069,
+      "micro_f1_pct": 94.3226,
+      "macro_f1_pct": 94.2809,
+      "elapsed_seconds": 2698.054,
+      "prompt_tokens": 252900,
+      "completion_tokens": 277737,
+      "cached_tokens": 35253,
+      "new_spend_usd": 1.821037,
+      "historical_cost_usd": 0.213033,
+      "retries": 0
+    }
+  },
+  "by_convention": [
+    {
+      "convention": "S",
+      "tp": 655,
+      "fp": 20,
+      "fn": 10,
+      "precision_pct": 97.037,
+      "recall_pct": 98.4962,
+      "micro_f1_pct": 97.7612
+    },
+    {
+      "convention": "Z",
+      "tp": 160,
+      "fp": 1,
+      "fn": 0,
+      "precision_pct": 99.3789,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 99.6885
+    },
+    {
+      "convention": "3S",
+      "tp": 530,
+      "fp": 97,
+      "fn": 5,
+      "precision_pct": 84.5295,
+      "recall_pct": 99.0654,
+      "micro_f1_pct": 91.222
+    },
+    {
+      "convention": "ING",
+      "tp": 355,
+      "fp": 5,
+      "fn": 0,
+      "precision_pct": 98.6111,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 99.3007
+    },
+    {
+      "convention": "ED",
+      "tp": 409,
+      "fp": 0,
+      "fn": 1,
+      "precision_pct": 100.0,
+      "recall_pct": 99.7561,
+      "micro_f1_pct": 99.8779
+    },
+    {
+      "convention": "EN",
+      "tp": 220,
+      "fp": 14,
+      "fn": 0,
+      "precision_pct": 94.0171,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 96.9163
+    },
+    {
+      "convention": "BE",
+      "tp": 357,
+      "fp": 0,
+      "fn": 3,
+      "precision_pct": 100.0,
+      "recall_pct": 99.1667,
+      "micro_f1_pct": 99.5816
+    },
+    {
+      "convention": "MODAL",
+      "tp": 227,
+      "fp": 0,
+      "fn": 3,
+      "precision_pct": 100.0,
+      "recall_pct": 98.6957,
+      "micro_f1_pct": 99.3435
+    },
+    {
+      "convention": "OTHER",
+      "tp": 240,
+      "fp": 0,
+      "fn": 0,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 100.0
+    },
+    {
+      "convention": "NEG",
+      "tp": 200,
+      "fp": 2,
+      "fn": 0,
+      "precision_pct": 99.0099,
+      "recall_pct": 100.0,
+      "micro_f1_pct": 99.5025
+    }
+  ],
+  "metrics_excluded": [
+    "wla",
+    "bm_wla"
+  ],
+  "primary_metric": "micro_f1",
+  "phase_b_executed": false,
+  "stage3_executed": false,
+  "by_config_convention": {
+    "gpt-5.6-sol__reason-medium": [
+      {
+        "convention": "S",
+        "tp": 133,
+        "fp": 5,
+        "fn": 0,
+        "precision_pct": 96.3768,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 98.155
+      },
+      {
+        "convention": "Z",
+        "tp": 32,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 96.9697,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 98.4615
+      },
+      {
+        "convention": "3S",
+        "tp": 107,
+        "fp": 18,
+        "fn": 0,
+        "precision_pct": 85.6,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 92.2414
+      },
+      {
+        "convention": "ING",
+        "tp": 71,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 98.6111,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "ED",
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "EN",
+        "tp": 44,
+        "fp": 2,
+        "fn": 0,
+        "precision_pct": 95.6522,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 97.7778
+      },
+      {
+        "convention": "BE",
+        "tp": 71,
+        "fp": 0,
+        "fn": 1,
+        "precision_pct": 100.0,
+        "recall_pct": 98.6111,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "MODAL",
+        "tp": 46,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "OTHER",
+        "tp": 48,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "NEG",
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      }
+    ],
+    "claude-sonnet-5__think-adaptive-high": [
+      {
+        "convention": "S",
+        "tp": 127,
+        "fp": 1,
+        "fn": 6,
+        "precision_pct": 99.2188,
+        "recall_pct": 95.4887,
+        "micro_f1_pct": 97.318
+      },
+      {
+        "convention": "Z",
+        "tp": 32,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "3S",
+        "tp": 107,
+        "fp": 22,
+        "fn": 0,
+        "precision_pct": 82.9457,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 90.678
+      },
+      {
+        "convention": "ING",
+        "tp": 71,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 98.6111,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "ED",
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "EN",
+        "tp": 44,
+        "fp": 3,
+        "fn": 0,
+        "precision_pct": 93.617,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 96.7033
+      },
+      {
+        "convention": "BE",
+        "tp": 71,
+        "fp": 0,
+        "fn": 1,
+        "precision_pct": 100.0,
+        "recall_pct": 98.6111,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "MODAL",
+        "tp": 45,
+        "fp": 0,
+        "fn": 1,
+        "precision_pct": 100.0,
+        "recall_pct": 97.8261,
+        "micro_f1_pct": 98.9011
+      },
+      {
+        "convention": "OTHER",
+        "tp": 48,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "NEG",
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      }
+    ],
+    "deepseek-v4-pro__think-high": [
+      {
+        "convention": "S",
+        "tp": 132,
+        "fp": 5,
+        "fn": 1,
+        "precision_pct": 96.3504,
+        "recall_pct": 99.2481,
+        "micro_f1_pct": 97.7778
+      },
+      {
+        "convention": "Z",
+        "tp": 32,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "3S",
+        "tp": 105,
+        "fp": 17,
+        "fn": 2,
+        "precision_pct": 86.0656,
+        "recall_pct": 98.1308,
+        "micro_f1_pct": 91.7031
+      },
+      {
+        "convention": "ING",
+        "tp": 71,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 98.6111,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "ED",
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "EN",
+        "tp": 44,
+        "fp": 4,
+        "fn": 0,
+        "precision_pct": 91.6667,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 95.6522
+      },
+      {
+        "convention": "BE",
+        "tp": 72,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "MODAL",
+        "tp": 46,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "OTHER",
+        "tp": 48,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "NEG",
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      }
+    ],
+    "qwen-3.5-plus__think-on": [
+      {
+        "convention": "S",
+        "tp": 130,
+        "fp": 4,
+        "fn": 3,
+        "precision_pct": 97.0149,
+        "recall_pct": 97.7444,
+        "micro_f1_pct": 97.3783
+      },
+      {
+        "convention": "Z",
+        "tp": 32,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "3S",
+        "tp": 104,
+        "fp": 19,
+        "fn": 3,
+        "precision_pct": 84.5528,
+        "recall_pct": 97.1963,
+        "micro_f1_pct": 90.4348
+      },
+      {
+        "convention": "ING",
+        "tp": 71,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 98.6111,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "ED",
+        "tp": 81,
+        "fp": 0,
+        "fn": 1,
+        "precision_pct": 100.0,
+        "recall_pct": 98.7805,
+        "micro_f1_pct": 99.3865
+      },
+      {
+        "convention": "EN",
+        "tp": 44,
+        "fp": 2,
+        "fn": 0,
+        "precision_pct": 95.6522,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 97.7778
+      },
+      {
+        "convention": "BE",
+        "tp": 71,
+        "fp": 0,
+        "fn": 1,
+        "precision_pct": 100.0,
+        "recall_pct": 98.6111,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "MODAL",
+        "tp": 44,
+        "fp": 0,
+        "fn": 2,
+        "precision_pct": 100.0,
+        "recall_pct": 95.6522,
+        "micro_f1_pct": 97.7778
+      },
+      {
+        "convention": "OTHER",
+        "tp": 48,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "NEG",
+        "tp": 40,
+        "fp": 2,
+        "fn": 0,
+        "precision_pct": 95.2381,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 97.561
+      }
+    ],
+    "gemini-3.6-flash__think-medium": [
+      {
+        "convention": "S",
+        "tp": 133,
+        "fp": 5,
+        "fn": 0,
+        "precision_pct": 96.3768,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 98.155
+      },
+      {
+        "convention": "Z",
+        "tp": 32,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "3S",
+        "tp": 107,
+        "fp": 21,
+        "fn": 0,
+        "precision_pct": 83.5938,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 91.0638
+      },
+      {
+        "convention": "ING",
+        "tp": 71,
+        "fp": 1,
+        "fn": 0,
+        "precision_pct": 98.6111,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 99.3007
+      },
+      {
+        "convention": "ED",
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "EN",
+        "tp": 44,
+        "fp": 3,
+        "fn": 0,
+        "precision_pct": 93.617,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 96.7033
+      },
+      {
+        "convention": "BE",
+        "tp": 72,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "MODAL",
+        "tp": 46,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "OTHER",
+        "tp": 48,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      },
+      {
+        "convention": "NEG",
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision_pct": 100.0,
+        "recall_pct": 100.0,
+        "micro_f1_pct": 100.0
+      }
+    ]
+  }
+}

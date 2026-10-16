@@ -1,0 +1,716 @@
+{
+  "ok": true,
+  "error": null,
+  "model": "gpt-5.6-luna",
+  "prompt_version": "V1",
+  "family": "easy_04",
+  "batch_size": "full",
+  "n_utterances": 74,
+  "n_requests": 1,
+  "max_output_tokens": 7056,
+  "elapsed_seconds": 22.939,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3342,
+    "completion_tokens": 3046,
+    "cached_tokens": 0,
+    "total_tokens": 6388
+  },
+  "estimated_cost_usd": 0.004324,
+  "failures": 0,
+  "tp": 40,
+  "fp": 3,
+  "fn": 1,
+  "precision_pct": 93.0233,
+  "recall_pct": 97.561,
+  "micro_f1_pct": 95.2381,
+  "rows": [
+    {
+      "original": "C The small duck got nothing.",
+      "expected": "C The small duck got nothing.",
+      "actual": "C The small duck got nothing.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It is finding food under the water.",
+      "expected": "P It is find/ing food under the water.",
+      "actual": "P It is find/ing food under the water.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But the big duck ate that bit.",
+      "expected": "C But the big duck ate that bit.",
+      "actual": "C But the big duck ate that bit.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P There may be more underneath.",
+      "expected": "P There may be more underneath.",
+      "actual": "P There may be more underneath.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I can see his feet.",
+      "expected": "C I can see his feet.",
+      "actual": "C I can see his feet.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They're like little fans.",
+      "expected": "C They/'re like little fan/s.",
+      "actual": "C They/'re like little fan/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P He paddles with them.",
+      "expected": "P He paddle/3s with them.",
+      "actual": "P He paddle/3s with them.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Can I) can I paddle like that?",
+      "expected": "C (Can I) can I paddle like that?",
+      "actual": "C (Can I) can I paddle like that?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P With your hands, up here.",
+      "expected": "P With your hand/s, up here.",
+      "actual": "P With your hand/s, up here.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %quack_quack.",
+      "expected": "C %quack_quack.",
+      "actual": "C %quack_quack.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Was that you or the duck?",
+      "expected": "P Was that you or the duck?",
+      "actual": "P Was that you or the duck?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Me.",
+      "expected": "C Me.",
+      "actual": "C Me.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He didn't answer.",
+      "expected": "C He did/n't answer.",
+      "actual": "C He did/n't answer.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Perhaps he is busy.",
+      "expected": "P Perhaps he is busy.",
+      "actual": "P Perhaps he is busy.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He's eaten something now.",
+      "expected": "C He/h's eat/en something now.",
+      "actual": "C He/h's eat/en something now.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Yes, he has taken a little mouthful.",
+      "expected": "P Yes, he has take/en a little mouthful.",
+      "actual": "P Yes, he has take/en a little mouthful.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The other duck's head is shiny.",
+      "expected": "C The other duck/z head is shiny.",
+      "actual": "C The other duck/z head is shiny.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The sunlight catches it.",
+      "expected": "P The sunlight catch/3s it.",
+      "actual": "P The sunlight catch/3s it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I want a shiny head.",
+      "expected": "C I want a shiny head.",
+      "actual": "C I want a shiny head.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Your hat sparkles.",
+      "expected": "P Your hat sparkle/3s.",
+      "actual": "P Your hat sparkle/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C That's Ruby's hat.",
+      "expected": "C That/'s Ruby/z hat.",
+      "actual": "C That/'s Ruby/z hat.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Mine has a whale.",
+      "expected": "C Mine has a whale.",
+      "actual": "C Mine has a whale.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P So it is.",
+      "expected": "P So it is.",
+      "actual": "P So it is.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Ruby gave it to me today.",
+      "expected": "C Ruby gave it to me today.",
+      "actual": "C Ruby gave it to me today.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Did she borrow yours?",
+      "expected": "P Did she borrow yours?",
+      "actual": "P Did she borrow yours?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, (the whale one) mine.",
+      "expected": "C Yes, (the whale one) mine.",
+      "actual": "C Yes, (the whale one) mine.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She wanted the whale.",
+      "expected": "C She want/ed the whale.",
+      "actual": "C She want/ed the whale.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That was a kind swap.",
+      "expected": "P That was a kind swap.",
+      "actual": "P That was a kind swap.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We can swap again tomorrow.",
+      "expected": "C We can swap again tomorrow.",
+      "actual": "C We can swap again tomorrow.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'll help you remember.",
+      "expected": "P I/'ll help you remember.",
+      "actual": "P I/'ll help you remember.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Look, two ducks are racing.",
+      "expected": "C Look, two duck/s are race/ing.",
+      "actual": "C Look, two duck/s are rac/ing.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P They're swimming very quickly, certainly.",
+      "expected": "P They/'re swim/ing very quickly, certainly.",
+      "actual": "P They/'re swim/ing very quickly, certainly.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I think that one wins.",
+      "expected": "C I think that one win/3s.",
+      "actual": "C I think that one win/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P They might just be following each other.",
+      "expected": "P They might just be follow/ing each other.",
+      "actual": "P They might just be follow/ing each other.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No finish line.",
+      "expected": "C No finish line.",
+      "actual": "C No finish line.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (They could) I'd put it at the reeds.",
+      "expected": "C (They could) I/'d put it at the reed/s.",
+      "actual": "C (They could) I/'d put it at the reed/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We can imagine one.",
+      "expected": "P We can imagine one.",
+      "actual": "P We can imagine one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The reeds are too bendy.",
+      "expected": "C The reed/s are too bendy.",
+      "actual": "C The reed/s are too bendy.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A finish line need not be straight in your game.",
+      "expected": "P A finish line need not be straight in your game.",
+      "actual": "P A finish line need not be straight in your game.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Then both win.",
+      "expected": "C Then both win.",
+      "actual": "C Then both win.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I've never seen a duck race with two winners.",
+      "expected": "P I/'ve never seen a duck race with two winner/s.",
+      "actual": "P I/'ve never seen a duck race with two winner/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You have now.",
+      "expected": "C You have now.",
+      "actual": "C You have now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Fair enough.",
+      "expected": "P Fair enough.",
+      "actual": "P Fair enough.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Can we give them my cracker?",
+      "expected": "C Can we give them my cracker?",
+      "actual": "C Can we give them my cracker?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Let's keep our food.",
+      "expected": "P Let/'us keep our food.",
+      "actual": "P Let/'us keep our food.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We are here to watch today.",
+      "expected": "P We are here to watch today.",
+      "actual": "P We are here to watch today.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But I haven't eaten it.",
+      "expected": "C But I have/n't eat/en it.",
+      "actual": "C But I have/n't eat/en it.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I know.",
+      "expected": "P I know.",
+      "actual": "P I know.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Well) the ducks don't know.",
+      "expected": "C (Well) the duck/s don't know.",
+      "actual": "C (Well) the duck/s don't know.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P They find food that grows here.",
+      "expected": "P They find food that grow/3s here.",
+      "actual": "P They find food that grow/3s here.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Is that green stuff food?",
+      "expected": "C Is that green stuff food?",
+      "actual": "C Is that green stuff food?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Some of it can be.",
+      "expected": "P Some of it can be.",
+      "actual": "P Some of it can be.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He sprayed the other one!",
+      "expected": "C He spray/ed the other one!",
+      "actual": "C He spray/ed the other one!",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A quick shake.",
+      "expected": "P A quick shake.",
+      "actual": "P A quick shake.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I splashed Ruby like that in the bath.",
+      "expected": "C I splash/ed Ruby like that in the bath.",
+      "actual": "C I splash/ed Ruby like that in the bath.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Was she pleased?",
+      "expected": "P Was she pleased?",
+      "actual": "P Was she pleased?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No.",
+      "expected": "C No.",
+      "actual": "C No.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She said stop.",
+      "expected": "C She said stop.",
+      "actual": "C She said stop.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then you stopped?",
+      "expected": "P Then you stop/ed?",
+      "actual": "P Then you stop/ed?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, (I stopped) right away.",
+      "expected": "C Yes, (I stop/ed) right away.",
+      "actual": "C Yes, (I stop/ed) right away.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P This duck can swim away.",
+      "expected": "P This duck can swim away.",
+      "actual": "P This duck can swim away.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He is going behind the tree.",
+      "expected": "C He is go/ing behind the tree.",
+      "actual": "C He is go/ing behind the tree.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I can't see him there.",
+      "expected": "C I can/'t see him there.",
+      "actual": "C He can/'t see him there.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We can move along the rail.",
+      "expected": "P We can move along the rail.",
+      "actual": "P We can move along the rail.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Quietly so we won't scare him.",
+      "expected": "C Quietly so we won't scare him.",
+      "actual": "C Quietly so we won't scare him.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Good thought.",
+      "expected": "P Good thought.",
+      "actual": "P Good thought.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Here's a gap {points between two branches}.",
+      "expected": "C Here/'s a gap {points between two branches}.",
+      "actual": "C Here/'s a gap {point/s between two branch/s}.",
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I see his tail.",
+      "expected": "P I see his tail.",
+      "actual": "P I see his tail.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C And his friend.",
+      "expected": "C And his friend.",
+      "actual": "C And his friend.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They're together again.",
+      "expected": "C They/'re together again.",
+      "actual": "C They/'re together again.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Shall we stay here a moment?",
+      "expected": "P Shall we stay here a moment?",
+      "actual": "P Shall we stay here a moment?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes.",
+      "expected": "C Yes.",
+      "actual": "C Yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'll be quiet like a tree.",
+      "expected": "C I/'ll be quiet like a tree.",
+      "actual": "C I/'ll be quiet like a tree.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (A tree) a tree with a hat.",
+      "expected": "C (A tree) a tree with a hat.",
+      "actual": "C (A tree) a tree with a hat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "counts_toward_stage1": true,
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C The small duck got nothing.\"},{\"id\":1,\"text\":\"P It is find/ing food under the water.\"},{\"id\":2,\"text\":\"C But the big duck ate that bit.\"},{\"id\":3,\"text\":\"P There may be more underneath.\"},{\"id\":4,\"text\":\"C I can see his feet.\"},{\"id\":5,\"text\":\"C They/'re like little fan/s.\"},{\"id\":6,\"text\":\"P He paddle/3s with them.\"},{\"id\":7,\"text\":\"C (Can I) can I paddle like that?\"},{\"id\":8,\"text\":\"P With your hand/s, up here.\"},{\"id\":9,\"text\":\"C %quack_quack.\"},{\"id\":10,\"text\":\"P Was that you or the duck?\"},{\"id\":11,\"text\":\"C Me.\"},{\"id\":12,\"text\":\"C He did/n't answer.\"},{\"id\":13,\"text\":\"P Perhaps he is busy.\"},{\"id\":14,\"text\":\"C He/h's eat/en something now.\"},{\"id\":15,\"text\":\"P Yes, he has take/en a little mouthful.\"},{\"id\":16,\"text\":\"C The other duck/z head is shiny.\"},{\"id\":17,\"text\":\"P The sunlight catch/3s it.\"},{\"id\":18,\"text\":\"C I want a shiny head.\"},{\"id\":19,\"text\":\"P Your hat sparkle/3s.\"},{\"id\":20,\"text\":\"C That/'s Ruby/z hat.\"},{\"id\":21,\"text\":\"C Mine has a whale.\"},{\"id\":22,\"text\":\"P So it is.\"},{\"id\":23,\"text\":\"C Ruby gave it to me today.\"},{\"id\":24,\"text\":\"P Did she borrow yours?\"},{\"id\":25,\"text\":\"C Yes, (the whale one) mine.\"},{\"id\":26,\"text\":\"C She want/ed the whale.\"},{\"id\":27,\"text\":\"P That was a kind swap.\"},{\"id\":28,\"text\":\"C We can swap again tomorrow.\"},{\"id\":29,\"text\":\"P I/'ll help you remember.\"},{\"id\":30,\"text\":\"C Look, two duck/s are rac/ing.\"},{\"id\":31,\"text\":\"P They/'re swim/ing very quickly, certainly.\"},{\"id\":32,\"text\":\"C I think that one win/3s.\"},{\"id\":33,\"text\":\"P They might just be follow/ing each other.\"},{\"id\":34,\"text\":\"C No finish line.\"},{\"id\":35,\"text\":\"C (They could) I/'d put it at the reed/s.\"},{\"id\":36,\"text\":\"P We can imagine one.\"},{\"id\":37,\"text\":\"C The reed/s are too bendy.\"},{\"id\":38,\"text\":\"P A finish line need not be straight in your game.\"},{\"id\":39,\"text\":\"C Then both win.\"},{\"id\":40,\"text\":\"P I/'ve never seen a duck race with two winner/s.\"},{\"id\":41,\"text\":\"C You have now.\"},{\"id\":42,\"text\":\"P Fair enough.\"},{\"id\":43,\"text\":\"C Can we give them my cracker?\"},{\"id\":44,\"text\":\"P Let/'us keep our food.\"},{\"id\":45,\"text\":\"P We are here to watch today.\"},{\"id\":46,\"text\":\"C But I have/n't eat/en it.\"},{\"id\":47,\"text\":\"P I know.\"},{\"id\":48,\"text\":\"C (Well) the duck/s don't know.\"},{\"id\":49,\"text\":\"P They find food that grow/3s here.\"},{\"id\":50,\"text\":\"C Is that green stuff food?\"},{\"id\":51,\"text\":\"P Some of it can be.\"},{\"id\":52,\"text\":\"C He spray/ed the other one!\"},{\"id\":53,\"text\":\"P A quick shake.\"},{\"id\":54,\"text\":\"C I splash/ed Ruby like that in the bath.\"},{\"id\":55,\"text\":\"P Was she pleased?\"},{\"id\":56,\"text\":\"C No.\"},{\"id\":57,\"text\":\"C She said stop.\"},{\"id\":58,\"text\":\"P Then you stop/ed?\"},{\"id\":59,\"text\":\"C Yes, (I stop/ed) right away.\"},{\"id\":60,\"text\":\"P This duck can swim away.\"},{\"id\":61,\"text\":\"C He is go/ing behind the tree.\"},{\"id\":62,\"text\":\"C He can/'t see him there.\"},{\"id\":63,\"text\":\"P We can move along the rail.\"},{\"id\":64,\"text\":\"C Quietly so we won't scare him.\"},{\"id\":65,\"text\":\"P Good thought.\"},{\"id\":66,\"text\":\"C Here/'s a gap {point/s between two branch/s}.\"},{\"id\":67,\"text\":\"P I see his tail.\"},{\"id\":68,\"text\":\"C And his friend.\"},{\"id\":69,\"text\":\"C They/'re together again.\"},{\"id\":70,\"text\":\"P Shall we stay here a moment?\"},{\"id\":71,\"text\":\"C Yes.\"},{\"id\":72,\"text\":\"C I/'ll be quiet like a tree.\"},{\"id\":73,\"text\":\"C (A tree) a tree with a hat.\"}]}"
+  ],
+  "configuration": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1"
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "ok": true,
+  "error": null,
+  "config_id": "gpt-5.6-luna__reason-medium",
+  "model": "gpt-5.6-luna",
+  "label": "GPT-5.6 Luna medium",
+  "provider": "openai",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "easy_03",
+  "batch_size": "full",
+  "n_utterances": 75,
+  "n_requests": 1,
+  "max_output_tokens": 7096,
+  "elapsed_seconds": 17.302,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "usage": {
+    "prompt_tokens": 8359,
+    "completion_tokens": 2117,
+    "cached_tokens": 0,
+    "total_tokens": 10476
+  },
+  "estimated_cost_usd": 0.0,
+  "historical_cost_usd": 0.004212,
+  "new_spend_usd": 0.0,
+  "reused_from_stage1": true,
+  "failures": 0,
+  "tp": 40,
+  "fp": 1,
+  "fn": 2,
+  "precision_pct": 97.561,
+  "recall_pct": 95.2381,
+  "micro_f1_pct": 96.3855,
+  "rows": [
+    {
+      "original": "C That roof looks like a triangle.",
+      "expected": "C That roof look/3s like a triangle.",
+      "actual": "C That roof look/3s like a triangle.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The pointed one above the shop?",
+      "expected": "P The pointed one above the shop?",
+      "actual": "P The pointed one above the shop?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, with two windows underneath.",
+      "expected": "C Yes, with two window/s underneath.",
+      "actual": "C Yes, with two window/s underneath.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It's a face.",
+      "expected": "C It/'s a face.",
+      "actual": "C It/'s a face.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What would its mouth be?",
+      "expected": "P What would its mouth be?",
+      "actual": "P What would its mouth be?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The door.",
+      "expected": "C The door.",
+      "actual": "C The door.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I think it is smiling.",
+      "expected": "P I think it is smile/ing.",
+      "actual": "P I think it is smile/ing.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It can't smile when the door is shut.",
+      "expected": "C It can/'t smile when the door is shut.",
+      "actual": "C It can/'t smile when the door is shut.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You're right.",
+      "expected": "P You/'re right.",
+      "actual": "P You/'re right.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (The door) somebody opened it!",
+      "expected": "C (The door) somebody open/ed it!",
+      "actual": "C (The door) somebody open/ed it!",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now it says hello.",
+      "expected": "C Now it says hello.",
+      "actual": "C Now it says hello.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We passed it too quickly to hear.",
+      "expected": "P We pass/ed it too quickly to hear.",
+      "actual": "P We pass/ed it too quickly to hear.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Are we going up?",
+      "expected": "C Are we go/ing up?",
+      "actual": "C Are we go/ing up?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A little hill.",
+      "expected": "P A little hill.",
+      "actual": "P A little hill.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Last time this tram went flat.",
+      "expected": "C Last time this tram went flat.",
+      "actual": "C Last time this tram went flat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We took a different route.",
+      "expected": "P We took a different route.",
+      "actual": "P We took a different route.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We've taken the long way today.",
+      "expected": "C We/'ve take/en the long way today.",
+      "actual": "C We/'ve take/en the long way today.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I have taken this route before.",
+      "expected": "P I have take/en this route before.",
+      "actual": "P I have take/en this route before.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Does it go past the river?",
+      "expected": "C Does it go past the river?",
+      "actual": "C Does it go past the river?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Yes, after the square.",
+      "expected": "P Yes, after the square.",
+      "actual": "P Yes, after the square.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A square like my window?",
+      "expected": "C A square like my window?",
+      "actual": "C A square like my window?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A square can also mean an open space in town.",
+      "expected": "P A square can also mean an open space in town.",
+      "actual": "P A square can also mean an open space in town.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Oh, a) a people square.",
+      "expected": "C (Oh, a) a people square.",
+      "actual": "C (Oh, a) a people square.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Usually with shops around it.",
+      "expected": "P Usually with shop/s around it.",
+      "actual": "P Usually with shop/s around it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C There are people on that roof.",
+      "expected": "C There are people on that roof.",
+      "actual": "C There are people on that roof.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Those are statues.",
+      "expected": "P Those are statue/s.",
+      "actual": "P Those are statue/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They look very still.",
+      "expected": "C They look very still.",
+      "actual": "C They look very still.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P They are made of stone.",
+      "expected": "P They are made of stone.",
+      "actual": "P They are made of stone.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'd get bored up there.",
+      "expected": "C I/'d get bored up there.",
+      "actual": "C I/'d get bored up there.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You could watch the trams.",
+      "expected": "P You could watch the tram/s.",
+      "actual": "P You could watch the tram/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C And count dogs.",
+      "expected": "C And count dog/s.",
+      "actual": "C And count dogs.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C One just crossed the road.",
+      "expected": "C One just cross/ed the road.",
+      "actual": "C One just cross/ed the road.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Its owner's waiting by the crossing.",
+      "expected": "P Its owner/'s wait/ing by the crossing.",
+      "actual": "P Its owner/'s wait/ing by the crossing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C His coat matches the dog.",
+      "expected": "C His coat match/3s the dog.",
+      "actual": "C His coat match/3s the dog.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Brown and white.",
+      "expected": "P Brown and white.",
+      "actual": "P Brown and white.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Um) maybe it is the dog's coat.",
+      "expected": "C (Um) maybe it is the dog/z coat.",
+      "actual": "C (Um) maybe it is the dog/z coat.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Much too long for that dog.",
+      "expected": "P Much too long for that dog.",
+      "actual": "P Much too long for that dog.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C He'd trip.",
+      "expected": "C He/'d trip.",
+      "actual": "C He/'d trip.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Hold my arm while we turn.",
+      "expected": "P Hold my arm while we turn.",
+      "actual": "P Hold my arm while we turn.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %squeak.",
+      "expected": "C %squeak.",
+      "actual": "C %squeak.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Is that your tram noise?",
+      "expected": "P Is that your tram noise?",
+      "actual": "P Is that your tram noise?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The wheels did it first.",
+      "expected": "C The wheel/s did it first.",
+      "actual": "C The wheel/s did it first.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Mine is smaller.",
+      "expected": "C Mine is smaller.",
+      "actual": "C Mine is smaller.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P This turn always squeaks.",
+      "expected": "P This turn always squeak/3s.",
+      "actual": "P This turn always squeak/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Why?",
+      "expected": "C Why?",
+      "actual": "C Why?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I don't know exactly.",
+      "expected": "P I don't know exactly.",
+      "actual": "P I don't know exactly.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Maybe the tram's hungry.",
+      "expected": "C Maybe the tram/'s hungry.",
+      "actual": "C Maybe the tram/'s hungry.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What would it eat?",
+      "expected": "P What would it eat?",
+      "actual": "P What would it eat?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Tracks.",
+      "expected": "C Track/s.",
+      "actual": "C Track/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then it would have nowhere to go.",
+      "expected": "P Then it would have nowhere to go.",
+      "actual": "P Then it would have nowhere to go.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, (not tracks) pretend sandwiches.",
+      "expected": "C No, (not track/s) pretend sandwich/s.",
+      "actual": "C No, (not track/s) pretend sandwich/es.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C I've eaten my sandwich.",
+      "expected": "C I/'ve eat/en my sandwich.",
+      "actual": "C I/'ve eat/en my sandwich.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You have eaten half.",
+      "expected": "P You have eat/en half.",
+      "actual": "P You have eat/en half.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The other half is yours now.",
+      "expected": "C The other half is yours now.",
+      "actual": "C The other half is yours now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thank you.",
+      "expected": "P Thank you.",
+      "actual": "P Thank you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Water!",
+      "expected": "C Water!",
+      "actual": "C Water!",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I didn't see the river before.",
+      "expected": "C I did/n't see the river before.",
+      "actual": "C I did/n't see the river before.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The houses hid it until now.",
+      "expected": "P The house/s hid it until now.",
+      "actual": "P The house/s hid it until now.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Is that boat moving too?",
+      "expected": "C Is that boat move/ing too?",
+      "actual": "C Is that boat move/ing too?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Slowly toward the bridge.",
+      "expected": "P Slowly toward the bridge.",
+      "actual": "P Slowly toward the bridge.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Its flag's flapping.",
+      "expected": "C Its flag/'s flap/ing.",
+      "actual": "C Its flag/'s flap/ing.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Our stop is after the bridge.",
+      "expected": "P Our stop is after the bridge.",
+      "actual": "P Our stop is after the bridge.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I will press the button.",
+      "expected": "C I will press the button.",
+      "actual": "C I will press the button.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I'll tell you when.",
+      "expected": "P I/'ll tell you when.",
+      "actual": "P I/'ll tell you when.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Is it) is it time yet?",
+      "expected": "C (Is it) is it time yet?",
+      "actual": "C (Is it) is it time yet?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P At the next bend.",
+      "expected": "P At the next bend.",
+      "actual": "P At the next bend.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The bell's picture is yellow.",
+      "expected": "C The bell/z picture is yellow.",
+      "actual": "C The bell/z picture is yellow.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Yes, that is the button.",
+      "expected": "P Yes, that is the button.",
+      "actual": "P Yes, that is the button.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Now?",
+      "expected": "C Now?",
+      "actual": "C Now?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Now.",
+      "expected": "P Now.",
+      "actual": "P Now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I pressed it {keeps one finger against the button}.",
+      "expected": "C I press/ed it {keeps one finger against the button}.",
+      "actual": "C I press/ed it {keeps one finger against the button}.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The little light came on.",
+      "expected": "P The little light came on.",
+      "actual": "P The little light came on.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It remembers for us.",
+      "expected": "C It remember/3s for us.",
+      "actual": "C It remember/3s for us.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Let's wait until we stop.",
+      "expected": "P Let/'us wait until we stop.",
+      "actual": "P Let/'us wait until we stop.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I want to find a round building next.",
+      "expected": "C I want to find a round building next.",
+      "actual": "C I want to find a round building next.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C That roof look/3s like a triangle.\"},{\"id\":1,\"text\":\"P The pointed one above the shop?\"},{\"id\":2,\"text\":\"C Yes, with two window/s underneath.\"},{\"id\":3,\"text\":\"C It/'s a face.\"},{\"id\":4,\"text\":\"P What would its mouth be?\"},{\"id\":5,\"text\":\"C The door.\"},{\"id\":6,\"text\":\"P I think it is smile/ing.\"},{\"id\":7,\"text\":\"C It can/'t smile when the door is shut.\"},{\"id\":8,\"text\":\"P You/'re right.\"},{\"id\":9,\"text\":\"C (The door) somebody open/ed it!\"},{\"id\":10,\"text\":\"C Now it says hello.\"},{\"id\":11,\"text\":\"P We pass/ed it too quickly to hear.\"},{\"id\":12,\"text\":\"C Are we go/ing up?\"},{\"id\":13,\"text\":\"P A little hill.\"},{\"id\":14,\"text\":\"C Last time this tram went flat.\"},{\"id\":15,\"text\":\"P We took a different route.\"},{\"id\":16,\"text\":\"C We/'ve take/en the long way today.\"},{\"id\":17,\"text\":\"P I have take/en this route before.\"},{\"id\":18,\"text\":\"C Does it go past the river?\"},{\"id\":19,\"text\":\"P Yes, after the square.\"},{\"id\":20,\"text\":\"C A square like my window?\"},{\"id\":21,\"text\":\"P A square can also mean an open space in town.\"},{\"id\":22,\"text\":\"C (Oh, a) a people square.\"},{\"id\":23,\"text\":\"P Usually with shop/s around it.\"},{\"id\":24,\"text\":\"C There are people on that roof.\"},{\"id\":25,\"text\":\"P Those are statue/s.\"},{\"id\":26,\"text\":\"C They look very still.\"},{\"id\":27,\"text\":\"P They are made of stone.\"},{\"id\":28,\"text\":\"C I/'d get bored up there.\"},{\"id\":29,\"text\":\"P You could watch the tram/s.\"},{\"id\":30,\"text\":\"C And count dogs.\"},{\"id\":31,\"text\":\"C One just cross/ed the road.\"},{\"id\":32,\"text\":\"P Its owner/'s wait/ing by the crossing.\"},{\"id\":33,\"text\":\"C His coat match/3s the dog.\"},{\"id\":34,\"text\":\"P Brown and white.\"},{\"id\":35,\"text\":\"C (Um) maybe it is the dog/z coat.\"},{\"id\":36,\"text\":\"P Much too long for that dog.\"},{\"id\":37,\"text\":\"C He/'d trip.\"},{\"id\":38,\"text\":\"P Hold my arm while we turn.\"},{\"id\":39,\"text\":\"C %squeak.\"},{\"id\":40,\"text\":\"P Is that your tram noise?\"},{\"id\":41,\"text\":\"C The wheel/s did it first.\"},{\"id\":42,\"text\":\"C Mine is smaller.\"},{\"id\":43,\"text\":\"P This turn always squeak/3s.\"},{\"id\":44,\"text\":\"C Why?\"},{\"id\":45,\"text\":\"P I don't know exactly.\"},{\"id\":46,\"text\":\"C Maybe the tram/'s hungry.\"},{\"id\":47,\"text\":\"P What would it eat?\"},{\"id\":48,\"text\":\"C Track/s.\"},{\"id\":49,\"text\":\"P Then it would have nowhere to go.\"},{\"id\":50,\"text\":\"C No, (not track/s) pretend sandwich/es.\"},{\"id\":51,\"text\":\"C I/'ve eat/en my sandwich.\"},{\"id\":52,\"text\":\"P You have eat/en half.\"},{\"id\":53,\"text\":\"C The other half is yours now.\"},{\"id\":54,\"text\":\"P Thank you.\"},{\"id\":55,\"text\":\"C Water!\"},{\"id\":56,\"text\":\"C I did/n't see the river before.\"},{\"id\":57,\"text\":\"P The house/s hid it until now.\"},{\"id\":58,\"text\":\"C Is that boat move/ing too?\"},{\"id\":59,\"text\":\"P Slowly toward the bridge.\"},{\"id\":60,\"text\":\"C Its flag/'s flap/ing.\"},{\"id\":61,\"text\":\"P Our stop is after the bridge.\"},{\"id\":62,\"text\":\"C I will press the button.\"},{\"id\":63,\"text\":\"P I/'ll tell you when.\"},{\"id\":64,\"text\":\"C (Is it) is it time yet?\"},{\"id\":65,\"text\":\"P At the next bend.\"},{\"id\":66,\"text\":\"C The bell/z picture is yellow.\"},{\"id\":67,\"text\":\"P Yes, that is the button.\"},{\"id\":68,\"text\":\"C Now?\"},{\"id\":69,\"text\":\"P Now.\"},{\"id\":70,\"text\":\"C I press/ed it {keeps one finger against the button}.\"},{\"id\":71,\"text\":\"P The little light came on.\"},{\"id\":72,\"text\":\"C It remember/3s for us.\"},{\"id\":73,\"text\":\"P Let/'us wait until we stop.\"},{\"id\":74,\"text\":\"C I want to find a round building next.\"}]}"
+  ],
+  "counts_toward_phase_a": true,
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1",
+    "source": "stage1_v5_reuse"
+  }
+}

@@ -1,0 +1,167 @@
+For each word or short phrase, run every potentially relevant conditional tree below. The outcome of one gate determines whether the next gate is evaluated. A terminal instruction ends only that convention tree; other relevant trees must still be evaluated. Multiple trees may produce marks on the same word or utterance.
+
+GLOBAL FORM AND SCOPE CONDITIONS
+- IF a proposed change is not a required slash-code insertion or the lemma restoration required by that code, THEN reject the change. Preserve every speaker ID, word, line break, capitalization choice, punctuation mark, and apostrophe exactly.
+- IF a lexical suffix is marked, THEN place the code after the complete dictionary lemma. Remove the full surface inflection and reverse silent-e deletion, y-to-i spelling, and consonant doubling. Never output fragments such as choos/ing, chang/ed, compar/ing, carri/ed, us/ed, or mov/ing.
+- IF a proposed code is not one of /s, /z, /3s, /ing, /ed, /en, /'s, /'re, /'m, /'ll, /'d, /'ve, /h's, /h'd, /d's, /d'd, /'us, /'t, or /n't, THEN reject it.
+- Surface spelling creates only a candidate. IF grammatical function or context fails a tree's eligibility condition, THEN that tree must not mark the form.
+
+TREE - REGULAR PLURAL (/s)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: noun forms that express more than one entity and appear to contain a regular plural ending.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The form functions as a noun in context, denotes more than one entity, and has a recoverable singular noun root with a productive regular plural inflection.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: Do not mark singular nouns; verbs ending in s; possessives; irregular plurals such as mice, geese, children, or deer; or plural-looking lexical items with no productive singular form, such as pants, binoculars, or congratulations.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN remove the complete surface plural ending and write the singular dictionary lemma followed by /s. Use /s for surface -s and -es; never use /es. Thus cats becomes cat/s, boxes becomes box/s, and babies becomes baby/s.
+
+TREE - POSSESSIVE (/z (and /s/z when plural and possessive both apply))
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: a noun or name expressing possession through apostrophe-s, plural-s plus apostrophe, or a predicative possessive whose possessed noun is understood.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The noun or name expresses ownership or another possessive relationship either before the possessed noun or predicatively after BE, as in "This one is Ella's."
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: Do not mark possessive pronouns such as mine, his, hers, ours, yours, its, or theirs. Do not treat apostrophe-s meaning is or has as possessive. Do not invent possessive marking when the relationship is not expressed in the transcript.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN replace singular possessive apostrophe-s with /z on the complete owner. For a regular plural possessor, remove the surface plural ending, recover the singular noun lemma, and write lemma/s/z. Never output visitors/s/z or helpers/s/z.
+
+TREE - REGULAR THIRD-PERSON SINGULAR (/3s)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: present-tense verb forms ending in s or es.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The form is a regular present-tense lexical verb governed by a third-person singular subject. Identify the subject within the verb's own main, subordinate, relative, or embedded clause.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: plural noun; possessive; verb with a non-third-person-singular subject; infinitive under a modal; or irregular DOES, HAS, IS, or SAYS. IF SAYS introduces an embedded clause, THEN leave SAYS intact and evaluate the embedded verb independently.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN remove the full surface -s or -es ending and write the dictionary verb lemma followed by /3s. GOES becomes go/3s, CARRIES becomes carry/3s, and MAKES becomes make/3s. Never output makes/3s, uses/3s, or checks/3s.
+
+TREE - PROGRESSIVE (/ing)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: verbs ending in ing.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The ing-form expresses an unfolding or continuing action either in a BE progressive or as the verbal complement of an aspectual verb such as KEEP or START.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: gerund or activity noun functioning as a subject, object, or complement; ing-form selected by a preposition such as AFTER, BEFORE, BY, FOR, FROM, IN, OF, ON, THROUGH, WITH, or WITHOUT; adjectival ing-form; or GOING in a going-to future construction.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN remove the complete surface -ing ending and write the full dictionary verb lemma followed by /ing. Restore silent E and undo consonant doubling: choosing becomes choose/ing, causing becomes cause/ing, comparing becomes compare/ing, moving becomes move/ing, using becomes use/ing, and changing becomes change/ing.
+
+TREE - REGULAR PAST TENSE (/ed)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: a surface verb ending in productive regular -ed or -d that may express simple past tense or function as a regular past participle in a HAVE perfect. Do not manufacture an ED candidate from another spelling.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The form carries a productive regular -ed or -d inflection and functions either as a completed simple-past event or as a regular past participle governed by HAVE, HAS, HAD, or an eligible contraction.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: irregular past such as went, ate, brought, chose, found, had, made, said, or told; attributive or predicate adjective; passive or result-state participle governed by BE or GET; noun; or present-tense verb. Do not regularize an irregular past.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN remove the full surface -ed or -d ending and write the complete present-tense dictionary lemma followed by /ed. Thus changed becomes change/ed, carried becomes carry/ed, compared becomes compare/ed, agreed becomes agree/ed, arrived becomes arrive/ed, and used becomes use/ed. A regular perfect participle such as "had checked" uses check/ed, not /en.
+
+TREE - PAST PARTICIPLE (/en)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: past-participle forms that occur in a perfect construction with have, has, or had, including an eligible contracted has.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The form is an en-participle in a HAVE, HAS, or HAD perfect construction, and its present-tense root is recoverable without a disqualifying root-sound change. Eligible root-preserving forms include fallen, proven, given, taken, shaken, and eaten.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: regular ed-participle; be-only passive; adjectival participle; noun; form without an eligible en participle; or disallowed root-changing form such as gotten, spoken, seen, been, or written. A regular form such as checked never receives /en.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN write the complete present-tense dictionary lemma followed by /en and restore silent E where required: fallen becomes fall/en, proven becomes prove/en, given becomes give/en, taken becomes take/en, shaken becomes shake/en, and eaten becomes eat/en.
+
+TREE - CONTRACTED BE (/'s, /'re, /'m)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: an orthographic apostrophe-s, apostrophe-re, or apostrophe-m contraction hosted by a pronoun, interrogative, noun, or proper name.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: Context shows that the contraction means IS, ARE, or AM. Apostrophe-s followed by a location, adjective, or progressive predicate supports contracted IS.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: uncontracted IS, ARE, or AM; possessive apostrophe-s; or apostrophe-s meaning HAS before a perfect participle, including when ALREADY intervenes.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN preserve the complete host and replace only the contraction boundary with /'s, /'re, or /'m: Rina's checking becomes Rina/'s check/ing, the blanket's sitting becomes the blanket/'s sit/ing, they're becomes they/'re, and I'm becomes I/'m. Do not convert uncontracted "I am" into "I/'m."
+
+TREE - CONTRACTED MODAL (/'ll, /'d)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: orthographic contractions containing apostrophe-ll or apostrophe-d.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: Context shows that apostrophe-ll means WILL or apostrophe-d means WOULD, ordinarily before a base verb.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: uncontracted WILL or WOULD; apostrophe-d meaning HAD before a participle or in HAD BETTER; or apostrophe-d meaning DID in a question.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN preserve the complete host and use /'ll for WILL or /'d for WOULD. IF a base verb follows, that ordinarily supports WOULD; IF a past participle or BETTER follows, that supports HAD.
+
+TREE - OTHER ELIGIBLE CONTRACTIONS (/'ve, /h's, /h'd, /d's, /d'd, /'us)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: contractions whose recoverable element means have, has, had, does, did, or us.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: apostrophe-ve means HAVE; apostrophe-s means HAS before a perfect participle, including when ALREADY intervenes; apostrophe-d means HAD before a participle or in HAD BETTER; apostrophe-s means DOES in a suitable question; apostrophe-d means DID in a suitable question; or LET'S means LET US.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: Do not use these codes for contracted BE, contracted will or would, possessive apostrophe-s, negative contractions, or uncontracted words.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN preserve the complete host and attach the code that identifies the recovered element: we've becomes we/'ve; Lily's already finished becomes Lily/h's already finish/ed; we'd checked becomes we/h'd check/ed; what's meaning what does becomes what/d's; why'd meaning why did becomes why/d'd; and let's becomes let/'us.
+
+TREE - NEGATIVE CONTRACTIONS (/'t, /n't)
+GATE 1 - CANDIDACY
+IF the form is not one of the following, THEN terminate this tree without a mark: a negative contraction already written with apostrophe-t or n't. Separate words such as CAN WE or DID NOT are not candidates.
+OTHERWISE continue to Gate 2.
+GATE 2 - ELIGIBILITY
+IF this condition is not satisfied, THEN terminate this tree without a mark: The written contraction has a stable recoverable root: CAN, IS, ARE, WAS, WERE, DOES, DID, COULD, SHOULD, WOULD, HAVE, HAS, or HAD.
+OTHERWISE continue to Gate 3.
+GATE 3 - EXCLUSIONS
+IF any exclusion applies, THEN terminate this tree without a mark: WON'T, DON'T, or AIN'T; uncontracted negative phrase; affirmative question such as CAN WE; or any form requiring an invented apostrophe. Leave excluded forms character-for-character unchanged.
+OTHERWISE continue to Gate 4.
+GATE 4 - ANNOTATION
+IF all prior gates were passed, THEN use /'t only for eligible CAN'T and /n't for the other eligible contractions. Preserve the full root: can't becomes can/'t, isn't becomes is/n't, doesn't becomes does/n't, wouldn't becomes would/n't, and didn't becomes did/n't.
+
+GLOBAL CONFLICT CONDITIONS
+IF regular plurality and possession both apply to the same owner, THEN use /s/z in that order after the singular noun lemma.
+IF apostrophe-s is ambiguous, THEN resolve it from syntax as possession, IS, HAS, or DOES before selecting /z, /'s, /h's, or /d's.
+IF apostrophe-d is ambiguous, THEN resolve it from syntax as WOULD, HAD, or DID before selecting /'d, /h'd, or /d'd.
+IF one convention qualifies, THEN continue evaluating any other independently relevant tree. Multiple codes are allowed only when each represents a distinct eligible morpheme.
+IF contextual evidence remains insufficient, THEN leave that candidate unmarked.
+
+CALIBRATION EXAMPLES
+MARK: "C The visitors' boxes are moving."
+AS:   "C The visitor/s/z box/s are move/ing."
+MARK: "C Lily carried the map while Rina was choosing where it goes."
+AS:   "C Lily carry/ed the map while Rina was choose/ing where it go/3s."
+MARK: "P Lily's already checked it, and we'd taken the other path."
+AS:   "P Lily/h's already check/ed it, and we/h'd take/en the other path."
+MARK: "C I'm ready, they're waiting, and she'll help because the box isn't heavy."
+AS:   "C I/'m ready, they/'re wait/ing, and she/'ll help because the box is/n't heavy."
+MARK: "C Why'd Mom move the boxes after we said let's go?"
+AS:   "C Why/d'd Mom move the box/s after we said let/'us go?"
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C We can use it without losing the shaded path."
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C The mice did not leave because the box has been checked."
+
+INPUT AND OUTPUT
+- The input is an unannotated plain-text SALT transcript. Each utterance begins with a speaker ID.
+- Preserve every speaker ID, line break, utterance boundary, word, capitalization choice, punctuation mark, maze, comment, and other SALT notation except where a required slash code must be inserted.
+- Apply every qualifying convention from the full set of ten. One word or utterance may require more than one mark.
+- Annotate every clearly eligible occurrence and no ineligible occurrence.
+- Resolve apostrophe meanings from context before selecting possessive, BE, modal, other, or negative coding.
+- When the transcript does not supply enough context to resolve a candidate, leave that candidate unmarked.
+- Return only the fully annotated transcript, with no explanation, analysis, headings, or code fence.

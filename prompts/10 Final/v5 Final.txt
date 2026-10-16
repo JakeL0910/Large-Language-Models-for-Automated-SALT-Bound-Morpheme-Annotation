@@ -1,0 +1,962 @@
+I have a list of sentences from a language sample. For each sentence, apply all applicable Systematic Analysis of Language Transcripts (SALT) conventions below. A single line may have one required convention annotation, zero convention annotations, or more than one required convention annotation.
+
+IMPORTANT OUTPUT RULES
+- Keep the speaker prefix exactly as provided: C, P, or A. Never remove the speaker prefix.
+- Preserve the original words, word order, capitalization, and punctuation except where annotation requires modifying a word.
+- Do not rewrite, paraphrase, correct grammar, or improve the sentence.
+- Apply every applicable convention in the sentence.
+- Output ONLY the fully annotated sentence.
+- Do not explain your answer.
+- Do not provide labels, reasoning, notes, bullets, or commentary.
+
+IMMUTABLE-TOKEN REQUIREMENT
+- Treat the input line as read-only except for the exact word receiving SALT annotation.
+- Never add, delete, reorder, or substitute a speaker label, name, pronoun,
+  determiner, auxiliary, modal, content word, or punctuation mark.
+- Annotation is not correction or rewriting. If a token is not being annotated,
+  copy it character-for-character.
+- An annotation may alter only the internal form of its own eligible token by
+  restoring its root and appending a slash code. It never licenses a change to
+  any neighboring token.
+- Never create an apostrophe or a negative contraction that is absent from the
+  input. An uncontracted modal or auxiliary must remain uncontracted.
+- Conversely, never erase or ignore an apostrophe already present in an eligible
+  contraction. Preserve that contraction by inserting its required slash code.
+- Preserve every original line-initial word after the speaker prefix, including
+  discourse markers, conjunctions, adverbs, and determiners.
+- The output must contain the same number of space-delimited tokens as the
+  input. A slash code changes a token internally; it does not add or remove a
+  word.
+
+ANNOTATION-COVERAGE REQUIREMENT
+- Examine every noun, finite verb, BE-progressive phrase, perfect construction,
+  and apostrophe form in the entire line. Do not stop after finding one target.
+- Apply all eligible annotations independently. The presence of one correct
+  code does not excuse leaving another eligible word unchanged.
+- Rules apply productively to every eligible lexical item, not only to words
+  appearing in the examples.
+- Explicit exclusion rules are vetoes. Once a form is excluded by its syntax or
+  lexical status, do not annotate it merely because its spelling resembles a
+  target ending.
+
+RULE PRECEDENCE
+- Apply rules in this order: preserve the input tokens; identify grammatical
+  category and construction; enforce lexical and syntactic exclusions; then
+  restore the lemma and append the permitted code.
+- A root-restoration instruction cannot override an exclusion. Root restoration
+  occurs only after a word has been proven eligible.
+- Never reinterpret an irregular word as a regular form in order to attach a
+  code. Never reinterpret a noun as a verb or a verb as a noun to create an
+  annotation opportunity.
+
+CRITICAL ROOT-RESTORATION RULE
+- Write the complete free/root word before every slash.
+- Never truncate the root, change final Y to I, or insert a slash inside the root.
+- Use a lemma-first operation: identify the complete dictionary base form,
+  write that entire form, and append exactly one applicable morpheme code.
+- Do not derive the root by merely deleting the visible final letters of the
+  inflected surface form.
+- Reverse ordinary English spelling adjustments before adding the code: restore
+  silent E, reverse Y-to-I changes, and undo consonant doubling. The material
+  before the slash must always be the intact dictionary lemma.
+- Root restoration is mandatory for every eligible regular form, including
+  words whose surface spelling drops E or changes final Y. Never output a
+  clipped spelling fragment before a slash.
+- Correct: change/ed, carry/ed, expect/ed, happen/ed, arrive/ed, use/ed,
+  compare/ed, compare/ing, choose/ing, cause/ing.
+- Incorrect: chang/ed, carri/ed, expected, happened, arriv/ed, use/3s,
+  compar/ed, compar/ing, choos/ing, caus/ing.
+- The material before a slash is the lemma, not an orthographic stem. For a
+  final-Y verb, retain Y in the lemma. For a silent-E verb, restore E before
+  /ed or /ing. This requirement is mechanical and does not vary with tense,
+  speaker, clause depth, or surrounding words.
+
+FIXED CODE STRINGS
+- Use only the convention code specified by the eligible category. Regular
+  plurals always take /s, including surface plurals pronounced with an extra
+  syllable; never invent /es.
+- Regular third-person singular verbs always take /3s. Negative contractions
+  take /n't or /'t exactly as specified. Never shorten, respell, or improvise a
+  slash code.
+- Only codes defined in this prompt are permitted. Never invent partial codes
+  such as /e or insert a slash merely to show a spelling change.
+
+1. REGULAR PLURAL (/s)
+
+Mark regular plural nouns formed with -s or -es. Restore the complete singular
+root before /s, including when written Y changes to IE in the surface plural.
+
+Examples:
+adults → adult/s
+boxes → box/s
+parts → part/s
+jobs → job/s
+stripes → stripe/s
+babies → baby/s
+supplies → supply/s
+
+Do NOT mark:
+- irregular plurals:
+  mice, geese, children
+- sound-change plurals:
+  leaves, wolves
+- singular words ending in -s:
+  pants, class, mess, bus when singular
+- verbs
+- possessives
+- nouns functioning as attributive modifiers in fixed compounds when they do
+  not express plural meaning, e.g. "sales team"
+
+Mark every eligible regular plural noun in the line.
+
+Every semantically plural count noun with a productive regular -s or -es
+inflection must receive /s, even when it is the first word after a speaker ID.
+Preserve all determiners and surrounding words.
+
+Example:
+C Blocks can sit on the shelves.
+→ C Block/s can sit on the shelf/s.
+
+================================================================================
+2. POSSESSIVE (/z)
+================================================================================
+
+Mark noun or proper-name possessive 's that signify possession. A possessive ’s may occur before the possessed noun or stand alone when the possessed item is already stated or understood.
+
+Examples:
+the owl's nest → the owl/z nest
+Bob’s gate → Bob/z gate
+
+If both plural and possessive morphology apply, including regular plural
+possessives written with a final apostrophe, mark both:
+frogs' → frog/s/z
+visitors' tickets → visitor/s/z ticket/s
+helpers' benches → helper/s/z bench/s
+
+Do NOT mark:
+- possessive pronouns:
+  mine, yours, his, hers, ours, theirs, its
+- possessives such as James' where no additional /s/ sound is present
+- contracted IS
+- contracted HAS
+
+Possessive /z may also occur predicatively or before HAS:
+This envelope is Rina's. → This envelope is Rina/z.
+Hugo's has a plain mark. → Hugo/z has a plain mark.
+Do not misclassify these possessives as contracted IS.
+
+
+================================================================================
+3. REGULAR THIRD-PERSON SINGULAR (/3s)
+================================================================================
+
+Mark regular present-tense third-person singular verbs formed by adding
+-s or -es without irregular root change.
+
+Examples:
+walks → walk/3s
+plays → play/3s
+looks → look/3s
+wants → want/3s
+helps → help/3s
+
+Do NOT mark:
+- irregular third-person forms:
+  does, has, is, says
+- nouns ending in -s
+- possessives
+- verbs with plural subjects
+- verbs with first-person subjects
+- verbs with second-person subjects
+- infinitives
+- bare verbs following modals
+
+Important contrasts:
+belongs → belong/3s
+means → mean/3s
+shifts → shift/3s
+goes → go/3s
+says → says (unmarked because SAY changes sound)
+
+LEXICAL VETO: DOES, HAS, IS, and SAYS are indivisible irregular forms for this
+convention. Copy them unchanged. Never segment any of them with /3s or convert
+SAYS into a regular SAY analysis.
+
+When SAYS introduces an embedded clause, analyze the matrix and embedded verbs
+separately. SAYS remains intact, while an eligible regular present verb inside
+the clause still takes /3s according to its own subject. Never move the marker
+from the embedded verb onto SAYS.
+
+The veto applies to the whole surface word. Do not attach /3s to a noun merely
+because it precedes an eligible verb, and do not retain the inflected spelling
+before /3s. For an eligible verb, the material before /3s is the dictionary
+lemma, never the surface form with S still attached.
+
+THIRD-PERSON DECISION RULE
+- First identify the grammatical subject of each present-tense verb, including
+  verbs inside relative, subordinate, and embedded clauses.
+- If that subject is singular third person and the verb is a regular eligible
+  form, /3s is mandatory even when the verb is far from the sentence beginning.
+- The exclusion list is lexical, not visual: SAYS remains unmarked, but other
+  eligible verbs must not be left unmarked merely because they already end in S.
+- After excluding DOES, HAS, IS, and SAYS, an overt regular -s or -es on a
+  present-tense verb with a singular third-person subject requires /3s. This is
+  mandatory in main, subordinate, relative, and interrogative clauses.
+- Never annotate a noun as /3s and never annotate a verb whose subject is I,
+  YOU, WE, THEY, or a plural noun phrase.
+- YOU is an absolute subject-agreement veto for /3s, including inside IF,
+  WHEN, WHILE, and other subordinate clauses. A present verb governed by YOU
+  remains in its unmarked base form.
+- Assign /3s only to the finite verb itself. Subject nouns, object nouns, and
+  nearby modifiers cannot receive /3s.
+- A token inside the subject noun phrase remains a noun. Do not attach /3s to
+  the head noun of a determiner-led subject phrase; locate the following finite
+  predicate verb instead.
+
+================================================================================
+4. PROGRESSIVE (/ing)
+================================================================================
+
+Mark -ing verbs when they are true progressive verb forms.
+
+Typical environments:
+am + VERB-ing
+is + VERB-ing
+are + VERB-ing
+was + VERB-ing
+were + VERB-ing
+
+Also mark progressive forms when NOT occurs in the auxiliary phrase.
+
+Examples:
+is moving → is move/ing
+keeps changing → keep/3s change/ing
+are checking → are check/ing
+is not running → is not run/ing
+
+Use the complete verb root before /ing.
+
+Examples:
+building → build/ing
+shining → shine/ing
+hiding → hide/ing
+running → run/ing
+crawling → crawl/ing
+walking → walk/ing
+looking → look/ing
+checking → check/ing
+sleeping → sleep/ing
+
+Do NOT mark:
+- "going to" when GOING functions as the future construction:
+  is going to be
+- gerund nouns:
+  Checking the envelope is my favorite job.
+- activity nouns after verbs such as LIKE:
+  I like dancing.
+- nouns ending in -ing:
+  the recording
+- adjectival -ing forms before nouns:
+  squeaking toy
+
+Do not annotate an -ing form merely because it ends in ING. Require a verbal
+continuing-action or action-onset use. Eligible uses include both BE-progressive
+phrases and verbal complements selected by aspectual KEEP or START.
+
+ING ELIGIBILITY GATE
+- First determine whether the -ing form expresses an action as a verb rather
+  than functioning as a noun, adjective, or future GOING TO construction.
+- Mark /ing when the -ing word is the lexical verb in a progressive phrase
+  headed by BE, including when NOT intervenes.
+- Also mark /ing when an aspectual form of KEEP or START selects an -ing verb
+  expressing continuation or onset of an action. BE is not required in this
+  environment.
+- If the -ing word follows a preposition, functions as a gerund noun or noun
+  phrase, or is otherwise nonverbal, it stays unmarked.
+- An -ing clause functioning as the grammatical subject of IS is a gerund noun
+  phrase and stays unmarked.
+- Apply the exclusion test before root restoration; a correct-looking root does
+  not make a non-progressive form eligible.
+- Possessive interpretation is impossible when noun/name 's directly heads a
+  BE-progressive predicate. In that environment, classify 's as contracted IS
+  and classify the following -ing verb as progressive.
+- A lexical verb other than the specified aspectual KEEP or START does not
+  automatically license /ing. Continue to apply the stated exclusions.
+- Once an -ing token passes this syntactic gate, lemma restoration is
+  compulsory: silent E belongs to the lemma before /ing. Do not use the
+  spelling stem produced by dropping E from the surface form.
+
+Non-progressive contrasts remain unmarked:
+before asking → before asking
+without losing → without losing
+finished checking → finished checking
+likes dancing → likes dancing
+
+================================================================================
+5. REGULAR PAST TENSE (/ed)
+================================================================================
+
+Mark regular simple-past verbs and regular -ed or -d participles in HAVE, HAS, or HAD perfect constructions.
+
+Examples:
+shared → share/ed
+stopped → stop/ed
+died → die/ed
+tried → try/ed
+baked → bake/ed
+
+Restore the complete root before /ed.
+
+Do NOT mark:
+- irregular past:
+  went, saw, found, said, told, did, had, made, bought, brought, chose,
+  thought, forgot, ran, ate
+- predicate adjectives:
+  was tired
+  felt worried
+- adjectival participles:
+  shaded path
+  got fixed
+- present-tense verbs
+- nouns
+
+Mark every eligible regular simple-past verb or regular -ed perfect participle in the line.
+
+Important contrasts:
+Who used it? → Who use/ed it?
+I finished it → I finish/ed it
+the place is taken → the place is taken
+the corner was finished → the corner was finished
+the photo is finished → the photo is finished
+the card hasn't been checked → the card has/n't been checked
+
+PAST-TENSE GATE
+- Require a finite regular-past verb or a regular -ed participle governed by
+  HAVE, HAS, or HAD (including eligible contractions) before applying /ed.
+- Irregular past forms are atomic and must never be converted into a regular
+  root-plus-/ed analysis.
+- SAID is the irregular past of SAY and is always copied intact. Never analyze
+  it as regular past morphology.
+- Every irregular past form is copied intact, including irregular forms created
+  by a vowel change, consonant change, or no productive -ed suffix. Do not
+  replace an irregular surface form with its present-tense lemma plus /ed.
+- CHOSE is a frozen irregular past form. Preserve it intact; never replace it
+  with CHOOSE plus /ed.
+- If BE, BEEN, or GET licenses the form as passive or adjectival, /ed is
+  prohibited. This exclusion overrides the visible ED ending.
+- An -ed-looking modifier before a noun is adjectival unless the syntax clearly
+  makes it the finite past-tense verb.
+- Conversely, any finite completed regular-past event requires /ed even when
+  the spelling is unchanged except for ordinary final -ed or -d. Do not leave
+  an eligible regular past verb unannotated because it is not listed in an
+  example.
+- Apply the regular-/ed eligibility test independently inside complement,
+  relative, and subordinate clauses. A regular form remains eligible when its
+  subject is omitted by ordinary relative-clause syntax or when another past
+  event occurs earlier in the same sentence.
+- A past participle governed by BE or BEEN is passive or adjectival here, not
+  finite regular past. Keep that participle intact and unsegmented.
+- The BE/BEEN veto is determined by syntax, not meaning. If the auxiliary heads
+  a passive or result-state predicate, the following participle remains intact
+  even when the same spelling could be a finite regular-past verb elsewhere.
+- The passive veto also covers MODAL + BE + past participle. In that structure,
+  annotate an eligible modal contraction if present, but leave the participle
+  intact. Do not treat the participle as a finite /ed verb merely because it
+  has regular spelling.
+- A bare verb selected by LET or LET US is not past tense and cannot receive
+  /ed. Its form must remain the dictionary base verb.
+
+================================================================================
+6. PAST PARTICIPLE (/en)
+================================================================================
+
+Mark eligible past participles ending in -en ONLY when they occur in a
+HAVE/HAS/HAD perfect construction.
+
+When an eligible irregular -en participle occurs after uncontracted or
+contracted HAVE, HAS, or HAD, /en is mandatory. Do not leave the surface
+participle intact and do not convert an irregular participle into /ed.
+
+This includes contracted HAVE/HAS/HAD forms.
+
+Eligible environments include:
+have + participle
+has + participle
+had + participle
+haven't + participle
+hasn't + participle
+I've + participle
+we've + participle
+they've + participle
+he's + participle when 's = HAS
+she's + participle when 's = HAS
+he'd + participle when 'd = HAD
+she'd + participle when 'd = HAD
+
+If the verb chain contains:
+have been
+has been
+had been
+haven't been
+hasn't been
+
+ignore BEEN for /en coding and evaluate the next -en participle.
+
+Do NOT mark:
+- words not ending in -en
+- BEEN itself
+- irregular participles where the root vowel changes and the form is excluded
+- -en forms after only:
+  is, are, am, was, were, be, being, get, gets, got, gotten
+  unless HAVE/HAS/HAD is part of the same perfect verb chain
+- passive/adjectival participles without HAVE/HAS/HAD
+- nouns
+- words where -en is not a separable syllable
+
+YES LIST:
+Always mark these when they occur after HAVE/HAS/HAD:
+
+fallen → fall/en
+proven → prove/en
+given → give/en
+taken → take/en
+shaken → shake/en
+eaten → eat/en
+
+For other possible -en forms:
+- mark only if the complete present/root form can occur before /en
+- restore the full root
+- never use only /n
+
+Correct:
+take/en
+give/en
+eat/en
+
+Incorrect:
+tak/en
+giv/en
+eate/n
+
+IMPORTANT:
+Irregular forms specifically excluded by SALT, such as "seen", remain
+unmarked.
+
+Example:
+C She has seen the card.
+→ C She has seen the card.
+
+================================================================================
+7. CONTRACTED BE (/'s, /'re, /'m)
+================================================================================
+
+Mark contractions of BE only.
+
+IS:
+he's ready → he/'s ready
+she's walking → she/'s walk/ing
+what's that → what/'s that
+
+ARE:
+we're here → we/'re here
+they're running → they/'re run/ing
+
+AM:
+I'm ready → I/'m ready
+
+Do NOT use this category when:
+- 's is possessive
+- 's means HAS
+- 's means DOES
+- 'd means something else
+- IS, ARE, or AM is uncontracted
+
+Do not overlook the written contraction itself:
+You're holding it. → You/'re hold/ing it.
+I'm moving it. → I/'m move/ing it.
+
+================================================================================
+8. CONTRACTED MODAL (/'ll, /'d)
+================================================================================
+
+Mark contracted modal forms.
+
+WILL:
+/'ll
+
+Examples:
+I'll help. → I/'ll help.
+She'll go. → She/'ll go.
+We'll check it. → We/'ll check it.
+
+WOULD:
+/'d
+
+Examples:
+She'd go with us. → She/'d go with us.
+We'd like that. → We/'d like that.
+Why'd she want that? → Why/'d she want that?
+ONLY if the intended expansion is "Why would she want that?"
+
+Do NOT mark:
+- uncontracted will
+- uncontracted would
+- 'd meaning HAD
+- 'd meaning DID
+
+================================================================================
+9. OTHER ELIGIBLE CONTRACTIONS
+(/'ve, /h's, /h'd, /d's, /d'd, /'us)
+================================================================================
+
+CRITICAL RULE:
+Do NOT classify contractions only from their written form.
+
+Before coding 's or 'd, determine what the contraction MEANS in context.
+
+Mentally expand the contraction first.
+
+CONTRACTION PASS REQUIREMENT
+- Scan every apostrophe token in a separate pass after lexical morphology.
+- Every eligible written contraction must receive its contraction code; do not
+  leave the original apostrophe form unchanged.
+- The slash is inserted immediately before the contraction letters specified
+  by the code. Preserve the apostrophe and the complete pronoun or auxiliary
+  to its left. Thus /'ve and /'d are indivisible code strings; plain written
+  apostrophe forms are not acceptable substitutes for those codes.
+- Decide the expansion from syntax before selecting a code. Never select a code
+  from spelling alone.
+- ALREADY followed by a past participle strongly selects HAS or HAD. BETTER
+  after 'd selects HAD. A following base verb normally selects WOULD.
+- Adverbs may intervene between the contraction and its participle. If 's is
+  followed by ALREADY and then a participle in a perfect construction, it means
+  HAS rather than IS.
+- An 's directly followed by a progressive -ing predicate selects IS, not
+  possession. An 's followed by a perfect participle selects HAS. Only an 's
+  that identifies an owner receives /z.
+- Contraction coding and verb-suffix coding are independent, so apply both when
+  the same verb phrase requires both.
+
+-------------------------------------------------------------------------------
+A. /'ve = HAVE
+-------------------------------------------------------------------------------
+
+Mark 've when it means HAVE.
+
+Examples:
+I've seen it.
+→ I/'ve seen it.
+
+We've already seen the card.
+→ We/'ve already seen the card.
+
+They've taken the key.
+→ They/'ve take/en the key.
+
+Do not change uncontracted HAVE.
+
+C We have seen the card.
+→ C We have seen the card.
+
+-------------------------------------------------------------------------------
+B. /h's = HAS
+-------------------------------------------------------------------------------
+
+Mark 's as /h's ONLY when it means HAS.
+
+STRONG CUE:
+The contraction is followed by a past participle or perfect verb phrase.
+
+Examples:
+She's already seen it.
+Expansion: She HAS already seen it.
+→ She/h's already seen it.
+
+He's finished the work.
+Expansion: He HAS finished the work.
+→ He/h's finished the work.
+
+Maya's already seen the chair.
+Expansion: Maya HAS already seen the chair.
+→ Maya/h's already seen the chair.
+
+Nora's taken the key.
+Expansion: Nora HAS taken the key.
+→ Nora/h's take/en the key.
+
+DO NOT confuse HAS with IS.
+
+She's ready.
+Expansion: She IS ready.
+→ She/'s ready.
+
+She's running.
+Expansion: She IS running.
+→ She/'s run/ing.
+
+DO NOT confuse HAS with possession.
+
+Maya's chair
+Expansion: the chair belongs to Maya
+→ Maya/z chair
+
+-------------------------------------------------------------------------------
+C. /h'd = HAD
+-------------------------------------------------------------------------------
+
+Mark 'd as /h'd ONLY when it means HAD.
+
+STRONG CUE:
+The contraction is followed by a past participle in a past-perfect
+construction.
+
+Examples:
+She'd seen it before.
+Expansion: She HAD seen it before.
+→ She/h'd seen it before.
+
+He'd already finished.
+Expansion: He HAD already finished.
+→ He/h'd already finished.
+
+They'd taken the key.
+Expansion: They HAD taken the key.
+→ They/h'd take/en the key.
+
+DO NOT confuse HAD with WOULD.
+
+She'd go with us.
+Expansion: She WOULD go with us.
+→ She/'d go with us.
+
+We’d like that.
+Expansion: We WOULD like that.
+→ We/'d like that.
+
+Additional high-priority contrasts:
+We'd already checked it. → We/h'd already check/ed it.
+We'd better keep it. → We/h'd better keep it.
+Now we'd make a different choice. → Now we/'d make a different choice.
+
+Treat these contrasts as hard syntactic decisions. Do not use /'d when the
+expansion is HAD, and do not leave an eligible contracted WOULD unannotated.
+
+The apostrophe itself must remain represented in the appropriate contraction
+code. Do not copy an eligible contracted form unchanged after determining its
+expansion.
+
+Contraction annotation is obligatory even when the rest of the line already
+contains correctly coded morphology. Preserve the lexical root of the
+contracted auxiliary exactly as specified by the contraction convention.
+
+-------------------------------------------------------------------------------
+D. /d's = DOES
+-------------------------------------------------------------------------------
+
+Mark 's as /d's ONLY when it means DOES.
+
+STRONG CUES:
+- Usually occurs in a question.
+- A subject follows the contraction.
+- The main verb is in bare/base form.
+- Replacing 's with DOES produces the intended grammatical sentence.
+
+Examples:
+
+What's Maya do in this picture?
+Expansion:
+What DOES Maya do in this picture?
+→ What/d's Maya do in this picture?
+
+Where's Eli work?
+Expansion:
+Where DOES Eli work?
+→ Where/d's Eli work?
+
+How's that help?
+Expansion:
+How DOES that help?
+→ How/d's that help?
+
+DO NOT confuse DOES with IS.
+
+What's that?
+Expansion:
+What IS that?
+→ What/'s that?
+
+What's Maya doing?
+Expansion:
+What IS Maya doing?
+→ What/'s Maya do/ing?
+
+DO NOT confuse DOES with HAS.
+
+What's Maya seen?
+Expansion:
+What HAS Maya seen?
+→ What/h's Maya seen?
+
+DECISION TEST FOR 's:
+
+"What’s Maya do?"
+IS expansion:
+"What is Maya do?" = ungrammatical
+HAS expansion:
+"What has Maya do?" = ungrammatical
+DOES expansion:
+"What does Maya do?" = grammatical
+
+Therefore:
+→ What/d's Maya do?
+
+-------------------------------------------------------------------------------
+E. /d'd = DID
+-------------------------------------------------------------------------------
+
+Mark 'd as /d'd ONLY when it means DID.
+
+STRONG CUES:
+- Commonly occurs in WH-questions.
+- The contraction is followed by a subject.
+- A bare/base verb follows that subject.
+- Expanding 'd to DID gives the intended sentence.
+
+Examples:
+
+Why'd Maya move the box?
+Expansion:
+Why DID Maya move the box?
+→ Why/d'd Maya move the box?
+
+Where'd Eli put the chair?
+Expansion:
+Where DID Eli put the chair?
+→ Where/d'd Eli put the chair?
+
+What'd Nora see?
+Expansion:
+What DID Nora see?
+→ What/d'd Nora see?
+
+Why'd Omar check the key?
+Expansion:
+Why DID Omar check the key?
+→ Why/d'd Omar check the key?
+
+DO NOT automatically code every WH + 'd as DID.
+
+Example:
+Why'd she want that?
+
+Possible expansion:
+Why WOULD she want that?
+→ Why/'d she want that?
+
+Possible expansion in another context:
+Why DID she want that?
+→ Why/d'd she want that?
+
+Use the sentence's intended grammatical meaning.
+
+-------------------------------------------------------------------------------
+F. /'us = US
+-------------------------------------------------------------------------------
+
+Mark LET'S as LET + contracted US.
+
+Examples:
+Let's go.
+→ Let/'us go.
+
+Let's move the box.
+→ Let/'us move the box.
+
+Let's carry the chair now.
+→ Let/'us carry the chair now.
+
+Never output let/'s. The required SALT form is always let/'us when LET'S means
+LET US. Preserve the original capitalization in sentence context.
+
+Do NOT change uncontracted LET US.
+
+Let us move the box.
+→ Let us move the box.
+
+-------------------------------------------------------------------------------
+MANDATORY 'S DISAMBIGUATION
+-------------------------------------------------------------------------------
+
+Every time you encounter 's, determine its meaning before coding it.
+
+Test these possibilities:
+
+1. POSSESSION
+Does the following noun belong to the preceding noun/person?
+→ /z
+
+Maya's chair
+→ Maya/z chair
+
+2. IS
+Does replacing 's with IS produce the intended sentence?
+→ /'s
+
+Maya's ready.
+→ Maya/'s ready.
+
+3. HAS
+Does replacing 's with HAS produce a perfect construction?
+→ /h's
+
+Maya's already seen it.
+→ Maya/h's already seen it.
+
+4. DOES
+Does replacing 's with DOES produce a grammatical question with a base verb?
+→ /d's
+
+What's Maya do?
+→ What/d's Maya do?
+
+Never assign the code based only on "'s".
+
+-------------------------------------------------------------------------------
+MANDATORY 'D DISAMBIGUATION
+-------------------------------------------------------------------------------
+
+Every time you encounter 'd, determine its meaning before coding it.
+
+1. HAD
+Usually followed by a past participle.
+→ /h'd
+
+She'd seen it.
+→ She/h'd seen it.
+
+2. WOULD
+Usually followed directly by a base verb.
+→ /'d
+
+She'd go.
+→ She/'d go.
+
+3. DID
+Typically in a question:
+WH-word + 'd + subject + base verb
+→ /d'd
+
+Why'd Maya go?
+→ Why/d'd Maya go?
+
+Never assign the code based only on "'d".
+
+================================================================================
+10. NEGATIVE CONTRACTIONS (/'t, /n't)
+================================================================================
+
+Mark eligible negative contractions only when the uncontracted root is
+recoverable and its pronunciation remains stable.
+
+For negative contractions, restore the complete uncontracted auxiliary before
+/n't or /'t. This contraction-specific root controls the output; do not strip
+letters from the auxiliary and do not apply /3s to it. The irregular status of
+DOES blocks /3s but does not block the eligible negative-contraction code.
+
+Use /n't after:
+
+isn't → is/n't
+aren't → are/n't
+wasn't → was/n't
+doesn't → does/n't
+didn't → did/n't
+couldn't → could/n't
+shouldn't → should/n't
+wouldn't → would/n't
+haven't → have/n't
+hasn't → has/n't
+hadn't → had/n't
+
+Use /'t after CAN:
+
+can't → can/'t
+
+Do NOT mark:
+won't
+don't
+ain't
+
+Reason:
+the required root form is not represented with the required stable
+pronunciation/form.
+
+Do NOT mark uncontracted negatives:
+
+is not
+did not
+cannot
+have not
+
+================================================================================
+FEW-SHOT EXAMPLES
+================================================================================
+
+
+
+EXAMPLE 1 — HAS + REGULAR PAST + /3S + PROGRESSIVE
+
+Input:
+C Lily's already carried the map, and the change means she is choosing the right path.
+
+Output:
+C Lily/h's already carry/ed the map, and the change mean/3s she is choose/ing the right path.
+
+-------------------------------------------------------------------------------
+
+EXAMPLE 2 — HAVE + REGULAR PAST + /EN + NEGATIVE PROGRESSIVE
+
+Input:
+C We've already checked the cards after we had eaten, and now we aren't starting the game.
+
+Output:
+C We/'ve already check/ed the card/s after we had eat/en, and now we are/n't start/ing the game.
+
+-------------------------------------------------------------------------------
+
+EXAMPLE 3 — DOES VS HAS CONTRAST
+
+Input:
+C What's Eli do after he's seen the cards?
+
+Output:
+C What/d's Eli do after he/h's seen the card/s?
+
+-------------------------------------------------------------------------------
+
+EXAMPLE 4 — NEGATION + PASSIVE EXCLUSION
+
+Input:
+C The ticket isn't ready because the bag hasn't been checked.
+
+Output:
+C The ticket is/n't ready because the bag has/n't been checked.
+
+-------------------------------------------------------------------------------
+
+EXAMPLE 5 — CONTRACTED BE + PROGRESSIVE + NOUN/VERB CONTRAST
+
+Input:
+C We're waiting while Lily compares the map, and the new position works.
+
+Output:
+C We/'re wait/ing while Lily compare/3s the map, and the new position work/3s.
+
+-------------------------------------------------------------------------------
+
+EXAMPLE 6 — PLURAL POSSESSIVE + IRREGULAR SAYS + /3S + PROGRESSIVE
+
+Input:
+C The visitors' map says the ticket goes here while Lily is moving it.
+
+Output:
+C The visitor/s/z map says the ticket go/3s here while Lily is move/ing it.

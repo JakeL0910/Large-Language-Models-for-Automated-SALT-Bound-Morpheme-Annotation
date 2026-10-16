@@ -1,0 +1,64 @@
+{
+  "label": "Optional diagnostic remap of synonym JSON identifier keys (override/item/…). Never substituted for original scores. Parser and saved cells unchanged.",
+  "substitutes_for_official": false,
+  "failed_cells": [
+    {
+      "family": "hard_03",
+      "config_id": "gemini-3.6-flash__think-medium",
+      "strict_ok": false,
+      "strict_error": "Batch JSON missing output IDs: [60]",
+      "strict_micro_f1_pct": 0.0,
+      "note": "sensitivity_offline_normalization; not a substitute for strict first-attempt scores",
+      "applicable": true,
+      "remapped_objects": [
+        {
+          "id": 60,
+          "source_key": "override"
+        }
+      ],
+      "missing_ids": [],
+      "diagnostic_failures": 0,
+      "diagnostic_tp": 102,
+      "diagnostic_fp": 5,
+      "diagnostic_fn": 0,
+      "diagnostic_precision_pct": 95.3271,
+      "diagnostic_recall_pct": 100.0,
+      "diagnostic_micro_f1_pct": 97.6077
+    },
+    {
+      "family": "medium_02",
+      "config_id": "gemini-3.6-flash__think-medium",
+      "strict_ok": false,
+      "strict_error": "Batch JSON missing output IDs: [99]",
+      "strict_micro_f1_pct": 0.0,
+      "note": "sensitivity_offline_normalization; not a substitute for strict first-attempt scores",
+      "applicable": true,
+      "remapped_objects": [
+        {
+          "id": 99,
+          "source_key": "item"
+        }
+      ],
+      "missing_ids": [],
+      "diagnostic_failures": 0,
+      "diagnostic_tp": 54,
+      "diagnostic_fp": 4,
+      "diagnostic_fn": 0,
+      "diagnostic_precision_pct": 93.1034,
+      "diagnostic_recall_pct": 100.0,
+      "diagnostic_micro_f1_pct": 96.4286
+    },
+    {
+      "family": "NEG_hard_04",
+      "config_id": "gemini-3.6-flash__think-medium",
+      "strict_ok": false,
+      "strict_error": "Expecting value: line 1 column 5739 (char 5738)",
+      "strict_micro_f1_pct": 0.0,
+      "note": "sensitivity_offline_normalization; not a substitute for strict first-attempt scores",
+      "applicable": false,
+      "remapped_objects": null,
+      "missing_ids": null,
+      "reason": "json_parse_failed: Expecting value: line 1 column 5739 (char 5738)"
+    }
+  ]
+}

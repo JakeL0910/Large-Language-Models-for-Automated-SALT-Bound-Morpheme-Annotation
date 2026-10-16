@@ -1,0 +1,1240 @@
+{
+  "ok": true,
+  "error": null,
+  "config_id": "gpt-5.6-luna__reason-medium",
+  "model": "gpt-5.6-luna",
+  "label": "GPT-5.6 Luna medium",
+  "provider": "openai",
+  "prompt_version": "V5",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "family": "hard_06",
+  "batch_size": "full",
+  "n_utterances": 132,
+  "n_requests": 1,
+  "max_output_tokens": 9376,
+  "elapsed_seconds": 37.526,
+  "retries": 0,
+  "finish_reasons": [
+    "stop"
+  ],
+  "usage": {
+    "prompt_tokens": 9587,
+    "completion_tokens": 4450,
+    "cached_tokens": 0,
+    "total_tokens": 14037
+  },
+  "estimated_cost_usd": 0.0,
+  "historical_cost_usd": 0.007257,
+  "new_spend_usd": 0.0,
+  "reused_from_stage1": true,
+  "failures": 0,
+  "tp": 78,
+  "fp": 3,
+  "fn": 5,
+  "precision_pct": 96.2963,
+  "recall_pct": 93.9759,
+  "micro_f1_pct": 95.122,
+  "rows": [
+    {
+      "original": "C You need a ticket before you sit there.",
+      "expected": "C You need a ticket before you sit there.",
+      "actual": "C You need a ticket before you sit there.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Is this our train from Saturday?",
+      "expected": "P Is this our train from Saturday?",
+      "actual": "P Is this our train from Saturday?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, I'm the driver.",
+      "expected": "C Yes, I/'m the driver.",
+      "actual": "C Yes, I/'m the driver.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I remember you being the driver at the museum.",
+      "expected": "P I remember you being the driver at the museum.",
+      "actual": "P I remember you being the driver at the museum.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (That's) that's what I mean.",
+      "expected": "C (That/'s) that/'s what I mean.",
+      "actual": "C (That's) that/'s what I mean.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C The museum train.",
+      "expected": "C The museum train.",
+      "actual": "C The museum train.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I thought you meant the train we rode to get there.",
+      "expected": "P I thought you meant the train we rode to get there.",
+      "actual": "P I thought you meant the train we rode to get there.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, that one went places.",
+      "expected": "C No, that one went place/s.",
+      "actual": "C No, that one went places.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P And the museum one stayed in the building.",
+      "expected": "P And the museum one stay/ed in the building.",
+      "actual": "P And the museum one stay/ed in the building.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It moved a little.",
+      "expected": "C It move/ed a little.",
+      "actual": "C It move/ed a little.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Which part moved?",
+      "expected": "P Which part move/ed?",
+      "actual": "P Which part move/ed?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (The big) the big handle.",
+      "expected": "C (The big) the big handle.",
+      "actual": "C (The big) the big handle.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I pulled it toward me.",
+      "expected": "C I pull/ed it toward me.",
+      "actual": "C I pull/ed it toward me.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Keep the chair on the floor while you drive.",
+      "expected": "P Keep the chair on the floor while you drive.",
+      "actual": "P Keep the chair on the floor while you drive.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'm doing the handle, not the chair.",
+      "expected": "C I/'m do/ing the handle, not the chair.",
+      "actual": "C I/'m do/ing the handle, not the chair.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You can use this wooden spoon as a handle.",
+      "expected": "P You can use this wooden spoon as a handle.",
+      "actual": "P You can use this wooden spoon as a handle.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The driver's handle was black.",
+      "expected": "C The driver/z handle was black.",
+      "actual": "C The driver/z handle was black.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P This one can be black in our game.",
+      "expected": "P This one can be black in our game.",
+      "actual": "P This one can be black in our game.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (And) and you have to stand behind the yellow line.",
+      "expected": "C (And) and you have to stand behind the yellow line.",
+      "actual": "C (And) and you have to stand behind the yellow line.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Was there a yellow line in the cab?",
+      "expected": "P Was there a yellow line in the cab?",
+      "actual": "P Was there a yellow line in the cab?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, at the real station.",
+      "expected": "C No, at the real station.",
+      "actual": "C No, at the real station.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We are mixing two places.",
+      "expected": "P We are mix/ing two place/s.",
+      "actual": "P We are mix/ing two place/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C My pretend train has both.",
+      "expected": "C My pretend train has both.",
+      "actual": "C My pretend train has both.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then I need to know which rules belong here.",
+      "expected": "P Then I need to know which rule/s belong here.",
+      "actual": "P Then I need to know which rule/s belong here.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (First) first your ticket.",
+      "expected": "C (First) first your ticket.",
+      "actual": "C (First) first your ticket.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Here is my imaginary ticket {holds out an empty hand}.",
+      "expected": "P Here is my imaginary ticket {holds out an empty hand}.",
+      "actual": "P Here is my imaginary ticket {holds out an empty hand}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I've taken it.",
+      "expected": "C I/'ve take/en it.",
+      "actual": "C I/'ve take/en it.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You can get on now.",
+      "expected": "C You can get on now.",
+      "actual": "C You can get on now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Thank you.",
+      "expected": "P Thank you.",
+      "actual": "P Thank you.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Where are the other passengers?",
+      "expected": "C Where are the other passenger/s?",
+      "actual": "C Where are the other passenger/s?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Shall we use the cushions?",
+      "expected": "P Shall we use the cushion/s?",
+      "actual": "P Shall we use the cushion/s?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C They're people with no legs.",
+      "expected": "C They/'re people with no leg/s.",
+      "actual": "C They/'re people with no leg/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Comfortable people.",
+      "expected": "P Comfortable people.",
+      "actual": "P Comfortable people.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This one's the lady who smiled at us.",
+      "expected": "C This one/'s the lady who smile/ed at us.",
+      "actual": "C This one/'s the lady who smile/ed at us.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P On the train ride there?",
+      "expected": "P On the train ride there?",
+      "actual": "P On the train ride there?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, she had a red bag.",
+      "expected": "C Yes, she had a red bag.",
+      "actual": "C Yes, she had a red bag.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I remember) I remember because it had stars.",
+      "expected": "C (I remember) I remember because it had star/s.",
+      "actual": "C (I remember) I remember because it had star/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Did she speak to you?",
+      "expected": "P Did she speak to you?",
+      "actual": "P Did she speak to you?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She said XX {speaks the last part into her sleeve}.",
+      "expected": "C She said XX {speaks the last part into her sleeve}.",
+      "actual": "C She said XX {speaks the last part into her sleeve}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P In the station, or on the train?",
+      "expected": "P In the station, or on the train?",
+      "actual": "P In the station, or on the train?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C On the train, when I dropped my ticket.",
+      "expected": "C On the train, when I drop/ed my ticket.",
+      "actual": "C On the train, when I drop/ed my ticket.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P She said that it was under your foot.",
+      "expected": "P She said that it was under your foot.",
+      "actual": "P She said that it was under your foot.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Oh, yes.",
+      "expected": "C Oh, yes.",
+      "actual": "C Oh, yes.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'd thought it fell through the floor.",
+      "expected": "C I/h'd thought it fell through the floor.",
+      "actual": "C I/h'd thought it fell through the floor.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P The floor had no hole there.",
+      "expected": "P The floor had no hole there.",
+      "actual": "P The floor had no hole there.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (It looked) it looked like one by the door.",
+      "expected": "C (It look/ed) it look/ed like one by the door.",
+      "actual": "C (It looked) it look/ed like one by the door.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "P That was a dark mat.",
+      "expected": "P That was a dark mat.",
+      "actual": "P That was a dark mat.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The lady's shoes were on it.",
+      "expected": "C The lady/z shoe/s were on it.",
+      "actual": "C The lady/z shoe/s were on it.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She couldn't see my ticket until I moved.",
+      "expected": "C She could/n't see my ticket until I move/ed.",
+      "actual": "C She could/n't see my ticket until I move/ed.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then you picked it up.",
+      "expected": "P Then you pick/ed it up.",
+      "actual": "P Then you pick/ed it up.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I thanked her too.",
+      "expected": "C I thank/ed her too.",
+      "actual": "C I thank/ed her too.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P You did.",
+      "expected": "P You did.",
+      "actual": "P You did.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Now) now the cushion lady needs a ticket.",
+      "expected": "C (Now) now the cushion lady need/3s a ticket.",
+      "actual": "C (Now) now the cushion lady need/3s a ticket.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I can give her one.",
+      "expected": "P I can give her one.",
+      "actual": "P I can give her one.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C No, she's already got hers.",
+      "expected": "C No, she/h's already got hers.",
+      "actual": "C No, she/h's already got hers.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It's in her red bag.",
+      "expected": "C It/'s in her red bag.",
+      "actual": "C It/'s in her red bag.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We'll imagine the bag beside her.",
+      "expected": "P We/'ll imagine the bag beside her.",
+      "actual": "P We/'ll imagine the bag beside her.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The train's doors close now.",
+      "expected": "C The train/z door/s close now.",
+      "actual": "C The train/z door/s close/3s now.",
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C %beep_beep.",
+      "expected": "C %beep_beep.",
+      "actual": "C %beep_beep.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That sounds like the train we rode.",
+      "expected": "P That sound/3s like the train we rode.",
+      "actual": "P That sound/3s like the train we rode.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It did that before it^",
+      "expected": "C It did that before it^",
+      "actual": "C It did that before it^",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Before it left the platform?",
+      "expected": "P Before it left the platform?",
+      "actual": "P Before it left the platform?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, before that.",
+      "expected": "C Yes, before that.",
+      "actual": "C Yes, before that.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We're leaving the museum.",
+      "expected": "C We/'re leave/ing the museum.",
+      "actual": "C We/'re leave/ing the museum.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Are we inside the display train or on the real one?",
+      "expected": "P Are we inside the display train or on the real one?",
+      "actual": "P Are we inside the display train or on the real one?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (On the) on the real one now.",
+      "expected": "C (On the) on the real one now.",
+      "actual": "C (On the) on the real one now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I changed it.",
+      "expected": "C I change/ed it.",
+      "actual": "C I change/ed it.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then your spoon is the real driver's handle.",
+      "expected": "P Then your spoon is the real driver/z handle.",
+      "actual": "P Then your spoon is the real driver/z handle.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C But I can't really touch that.",
+      "expected": "C But I can/'t really touch that.",
+      "actual": "C But I can/'t really touch that.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Correct.",
+      "expected": "P Correct.",
+      "actual": "P Correct.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Dad says children don't drive trains.",
+      "expected": "C Dad says children don't drive train/s.",
+      "actual": "C Dad says children don't drive train/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P In a real cab, a trained driver does the job.",
+      "expected": "P In a real cab, a trained driver does the job.",
+      "actual": "P In a real cab, a trained driver does the job.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I can) I can drive this one because it's chairs.",
+      "expected": "C (I can) I can drive this one because it/'s chair/s.",
+      "actual": "C (I can) I can drive this one because it/'s chair/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That's the difference.",
+      "expected": "P That/'s the difference.",
+      "actual": "P That/'s the difference.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (And) and it doesn't need tracks.",
+      "expected": "C (And) and it does/n't need track/s.",
+      "actual": "C (And) and it does/n't need track/s.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C It goes wherever I want.",
+      "expected": "C It go/3s wherever I want.",
+      "actual": "C It go/3s wherever I want.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Where will we go first?",
+      "expected": "P Where will we go first?",
+      "actual": "P Where will we go first?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C To the room with the tiny trains.",
+      "expected": "C To the room with the tiny train/s.",
+      "actual": "C To the room with the tiny train/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P That was another part of the museum.",
+      "expected": "P That was another part of the museum.",
+      "actual": "P That was another part of the museum.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We saw little trees there.",
+      "expected": "C We saw little tree/s there.",
+      "actual": "C We saw little tree/s there.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A train crossed a little bridge.",
+      "expected": "C A train cross/ed a little bridge.",
+      "actual": "C A train cross/ed a little bridge.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It disappeared inside a tunnel.",
+      "expected": "P It disappear/ed inside a tunnel.",
+      "actual": "P It disappear/ed inside a tunnel.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Then) then it came out the wrong side.",
+      "expected": "C (Then) then it came out the wrong side.",
+      "actual": "C (Then) then it came out the wrong side.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P It may have gone around a bend inside.",
+      "expected": "P It may have gone around a bend inside.",
+      "actual": "P It may have gone around a bend inside.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I thought there were two trains.",
+      "expected": "C I thought there were two train/s.",
+      "actual": "C I thought there were two train/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P There could have been.",
+      "expected": "P There could have been.",
+      "actual": "P There could have been.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You didn't count them either?",
+      "expected": "C You did/n't count them either?",
+      "actual": "C You did/n't count them either?",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I was watching you point at the bridge.",
+      "expected": "P I was watch/ing you point at the bridge.",
+      "actual": "P I was watch/ing you point at the bridge.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C This tunnel's got only one train.",
+      "expected": "C This tunnel/h's got only one train.",
+      "actual": "C This tunnel/h's got only one train.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Can it fit underneath?",
+      "expected": "P Can it fit underneath?",
+      "actual": "P Can it fit underneath?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The toy one can.",
+      "expected": "C The toy one can.",
+      "actual": "C The toy one can.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Not us) not the chairs.",
+      "expected": "C (Not us) not the chair/s.",
+      "actual": "C (Not us) not the chair/s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P So we have a big train and a small model now.",
+      "expected": "P So we have a big train and a small model now.",
+      "actual": "P So we have a big train and a small model now.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The model is showing where we're going.",
+      "expected": "C The model is show/ing where we/'re go/ing.",
+      "actual": "C The model is show/ing where we/'re go/ing.",
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Like a map that moves.",
+      "expected": "P Like a map that move/3s.",
+      "actual": "P Like a map that move/3s.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Exactly.",
+      "expected": "C Exactly.",
+      "actual": "C Exactly.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'll drive it through when>",
+      "expected": "C I/'ll drive it through when>",
+      "actual": "C I/'ll drive it through when>",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Wait, the scarf fell down.",
+      "expected": "C Wait, the scarf fell down.",
+      "actual": "C Wait, the scarf fell down.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Would you like me to hold one end?",
+      "expected": "P Would you like me to hold one end?",
+      "actual": "P Would you like me to hold one end?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, but don't make it too high.",
+      "expected": "C Yes, but don't make it too high.",
+      "actual": "C Yes, but don't make it too high.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (Because) because it's a mountain tunnel.",
+      "expected": "C (Because) because it/'s a mountain tunnel.",
+      "actual": "C (Because) because it/'s a mountain tunnel.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P My hand can be the mountain {holds one edge of the scarf}.",
+      "expected": "P My hand can be the mountain {holds one edge of the scarf}.",
+      "actual": "P My hand can be the mountain {holds one edge of the scarf}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The train's coming out.",
+      "expected": "C The train/'s come/ing out.",
+      "actual": "C The train/'s com/ing out.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C (Nobody) nobody got lost.",
+      "expected": "C (Nobody) nobody got lost.",
+      "actual": "C (Nobody) nobody got lost.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P A successful journey.",
+      "expected": "P A successful journey.",
+      "actual": "P A successful journey.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We haven't had lunch yet.",
+      "expected": "C We have/n't had lunch yet.",
+      "actual": "C We have/n't had lunch yet.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Did we have lunch on our museum day?",
+      "expected": "P Did we have lunch on our museum day?",
+      "actual": "P Did we have lunch on our museum day?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Yes, by the window, with the trains outside.",
+      "expected": "C Yes, by the window, with the train/s outside.",
+      "actual": "C Yes, by the window, with the train/s outside.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C We'd eaten before we went to the tiny train room.",
+      "expected": "C We/h'd eat/en before we went to the tiny train room.",
+      "actual": "C We/h'd eat/en before we went to the tiny train room.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P I think you are right.",
+      "expected": "P I think you are right.",
+      "actual": "P I think you are right.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (I had) I had cheese in my sandwich.",
+      "expected": "C (I had) I had cheese in my sandwich.",
+      "actual": "C (I had) I had cheese in my sandwich.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (You had) you had the other kind.",
+      "expected": "C (You had) you had the other kind.",
+      "actual": "C (You had) you had the other kind.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Mine had egg.",
+      "expected": "P Mine had egg.",
+      "actual": "P Mine had egg.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The cushion lady would like cheese too.",
+      "expected": "C The cushion lady would like cheese too.",
+      "actual": "C The cushion lady would like cheese too.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P We'll serve her a pretend sandwich.",
+      "expected": "P We/'ll serve her a pretend sandwich.",
+      "actual": "P We/'ll serve her a pretend sandwich.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She's eaten it already.",
+      "expected": "C She/h's eat/en it already.",
+      "actual": "C She/h's eat/en it already.",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C She's very quick.",
+      "expected": "C She/'s very quick.",
+      "actual": "C She/'s very quick.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Traveling can make people hungry.",
+      "expected": "P Traveling can make people hungry.",
+      "actual": "P Traveling can make people hungry.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (But) but the museum train didn't travel.",
+      "expected": "C (But) but the museum train did/n't travel.",
+      "actual": "C (But) but the museum train did/n't travel.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Our imaginary one has traveled quite a long way.",
+      "expected": "P Our imaginary one has travel/ed quite a long way.",
+      "actual": "P Our imaginary one has travel/ed quite a long way.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C To the kitchen and back.",
+      "expected": "C To the kitchen and back.",
+      "actual": "C To the kitchen and back.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C I'd like one more stop^",
+      "expected": "C I/'d like one more stop^",
+      "actual": "C I/'d like one more stop^",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Where would that be?",
+      "expected": "P Where would that be?",
+      "actual": "P Where would that be?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Home.",
+      "expected": "C Home.",
+      "actual": "C Home.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C (The real) the real home where we are already.",
+      "expected": "C (The real) the real home where we are already.",
+      "actual": "C (The real) the real home where we are already.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P Then we won't need a long journey.",
+      "expected": "P Then we won't need a long journey.",
+      "actual": "P Then we won't need a long journey.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C You'll have to carry your own bag.",
+      "expected": "C You/'ll have to carry your own bag.",
+      "actual": "C You/'ll have to carry your own bag.",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C The driver's having a rest {lays spoon across lap}.",
+      "expected": "C The driver/'s have/ing a rest {lays spoon across lap}.",
+      "actual": "C The driver/'s hav/ing a rest {lays spoon across lap}.",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "failed": false
+    },
+    {
+      "original": "C (And) and they can look out the window {points toward the living-room window}.",
+      "expected": "C (And) and they can look out the window {points toward the living-room window}.",
+      "actual": "C (And) and they can look out the window {points toward the living-room window}.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "P What can they see?",
+      "expected": "P What can they see?",
+      "actual": "P What can they see?",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C Our tree.",
+      "expected": "C Our tree.",
+      "actual": "C Our tree.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    },
+    {
+      "original": "C A real one, this time.",
+      "expected": "C A real one, this time.",
+      "actual": "C A real one, this time.",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "failed": false
+    }
+  ],
+  "raw_responses": [
+    "{\"outputs\":[{\"id\":0,\"text\":\"C You need a ticket before you sit there.\"},{\"id\":1,\"text\":\"P Is this our train from Saturday?\"},{\"id\":2,\"text\":\"C Yes, I/'m the driver.\"},{\"id\":3,\"text\":\"P I remember you being the driver at the museum.\"},{\"id\":4,\"text\":\"C (That's) that/'s what I mean.\"},{\"id\":5,\"text\":\"C The museum train.\"},{\"id\":6,\"text\":\"P I thought you meant the train we rode to get there.\"},{\"id\":7,\"text\":\"C No, that one went places.\"},{\"id\":8,\"text\":\"P And the museum one stay/ed in the building.\"},{\"id\":9,\"text\":\"C It move/ed a little.\"},{\"id\":10,\"text\":\"P Which part move/ed?\"},{\"id\":11,\"text\":\"C (The big) the big handle.\"},{\"id\":12,\"text\":\"C I pull/ed it toward me.\"},{\"id\":13,\"text\":\"P Keep the chair on the floor while you drive.\"},{\"id\":14,\"text\":\"C I/'m do/ing the handle, not the chair.\"},{\"id\":15,\"text\":\"P You can use this wooden spoon as a handle.\"},{\"id\":16,\"text\":\"C The driver/z handle was black.\"},{\"id\":17,\"text\":\"P This one can be black in our game.\"},{\"id\":18,\"text\":\"C (And) and you have to stand behind the yellow line.\"},{\"id\":19,\"text\":\"P Was there a yellow line in the cab?\"},{\"id\":20,\"text\":\"C No, at the real station.\"},{\"id\":21,\"text\":\"P We are mix/ing two place/s.\"},{\"id\":22,\"text\":\"C My pretend train has both.\"},{\"id\":23,\"text\":\"P Then I need to know which rule/s belong here.\"},{\"id\":24,\"text\":\"C (First) first your ticket.\"},{\"id\":25,\"text\":\"P Here is my imaginary ticket {holds out an empty hand}.\"},{\"id\":26,\"text\":\"C I/'ve take/en it.\"},{\"id\":27,\"text\":\"C You can get on now.\"},{\"id\":28,\"text\":\"P Thank you.\"},{\"id\":29,\"text\":\"C Where are the other passenger/s?\"},{\"id\":30,\"text\":\"P Shall we use the cushion/s?\"},{\"id\":31,\"text\":\"C They/'re people with no leg/s.\"},{\"id\":32,\"text\":\"P Comfortable people.\"},{\"id\":33,\"text\":\"C This one/'s the lady who smile/ed at us.\"},{\"id\":34,\"text\":\"P On the train ride there?\"},{\"id\":35,\"text\":\"C Yes, she had a red bag.\"},{\"id\":36,\"text\":\"C (I remember) I remember because it had star/s.\"},{\"id\":37,\"text\":\"P Did she speak to you?\"},{\"id\":38,\"text\":\"C She said XX {speaks the last part into her sleeve}.\"},{\"id\":39,\"text\":\"P In the station, or on the train?\"},{\"id\":40,\"text\":\"C On the train, when I drop/ed my ticket.\"},{\"id\":41,\"text\":\"P She said that it was under your foot.\"},{\"id\":42,\"text\":\"C Oh, yes.\"},{\"id\":43,\"text\":\"C I/h'd thought it fell through the floor.\"},{\"id\":44,\"text\":\"P The floor had no hole there.\"},{\"id\":45,\"text\":\"C (It looked) it look/ed like one by the door.\"},{\"id\":46,\"text\":\"P That was a dark mat.\"},{\"id\":47,\"text\":\"C The lady/z shoe/s were on it.\"},{\"id\":48,\"text\":\"C She could/n't see my ticket until I move/ed.\"},{\"id\":49,\"text\":\"P Then you pick/ed it up.\"},{\"id\":50,\"text\":\"C I thank/ed her too.\"},{\"id\":51,\"text\":\"P You did.\"},{\"id\":52,\"text\":\"C (Now) now the cushion lady need/3s a ticket.\"},{\"id\":53,\"text\":\"P I can give her one.\"},{\"id\":54,\"text\":\"C No, she/h's already got hers.\"},{\"id\":55,\"text\":\"C It/'s in her red bag.\"},{\"id\":56,\"text\":\"P We/'ll imagine the bag beside her.\"},{\"id\":57,\"text\":\"C The train/z door/s close/3s now.\"},{\"id\":58,\"text\":\"C %beep_beep.\"},{\"id\":59,\"text\":\"P That sound/3s like the train we rode.\"},{\"id\":60,\"text\":\"C It did that before it^\"},{\"id\":61,\"text\":\"P Before it left the platform?\"},{\"id\":62,\"text\":\"C Yes, before that.\"},{\"id\":63,\"text\":\"C We/'re leave/ing the museum.\"},{\"id\":64,\"text\":\"P Are we inside the display train or on the real one?\"},{\"id\":65,\"text\":\"C (On the) on the real one now.\"},{\"id\":66,\"text\":\"C I change/ed it.\"},{\"id\":67,\"text\":\"P Then your spoon is the real driver/z handle.\"},{\"id\":68,\"text\":\"C But I can/'t really touch that.\"},{\"id\":69,\"text\":\"P Correct.\"},{\"id\":70,\"text\":\"C Dad says children don't drive train/s.\"},{\"id\":71,\"text\":\"P In a real cab, a trained driver does the job.\"},{\"id\":72,\"text\":\"C (I can) I can drive this one because it/'s chair/s.\"},{\"id\":73,\"text\":\"P That/'s the difference.\"},{\"id\":74,\"text\":\"C (And) and it does/n't need track/s.\"},{\"id\":75,\"text\":\"C It go/3s wherever I want.\"},{\"id\":76,\"text\":\"P Where will we go first?\"},{\"id\":77,\"text\":\"C To the room with the tiny train/s.\"},{\"id\":78,\"text\":\"P That was another part of the museum.\"},{\"id\":79,\"text\":\"C We saw little tree/s there.\"},{\"id\":80,\"text\":\"C A train cross/ed a little bridge.\"},{\"id\":81,\"text\":\"P It disappear/ed inside a tunnel.\"},{\"id\":82,\"text\":\"C (Then) then it came out the wrong side.\"},{\"id\":83,\"text\":\"P It may have gone around a bend inside.\"},{\"id\":84,\"text\":\"C I thought there were two train/s.\"},{\"id\":85,\"text\":\"P There could have been.\"},{\"id\":86,\"text\":\"C You did/n't count them either?\"},{\"id\":87,\"text\":\"P I was watch/ing you point at the bridge.\"},{\"id\":88,\"text\":\"C This tunnel/h's got only one train.\"},{\"id\":89,\"text\":\"P Can it fit underneath?\"},{\"id\":90,\"text\":\"C The toy one can.\"},{\"id\":91,\"text\":\"C (Not us) not the chair/s.\"},{\"id\":92,\"text\":\"P So we have a big train and a small model now.\"},{\"id\":93,\"text\":\"C The model is show/ing where we/'re go/ing.\"},{\"id\":94,\"text\":\"P Like a map that move/3s.\"},{\"id\":95,\"text\":\"C Exactly.\"},{\"id\":96,\"text\":\"C I/'ll drive it through when>\"},{\"id\":97,\"text\":\"C Wait, the scarf fell down.\"},{\"id\":98,\"text\":\"P Would you like me to hold one end?\"},{\"id\":99,\"text\":\"C Yes, but don't make it too high.\"},{\"id\":100,\"text\":\"C (Because) because it/'s a mountain tunnel.\"},{\"id\":101,\"text\":\"P My hand can be the mountain {holds one edge of the scarf}.\"},{\"id\":102,\"text\":\"C The train/'s com/ing out.\"},{\"id\":103,\"text\":\"C (Nobody) nobody got lost.\"},{\"id\":104,\"text\":\"P A successful journey.\"},{\"id\":105,\"text\":\"C We have/n't had lunch yet.\"},{\"id\":106,\"text\":\"P Did we have lunch on our museum day?\"},{\"id\":107,\"text\":\"C Yes, by the window, with the train/s outside.\"},{\"id\":108,\"text\":\"C We/h'd eat/en before we went to the tiny train room.\"},{\"id\":109,\"text\":\"P I think you are right.\"},{\"id\":110,\"text\":\"C (I had) I had cheese in my sandwich.\"},{\"id\":111,\"text\":\"C (You had) you had the other kind.\"},{\"id\":112,\"text\":\"P Mine had egg.\"},{\"id\":113,\"text\":\"C The cushion lady would like cheese too.\"},{\"id\":114,\"text\":\"P We/'ll serve her a pretend sandwich.\"},{\"id\":115,\"text\":\"C She/h's eat/en it already.\"},{\"id\":116,\"text\":\"C She/'s very quick.\"},{\"id\":117,\"text\":\"P Traveling can make people hungry.\"},{\"id\":118,\"text\":\"C (But) but the museum train did/n't travel.\"},{\"id\":119,\"text\":\"P Our imaginary one has travel/ed quite a long way.\"},{\"id\":120,\"text\":\"C To the kitchen and back.\"},{\"id\":121,\"text\":\"C I/'d like one more stop^\"},{\"id\":122,\"text\":\"P Where would that be?\"},{\"id\":123,\"text\":\"C Home.\"},{\"id\":124,\"text\":\"C (The real) the real home where we are already.\"},{\"id\":125,\"text\":\"P Then we won't need a long journey.\"},{\"id\":126,\"text\":\"C You/'ll have to carry your own bag.\"},{\"id\":127,\"text\":\"C The driver/'s hav/ing a rest {lays spoon across lap}.\"},{\"id\":128,\"text\":\"C (And) and they can look out the window {points toward the living-room window}.\"},{\"id\":129,\"text\":\"P What can they see?\"},{\"id\":130,\"text\":\"C Our tree.\"},{\"id\":131,\"text\":\"C A real one, this time.\"}]}"
+  ],
+  "counts_toward_phase_a": true,
+  "configuration": {
+    "temperature": null,
+    "reasoning": "medium",
+    "processing_mode": "batch",
+    "batch_size": "full_transcript",
+    "json_id_alignment": true,
+    "primary_metric": "micro_f1",
+    "source": "stage1_v5_reuse"
+  }
+}

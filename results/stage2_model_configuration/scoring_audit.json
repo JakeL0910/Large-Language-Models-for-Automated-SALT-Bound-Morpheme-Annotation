@@ -1,0 +1,117 @@
+{
+  "n_utterances": 12600,
+  "n_failures": 27,
+  "failure_kinds": {
+    "tokencount 9->8": 3,
+    "tokencount 5->4": 6,
+    "tokencount 5->6": 1,
+    "tokencount 7->5": 1,
+    "tokencount 7->6": 5,
+    "tokencount 8->7": 2,
+    "tokencount 6->5": 6,
+    "tokencount 3->2": 1,
+    "tokencount 9->10": 1,
+    "tokencount 4->3": 1
+  },
+  "all_failures_are_token_count_or_empty": true,
+  "bag_vs_token_position_disagreements_on_aligned_rows": 0,
+  "scoring_correction_required": false,
+  "v5_remains_winner": true,
+  "rescored_ranking_unchanged": true,
+  "ranking": [
+    {
+      "prompt_version": "V5",
+      "micro_f1_pct": 88.7918,
+      "tp": 1220,
+      "fp": 176,
+      "fn": 132
+    },
+    {
+      "prompt_version": "V1",
+      "micro_f1_pct": 87.5,
+      "tp": 1218,
+      "fp": 214,
+      "fn": 134
+    },
+    {
+      "prompt_version": "V3",
+      "micro_f1_pct": 84.9455,
+      "tp": 1168,
+      "fp": 230,
+      "fn": 184
+    },
+    {
+      "prompt_version": "V2",
+      "micro_f1_pct": 84.5694,
+      "tp": 1203,
+      "fp": 290,
+      "fn": 149
+    },
+    {
+      "prompt_version": "V4",
+      "micro_f1_pct": 81.7555,
+      "tp": 1127,
+      "fp": 278,
+      "fn": 225
+    }
+  ],
+  "policy": "Keep Stage 1 evaluate_rows: failed rows contribute FP/FN and are never dropped. Aligned rows use per-utterance morpheme multisets. Token-index matching agreed.",
+  "examples": [
+    {
+      "cell": "gpt-4o_V1_medium_04.json",
+      "kind": "tokencount 9->8",
+      "original": "C I will let her give back the hat.",
+      "expected": "C I will let her give back the hat.",
+      "actual": "C I/'ll let her give back the hat."
+    },
+    {
+      "cell": "gpt-5.6-luna_V1_easy_09.json",
+      "kind": "tokencount 5->4",
+      "original": "C This room's only pretend.",
+      "expected": "C This room/'s only pretend.",
+      "actual": "C room/'s only pretend."
+    },
+    {
+      "cell": "gpt-5.6-luna_V1_hard_09.json",
+      "kind": "tokencount 5->6",
+      "original": "P A little tree counts.",
+      "expected": "P A little tree count/3s.",
+      "actual": "P Tree/s come in different sizes."
+    },
+    {
+      "cell": "gpt-5.6-luna_V1_hard_10.json",
+      "kind": "tokencount 7->5",
+      "original": "C (His wings) His wings are tired.",
+      "expected": "C (His wing/s) His wing/s are tired.",
+      "actual": "C His wing/s are tired."
+    },
+    {
+      "cell": "gpt-5.6-luna_V2_hard_10.json",
+      "kind": "tokencount 7->6",
+      "original": "C (What) What does that word mean?",
+      "expected": "C (What) What does that word mean?",
+      "actual": "C (What) What/d's that word mean?"
+    },
+    {
+      "cell": "gpt-5.6-luna_V2_hard_10.json",
+      "kind": "tokencount 7->6",
+      "original": "P Once I followed the wrong flock.",
+      "expected": "P Once I follow/ed the wrong flock.",
+      "actual": "P I follow/ed the wrong flock."
+    },
+    {
+      "cell": "gpt-5.6-luna_V2_hard_10.json",
+      "kind": "tokencount 5->4",
+      "original": "C Oops, that wasn't quiet.",
+      "expected": "C Oops, that was/n't quiet.",
+      "actual": "C Oops, was/n't quiet."
+    },
+    {
+      "cell": "gpt-5.6-luna_V2_medium_05.json",
+      "kind": "tokencount 8->7",
+      "original": "P Long enough for a few quiet breaths.",
+      "expected": "P Long enough for a few quiet breath/s.",
+      "actual": "P Long enough for a few breath/s."
+    }
+  ]
+}

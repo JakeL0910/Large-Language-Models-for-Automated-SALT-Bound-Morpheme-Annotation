@@ -1,0 +1,134 @@
+{
+  "checked_at_utc": "2026-10-15T00:54:48Z",
+  "models": [
+    {
+      "label": "GPT-4o",
+      "api_model": "gpt-4o",
+      "provider": "openai",
+      "endpoint": "chat.completions",
+      "key_present": true,
+      "reasoning": "none (not a reasoning model)",
+      "temperature": "0–2; Stage 2 baseline 0.0",
+      "structured_output": "response_format json_object (and json_schema)",
+      "max_output": 16384,
+      "context": 128000,
+      "prompt_caching": "automatic prefix ≥1024 tokens",
+      "rates_usd_per_m": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "output": 10.0
+      }
+    },
+    {
+      "label": "GPT-5.6 Luna",
+      "api_model": "gpt-5.6-luna",
+      "provider": "openai",
+      "endpoint": "chat.completions",
+      "key_present": true,
+      "reasoning": "reasoning_effort none|low|medium|high|xhigh|max; default medium",
+      "temperature": "allowed only when effort=none; otherwise API forces 1",
+      "structured_output": "json_object / json_schema",
+      "max_output": 128000,
+      "context": 1050000,
+      "prompt_caching": "automatic prefix",
+      "rates_usd_per_m": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.2
+      }
+    },
+    {
+      "label": "GPT-5.6 Sol",
+      "api_model": "gpt-5.6-sol",
+      "provider": "openai",
+      "endpoint": "chat.completions",
+      "key_present": true,
+      "reasoning": "same effort enum as Luna; default medium",
+      "temperature": "allowed only when effort=none",
+      "structured_output": "json_object / json_schema",
+      "max_output": 128000,
+      "context": 1050000,
+      "prompt_caching": "automatic prefix",
+      "rates_usd_per_m": {
+        "input": 4.0,
+        "cached_input": 0.4,
+        "output": 20.0
+      }
+    },
+    {
+      "label": "Claude Sonnet 5",
+      "api_model": "claude-sonnet-5",
+      "provider": "anthropic",
+      "endpoint": "messages",
+      "key_present": true,
+      "reasoning": "adaptive on by default; disable with thinking.type=disabled; no budget_tokens",
+      "temperature": "non-default sampling returns HTTP 400 — omit always",
+      "structured_output": "output_config.format json_schema",
+      "max_output": 128000,
+      "context": 1000000,
+      "prompt_caching": "explicit cache_control on system block",
+      "rates_usd_per_m": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 10.0
+      }
+    },
+    {
+      "label": "DeepSeek V4 Pro",
+      "api_model": "deepseek-v4-pro",
+      "provider": "deepseek",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "key_present": true,
+      "reasoning": "thinking enabled by default; effort low|high|max; none disables",
+      "temperature": "0–2 in non-thinking; ignored in thinking mode",
+      "structured_output": "JSON output supported",
+      "max_output": 384000,
+      "context": 1000000,
+      "prompt_caching": "automatic cache-hit input rates",
+      "rates_usd_per_m": {
+        "input": 1.32,
+        "cached_input": 0.044,
+        "output": 3.96
+      },
+      "rate_note": "Peak list prices used for the estimate (off-peak is 50% lower)."
+    },
+    {
+      "label": "Qwen 3.5",
+      "api_model": "qwen3.5-plus",
+      "provider": "dashscope",
+      "endpoint": "compatible-mode/v1 (intl)",
+      "key_present": true,
+      "reasoning": "enable_thinking true by default; false is true off",
+      "temperature": "0–2 supported; Stage 2 grids it only when thinking is off",
+      "structured_output": "supported",
+      "max_output": 65536,
+      "context": 1000000,
+      "prompt_caching": "explicit cache on intl endpoint",
+      "rates_usd_per_m": {
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 2.4
+      },
+      "rate_note": "Singapore international list ($0.40/$2.40). US/Frankfurt is $0.115/$0.688."
+    },
+    {
+      "label": "Gemini 3.6 Flash",
+      "api_model": "gemini-3.6-flash",
+      "provider": "gemini",
+      "endpoint": "generativelanguage.googleapis.com/v1beta generateContent",
+      "key_present": true,
+      "reasoning": "thinking_level minimal|low|medium|high; default medium. minimal ≠ disabled.",
+      "temperature": "custom temperature/top_p/top_k ignored (future 400) — omit",
+      "structured_output": "responseMimeType application/json + responseSchema",
+      "max_output": 65536,
+      "context": 1048576,
+      "prompt_caching": "explicit context cache",
+      "rates_usd_per_m": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "rate_note": "Paid tier through 2026-12-31. Thinking tokens billed as output."
+    }
+  ]
+}

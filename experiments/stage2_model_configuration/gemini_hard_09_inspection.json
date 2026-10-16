@@ -1,0 +1,33 @@
+{
+  "saved_raw_chars": 0,
+  "saved_raw_empty": true,
+  "finish_reason": null,
+  "max_output_tokens": 9616,
+  "usage_logged": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "cached_tokens": 0,
+    "total_tokens": 0
+  },
+  "parse_errors": [
+    "Unterminated string starting at: line 281 column 15 (char 5290)",
+    "Expecting property name enclosed in double quotes: line 255 column 6 (char 4823)",
+    "Unterminated string starting at: line 1 column 3158 (char 3157)"
+  ],
+  "incomplete_json": true,
+  "sister_hard_02_output_ratio": 0.9903,
+  "truncation_confirmed": true,
+  "evidence": "Parse errors show incomplete JSON at 3158–5290 characters; finish_reason was not persisted (null) because the parse exception dropped the body. Gemini hard_02 used 99.0% of maxOutputTokens with finish=STOP. Thinking tokens count against Gemini maxOutputTokens, so hard_09 at 9616 tokens is treated as output truncation.",
+  "technical_adjustment_if_retry": {
+    "unchanged": [
+      "frozen V5 text and SHA-256",
+      "thinking_level=medium",
+      "responseMimeType=application/json",
+      "JSON_CONTRACT",
+      "full-transcript batching"
+    ],
+    "max_output_tokens_from": 9616,
+    "max_output_tokens_to": 32768,
+    "reason": "One-file output-token allowance so thinking + JSON can finish; not a scoring, prompt, or dataset change."
+  }
+}

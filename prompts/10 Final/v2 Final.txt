@@ -1,0 +1,61 @@
+Complete the following actions in order. Finish each action before beginning the next. 
+
+ACTION 1 - PRESERVE THE TRANSCRIPT FRAME
+Retain the speaker IDs, utterance boundaries, wording, punctuation, mazes, comments, and existing SALT notation.
+Treat every input token as fixed except for the internal SALT annotation of an eligible token. Do not add, delete, replace, reorder, capitalize, or lowercase words. Do not turn an uncontracted phrase into a contraction or erase an existing apostrophe.
+
+ACTION 2 - IDENTIFY CANDIDATES
+Scan the entire transcript and identify provisional candidates from every family: regular plural nouns; possessive nouns or names; regular present-tense verbs ending in s or es; words ending in ing; surface words ending in regular past-tense ed or d; en-participles in perfect constructions; and written apostrophe contractions. A spelling match is only a candidate. Do not annotate until Action 3 establishes the word's grammatical function and eligibility.
+
+ACTION 3 - EVALUATE LINGUISTIC PROPERTIES
+For each candidate, determine its grammatical role, local construction, contextual meaning, regularity, and recoverable root. Evaluate the following matched criteria without annotating yet:
+- Regular Plural (/s): The form functions as a noun in context, denotes more than one entity, and has a recoverable singular noun root with a productive regular plural inflection. Do not mark singular nouns; verbs ending in s; possessives; irregular plurals such as mice, geese, children, or deer; or plural-looking lexical items with no productive singular form, such as pants, binoculars, or congratulations.
+- Possessive (/z (and /s/z when plural and possessive both apply)): The noun or name expresses ownership or another possessive relationship, either before the possessed noun or predicatively after BE. Do not require a following noun for predicative forms such as statements identifying whose object something is. Do not mark possessive pronouns such as mine, his, hers, ours, yours, its, or theirs. Do not treat apostrophe-s meaning IS or HAS as possessive.
+- Regular Third-Person Singular (/3s): The form is a present-tense verb with a third-person singular subject and a regular third-person singular inflection. Do not mark plural nouns, possessives, verbs with non-third-person-singular subjects, infinitives under modals, or irregular or root-changing forms such as does, has, is, or says.
+- Progressive (/ing): The ing-form is a verbal ongoing-action form supported by BE, including an eligible BE contraction, or is a verbal complement selected by aspectual KEEP or START. Do not mark gerund nouns or subjects, activity nouns after LIKE, adjectival forms modifying nouns, forms in clauses introduced by prepositions such as BEFORE, WITHOUT, or WITH, or GOING in a going-to future construction.
+- Regular Past Tense (/ed): The surface form bears a productive regular ed or d inflection and functions either as a finite simple-past verb or as a regular past participle in a HAVE, HAS, or HAD perfect construction. Do not create an ED candidate from a word ending in s or ing. Exclude irregular past forms, attributive and predicate adjectives, and passive or result-state participles governed by BE or GET.
+- Past Participle (/en): The surface form is an eligible en-participle in a HAVE, HAS, or HAD perfect construction, and its present-tense root is recoverable without a disqualifying root-sound change. Eligible root-preserving forms include fallen, proven, given, taken, shaken, and eaten. Do not apply /en to a regular ed-participle such as checked; eligible regular ed morphology remains /ed even in a perfect construction. Do not mark be-only passives, adjectival participles, nouns, or excluded irregular forms such as gotten, spoken, seen, been, or written.
+- Contracted BE (/'s, /'re, /'m): Context shows that the contraction means is, are, or am. Do not mark uncontracted is, are, or am; possessive apostrophe-s; or apostrophe-s meaning has.
+- Contracted Modal (/'ll, /'d): Context shows that apostrophe-ll means will or apostrophe-d means would. Do not mark uncontracted will or would. Do not mark apostrophe-d when it means had or did.
+- Other Eligible Contractions (/'ve, /h's, /h'd, /d's, /d'd, /'us): Expand the written contraction from syntax. Use /'ve for HAVE; /h's for HAS before a perfect participle, including when ALREADY intervenes; /h'd for HAD before a participle and in HAD BETTER; /d's for DOES; /d'd for DID; and /'us for LET US. Do not use these codes for contracted BE, contracted WILL or WOULD, possession, negation, or uncontracted words.
+- Negative Contractions (/'t, /n't): The input already contains an orthographic negative contraction with a stable, recoverable root, as in can't, isn't, aren't, wasn't, didn't, couldn't, shouldn't, wouldn't, haven't, hasn't, or hadn't. Do not mark won't, don't, or ain't. An uncontracted phrase such as did not must remain uncontracted and unmarked.
+
+ACTION 4 - DETERMINE EVERY APPLICABLE CONVENTION
+Assign all conventions clearly supported by the properties established in Action 3. Resolve apostrophe meanings before choosing among possessive, BE, modal, other, and negative codes. Do not stop after identifying one applicable convention.
+
+ACTION 5 - PRODUCE THE ANNOTATION
+Insert the required marks using these matched annotation forms:
+- Before any lexical slash code, write the complete dictionary lemma rather than a shortened spelling stem. Restore silent E, reverse Y-to-I changes, and undo consonant doubling.
+- Regular Plural (/s): Write the singular noun root followed by /s. Use /s for every eligible regular plural, including es spellings; never invent /es.
+- Possessive (/z (and /s/z when plural and possessive both apply)): Replace singular possessive apostrophe-s with /z on the owner root. For a regular plural possessor, recover the singular noun root and write root/s/z; never retain the surface plural s before /s/z.
+- Regular Third-Person Singular (/3s): Write the complete verb lemma followed by /3s. Use only /3s, never /s or /es. Irregular DOES, HAS, IS, and SAYS remain intact.
+- Progressive (/ing): Write the complete verb lemma followed by /ing only after the construction passes the Progressive criterion.
+- Regular Past Tense (/ed): Write the complete present-tense verb lemma followed by /ed only after the form passes the regular-ED eligibility criterion.
+- Past Participle (/en): Write the full present-tense verb root followed by /en: fallen becomes fall/en, proven becomes prove/en, given becomes give/en, taken becomes take/en, shaken becomes shake/en, and eaten becomes eat/en.
+- Contracted BE (/'s, /'re, /'m): Separate the recoverable host from the contraction with the matching code: she's meaning she is becomes she/'s, they're becomes they/'re, and I'm becomes I/'m.
+- Contracted Modal (/'ll, /'d): Separate the host from the contraction with /'ll for will or /'d for would: I'll becomes I/'ll and she'd meaning she would becomes she/'d.
+- Other Eligible Contractions (/'ve, /h's, /h'd, /d's, /d'd, /'us): Attach the code that identifies the recovered element: we've becomes we/'ve; he's meaning he has becomes he/h's; they'd meaning they had becomes they/h'd; what's meaning what does becomes what/d's; why'd meaning why did becomes why/d'd; and let's becomes let/'us.
+- Negative Contractions (/'t, /n't): Separate the recoverable root from the negative contraction: can't becomes can/'t, isn't becomes is/n't, and didn't becomes did/n't.
+
+CALIBRATION EXAMPLES
+MARK: "C The visitors' boxes are moving."
+AS:   "C The visitor/s/z box/s are move/ing."
+MARK: "C She carried the map while he was choosing the path because it goes there."
+AS:   "C She carry/ed the map while he was choose/ing the path because it go/3s there."
+MARK: "C Lily's already checked it, and we'd taken one."
+AS:   "C Lily/h's already check/ed it, and we/h'd take/en one."
+MARK: "C I'm ready, they'll help, and she isn't tired."
+AS:   "C I/'m ready, they/'ll help, and she is/n't tired."
+MARK: "C Why'd Mom say let's go?"
+AS:   "C Why/d'd Mom say let/'us go?"
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C We can move it without losing anything beside the shaded path."
+LEAVE ALL INELIGIBLE FORMS UNMARKED: "C It did not move, and the mice went home."
+
+INPUT AND OUTPUT
+- The input is an unannotated plain-text SALT transcript. Each utterance begins with a speaker ID.
+- Preserve every speaker ID, line break, utterance boundary, word, capitalization choice, punctuation mark, maze, comment, and other SALT notation except where a required slash code must be inserted.
+- Apply every qualifying convention from the full set of ten. One word or utterance may require more than one mark.
+- Annotate every clearly eligible occurrence and no ineligible occurrence.
+- Resolve apostrophe meanings from context before selecting possessive, BE, modal, other, or negative coding.
+- When the transcript does not supply enough context to resolve a candidate, leave that candidate unmarked.
+- Return only the fully annotated transcript, with no explanation, analysis, headings, or code fence.

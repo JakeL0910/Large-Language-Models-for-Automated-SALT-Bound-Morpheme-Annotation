@@ -1,0 +1,137 @@
+{
+  "selected_batch_size": "full",
+  "both_models_full_transcript": true,
+  "pilot_family": "hard_02",
+  "pilot_prompt": "V5",
+  "history": [
+    {
+      "batch_size": "full",
+      "ok_both": true,
+      "cells": [
+        {
+          "ok": true,
+          "error": null,
+          "model": "gpt-4o",
+          "prompt_version": "V5",
+          "family": "hard_02",
+          "batch_size": "full",
+          "n_utterances": 139,
+          "n_requests": 1,
+          "max_output_tokens": 5560,
+          "elapsed_seconds": 14.149,
+          "retries": 0,
+          "finish_reasons": [
+            "stop"
+          ],
+          "attempts": [
+            {
+              "attempt": 1,
+              "ok": true
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 9727,
+            "completion_tokens": 2332,
+            "cached_tokens": 0,
+            "total_tokens": 12059
+          },
+          "estimated_cost_usd": 0.047637,
+          "failures": 0,
+          "tp": 70,
+          "fp": 26,
+          "fn": 4,
+          "precision_pct": 72.9167,
+          "recall_pct": 94.5946,
+          "micro_f1_pct": 82.3529,
+          "counts_toward_stage1": true
+        },
+        {
+          "ok": true,
+          "error": null,
+          "model": "gpt-5.6-luna",
+          "prompt_version": "V5",
+          "family": "hard_02",
+          "batch_size": "full",
+          "n_utterances": 139,
+          "n_requests": 1,
+          "max_output_tokens": 9656,
+          "elapsed_seconds": 35.405,
+          "retries": 0,
+          "finish_reasons": [
+            "stop"
+          ],
+          "attempts": [
+            {
+              "attempt": 1,
+              "ok": true
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 9726,
+            "completion_tokens": 3722,
+            "cached_tokens": 0,
+            "total_tokens": 13448
+          },
+          "estimated_cost_usd": 0.006412,
+          "failures": 0,
+          "tp": 71,
+          "fp": 2,
+          "fn": 3,
+          "precision_pct": 97.2603,
+          "recall_pct": 95.9459,
+          "micro_f1_pct": 96.5986,
+          "counts_toward_stage1": true
+        }
+      ]
+    }
+  ],
+  "nominal_requests_per_model": 60,
+  "nominal_requests_total": 120,
+  "pilot_requests_completed": 2,
+  "remaining_requests_after_pilot": 118,
+  "output_token_budgets": {
+    "gpt-4o": 5560,
+    "gpt-5.6-luna": 9656
+  },
+  "preflight": {
+    "largest_prompt": "prompts/10 Final/v5 Final.txt",
+    "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+    "longest_transcript": "hard_02",
+    "n_utterances": 139,
+    "prompt_tokens": 6946,
+    "json_contract_tokens": 45,
+    "user_json_tokens": 2721,
+    "gold_json_tokens": 2846,
+    "models": {
+      "gpt-4o": {
+        "context_window": 128000,
+        "input_tokens_estimate": 9712,
+        "gold_json_tokens": 2846,
+        "max_output_tokens": 5560,
+        "fits_context": true,
+        "fits_gold_json_in_output_budget": true,
+        "json_object_response_format": true,
+        "reasoning": "none",
+        "automatic_prompt_caching": true,
+        "full_transcript_feasible": true
+      },
+      "gpt-5.6-luna": {
+        "context_window": 1050000,
+        "input_tokens_estimate": 9712,
+        "gold_json_tokens": 2846,
+        "max_output_tokens": 9656,
+        "fits_context": true,
+        "fits_gold_json_in_output_budget": true,
+        "json_object_response_format": true,
+        "reasoning": "medium (shares completion budget)",
+        "automatic_prompt_caching": true,
+        "full_transcript_feasible": true
+      }
+    },
+    "selected_batch_size": "full",
+    "selection_rule": "technical feasibility only; not F1",
+    "nominal_requests_per_model": 60,
+    "nominal_requests_total": 120,
+    "jobs": 120
+  }
+}

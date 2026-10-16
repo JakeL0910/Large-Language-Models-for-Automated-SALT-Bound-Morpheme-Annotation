@@ -1,0 +1,2061 @@
+{
+  "label": "Annotation performance on successfully parsed transcripts only. Not the frozen 18+30 first-attempt result.",
+  "substitutes_for_official": false,
+  "gemini": {
+    "n_ok": 45,
+    "mixed": {
+      "n_files": 16,
+      "n_ok": 16,
+      "n_utterances": 1645,
+      "failures": 0,
+      "tp": 940,
+      "fp": 37,
+      "fn": 2,
+      "precision_pct": 96.2129,
+      "recall_pct": 99.7877,
+      "micro_f1_pct": 97.9677,
+      "macro_f1_pct": 98.2761,
+      "elapsed_seconds": 505.997,
+      "prompt_tokens": 157134,
+      "completion_tokens": 127359,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.595444,
+      "historical_cost_usd": 0.0,
+      "retries": 0,
+      "by_difficulty": {
+        "easy": {
+          "n_files": 6,
+          "n_ok": 6,
+          "n_utterances": 449,
+          "failures": 0,
+          "tp": 260,
+          "fp": 2,
+          "fn": 0,
+          "precision_pct": 99.2366,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6169,
+          "macro_f1_pct": 99.6123,
+          "elapsed_seconds": 127.597,
+          "prompt_tokens": 55181,
+          "completion_tokens": 32259,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.162356,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "medium": {
+          "n_files": 5,
+          "n_ok": 5,
+          "n_utterances": 516,
+          "failures": 0,
+          "tp": 264,
+          "fp": 11,
+          "fn": 1,
+          "precision_pct": 96.0,
+          "recall_pct": 99.6226,
+          "micro_f1_pct": 97.7778,
+          "macro_f1_pct": 97.8363,
+          "elapsed_seconds": 153.607,
+          "prompt_tokens": 48967,
+          "completion_tokens": 38975,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.182881,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "hard": {
+          "n_files": 5,
+          "n_ok": 5,
+          "n_utterances": 680,
+          "failures": 0,
+          "tp": 416,
+          "fp": 24,
+          "fn": 1,
+          "precision_pct": 94.5455,
+          "recall_pct": 99.7602,
+          "micro_f1_pct": 97.0828,
+          "macro_f1_pct": 97.1124,
+          "elapsed_seconds": 224.793,
+          "prompt_tokens": 52986,
+          "completion_tokens": 56125,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.250207,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        }
+      },
+      "by_file_convention": {},
+      "bag_partition": {
+        "by_convention": [
+          {
+            "convention": "S",
+            "tp": 211,
+            "fp": 8,
+            "fn": 0,
+            "precision_pct": 96.347,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 98.1395
+          },
+          {
+            "convention": "Z",
+            "tp": 53,
+            "fp": 3,
+            "fn": 0,
+            "precision_pct": 94.6429,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 97.2477
+          },
+          {
+            "convention": "3S",
+            "tp": 134,
+            "fp": 23,
+            "fn": 0,
+            "precision_pct": 85.3503,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 92.0962
+          },
+          {
+            "convention": "ING",
+            "tp": 78,
+            "fp": 1,
+            "fn": 0,
+            "precision_pct": 98.7342,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 99.3631
+          },
+          {
+            "convention": "ED",
+            "tp": 114,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "EN",
+            "tp": 60,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "BE",
+            "tp": 102,
+            "fp": 0,
+            "fn": 1,
+            "precision_pct": 100.0,
+            "recall_pct": 99.0291,
+            "micro_f1_pct": 99.5122
+          },
+          {
+            "convention": "MODAL",
+            "tp": 66,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "OTHER",
+            "tp": 54,
+            "fp": 1,
+            "fn": 1,
+            "precision_pct": 98.1818,
+            "recall_pct": 98.1818,
+            "micro_f1_pct": 98.1818
+          },
+          {
+            "convention": "NEG",
+            "tp": 68,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "UNCLASSIFIED",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision_pct": 0.0,
+            "recall_pct": 0.0,
+            "micro_f1_pct": 0.0
+          }
+        ],
+        "sum": {
+          "tp": 940,
+          "fp": 37,
+          "fn": 2
+        }
+      },
+      "errors": {
+        "n_failed_utterances": 0,
+        "top_false_positives": [
+          [
+            "glass/s",
+            5
+          ],
+          [
+            "point/3s",
+            3
+          ],
+          [
+            "turn/3s",
+            2
+          ],
+          [
+            "hold/3s",
+            2
+          ],
+          [
+            "lay/3s",
+            1
+          ],
+          [
+            "corner/s",
+            1
+          ],
+          [
+            "raise/3s",
+            1
+          ],
+          [
+            "toy/z",
+            1
+          ],
+          [
+            "attach/3s",
+            1
+          ],
+          [
+            "lift/3s",
+            1
+          ],
+          [
+            "glass/es",
+            1
+          ],
+          [
+            "hand/s",
+            1
+          ],
+          [
+            "pinch/3s",
+            1
+          ],
+          [
+            "tilt/3s",
+            1
+          ],
+          [
+            "touch/3s",
+            1
+          ],
+          [
+            "make/3s",
+            1
+          ],
+          [
+            "sketch/3s",
+            1
+          ],
+          [
+            "bank/s",
+            1
+          ],
+          [
+            "add/3s",
+            1
+          ],
+          [
+            "draw/3s",
+            1
+          ],
+          [
+            "bird/z",
+            1
+          ],
+          [
+            "pull/3s",
+            1
+          ],
+          [
+            "she/h's",
+            1
+          ],
+          [
+            "cup/3s",
+            1
+          ],
+          [
+            "keep/3s",
+            1
+          ]
+        ],
+        "top_false_negatives": [
+          [
+            "That/'s",
+            1
+          ],
+          [
+            "She/h's",
+            1
+          ]
+        ],
+        "examples": [
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "easy_01",
+            "failed": false,
+            "expected": "C It look/3s like a banana {points to the curved shadow}.",
+            "actual": "C It look/3s like a banana {point/3s to the curved shadow}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "easy_06",
+            "failed": false,
+            "expected": "C Both stick/s now {lays them side by side}.",
+            "actual": "C Both stick/s now {lay/3s them side by side}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_01",
+            "failed": false,
+            "expected": "C His glasses.",
+            "actual": "C His glass/s.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_01",
+            "failed": false,
+            "expected": "C Yes, but those are/n't his real glasses.",
+            "actual": "C Yes, but those are/n't his real glass/s.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C His mouth was like this {turns up the corners of the mouth}.",
+            "actual": "C His mouth was like this {turn/3s up the corner/s of the mouth}.",
+            "tp": 0,
+            "fp": 2,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C He/'d need tiny glasses.",
+            "actual": "C He/'d need tiny glass/s.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "P Are those his glasses or yours?",
+            "actual": "P Are those his glass/s or yours?",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C Mine are giant pretend glasses.",
+            "actual": "C Mine are giant pretend glass/s.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C Wait, the hamster/'s awake now {raises the toy's head}.",
+            "actual": "C Wait, the hamster/'s awake now {raise/3s the toy/z head}.",
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C I/'ll put it on the mouse {attaches smile to paper mouse hat}.",
+            "actual": "C I/'ll put it on the mouse {attach/3s smile to paper mouse hat}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C (And) and he can take it off {lifts the paper hat}.",
+            "actual": "C (And) and he can take it off {lift/3s the paper hat}.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_05",
+            "failed": false,
+            "expected": "C He/h'd take/en his glasses off first, luckily.",
+            "actual": "C He/h'd take/en his glass/es off first, luckily.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          }
+        ]
+      }
+    },
+    "single": {
+      "n_files": 29,
+      "n_ok": 29,
+      "n_utterances": 1720,
+      "failures": 1,
+      "tp": 1466,
+      "fp": 11,
+      "fn": 2,
+      "precision_pct": 99.2552,
+      "recall_pct": 99.8638,
+      "micro_f1_pct": 99.5586,
+      "macro_f1_pct": 99.5364,
+      "elapsed_seconds": 670.083,
+      "prompt_tokens": 265581,
+      "completion_tokens": 172910,
+      "cached_tokens": 0,
+      "new_spend_usd": 0.847599,
+      "historical_cost_usd": 0.0,
+      "retries": 0,
+      "by_difficulty": {
+        "easy": {
+          "n_files": 10,
+          "n_ok": 10,
+          "n_utterances": 400,
+          "failures": 1,
+          "tp": 308,
+          "fp": 1,
+          "fn": 1,
+          "precision_pct": 99.6764,
+          "recall_pct": 99.6764,
+          "micro_f1_pct": 99.6764,
+          "macro_f1_pct": 99.6,
+          "elapsed_seconds": 179.621,
+          "prompt_tokens": 87234,
+          "completion_tokens": 45449,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.23586,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "medium": {
+          "n_files": 10,
+          "n_ok": 10,
+          "n_utterances": 600,
+          "failures": 0,
+          "tp": 529,
+          "fp": 2,
+          "fn": 1,
+          "precision_pct": 99.6234,
+          "recall_pct": 99.8113,
+          "micro_f1_pct": 99.7172,
+          "macro_f1_pct": 99.6795,
+          "elapsed_seconds": 225.167,
+          "prompt_tokens": 91841,
+          "completion_tokens": 58330,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.287619,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "hard": {
+          "n_files": 9,
+          "n_ok": 9,
+          "n_utterances": 720,
+          "failures": 0,
+          "tp": 629,
+          "fp": 8,
+          "fn": 0,
+          "precision_pct": 98.7441,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.3681,
+          "macro_f1_pct": 99.3069,
+          "elapsed_seconds": 265.295,
+          "prompt_tokens": 86506,
+          "completion_tokens": 69131,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.32412,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        }
+      },
+      "by_file_convention": {
+        "3S": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 162,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3865,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6923,
+          "macro_f1_pct": 99.7763,
+          "elapsed_seconds": 67.477,
+          "prompt_tokens": 27455,
+          "completion_tokens": 17319,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.085537,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "BE": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 182,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 69.877,
+          "prompt_tokens": 27619,
+          "completion_tokens": 17906,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.087862,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "ED": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 150,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3377,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6678,
+          "macro_f1_pct": 99.7763,
+          "elapsed_seconds": 70.098,
+          "prompt_tokens": 27475,
+          "completion_tokens": 17374,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.085759,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "EN": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 146,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3197,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6587,
+          "macro_f1_pct": 99.7455,
+          "elapsed_seconds": 69.192,
+          "prompt_tokens": 27568,
+          "completion_tokens": 18930,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.091664,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "ING": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 124,
+          "fp": 3,
+          "fn": 0,
+          "precision_pct": 97.6378,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 98.8048,
+          "macro_f1_pct": 99.0032,
+          "elapsed_seconds": 69.251,
+          "prompt_tokens": 27439,
+          "completion_tokens": 17991,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.088045,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "MODAL": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 148,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 69.989,
+          "prompt_tokens": 27601,
+          "completion_tokens": 18116,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.088636,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "NEG": {
+          "n_files": 2,
+          "n_ok": 2,
+          "n_utterances": 100,
+          "failures": 0,
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 43.357,
+          "prompt_tokens": 17951,
+          "completion_tokens": 11147,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.055265,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "OTHER": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 194,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 71.555,
+          "prompt_tokens": 27614,
+          "completion_tokens": 18622,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.090543,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "S": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 136,
+          "fp": 3,
+          "fn": 1,
+          "precision_pct": 97.8417,
+          "recall_pct": 99.2701,
+          "micro_f1_pct": 98.5507,
+          "macro_f1_pct": 98.7778,
+          "elapsed_seconds": 71.245,
+          "prompt_tokens": 27432,
+          "completion_tokens": 17919,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.08777,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "Z": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 1,
+          "tp": 143,
+          "fp": 2,
+          "fn": 1,
+          "precision_pct": 98.6207,
+          "recall_pct": 99.3056,
+          "micro_f1_pct": 98.9619,
+          "macro_f1_pct": 98.4399,
+          "elapsed_seconds": 68.042,
+          "prompt_tokens": 27427,
+          "completion_tokens": 17586,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.086518,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        }
+      },
+      "bag_partition": {
+        "by_convention": [
+          {
+            "convention": "S",
+            "tp": 139,
+            "fp": 2,
+            "fn": 0,
+            "precision_pct": 98.5816,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 99.2857
+          },
+          {
+            "convention": "Z",
+            "tp": 68,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "3S",
+            "tp": 392,
+            "fp": 1,
+            "fn": 1,
+            "precision_pct": 99.7455,
+            "recall_pct": 99.7455,
+            "micro_f1_pct": 99.7455
+          },
+          {
+            "convention": "ING",
+            "tp": 149,
+            "fp": 7,
+            "fn": 0,
+            "precision_pct": 95.5128,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 97.7049
+          },
+          {
+            "convention": "ED",
+            "tp": 359,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "EN",
+            "tp": 53,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "BE",
+            "tp": 101,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "MODAL",
+            "tp": 45,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "OTHER",
+            "tp": 97,
+            "fp": 1,
+            "fn": 1,
+            "precision_pct": 98.9796,
+            "recall_pct": 98.9796,
+            "micro_f1_pct": 98.9796
+          },
+          {
+            "convention": "NEG",
+            "tp": 63,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "UNCLASSIFIED",
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 0.0,
+            "recall_pct": 0.0,
+            "micro_f1_pct": 0.0
+          }
+        ],
+        "sum": {
+          "tp": 1466,
+          "fp": 11,
+          "fn": 2
+        }
+      },
+      "errors": {
+        "n_failed_utterances": 1,
+        "top_false_positives": [
+          [
+            "change/ing",
+            7
+          ],
+          [
+            "pajama/s",
+            2
+          ],
+          [
+            "Let/'us",
+            1
+          ],
+          [
+            "give/3s",
+            1
+          ]
+        ],
+        "top_false_negatives": [
+          [
+            "let/'us",
+            1
+          ],
+          [
+            "give/3s",
+            1
+          ]
+        ],
+        "examples": [
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "S_medium_01",
+            "failed": false,
+            "expected": "C Then let/'us look around the kitchen before we decide.",
+            "actual": "C Then Let/'us look around the kitchen before we decide.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "S_hard_03",
+            "failed": false,
+            "expected": "C The pajamas for the box can stay in the bag.",
+            "actual": "C The pajama/s for the box can stay in the bag.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "S_hard_03",
+            "failed": false,
+            "expected": "C The pajamas for the book can stay in the bag.",
+            "actual": "C The pajama/s for the book can stay in the bag.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "Z_easy_02",
+            "failed": true,
+            "expected": "P That give/3s us room to check the shoe.",
+            "actual": "P That give/3s room to check the shoe.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "Z_hard_02",
+            "failed": false,
+            "expected": "C I am use/ing the sticker because the plan keep/3s changing.",
+            "actual": "C I am use/ing the sticker because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "3S_hard_01",
+            "failed": false,
+            "expected": "P I am check/ing the box because the plan keep/3s changing.",
+            "actual": "P I am check/ing the box because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "ING_medium_04",
+            "failed": false,
+            "expected": "P I am check/ing the blanket because the plan keep/3s changing.",
+            "actual": "P I am check/ing the blanket because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "ING_hard_01",
+            "failed": false,
+            "expected": "P I am compare/ing the card because the plan keep/3s changing.",
+            "actual": "P I am compare/ing the card because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "ING_hard_01",
+            "failed": false,
+            "expected": "P I am use/ing the block because the plan keep/3s changing.",
+            "actual": "P I am use/ing the block because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "ED_hard_02",
+            "failed": false,
+            "expected": "C I am compare/ing the spoon because the plan keep/3s changing.",
+            "actual": "C I am compare/ing the spoon because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "EN_hard_05",
+            "failed": false,
+            "expected": "C I am choose/ing the wheel because the plan keep/3s changing.",
+            "actual": "C I am choose/ing the wheel because the plan keep/3s change/ing.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          }
+        ]
+      }
+    },
+    "combined": {
+      "n_files": 45,
+      "n_ok": 45,
+      "n_utterances": 3365,
+      "failures": 1,
+      "tp": 2406,
+      "fp": 48,
+      "fn": 4,
+      "precision_pct": 98.044,
+      "recall_pct": 99.834,
+      "micro_f1_pct": 98.9309,
+      "macro_f1_pct": 99.0883,
+      "elapsed_seconds": 1176.08,
+      "prompt_tokens": 422715,
+      "completion_tokens": 300269,
+      "cached_tokens": 0,
+      "new_spend_usd": 1.443043,
+      "historical_cost_usd": 0.0,
+      "retries": 0,
+      "by_difficulty": {
+        "easy": {
+          "n_files": 16,
+          "n_ok": 16,
+          "n_utterances": 849,
+          "failures": 1,
+          "tp": 568,
+          "fp": 3,
+          "fn": 1,
+          "precision_pct": 99.4746,
+          "recall_pct": 99.8243,
+          "micro_f1_pct": 99.6491,
+          "macro_f1_pct": 99.6046,
+          "elapsed_seconds": 307.218,
+          "prompt_tokens": 142415,
+          "completion_tokens": 77708,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.398216,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "medium": {
+          "n_files": 15,
+          "n_ok": 15,
+          "n_utterances": 1116,
+          "failures": 0,
+          "tp": 793,
+          "fp": 13,
+          "fn": 2,
+          "precision_pct": 98.3871,
+          "recall_pct": 99.7484,
+          "micro_f1_pct": 99.0631,
+          "macro_f1_pct": 99.0651,
+          "elapsed_seconds": 378.774,
+          "prompt_tokens": 140808,
+          "completion_tokens": 97305,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.4705,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "hard": {
+          "n_files": 14,
+          "n_ok": 14,
+          "n_utterances": 1400,
+          "failures": 0,
+          "tp": 1045,
+          "fp": 32,
+          "fn": 1,
+          "precision_pct": 97.0288,
+          "recall_pct": 99.9044,
+          "micro_f1_pct": 98.4456,
+          "macro_f1_pct": 98.5231,
+          "elapsed_seconds": 490.088,
+          "prompt_tokens": 139492,
+          "completion_tokens": 125256,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.574327,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        }
+      },
+      "by_file_convention": {
+        "3S": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 162,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3865,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6923,
+          "macro_f1_pct": 99.7763,
+          "elapsed_seconds": 67.477,
+          "prompt_tokens": 27455,
+          "completion_tokens": 17319,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.085537,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "BE": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 182,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 69.877,
+          "prompt_tokens": 27619,
+          "completion_tokens": 17906,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.087862,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "ED": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 150,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3377,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6678,
+          "macro_f1_pct": 99.7763,
+          "elapsed_seconds": 70.098,
+          "prompt_tokens": 27475,
+          "completion_tokens": 17374,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.085759,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "EN": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 146,
+          "fp": 1,
+          "fn": 0,
+          "precision_pct": 99.3197,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 99.6587,
+          "macro_f1_pct": 99.7455,
+          "elapsed_seconds": 69.192,
+          "prompt_tokens": 27568,
+          "completion_tokens": 18930,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.091664,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "ING": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 124,
+          "fp": 3,
+          "fn": 0,
+          "precision_pct": 97.6378,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 98.8048,
+          "macro_f1_pct": 99.0032,
+          "elapsed_seconds": 69.251,
+          "prompt_tokens": 27439,
+          "completion_tokens": 17991,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.088045,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "MODAL": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 148,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 69.989,
+          "prompt_tokens": 27601,
+          "completion_tokens": 18116,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.088636,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "NEG": {
+          "n_files": 2,
+          "n_ok": 2,
+          "n_utterances": 100,
+          "failures": 0,
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 43.357,
+          "prompt_tokens": 17951,
+          "completion_tokens": 11147,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.055265,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "OTHER": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 194,
+          "fp": 0,
+          "fn": 0,
+          "precision_pct": 100.0,
+          "recall_pct": 100.0,
+          "micro_f1_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "elapsed_seconds": 71.555,
+          "prompt_tokens": 27614,
+          "completion_tokens": 18622,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.090543,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "S": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 0,
+          "tp": 136,
+          "fp": 3,
+          "fn": 1,
+          "precision_pct": 97.8417,
+          "recall_pct": 99.2701,
+          "micro_f1_pct": 98.5507,
+          "macro_f1_pct": 98.7778,
+          "elapsed_seconds": 71.245,
+          "prompt_tokens": 27432,
+          "completion_tokens": 17919,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.08777,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        },
+        "Z": {
+          "n_files": 3,
+          "n_ok": 3,
+          "n_utterances": 180,
+          "failures": 1,
+          "tp": 143,
+          "fp": 2,
+          "fn": 1,
+          "precision_pct": 98.6207,
+          "recall_pct": 99.3056,
+          "micro_f1_pct": 98.9619,
+          "macro_f1_pct": 98.4399,
+          "elapsed_seconds": 68.042,
+          "prompt_tokens": 27427,
+          "completion_tokens": 17586,
+          "cached_tokens": 0,
+          "new_spend_usd": 0.086518,
+          "historical_cost_usd": 0.0,
+          "retries": 0
+        }
+      },
+      "bag_partition": {
+        "by_convention": [
+          {
+            "convention": "S",
+            "tp": 350,
+            "fp": 10,
+            "fn": 0,
+            "precision_pct": 97.2222,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 98.5915
+          },
+          {
+            "convention": "Z",
+            "tp": 121,
+            "fp": 3,
+            "fn": 0,
+            "precision_pct": 97.5806,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 98.7755
+          },
+          {
+            "convention": "3S",
+            "tp": 526,
+            "fp": 24,
+            "fn": 1,
+            "precision_pct": 95.6364,
+            "recall_pct": 99.8102,
+            "micro_f1_pct": 97.6787
+          },
+          {
+            "convention": "ING",
+            "tp": 227,
+            "fp": 8,
+            "fn": 0,
+            "precision_pct": 96.5957,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 98.2684
+          },
+          {
+            "convention": "ED",
+            "tp": 473,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "EN",
+            "tp": 113,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "BE",
+            "tp": 203,
+            "fp": 0,
+            "fn": 1,
+            "precision_pct": 100.0,
+            "recall_pct": 99.5098,
+            "micro_f1_pct": 99.7543
+          },
+          {
+            "convention": "MODAL",
+            "tp": 111,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "OTHER",
+            "tp": 151,
+            "fp": 2,
+            "fn": 2,
+            "precision_pct": 98.6928,
+            "recall_pct": 98.6928,
+            "micro_f1_pct": 98.6928
+          },
+          {
+            "convention": "NEG",
+            "tp": 131,
+            "fp": 0,
+            "fn": 0,
+            "precision_pct": 100.0,
+            "recall_pct": 100.0,
+            "micro_f1_pct": 100.0
+          },
+          {
+            "convention": "UNCLASSIFIED",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision_pct": 0.0,
+            "recall_pct": 0.0,
+            "micro_f1_pct": 0.0
+          }
+        ],
+        "sum": {
+          "tp": 2406,
+          "fp": 48,
+          "fn": 4
+        }
+      },
+      "errors": {
+        "n_failed_utterances": 1,
+        "top_false_positives": [
+          [
+            "change/ing",
+            7
+          ],
+          [
+            "glass/s",
+            5
+          ],
+          [
+            "point/3s",
+            3
+          ],
+          [
+            "turn/3s",
+            2
+          ],
+          [
+            "hold/3s",
+            2
+          ],
+          [
+            "pajama/s",
+            2
+          ],
+          [
+            "lay/3s",
+            1
+          ],
+          [
+            "corner/s",
+            1
+          ],
+          [
+            "raise/3s",
+            1
+          ],
+          [
+            "toy/z",
+            1
+          ],
+          [
+            "attach/3s",
+            1
+          ],
+          [
+            "lift/3s",
+            1
+          ],
+          [
+            "glass/es",
+            1
+          ],
+          [
+            "hand/s",
+            1
+          ],
+          [
+            "pinch/3s",
+            1
+          ],
+          [
+            "tilt/3s",
+            1
+          ],
+          [
+            "touch/3s",
+            1
+          ],
+          [
+            "make/3s",
+            1
+          ],
+          [
+            "sketch/3s",
+            1
+          ],
+          [
+            "bank/s",
+            1
+          ],
+          [
+            "add/3s",
+            1
+          ],
+          [
+            "draw/3s",
+            1
+          ],
+          [
+            "bird/z",
+            1
+          ],
+          [
+            "pull/3s",
+            1
+          ],
+          [
+            "she/h's",
+            1
+          ]
+        ],
+        "top_false_negatives": [
+          [
+            "That/'s",
+            1
+          ],
+          [
+            "She/h's",
+            1
+          ],
+          [
+            "let/'us",
+            1
+          ],
+          [
+            "give/3s",
+            1
+          ]
+        ],
+        "examples": [
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "easy_01",
+            "failed": false,
+            "expected": "C It look/3s like a banana {points to the curved shadow}.",
+            "actual": "C It look/3s like a banana {point/3s to the curved shadow}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "easy_06",
+            "failed": false,
+            "expected": "C Both stick/s now {lays them side by side}.",
+            "actual": "C Both stick/s now {lay/3s them side by side}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_01",
+            "failed": false,
+            "expected": "C His glasses.",
+            "actual": "C His glass/s.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_01",
+            "failed": false,
+            "expected": "C Yes, but those are/n't his real glasses.",
+            "actual": "C Yes, but those are/n't his real glass/s.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C His mouth was like this {turns up the corners of the mouth}.",
+            "actual": "C His mouth was like this {turn/3s up the corner/s of the mouth}.",
+            "tp": 0,
+            "fp": 2,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C He/'d need tiny glasses.",
+            "actual": "C He/'d need tiny glass/s.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "P Are those his glasses or yours?",
+            "actual": "P Are those his glass/s or yours?",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C Mine are giant pretend glasses.",
+            "actual": "C Mine are giant pretend glass/s.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C Wait, the hamster/'s awake now {raises the toy's head}.",
+            "actual": "C Wait, the hamster/'s awake now {raise/3s the toy/z head}.",
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C I/'ll put it on the mouse {attaches smile to paper mouse hat}.",
+            "actual": "C I/'ll put it on the mouse {attach/3s smile to paper mouse hat}.",
+            "tp": 1,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_04",
+            "failed": false,
+            "expected": "C (And) and he can take it off {lifts the paper hat}.",
+            "actual": "C (And) and he can take it off {lift/3s the paper hat}.",
+            "tp": 0,
+            "fp": 1,
+            "fn": 0
+          },
+          {
+            "config_id": "gemini-3.6-flash__think-medium",
+            "family": "hard_05",
+            "failed": false,
+            "expected": "C He/h'd take/en his glasses off first, luckily.",
+            "actual": "C He/h'd take/en his glass/es off first, luckily.",
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          }
+        ]
+      }
+    }
+  },
+  "paired_mixed_ok_only": [
+    {
+      "family": "medium_06",
+      "sol_micro_f1_pct": 97.0297,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": -2.9703,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "hard_05",
+      "sol_micro_f1_pct": 95.7055,
+      "gemini_micro_f1_pct": 98.0892,
+      "delta_f1_pp": -2.3837,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "medium_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 98.0392,
+      "delta_f1_pp": 1.9608,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_10",
+      "sol_micro_f1_pct": 98.7342,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": -1.2658,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "medium_09",
+      "sol_micro_f1_pct": 97.0874,
+      "gemini_micro_f1_pct": 96.1538,
+      "delta_f1_pp": 0.9336,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_01",
+      "sol_micro_f1_pct": 98.8235,
+      "gemini_micro_f1_pct": 98.8235,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_06",
+      "sol_micro_f1_pct": 98.8506,
+      "gemini_micro_f1_pct": 98.8506,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "easy_07",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "hard_01",
+      "sol_micro_f1_pct": 98.5507,
+      "gemini_micro_f1_pct": 98.5507,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "hard_04",
+      "sol_micro_f1_pct": 94.6108,
+      "gemini_micro_f1_pct": 94.6108,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "hard_07",
+      "sol_micro_f1_pct": 98.0952,
+      "gemini_micro_f1_pct": 98.0952,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "hard_08",
+      "sol_micro_f1_pct": 96.2162,
+      "gemini_micro_f1_pct": 96.2162,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "medium_07",
+      "sol_micro_f1_pct": 96.7742,
+      "gemini_micro_f1_pct": 96.7742,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "medium_08",
+      "sol_micro_f1_pct": 98.2143,
+      "gemini_micro_f1_pct": 98.2143,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    }
+  ],
+  "paired_single_ok_only": [
+    {
+      "family": "Z_easy_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 96.0,
+      "delta_f1_pp": 4.0,
+      "sol_failures": 0,
+      "gemini_failures": 1,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "S_medium_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 98.0,
+      "delta_f1_pp": 2.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "EN_medium_05",
+      "sol_micro_f1_pct": 99.0099,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": -0.9901,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "3S_easy_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "3S_hard_01",
+      "sol_micro_f1_pct": 99.3289,
+      "gemini_micro_f1_pct": 99.3289,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "3S_medium_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "BE_easy_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "BE_hard_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "BE_medium_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ED_easy_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ED_hard_02",
+      "sol_micro_f1_pct": 99.3289,
+      "gemini_micro_f1_pct": 99.3289,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ED_medium_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "EN_easy_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "EN_hard_05",
+      "sol_micro_f1_pct": 99.2366,
+      "gemini_micro_f1_pct": 99.2366,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ING_easy_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ING_hard_01",
+      "sol_micro_f1_pct": 98.2143,
+      "gemini_micro_f1_pct": 98.2143,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "ING_medium_04",
+      "sol_micro_f1_pct": 98.7952,
+      "gemini_micro_f1_pct": 98.7952,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "MODAL_easy_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "MODAL_hard_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "MODAL_medium_04",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "NEG_easy_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "NEG_medium_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "OTHER_easy_04",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "OTHER_hard_03",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "OTHER_medium_05",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "S_easy_01",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "S_hard_03",
+      "sol_micro_f1_pct": 98.3333,
+      "gemini_micro_f1_pct": 98.3333,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "Z_hard_02",
+      "sol_micro_f1_pct": 99.3197,
+      "gemini_micro_f1_pct": 99.3197,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    },
+    {
+      "family": "Z_medium_02",
+      "sol_micro_f1_pct": 100.0,
+      "gemini_micro_f1_pct": 100.0,
+      "delta_f1_pp": 0.0,
+      "sol_failures": 0,
+      "gemini_failures": 0,
+      "sol_ok": true,
+      "gemini_ok": true
+    }
+  ]
+}
