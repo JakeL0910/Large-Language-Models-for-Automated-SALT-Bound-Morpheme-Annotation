@@ -1,4 +1,18 @@
-# Stage 3 finalist results
+# Stage 3 finalist results — archival original aggregation
+
+> **Archival Stage 3 scoring log (before designated-category reanalysis).**
+> The original all-category single-convention scores of **99.68% Sol** and
+> **97.02% Gemini**, and the original all-category combined scores, are
+> preserved below as historical experiment records. They are **not** the
+> manuscript's corrected single-convention-designated results. The post hoc
+> designated-category analysis of the same frozen model outputs yields
+> **99.59% Sol** (604 TP / 5 FP / 0 FN) and **97.30% Gemini**
+> (577 TP / 5 FP / 27 FN); matched 29 valid files: **99.57% for both**.
+> This was a **post hoc reanalysis**, not a prespecified evaluation using
+> specialized prompts. Reproduce with
+> `python scripts/reproduce_designated_category_scores.py`.
+> **Do not mix all-category and designated-category counts into one F1.**
+
 
 Status: **STAGE3_GEMINI_CONTINUATION_COMPLETE.** 96 first-attempt cells on disk.
 Gemini has three original structural failures (`hard_03`, `medium_02`, `NEG_hard_04`).
@@ -20,7 +34,7 @@ Primary metric: pooled bag-of-morphemes micro F1. WLA not computed.
 | Spend | **$5.5485 / $12** |
 | Stop | none (continuation completed) |
 
-## 1. Strict first-attempt (official)
+## 1. Strict first-attempt (archival all-category aggregation)
 
 Structural JSON/ID failures remain failures. Do not drop them from the frozen 18+30 design.
 
@@ -37,7 +51,7 @@ Gemini mixed by difficulty (strict): easy 99.62% (6/6); medium 88.89% (5 ok + `m
 
 Failed families: `hard_03`, `medium_02`, `NEG_hard_04`.
 
-## 2. Parsed-successful annotation (subset; not official 18+30)
+## 2. Parsed-successful annotation (archival all-category subset)
 
 Successfully parsed transcripts only.
 
@@ -68,7 +82,7 @@ Cumulative Stage 3 **$5.5485** of $12 (Sol $3.96, Gemini $1.58). Continuation ad
 
 Stage 2 mixed validation (different 12 files): Sol 97.83%, Gemini 97.62%. Stage 3 reserved mixed strict: Sol 97.81% (complete); Gemini 90.60% with two mixed structural failures. Parsed-ok Gemini mixed 97.97% is a 16-file subset, not the frozen 18.
 
-No overall winner is declared from the strict 18+30 comparison while three Gemini first-attempt cells are technical failures. Parsed-ok mixed scores are close (Gemini 97.97 vs Sol 97.72 on the same 16 files).
+The original strict all-category 18+30 comparison is preserved here for provenance, not as the corrected combined figure. Parsed-ok mixed scores are close (Gemini 97.97 vs Sol 97.72 on the same 16 files).
 
 ## Artifacts
 
