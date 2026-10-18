@@ -1,0 +1,57 @@
+{
+  "analysis": "post hoc designated-category scoring on single-convention-focused transcripts",
+  "status": "POST_HOC_REANALYSIS_NOT_PRE_REGISTERED",
+  "input": "unaltered Stage 3 V5 model responses and author-reviewed reference keys",
+  "prompt_sha256": "f554bf77a9e8dbe0963425ef54e35f78619d8cdfb333151202a514597b2eede7",
+  "unit": "exact-match annotated tokens matched as multisets within utterances",
+  "scope": "only morpheme codes in each transcript's designated target convention",
+  "strict_structural_failure_policy": true,
+  "n_files": 30,
+  "n_reference_all_categories": 1545,
+  "n_reference_target_categories": 604,
+  "n_reference_off_target_categories": 941,
+  "results": [
+    {
+      "model": "gpt-5.6-sol__reason-medium",
+      "split": "single_strict_30",
+      "n_files": 30,
+      "n_valid": 30,
+      "tp": 604,
+      "fp": 5,
+      "fn": 0,
+      "f1_pct": 99.59
+    },
+    {
+      "model": "gemini-3.6-flash__think-medium",
+      "split": "single_strict_30",
+      "n_files": 30,
+      "n_valid": 29,
+      "tp": 577,
+      "fp": 5,
+      "fn": 27,
+      "f1_pct": 97.3
+    },
+    {
+      "model": "gpt-5.6-sol__reason-medium",
+      "split": "single_matched_29_valid_gemini",
+      "n_files": 29,
+      "n_valid": 29,
+      "tp": 577,
+      "fp": 5,
+      "fn": 0,
+      "f1_pct": 99.57
+    },
+    {
+      "model": "gemini-3.6-flash__think-medium",
+      "split": "single_matched_29_valid_gemini",
+      "n_files": 29,
+      "n_valid": 29,
+      "tp": 577,
+      "fp": 5,
+      "fn": 0,
+      "f1_pct": 99.57
+    }
+  ],
+  "disclaimer": "The original all-category single transcript scores were 99.68% (Sol) and 97.02% (Gemini). These target-category counts were computed after the original evaluation; they are not a prespecified metric nor new model-inference runs. Do not combine with mixed-convention all-category F1 into an aggregate F1.",
+  "reproduce": "python scripts/reproduce_designated_category_scores.py"
+}
