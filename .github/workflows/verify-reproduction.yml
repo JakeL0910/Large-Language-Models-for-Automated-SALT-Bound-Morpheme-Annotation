@@ -1,0 +1,29 @@
+name: Verify publication reproducibility
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out publication repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify 60-file dataset and frozen prompt
+        run: python scripts/verify_publication_dataset.py
+      - name: Reproduce mixed-convention Stage 3 scores
+        run: python scripts/reproduce_published_scores.py
+      - name: Reproduce post hoc designated-category scores
+        run: python scripts/reproduce_designated_category_scores.py
