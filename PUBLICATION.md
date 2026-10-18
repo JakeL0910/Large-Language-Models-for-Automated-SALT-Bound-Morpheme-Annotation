@@ -1,7 +1,8 @@
 # Public-release notes
 
-This branch is a **clean-history snapshot** of the finalized 60-transcript study.
-It is not a rewrite of `main` or of the private research branches.
+This public repository's default `main` branch is an independent,
+**clean-history snapshot** of the finalized 60-transcript study.
+The earlier research workspace and its Git history remain separately private.
 
 ## Included
 
@@ -15,7 +16,7 @@ It is not a rewrite of `main` or of the private research branches.
 | Material | Reason |
 | --- | --- |
 | 120 unused generation-pool transcripts/keys | Not evaluated in the finalized 60-transcript study |
-| Older mixed files currently on `main` | SHA-256 differs from V3.1; Stage 3 forbids substitution |
+| Older mixed-file revisions retained only in the private research archive | SHA-256 differs from V3.1; Stage 3 forbids substitution |
 | Streamlit lab, 180-file Super Mode runners | Superseded experimental pipeline |
 | SALTee 180-file baseline outputs | Tied to the unused 180 corpus |
 | `.env`, provider secrets, lock files | Credentials / local process state |
@@ -32,12 +33,20 @@ The first Stage 3 evaluation used the same full V5 prompt and **all-category sco
 
 The original mixed all-category primary results (97.81% and 90.60%) are unchanged. The two scoring scopes should not be merged into one overall F1. The new offline script is `scripts/reproduce_designated_category_scores.py`.
 
-## History warning
+## Public-release status and provenance
 
-The private `main` branch still contains the older 180-file research tree, obsolete SALTee materials, and historical single-convention prompts. Making **that** default branch public would expose unused transcripts through Git history even if the tip is later slimmed. Prefer this clean branch or a new public repository. Do not rewrite existing history without a separate approval.
+The public repository was created from the clean, independent publication
+snapshot. It includes only the current 60-transcript dataset and its recorded
+experiment artifacts; historical 180-file SALTee research is not part of this
+repository or its initial Git history. The private historical research
+repository is maintained separately.
+
+The current public `main` branch contains the manuscript-supporting materials.
+There is no need to check out a separate publication branch.
 
 ## Pending author decisions
 
-1. Select a public license (current file still says all rights reserved).
-2. Create a **separate standalone repository initialized from this branch's final tree**, if public access is desired. The GitHub connector cannot modify repository visibility or the default branch.
-3. Do **not** flip the existing private repository to public. Its older history and development branches are not part of the intended publication artifact.
+1. Decide whether to keep the **all rights reserved** notice or add an explicit
+   reuse license. Public availability alone does not grant redistribution rights.
+2. Create an immutable GitHub release tag and/or archive DOI once the manuscript
+   and the reproducibility checks are finalized.
