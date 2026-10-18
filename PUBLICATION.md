@@ -8,7 +8,7 @@ It is not a rewrite of `main` or of the private research branches.
 - 60 transcripts + 60 author-reviewed reference keys (V3.1 mixed files; reserved single-convention files)
 - Frozen mixed prompts V1–V5 and the transcript-generation prompt
 - Stage 1–3 manifests, summaries, tables, and saved cells (raw model responses)
-- Offline hash verification and F1 reproduction scripts
+- Offline hash verification, original mixed-convention F1 reproduction, and the post hoc designated-category single-convention scoring script
 
 ## Excluded (and why)
 
@@ -21,15 +21,23 @@ It is not a rewrite of `main` or of the private research branches.
 | `.env`, provider secrets, lock files | Credentials / local process state |
 | `writing/`, `archive/`, internal notes | Not for public distribution |
 | Stage 2 `recovery/` working archives | Operational debris, not publication records |
+| Original 180-transcript generation-settings document | Historical design notes for a superseded pool, not the frozen 60-transcript evaluation |
 | Copyrighted SALT manuals / PDFs | No redistribution permission |
 | Clinical or laboratory transcripts | None are in this study; none are published |
 
+
+## Scoring correction for the paper
+
+The first Stage 3 evaluation used the same full V5 prompt and **all-category scoring** on both mixed and single-convention-designated transcripts. The frozen all-category single results (Sol 99.68%, Gemini 97.02%) are retained in the **archival** Stage 3 tables. After recognizing that the single-convention files were designed to emphasize one specified target, a **post hoc designated-category reanalysis** was calculated from the exact same saved responses and keys. Results: **Sol 99.59%** (604 TP, 5 FP, 0 FN), **Gemini 97.30%** (577 TP, 5 FP, 27 FN); on the 29 valid matched files both scored **99.57%**.
+
+The original mixed all-category primary results (97.81% and 90.60%) are unchanged. The two scoring scopes should not be merged into one overall F1. The new offline script is `scripts/reproduce_designated_category_scores.py`.
+
 ## History warning
 
-`origin/main` still contains the 180-file tree. Making **that** default branch public would expose unused transcripts through Git history even if the tip is later slimmed. Prefer this clean branch or a new public repository. Do not rewrite existing history without a separate approval.
+The private `main` branch still contains the older 180-file research tree, obsolete SALTee materials, and historical single-convention prompts. Making **that** default branch public would expose unused transcripts through Git history even if the tip is later slimmed. Prefer this clean branch or a new public repository. Do not rewrite existing history without a separate approval.
 
 ## Pending author decisions
 
 1. Select a public license (current file still says all rights reserved).
-2. Approve pushing this branch and/or creating a new public GitHub repository.
-3. Do **not** flip the existing private repository to public until that history question is decided.
+2. Create a **separate standalone repository initialized from this branch's final tree**, if public access is desired. The GitHub connector cannot modify repository visibility or the default branch.
+3. Do **not** flip the existing private repository to public. Its older history and development branches are not part of the intended publication artifact.
