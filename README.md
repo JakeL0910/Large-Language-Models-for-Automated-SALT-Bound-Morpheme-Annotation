@@ -4,10 +4,10 @@
 This branch accompanies the manuscript *Large Language Models for Automated
 Systematic Analysis of Language Transcripts (SALT) Bound Morpheme Annotation*.
 
-**Repository status:** This is a clean-history **publication preparation branch**
-of a **private** repository. It is **not yet a public release or DOI**.
-The unrelated historical 180-file experimental workspace remains on private
-`main` and should **not** be made public.
+**Repository status:** This is the **public, clean-history publication
+repository** for the finalized 60-transcript study. The unrelated historical
+180-file research workspace is preserved separately in a private archive.
+No manuscript DOI or versioned GitHub release has been assigned yet.
 
 ## Study at a glance
 
@@ -77,7 +77,7 @@ excluded in strict-score reporting. **Do not combine mixed all-category F1 with
 single designated-category F1 into an overall F1**; those are different scoring
 scopes.
 
-The original pre-correction tables remain in
+The original pre-correction tables are preserved in
 [`experiments/stage3_finalists/STAGE3_RESULTS.md`](experiments/stage3_finalists/STAGE3_RESULTS.md)
 as **archival evidence** and must not be mistaken for corrected
 designated-category results.
@@ -89,7 +89,7 @@ Python 3.11+; these scripts use the Python standard library.
 ```bash
 git clone https://github.com/JakeL0910/Large-Language-Models-for-Automated-SALT-Bound-Morpheme-Annotation.git
 cd Large-Language-Models-for-Automated-SALT-Bound-Morpheme-Annotation
-git checkout publication/public-release-60
+# The published 60-transcript snapshot is already on main
 
 python scripts/verify_publication_dataset.py
 python scripts/reproduce_published_scores.py
@@ -117,8 +117,9 @@ scripts/          Offline dataset checks and F1 reproduction
 ```
 
 The unused focused-prompt variants, SALTee implementation, original 180-file
-pool, lab data, internal notes, and legacy Streamlit UI are **not** part of this
-publication branch. Original private history is intentionally retained elsewhere.
+pool, internal notes, and legacy Streamlit UI are **not** part of this
+public repository. Historical research files and history are kept in a
+separate private archive.
 
 ## Scope and limitations
 
@@ -130,7 +131,8 @@ bias have not been established.
 
 ## License and citation
 
-This preparation branch currently retains **all rights reserved**. No public
-reuse license, published paper DOI, or release tag has been assigned.
-Cite the accompanying paper once it is posted and use the versioned public
-repository link when available.
+This repository currently retains **all rights reserved**. Public viewing and
+reproduction of the reported results do not imply permission to redistribute
+or modify these materials. No manuscript DOI or release tag has been assigned.
+Cite the accompanying manuscript and link to this repository when referencing
+these materials.
