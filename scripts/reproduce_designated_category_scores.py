@@ -123,7 +123,7 @@ def main() -> None:
 
     gold_total = sum(
         sum(
-            filtered_counter(r.get("expected", ""), f["convention"]).values()
+            sum(filtered_counter(r.get("expected", ""), f["convention"]).values())
             for r in cells[SOL][f["family"]]["rows"]
         )
         for f in selected
